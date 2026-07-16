@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Check application links in listings.json and mark closed ones with 🔒.
-Attempts Workday board-ID injection to repair broken Workday URLs.
-"""
 
 import json
 import re
@@ -39,7 +35,6 @@ def skip_domain(url):
 
 
 def check_url(url):
-    """Return True if URL is live, False if dead."""
     if not url:
         return False
     if skip_domain(url):
@@ -57,7 +52,6 @@ def check_url(url):
 
 
 def try_workday_fix(url, workday_boards, company_name):
-    """Attempt to inject the correct Workday board ID for the company."""
     if 'myworkdayjobs.com' not in url and 'workday.com' not in url:
         return None
     board_id = workday_boards.get(company_name)

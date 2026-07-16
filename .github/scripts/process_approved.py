@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-Process approved GitHub issues and add them to listings.json.
-Triggered when an issue receives the 'approved' label.
-"""
 
 import json
 import os

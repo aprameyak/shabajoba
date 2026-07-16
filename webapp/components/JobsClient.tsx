@@ -57,7 +57,6 @@ function JobTable({
   seasonFilter: string;
 }) {
   const displayRows = useMemo(() => {
-    // Resolve grouped company names for search/filter
     const resolved: (ProcessedRow & { resolvedCompany: string })[] = [];
     let lastCompany = '';
     for (const row of rows) {

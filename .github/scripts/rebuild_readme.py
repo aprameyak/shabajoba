@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Rebuild README table from listings.json (single combined internships/co-ops table)."""
 
 import json
 import re

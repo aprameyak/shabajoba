@@ -1,6 +1,3 @@
-# Companies organized by recruiting platform
-# Used by check_links.py to repair Workday board URLs
-
 greenhouse:
   - Analog Devices
   - Anduril

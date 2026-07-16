@@ -1,13 +1,4 @@
 #!/usr/bin/env python3
-"""
-Scrape EE internship postings from:
-  - Greenhouse, Lever, Ashby, Workday, SmartRecruiters, iCIMS
-  - USAJOBS public API
-  - National lab / direct career pages (Sandia, Oak Ridge, NREL, JPL, Los Alamos)
-
-Classifies roles via keyword matching + Gemini API, then adds confirmed listings
-to listings.json / README and creates GitHub issues for lower-confidence matches.
-"""
 
 import json
 import os
@@ -18,17 +9,11 @@ import subprocess
 from pathlib import Path
 import requests
 
-# ---------------------------------------------------------------------------
-# Paths
-# ---------------------------------------------------------------------------
 LISTINGS_FILE = Path('listings.json')
 SEEN_FILE = Path('.github/data/seen_jobs.json')
 CLASSIFICATIONS_FILE = Path('.github/data/title_classifications.json')
 GEMINI_USAGE_FILE = Path('.github/data/gemini_usage.json')
 
-# ---------------------------------------------------------------------------
-# EE keyword config
-# ---------------------------------------------------------------------------
 EE_TITLE_KEYWORDS = [
     'electrical engineer', 'hardware engineer', 'analog engineer',
     'rf engineer', 'rf design', 'power engineer', 'signal integrity',
@@ -77,9 +62,6 @@ US_CA_LOCATION_PHRASES = [
     'remote', 'united states', 'canada', 'u.s.', 'usa', 'u.s.a',
 ]
 
-# ---------------------------------------------------------------------------
-# Gemini helpers
-# ---------------------------------------------------------------------------
 GEMINI_DAILY_LIMIT = 1400
 GEMINI_DELAY = 4.2
 
@@ -100,9 +82,6 @@ def save_gemini_usage(usage):
         json.dump(usage, f)
 
 
-# ---------------------------------------------------------------------------
-# Data helpers
-# ---------------------------------------------------------------------------
 def load_json(path, default):
     if path.exists():
         with open(path) as f:
@@ -124,12 +103,11 @@ def normalize_url(url):
 
 def is_us_or_canada(location_text):
     if not location_text:
-        return True  # assume US if no location provided by ATS
+        return True
     loc = location_text.lower()
     for phrase in US_CA_LOCATION_PHRASES:
         if phrase in loc:
             return True
-    # match ", XX" state/province abbreviation
     tokens = re.findall(r'\b([a-z]{2})\b', loc)
     return any(t in US_CA_LOCATION_TOKENS for t in tokens)
 
@@ -180,9 +158,6 @@ def add_listing(listings, entry):
     return True
 
 
-# ---------------------------------------------------------------------------
-# Gemini classification
-# ---------------------------------------------------------------------------
 def classify_titles_gemini(titles, api_key, usage):
     if not api_key or usage['count'] >= GEMINI_DAILY_LIMIT:
         return {}
@@ -217,10 +192,6 @@ def classify_titles_gemini(titles, api_key, usage):
             print(f'Gemini error for "{title}": {e}')
     return results
 
-
-# ---------------------------------------------------------------------------
-# Platform scrapers
-# ---------------------------------------------------------------------------
 
 def scrape_greenhouse(company, board_token, seen):
     jobs = []
@@ -307,12 +278,6 @@ def scrape_ashby(company, ashby_id, seen):
 
 
 def scrape_workday(company, tenant, site, board_num, seen):
-    """
-    POST to Workday's semi-public CXS jobs endpoint.
-    tenant  = e.g. 'intel'
-    site    = e.g. 'External' (the career site name in the URL)
-    board_num = Workday board number (wd1, wd3, wd5 are common)
-    """
     jobs = []
     base = f'https://{tenant}.wd{board_num}.myworkdayjobs.com'
     endpoint = f'{base}/wday/cxs/{tenant}/{site}/jobs'
@@ -362,7 +327,6 @@ def scrape_workday(company, tenant, site, board_num, seen):
 
 
 def scrape_smartrecruiters(company, company_id, seen):
-    """SmartRecruiters public postings API."""
     jobs = []
     offset = 0
     limit = 100
@@ -411,23 +375,13 @@ def scrape_smartrecruiters(company, company_id, seen):
 
 
 def scrape_icims(company, customer_id, seen):
-    """iCIMS public jobs feed (XML/JSON portal)."""
     jobs = []
     try:
-        url = (
-            f'https://careers.icims.com/jobs/search?ss=1'
-            f'&searchRelation=keyword_all&searchKeyword=intern'
-            f'&in_iframe=1&hashed=-625951441&mobile=false&width=990'
-            f'&height=500&bga=true&needsRedirect=false&jan1offset=-300'
-            f'&jun1offset=-240&customerId={customer_id}'
-        )
-        # iCIMS also exposes an XML feed at a predictable endpoint
         feed_url = f'https://careers.icims.com/jobs/search?pr=1&schemaId=&jobFamily=&jobType=&loctype=&startrow=1&listformat=j&in_iframe=1&customerId={customer_id}&searchKeyword=intern'
         resp = requests.get(feed_url, timeout=15,
                             headers={'User-Agent': 'Mozilla/5.0'})
         if resp.status_code != 200:
             return jobs
-        # iCIMS returns HTML; parse job titles from JSON blob if present
         matches = re.findall(r'"jobtitle"\s*:\s*"([^"]+)"', resp.text)
         ids = re.findall(r'"jobid"\s*:\s*"([^"]+)"', resp.text)
         locs = re.findall(r'"joblocation"\s*:\s*"([^"]+)"', resp.text)
@@ -448,10 +402,6 @@ def scrape_icims(company, customer_id, seen):
 
 
 def scrape_usajobs(seen):
-    """
-    USAJOBS public API — covers DoD, NASA, DOE, national lab internships.
-    Requires USAJOBS_API_KEY and USAJOBS_EMAIL env vars (free registration).
-    """
     jobs = []
     api_key = os.environ.get('USAJOBS_API_KEY', '')
     email = os.environ.get('USAJOBS_EMAIL', '')
@@ -518,13 +468,9 @@ def scrape_usajobs(seen):
 
 
 def scrape_national_lab(company, base_url, workday_tenant, workday_site, workday_num, seen):
-    """National labs that run on Workday (Sandia, Oak Ridge, NREL, LANL)."""
     return scrape_workday(company, workday_tenant, workday_site, workday_num, seen)
 
 
-# ---------------------------------------------------------------------------
-# GitHub issue creation
-# ---------------------------------------------------------------------------
 def create_github_issue(token, repo, company, role, location, url, season):
     title = f'[JOB] {company} — {role} ({season})'
     body = (
@@ -556,12 +502,7 @@ def create_github_issue(token, repo, company, role, location, url, season):
         print(f'Issue creation error: {e}')
 
 
-# ---------------------------------------------------------------------------
-# Company lists
-# ---------------------------------------------------------------------------
-
 GREENHOUSE_COMPANIES = [
-    # Semiconductors
     ('Analog Devices', 'analogdevices'),
     ('Broadcom', 'broadcom'),
     ('Cadence Design Systems', 'cadence'),
@@ -579,21 +520,16 @@ GREENHOUSE_COMPANIES = [
     ('Skyworks Solutions', 'skyworks'),
     ('Tenstorrent', 'tenstorrent'),
     ('Wolfspeed', 'wolfspeed'),
-    # Aerospace / defense
     ('Anduril', 'anduril'),
     ('Aurora Innovation', 'aurora'),
     ('Rocket Lab', 'rocketlab'),
     ('SpaceX', 'spacex'),
-    # Automotive / EV
     ('Lucid Motors', 'lucidmotors'),
     ('Rivian', 'rivian'),
-    # Test & instruments
     ('Keysight Technologies', 'keysight'),
     ('Teradyne', 'teradyne'),
-    # Power / energy
     ('Eaton', 'eaton'),
     ('GE Aerospace', 'geaerospace'),
-    # Other hardware
     ('Waymo', 'waymo'),
     ('Verkada', 'verkada'),
     ('Texas Instruments', 'ti'),
@@ -624,7 +560,6 @@ ASHBY_COMPANIES = [
     ('Wisk Aero', 'wisk'),
 ]
 
-# (company, tenant, site, board_num)
 WORKDAY_COMPANIES = [
     ('Intel', 'intel', 'External', '1'),
     ('Texas Instruments', 'ti', 'TICareersSite', '3'),
@@ -678,14 +613,12 @@ SMARTRECRUITERS_COMPANIES = [
 ]
 
 ICIMS_COMPANIES = [
-    # customer_id values from iCIMS portal
     ('BAE Systems US', '3767'),
     ('Collins Aerospace', '3771'),
     ('Parker Hannifin', '3024'),
     ('Textron', '2236'),
 ]
 
-# National labs with dedicated Workday tenants
 NATIONAL_LABS = [
     ('Sandia National Laboratories', 'https://sandia.gov/careers', 'sandia', 'ExternalCareers', '1'),
     ('Oak Ridge National Laboratory', 'https://ornl.gov/careers', 'ornl', 'External', '1'),
@@ -694,9 +627,6 @@ NATIONAL_LABS = [
 ]
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
 def main():
     github_token = os.environ.get('GITHUB_TOKEN', '')
     repo = os.environ.get('GITHUB_REPOSITORY', '')
@@ -766,7 +696,6 @@ def main():
 
     print(f'\nTotal candidates: {len(candidates)}')
 
-    # --- Classify via Gemini ---
     titles_to_classify = list({
         c['title'] for c in candidates
         if c['title'] not in classifications

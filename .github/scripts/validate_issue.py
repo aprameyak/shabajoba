@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Validate job listing issue submissions."""
 
 import os
 import re
