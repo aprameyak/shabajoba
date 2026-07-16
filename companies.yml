@@ -1,0 +1,133 @@
+# Companies organized by recruiting platform
+# Used by check_links.py to repair Workday board URLs
+
+greenhouse:
+  - Analog Devices
+  - Anduril
+  - Apple
+  - Aurora Innovation
+  - Broadcom
+  - Cadence Design Systems
+  - Celestica
+  - Cirrus Logic
+  - Cloudflare
+  - Cree (Wolfspeed)
+  - Danfoss
+  - Eaton
+  - Emerson Electric
+  - Faraday Future
+  - Flex
+  - GE Aerospace
+  - Infineon Technologies
+  - Keysight Technologies
+  - Lattice Semiconductor
+  - Lumentum
+  - Lucid Motors
+  - Marvell Technology
+  - Maxim Integrated
+  - Microchip Technology
+  - Micron Technology
+  - Monolithic Power Systems
+  - Nuro
+  - NVIDIA
+  - NXP Semiconductors
+  - ON Semiconductor
+  - Qualcomm
+  - Renesas Electronics
+  - Rocket Lab
+  - Skyworks Solutions
+  - SpaceX
+  - STMicroelectronics
+  - Teradyne
+  - Texas Instruments
+  - Tenstorrent
+  - Tower Semiconductor
+  - Verkada
+  - Waymo
+  - Wolfspeed
+  - Xilinx (AMD)
+
+lever:
+  - Blue Origin
+  - Exowatt
+  - Plus
+  - Shield AI
+  - Zoox
+
+workday:
+  boards:
+    3M: 3m
+    ABB: abb
+    Accenture: accenture
+    Advanced Energy Industries: advancedenergy
+    Agilent Technologies: agilent
+    Amphenol: amphenol
+    Aptiv: aptiv
+    BAE Systems: baesystems
+    Baker Hughes: bakerhughes
+    Belden: belden
+    Boeing: boeing
+    Broadcom: broadcom
+    Cisco: cisco
+    Collins Aerospace: collinsaerospace
+    Danaher: danaher
+    Dell Technologies: dell
+    Emerson Electric: emerson
+    Garmin: garmin
+    General Dynamics: generaldynamics
+    Honeywell: honeywell
+    Intel: intel
+    ITT: itt
+    Jabil: jabil
+    L3Harris Technologies: l3harris
+    Leidos: leidos
+    Lockheed Martin: lockheedmartin
+    Moog: moog
+    Motorola Solutions: motorolasolutions
+    Northrop Grumman: northropgrumman
+    Parker Hannifin: parker
+    Raytheon Technologies: rtx
+    Rockwell Automation: rockwellautomation
+    Sandia National Laboratories: sandia
+    Schneider Electric: schneider
+    Siemens: siemens
+    TE Connectivity: te
+    Textron: textron
+    Thales: thales
+    USAA: usaa
+    Viasat: viasat
+    Vishay Intertechnology: vishay
+    Xylem: xylem
+
+linkedin:
+  - Apple
+  - Alphabet (Google)
+  - Amazon
+  - IBM
+  - Meta
+  - Microsoft
+  - Qualcomm
+  - Samsung
+
+ashby:
+  - Anduril Industries
+  - Applied Intuition
+  - Astera Labs
+  - Axcelis Technologies
+  - Cerebras Systems
+  - Charge Robotics
+  - Cohere
+  - Etched
+  - Figure
+  - Fractile
+  - Groq
+  - Isolation Network
+  - Matician
+  - NextSilicon
+  - Nuro
+  - Perceive
+  - Reduct
+  - Sievert Larsen
+  - Tangent
+  - Tenstorrent
+  - Untether AI

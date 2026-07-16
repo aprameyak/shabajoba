@@ -1,0 +1,147 @@
+name: Add Job Listing
+description: Submit a new electrical engineering internship or co-op to be added to the list.
+title: "[JOB] <Company> — <Role> (<Season/Type>)"
+labels: ["new listing", "needs review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for submitting a job listing! Please fill out all required fields as accurately as possible.
+
+        > **Tip:** If you are comfortable with Markdown, consider submitting a Pull Request directly — it is faster and gives you full control over formatting. See [CONTRIBUTING.md](../CONTRIBUTING.md).
+
+        > ⚠️ This repository is **exclusively for electrical engineering internships and co-ops in the United States, Canada, or Remote** positions. Software-only or business roles will not be added.
+
+  - type: input
+    id: company
+    attributes:
+      label: Company Name
+      description: The official name of the company (plain text — no URL needed here).
+      placeholder: "e.g. Texas Instruments"
+    validations:
+      required: true
+
+  - type: input
+    id: role
+    attributes:
+      label: Role / Job Title
+      description: The exact job title as listed in the posting.
+      placeholder: "e.g. Electrical Engineering Intern"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: listing_type
+    attributes:
+      label: Listing Type
+      description: Is this an internship or a co-op?
+      options:
+        - Internship
+        - Co-op
+    validations:
+      required: true
+
+  - type: dropdown
+    id: season
+    attributes:
+      label: Season / Term
+      description: Select the recruiting season this listing applies to.
+      options:
+        - Summer 2027
+        - Fall 2026
+        - Winter 2027
+        - Spring 2027
+        - Co-op (rolling)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: City and state (US) or city and province (Canada). Use "Remote (US)" or "Remote (Canada)" if fully remote. Separate multiple locations with semicolons.
+      placeholder: "e.g. Dallas, TX or Remote (US)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sponsorship
+    attributes:
+      label: Visa Sponsorship?
+      description: Does the company sponsor visas (e.g. H-1B, OPT) for this role?
+      options:
+        - "Yes — sponsorship available"
+        - "No — does NOT offer sponsorship"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: citizenship
+    attributes:
+      label: U.S. Citizenship Required?
+      description: Does the posting explicitly require U.S. citizenship?
+      options:
+        - "No"
+        - "Yes — U.S. citizenship required"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: education
+    attributes:
+      label: Education Level
+      description: What education level is this role targeting?
+      options:
+        - Undergrad
+        - Masters
+        - PhD
+        - Undergrad / Masters
+    validations:
+      required: true
+
+  - type: input
+    id: apply_link
+    attributes:
+      label: Direct Application Link
+      description: A direct link to the job application page (not just the careers homepage).
+      placeholder: "https://careers.ti.com/job/..."
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Application Deadline (Optional)
+      description: If known, enter the deadline (any format is fine).
+      placeholder: "e.g. November 1, 2026"
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes (Optional)
+      description: Any other relevant details (e.g. specific team, subfield — analog/digital/RF, rolling basis).
+      placeholder: "e.g. Analog design team. Applications reviewed on a rolling basis."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following before submitting.
+      options:
+        - label: The role is an electrical engineering internship or co-op (hardware, EE, RF, analog, power, VLSI, ASIC, FPGA, PCB, test, signal processing, or similar).
+          required: true
+        - label: The role is in the United States, Canada, or is Remote.
+          required: true
+        - label: The application link is publicly accessible (no login required to view the posting).
+          required: true
+        - label: I checked that this listing does not already exist in the repository.
+          required: true
+        - label: The information I provided is accurate to the best of my knowledge.
+          required: true
