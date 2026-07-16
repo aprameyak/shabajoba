@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild README tables from listings.json."""
+"""Rebuild README table from listings.json (single combined internships/co-ops table)."""
 
 import json
 import re
@@ -29,10 +29,9 @@ def format_company(entry):
 
 def format_location(location):
     location = location.strip()
-    if ';' in location:
-        parts = [p.strip() for p in location.split(';') if p.strip()]
-    else:
+    if ';' not in location:
         return location
+    parts = [p.strip() for p in location.split(';') if p.strip()]
     if len(parts) <= 1:
         return parts[0] if parts else location
     inner = '</br>'.join(parts)
@@ -58,20 +57,14 @@ def apply_btn(url):
 
 
 def format_row(entry, company_col):
-    company = company_col
     role = entry['role'].strip()
     location = format_location(entry['location'])
+    season = entry.get('season', 'Summer 2027').strip()
     education = entry.get('education', 'Undergrad').strip()
     url = entry.get('url', '').strip()
     date = format_date(entry['date_added'])
     btn = apply_btn(url)
-    table_type = entry['type']
-
-    if table_type == 'offcycle':
-        season = entry.get('season', '').strip()
-        return f'| {company} | {role} | {location} | {season} | {education} | {btn} | {date} |'
-    else:
-        return f'| {company} | {role} | {location} | {education} | {btn} | {date} |'
+    return f'| {company_col} | {role} | {location} | {season} | {education} | {btn} | {date} |'
 
 
 def build_table(entries):
@@ -83,7 +76,6 @@ def build_table(entries):
         return (-dt.timestamp(), _company_sort_key(e['company']))
 
     sorted_entries = sorted(entries, key=sort_key)
-
     rows = []
     group_tracker = {}
 
@@ -138,16 +130,12 @@ def main():
     with open(LISTINGS_FILE) as f:
         listings = json.load(f)
 
-    summer = [e for e in listings if e['type'] == 'summer']
-    offcycle = [e for e in listings if e['type'] == 'offcycle']
-
-    print(f'Loaded {len(listings)} listings: {len(summer)} summer, {len(offcycle)} offcycle')
+    print(f'Loaded {len(listings)} listings')
 
     with open(README_FILE, encoding='utf-8') as f:
         content = f.read()
 
-    content = replace_table(content, 'summer', build_table(summer))
-    content = replace_table(content, 'offcycle', build_table(offcycle))
+    content = replace_table(content, 'listings', build_table(listings))
 
     with open(README_FILE, 'w', encoding='utf-8') as f:
         f.write(content)
