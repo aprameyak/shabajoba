@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "company": "Rocket Lab",
+    "role": "Electrical Engineering Intern Fall 2026",
+    "location": "Long Beach, CA",
+    "type": "offcycle",
+    "season": "Fall 2026",
+    "education": "Undergrad",
+    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7725243003",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-07-16"
+  },
+  {
+    "company": "Rocket Lab",
+    "role": "Systems Engineering Intern Fall 2026",
+    "location": "Long Beach, CA",
+    "type": "offcycle",
+    "season": "Fall 2026",
+    "education": "Undergrad",
+    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7725384003",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-07-16"
+  },
+  {
+    "company": "Verkada",
+    "role": "Hardware Engineer (Fall Co-op)",
+    "location": "San Mateo, CA United States",
+    "type": "offcycle",
+    "season": "Co-op",
+    "education": "Undergrad",
+    "url": "https://job-boards.greenhouse.io/verkada/jobs/4321159007",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-07-16"
+  }
+]

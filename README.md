@@ -11,6 +11,9 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Rocket Lab | Electrical Engineering Intern Fall 2026 | Long Beach, CA | Fall 2026 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7725243003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Jul 16 |
+| ↳ | Systems Engineering Intern Fall 2026 | Long Beach, CA | Fall 2026 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7725384003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Jul 16 |
+| Verkada | Hardware Engineer (Fall Co-op) | San Mateo, CA United States | Co-op | Undergrad | <a href="https://job-boards.greenhouse.io/verkada/jobs/4321159007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Jul 16 |
 <!-- TABLE_END listings -->
 
 ---
