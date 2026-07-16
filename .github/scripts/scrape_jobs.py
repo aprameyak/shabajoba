@@ -7,6 +7,7 @@ import time
 import datetime
 import subprocess
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
 
 LISTINGS_FILE = Path('listings.json')
@@ -287,7 +288,9 @@ def scrape_workday(company, tenant, site, board_num, seen):
     }
     offset = 0
     limit = 20
-    while True:
+    max_pages = 5
+    page = 0
+    while page < max_pages:
         payload = {
             'appliedFacets': {},
             'limit': limit,
@@ -295,7 +298,7 @@ def scrape_workday(company, tenant, site, board_num, seen):
             'searchText': 'intern',
         }
         try:
-            resp = requests.post(endpoint, json=payload, headers=headers, timeout=20)
+            resp = requests.post(endpoint, json=payload, headers=headers, timeout=15)
             if resp.status_code in (404, 403):
                 break
             resp.raise_for_status()
@@ -306,7 +309,6 @@ def scrape_workday(company, tenant, site, board_num, seen):
             for job in job_postings:
                 title = job.get('title', '')
                 location = job.get('locationsText', '') or job.get('primaryLocationText', '')
-                job_id = job.get('bulletFields', [''])[0] if job.get('bulletFields') else ''
                 external_path = job.get('externalPath', '')
                 apply_url = f'{base}{external_path}' if external_path else ''
                 key = f'workday:{tenant}:{external_path or title}'
@@ -319,7 +321,7 @@ def scrape_workday(company, tenant, site, board_num, seen):
             if len(job_postings) < limit:
                 break
             offset += limit
-            time.sleep(0.5)
+            page += 1
         except Exception as e:
             print(f'Workday error [{company}]: {e}')
             break
@@ -596,45 +598,25 @@ def main():
     today = datetime.date.today().isoformat()
     candidates = []
 
-    print('=== Greenhouse ===')
-    for company, token in GREENHOUSE_COMPANIES:
-        found = scrape_greenhouse(company, token, seen)
-        candidates.extend(found)
-        if found:
-            print(f'  {company}: {len(found)} candidates')
-        time.sleep(0.4)
+    tasks = (
+        [(scrape_greenhouse, (c, t, seen)) for c, t in GREENHOUSE_COMPANIES] +
+        [(scrape_lever, (c, s, seen)) for c, s in LEVER_COMPANIES] +
+        [(scrape_ashby, (c, s, seen)) for c, s in ASHBY_COMPANIES] +
+        [(scrape_workday, (c, t, s, n, seen)) for c, t, s, n in WORKDAY_COMPANIES] +
+        [(scrape_smartrecruiters, (c, i, seen)) for c, i in SMARTRECRUITERS_COMPANIES]
+    )
 
-    print('=== Lever ===')
-    for company, slug in LEVER_COMPANIES:
-        found = scrape_lever(company, slug, seen)
-        candidates.extend(found)
-        if found:
-            print(f'  {company}: {len(found)} candidates')
-        time.sleep(0.4)
-
-    print('=== Ashby ===')
-    for company, slug in ASHBY_COMPANIES:
-        found = scrape_ashby(company, slug, seen)
-        candidates.extend(found)
-        if found:
-            print(f'  {company}: {len(found)} candidates')
-        time.sleep(0.4)
-
-    print('=== Workday ===')
-    for company, tenant, site, num in WORKDAY_COMPANIES:
-        found = scrape_workday(company, tenant, site, num, seen)
-        candidates.extend(found)
-        if found:
-            print(f'  {company}: {len(found)} candidates')
-        time.sleep(0.6)
-
-    print('=== SmartRecruiters ===')
-    for company, company_id in SMARTRECRUITERS_COMPANIES:
-        found = scrape_smartrecruiters(company, company_id, seen)
-        candidates.extend(found)
-        if found:
-            print(f'  {company}: {len(found)} candidates')
-        time.sleep(0.4)
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        futures = {pool.submit(fn, *args): args[0] for fn, args in tasks}
+        for future in as_completed(futures):
+            company = futures[future]
+            try:
+                found = future.result()
+                if found:
+                    print(f'  {company}: {len(found)} candidates')
+                    candidates.extend(found)
+            except Exception as e:
+                print(f'  {company} error: {e}')
 
     print('=== USAJOBS ===')
     usajobs_found = scrape_usajobs(seen)
