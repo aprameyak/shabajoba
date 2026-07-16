@@ -308,7 +308,7 @@ def scrape_workday(company, tenant, site, board_num, seen):
                 location = job.get('locationsText', '') or job.get('primaryLocationText', '')
                 job_id = job.get('bulletFields', [''])[0] if job.get('bulletFields') else ''
                 external_path = job.get('externalPath', '')
-                apply_url = f'{base}/{site}/job/{external_path}' if external_path else ''
+                apply_url = f'{base}{external_path}' if external_path else ''
                 key = f'workday:{tenant}:{external_path or title}'
                 if key in seen or not is_internship(title):
                     continue
@@ -358,7 +358,7 @@ def scrape_smartrecruiters(company, company_id, seen):
                 key = f'smartrecruiters:{company_id}:{job_id}'
                 if key in seen or not is_internship(title):
                     continue
-                if country and country.upper() not in ('US', 'CA', 'USA', 'CAN', ''):
+                if country and country.lower() not in ('us', 'ca', 'usa', 'can', 'united states', 'canada', ''):
                     continue
                 if location and not is_us_or_canada(location) and not remote:
                     continue
@@ -371,33 +371,6 @@ def scrape_smartrecruiters(company, company_id, seen):
         except Exception as e:
             print(f'SmartRecruiters error [{company}]: {e}')
             break
-    return jobs
-
-
-def scrape_icims(company, customer_id, seen):
-    jobs = []
-    try:
-        feed_url = f'https://careers.icims.com/jobs/search?pr=1&schemaId=&jobFamily=&jobType=&loctype=&startrow=1&listformat=j&in_iframe=1&customerId={customer_id}&searchKeyword=intern'
-        resp = requests.get(feed_url, timeout=15,
-                            headers={'User-Agent': 'Mozilla/5.0'})
-        if resp.status_code != 200:
-            return jobs
-        matches = re.findall(r'"jobtitle"\s*:\s*"([^"]+)"', resp.text)
-        ids = re.findall(r'"jobid"\s*:\s*"([^"]+)"', resp.text)
-        locs = re.findall(r'"joblocation"\s*:\s*"([^"]+)"', resp.text)
-        for i, title in enumerate(matches):
-            job_id = ids[i] if i < len(ids) else str(i)
-            location = locs[i] if i < len(locs) else ''
-            apply_url = f'https://careers.icims.com/jobs/{job_id}/job'
-            key = f'icims:{customer_id}:{job_id}'
-            if key in seen or not is_internship(title):
-                continue
-            if location and not is_us_or_canada(location):
-                continue
-            jobs.append({'key': key, 'company': company, 'title': title,
-                         'location': location or 'United States', 'url': apply_url})
-    except Exception as e:
-        print(f'iCIMS error [{company}]: {e}')
     return jobs
 
 
@@ -465,10 +438,6 @@ def scrape_usajobs(seen):
         except Exception as e:
             print(f'USAJOBS error [{keyword}]: {e}')
     return jobs
-
-
-def scrape_national_lab(company, base_url, workday_tenant, workday_site, workday_num, seen):
-    return scrape_workday(company, workday_tenant, workday_site, workday_num, seen)
 
 
 def create_github_issue(token, repo, company, role, location, url, season):
@@ -612,19 +581,6 @@ SMARTRECRUITERS_COMPANIES = [
     ('Benchmark Electronics', 'BenchmarkElectronics'),
 ]
 
-ICIMS_COMPANIES = [
-    ('BAE Systems US', '3767'),
-    ('Collins Aerospace', '3771'),
-    ('Parker Hannifin', '3024'),
-    ('Textron', '2236'),
-]
-
-NATIONAL_LABS = [
-    ('Sandia National Laboratories', 'https://sandia.gov/careers', 'sandia', 'ExternalCareers', '1'),
-    ('Oak Ridge National Laboratory', 'https://ornl.gov/careers', 'ornl', 'External', '1'),
-    ('NREL', 'https://nrel.gov/careers', 'nrel', 'External', '1'),
-    ('Los Alamos National Laboratory', 'https://lanl.gov/careers', 'lanl', 'External', '1'),
-]
 
 
 def main():
@@ -675,14 +631,6 @@ def main():
     print('=== SmartRecruiters ===')
     for company, company_id in SMARTRECRUITERS_COMPANIES:
         found = scrape_smartrecruiters(company, company_id, seen)
-        candidates.extend(found)
-        if found:
-            print(f'  {company}: {len(found)} candidates')
-        time.sleep(0.4)
-
-    print('=== iCIMS ===')
-    for company, customer_id in ICIMS_COMPANIES:
-        found = scrape_icims(company, customer_id, seen)
         candidates.extend(found)
         if found:
             print(f'  {company}: {len(found)} candidates')
