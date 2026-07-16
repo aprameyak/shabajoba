@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """
-Scrape EE internship postings from major job boards and recruiting platforms.
+Scrape EE internship postings from:
+  - Greenhouse, Lever, Ashby, Workday, SmartRecruiters, iCIMS
+  - USAJOBS public API
+  - National lab / direct career pages (Sandia, Oak Ridge, NREL, JPL, Los Alamos)
+
 Classifies roles via keyword matching + Gemini API, then adds confirmed listings
 to listings.json / README and creates GitHub issues for lower-confidence matches.
 """
@@ -10,6 +14,7 @@ import os
 import re
 import time
 import datetime
+import subprocess
 from pathlib import Path
 import requests
 
@@ -22,54 +27,61 @@ CLASSIFICATIONS_FILE = Path('.github/data/title_classifications.json')
 GEMINI_USAGE_FILE = Path('.github/data/gemini_usage.json')
 
 # ---------------------------------------------------------------------------
-# EE-specific keyword configuration
+# EE keyword config
 # ---------------------------------------------------------------------------
 EE_TITLE_KEYWORDS = [
     'electrical engineer', 'hardware engineer', 'analog engineer',
-    'rf engineer', 'power engineer', 'signal integrity', 'pcb design',
-    'vlsi', 'asic', 'fpga', 'embedded hardware', 'test engineer',
-    'systems engineer', 'signal processing', 'circuit design',
-    'photonics', 'mixed signal', 'power electronics', 'silicon',
-    'semiconductor', 'ic design', 'chip design', 'soc design',
+    'rf engineer', 'rf design', 'power engineer', 'signal integrity',
+    'pcb design', 'pcb engineer', 'vlsi', 'asic', 'fpga', 'embedded hardware',
+    'test engineer', 'systems engineer', 'signal processing', 'circuit design',
+    'photonics', 'mixed signal', 'mixed-signal', 'power electronics', 'silicon',
+    'semiconductor', 'ic design', 'chip design', 'soc design', 'soc engineer',
     'verification engineer', 'physical design', 'layout engineer',
-    'product engineer', 'applications engineer', 'field applications',
-    'power systems', 'electric vehicle', 'battery systems',
-    'motor control', 'avionics', 'electrical systems',
+    'product engineer', 'applications engineer', 'field applications engineer',
+    'power systems', 'electric vehicle', 'battery systems', 'battery engineer',
+    'motor control', 'avionics', 'electrical systems', 'microelectronics',
+    'optoelectronics', 'electro-optical', 'radar engineer', 'antenna engineer',
+    'electromagnetics', 'high voltage', 'power conversion', 'inverter',
+    'substations', 'silicon photonics', 'test development engineer',
+    'hardware validation', 'hardware verification', 'chip validation',
+    'characterization engineer', 'process integration', 'device engineer',
 ]
 
 EXCLUDE_TITLE_KEYWORDS = [
     'software engineer', 'software developer', 'data scientist',
     'machine learning engineer', 'ml engineer', 'data engineer',
-    'backend engineer', 'frontend engineer', 'full stack',
-    'devops', 'site reliability', 'marketing', 'sales', 'hr',
+    'backend engineer', 'frontend engineer', 'full stack', 'fullstack',
+    'devops', 'site reliability', 'sre', 'marketing', 'sales', 'hr',
     'recruiter', 'finance', 'accounting', 'legal', 'mechanical engineer',
     'civil engineer', 'chemical engineer', 'product manager',
-    'program manager', 'business analyst', 'supply chain',
+    'program manager', 'business analyst', 'supply chain', 'counsel',
+    'industrial engineer', 'manufacturing engineer', 'operations analyst',
 ]
 
 INTERNSHIP_KEYWORDS = [
     'intern', 'internship', 'co-op', 'coop', 'co op',
-    'student', 'summer 2027', 'fall 2026', 'spring 2027',
+    'student', 'summer 2027', 'fall 2026', 'spring 2027', 'winter 2027',
+    'pathways', 'college hire', 'early career',
 ]
 
-LOCATION_KEYWORDS_US_CA = [
-    ', al', ', ak', ', az', ', ar', ', ca', ', co', ', ct', ', de',
-    ', fl', ', ga', ', hi', ', id', ', il', ', in', ', ia', ', ks',
-    ', ky', ', la', ', me', ', md', ', ma', ', mi', ', mn', ', ms',
-    ', mo', ', mt', ', ne', ', nv', ', nh', ', nj', ', nm', ', ny',
-    ', nc', ', nd', ', oh', ', ok', ', or', ', pa', ', ri', ', sc',
-    ', sd', ', tn', ', tx', ', ut', ', vt', ', va', ', wa', ', wv',
-    ', wi', ', wy', ', dc',
-    ', ab', ', bc', ', mb', ', nb', ', nl', ', ns', ', nt', ', nu',
-    ', on', ', pe', ', qc', ', sk', ', yt',
-    'remote', 'united states', 'canada',
+US_CA_LOCATION_TOKENS = {
+    'al', 'ak', 'az', 'ar', 'ca', 'co', 'ct', 'de', 'fl', 'ga',
+    'hi', 'id', 'il', 'in', 'ia', 'ks', 'ky', 'la', 'me', 'md',
+    'ma', 'mi', 'mn', 'ms', 'mo', 'mt', 'ne', 'nv', 'nh', 'nj',
+    'nm', 'ny', 'nc', 'nd', 'oh', 'ok', 'or', 'pa', 'ri', 'sc',
+    'sd', 'tn', 'tx', 'ut', 'vt', 'va', 'wa', 'wv', 'wi', 'wy', 'dc',
+    'ab', 'bc', 'mb', 'nb', 'nl', 'ns', 'nt', 'nu', 'on', 'pe', 'qc', 'sk', 'yt',
+}
+
+US_CA_LOCATION_PHRASES = [
+    'remote', 'united states', 'canada', 'u.s.', 'usa', 'u.s.a',
 ]
 
 # ---------------------------------------------------------------------------
-# Gemini rate-limit helpers
+# Gemini helpers
 # ---------------------------------------------------------------------------
 GEMINI_DAILY_LIMIT = 1400
-GEMINI_DELAY = 4.2  # seconds between calls
+GEMINI_DELAY = 4.2
 
 
 def load_gemini_usage():
@@ -106,24 +118,30 @@ def save_json(path, data):
 
 def normalize_url(url):
     url = url.strip().split('?')[0]
-    for param in ['utm_source', 'utm_medium', 'utm_campaign', 'source', 'ref']:
-        url = re.sub(rf'[?&]{param}=[^&]*', '', url)
+    url = re.sub(r'[?&](utm_\w+|source|ref|gh_src)=[^&]*', '', url)
     return url.rstrip('/')
 
 
 def is_us_or_canada(location_text):
+    if not location_text:
+        return True  # assume US if no location provided by ATS
     loc = location_text.lower()
-    return any(kw in loc for kw in LOCATION_KEYWORDS_US_CA)
+    for phrase in US_CA_LOCATION_PHRASES:
+        if phrase in loc:
+            return True
+    # match ", XX" state/province abbreviation
+    tokens = re.findall(r'\b([a-z]{2})\b', loc)
+    return any(t in US_CA_LOCATION_TOKENS for t in tokens)
 
 
-def is_ee_title_keyword(title):
+def is_ee_title(title):
     t = title.lower()
     if any(kw in t for kw in EXCLUDE_TITLE_KEYWORDS):
         return False
     return any(kw in t for kw in EE_TITLE_KEYWORDS)
 
 
-def is_internship_keyword(title):
+def is_internship(title):
     t = title.lower()
     return any(kw in t for kw in INTERNSHIP_KEYWORDS)
 
@@ -132,46 +150,57 @@ def infer_education(title):
     t = title.lower()
     if 'phd' in t or 'doctoral' in t or 'doctorate' in t:
         return 'PhD'
-    if 'master' in t or 'graduate' in t or ' ms ' in t:
+    if 'master' in t or ' ms ' in t or 'graduate student' in t:
         return 'Masters'
     return 'Undergrad'
 
 
 def classify_season(title):
     t = title.lower()
-    if 'fall 2026' in t or 'fall2026' in t:
+    if 'fall 2026' in t:
         return ('offcycle', 'Fall 2026')
-    if 'spring 2027' in t or 'spring2027' in t:
+    if 'spring 2027' in t:
         return ('offcycle', 'Spring 2027')
-    if 'winter 2027' in t or 'winter2027' in t:
+    if 'winter 2027' in t:
         return ('offcycle', 'Winter 2027')
     if 'co-op' in t or 'coop' in t or 'co op' in t:
         return ('offcycle', 'Co-op')
     return ('summer', 'Summer 2027')
 
 
+def add_listing(listings, entry):
+    norm = normalize_url(entry['url'])
+    for existing in listings:
+        if existing.get('url') and normalize_url(existing['url']) == norm:
+            return False
+        if (existing['company'].lower() == entry['company'].lower()
+                and existing['role'].lower() == entry['role'].lower()):
+            return False
+    listings.append(entry)
+    return True
+
+
 # ---------------------------------------------------------------------------
 # Gemini classification
 # ---------------------------------------------------------------------------
 def classify_titles_gemini(titles, api_key, usage):
-    """Batch-classify job titles via Gemini. Returns dict title->bool."""
     if not api_key or usage['count'] >= GEMINI_DAILY_LIMIT:
         return {}
-
     results = {}
     for title in titles:
         if usage['count'] >= GEMINI_DAILY_LIMIT:
             break
         prompt = (
-            f'Is the following job title an electrical engineering role '
-            f'(hardware, EE, RF, analog, power, VLSI, ASIC, FPGA, PCB, test, '
-            f'signal processing, photonics, or similar)? '
-            f'Answer only "yes" or "no".\n\nTitle: "{title}"'
+            'Is the following job title an electrical engineering role '
+            '(hardware, EE, RF, analog, power, VLSI, ASIC, FPGA, PCB, test, '
+            'signal processing, photonics, radar, avionics, or similar hardware discipline)? '
+            'Answer only "yes" or "no".\n\n'
+            f'Title: "{title}"'
         )
         try:
             resp = requests.post(
                 'https://generativelanguage.googleapis.com/v1beta/models/'
-                f'gemini-1.5-flash:generateContent?key={api_key}',
+                'gemini-1.5-flash:generateContent?key=' + api_key,
                 json={'contents': [{'parts': [{'text': prompt}]}]},
                 timeout=15,
             )
@@ -192,43 +221,32 @@ def classify_titles_gemini(titles, api_key, usage):
 # ---------------------------------------------------------------------------
 # Platform scrapers
 # ---------------------------------------------------------------------------
+
 def scrape_greenhouse(company, board_token, seen):
-    """Fetch jobs from Greenhouse v1 API."""
     jobs = []
     try:
         url = f'https://boards-api.greenhouse.io/v1/boards/{board_token}/jobs?content=true'
         resp = requests.get(url, timeout=15)
         resp.raise_for_status()
-        data = resp.json()
-        for job in data.get('jobs', []):
+        for job in resp.json().get('jobs', []):
             title = job.get('title', '')
             location = job.get('location', {}).get('name', '')
             apply_url = job.get('absolute_url', '')
             job_id = str(job.get('id', ''))
             key = f'greenhouse:{board_token}:{job_id}'
-            if key in seen:
+            if key in seen or not is_internship(title) or not is_us_or_canada(location):
                 continue
-            if not is_internship_keyword(title):
-                continue
-            if not is_us_or_canada(location):
-                continue
-            jobs.append({
-                'key': key,
-                'company': company,
-                'title': title,
-                'location': location,
-                'url': apply_url,
-            })
+            jobs.append({'key': key, 'company': company, 'title': title,
+                         'location': location, 'url': apply_url})
     except Exception as e:
-        print(f'Greenhouse error for {company}: {e}')
+        print(f'Greenhouse error [{company}]: {e}')
     return jobs
 
 
-def scrape_lever(company, lever_slug, seen):
-    """Fetch jobs from Lever public API."""
+def scrape_lever(company, slug, seen):
     jobs = []
     try:
-        url = f'https://api.lever.co/v0/postings/{lever_slug}?mode=json'
+        url = f'https://api.lever.co/v0/postings/{slug}?mode=json'
         resp = requests.get(url, timeout=15)
         resp.raise_for_status()
         for posting in resp.json():
@@ -236,84 +254,278 @@ def scrape_lever(company, lever_slug, seen):
             location = posting.get('categories', {}).get('location', '')
             apply_url = posting.get('hostedUrl', '')
             job_id = posting.get('id', '')
-            key = f'lever:{lever_slug}:{job_id}'
-            if key in seen:
-                continue
-            if not is_internship_keyword(title):
+            key = f'lever:{slug}:{job_id}'
+            if key in seen or not is_internship(title):
                 continue
             if location and not is_us_or_canada(location):
                 continue
-            jobs.append({
-                'key': key,
-                'company': company,
-                'title': title,
-                'location': location or 'United States',
-                'url': apply_url,
-            })
+            jobs.append({'key': key, 'company': company, 'title': title,
+                         'location': location or 'United States', 'url': apply_url})
     except Exception as e:
-        print(f'Lever error for {company}: {e}')
+        print(f'Lever error [{company}]: {e}')
     return jobs
 
 
 def scrape_ashby(company, ashby_id, seen):
-    """Fetch jobs from Ashby public API."""
     jobs = []
     try:
-        url = f'https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams'
         payload = {
             'operationName': 'ApiJobBoardWithTeams',
             'variables': {'organizationHostedJobsPageName': ashby_id},
-            'query': '''
-              query ApiJobBoardWithTeams($organizationHostedJobsPageName: String!) {
-                jobBoard: jobBoardWithTeams(
-                  organizationHostedJobsPageName: $organizationHostedJobsPageName
-                ) {
-                  jobPostings {
-                    id title locationName isRemote
-                    externalLink
-                  }
-                }
-              }
-            ''',
+            'query': (
+                'query ApiJobBoardWithTeams($organizationHostedJobsPageName: String!) {'
+                '  jobBoard: jobBoardWithTeams(organizationHostedJobsPageName: $organizationHostedJobsPageName) {'
+                '    jobPostings { id title locationName isRemote externalLink }'
+                '  }'
+                '}'
+            ),
         }
-        resp = requests.post(url, json=payload, timeout=15)
-        resp.raise_for_status()
-        postings = (
-            resp.json()
-            .get('data', {})
-            .get('jobBoard', {})
-            .get('jobPostings', [])
+        resp = requests.post(
+            'https://jobs.ashbyhq.com/api/non-user-graphql?op=ApiJobBoardWithTeams',
+            json=payload, timeout=15,
         )
+        resp.raise_for_status()
+        postings = (resp.json().get('data', {})
+                    .get('jobBoard', {}).get('jobPostings', []))
         for p in postings:
             title = p.get('title', '')
-            location = p.get('locationName', '')
+            location = p.get('locationName', '') or ''
             if p.get('isRemote'):
                 location = 'Remote (US)'
-            apply_url = p.get('externalLink', '') or f'https://jobs.ashbyhq.com/{ashby_id}/{p["id"]}'
+            apply_url = (p.get('externalLink') or
+                         f'https://jobs.ashbyhq.com/{ashby_id}/{p["id"]}')
             key = f'ashby:{ashby_id}:{p["id"]}'
-            if key in seen:
-                continue
-            if not is_internship_keyword(title):
+            if key in seen or not is_internship(title):
                 continue
             if location and not is_us_or_canada(location):
                 continue
-            jobs.append({
-                'key': key,
-                'company': company,
-                'title': title,
-                'location': location or 'United States',
-                'url': apply_url,
-            })
+            jobs.append({'key': key, 'company': company, 'title': title,
+                         'location': location or 'United States', 'url': apply_url})
     except Exception as e:
-        print(f'Ashby error for {company}: {e}')
+        print(f'Ashby error [{company}]: {e}')
     return jobs
+
+
+def scrape_workday(company, tenant, site, board_num, seen):
+    """
+    POST to Workday's semi-public CXS jobs endpoint.
+    tenant  = e.g. 'intel'
+    site    = e.g. 'External' (the career site name in the URL)
+    board_num = Workday board number (wd1, wd3, wd5 are common)
+    """
+    jobs = []
+    base = f'https://{tenant}.wd{board_num}.myworkdayjobs.com'
+    endpoint = f'{base}/wday/cxs/{tenant}/{site}/jobs'
+    headers = {
+        'Content-Type': 'application/json',
+        'User-Agent': 'Mozilla/5.0',
+    }
+    offset = 0
+    limit = 20
+    while True:
+        payload = {
+            'appliedFacets': {},
+            'limit': limit,
+            'offset': offset,
+            'searchText': 'intern',
+        }
+        try:
+            resp = requests.post(endpoint, json=payload, headers=headers, timeout=20)
+            if resp.status_code in (404, 403):
+                break
+            resp.raise_for_status()
+            data = resp.json()
+            job_postings = data.get('jobPostings', [])
+            if not job_postings:
+                break
+            for job in job_postings:
+                title = job.get('title', '')
+                location = job.get('locationsText', '') or job.get('primaryLocationText', '')
+                job_id = job.get('bulletFields', [''])[0] if job.get('bulletFields') else ''
+                external_path = job.get('externalPath', '')
+                apply_url = f'{base}/{site}/job/{external_path}' if external_path else ''
+                key = f'workday:{tenant}:{external_path or title}'
+                if key in seen or not is_internship(title):
+                    continue
+                if location and not is_us_or_canada(location):
+                    continue
+                jobs.append({'key': key, 'company': company, 'title': title,
+                             'location': location or 'United States', 'url': apply_url})
+            if len(job_postings) < limit:
+                break
+            offset += limit
+            time.sleep(0.5)
+        except Exception as e:
+            print(f'Workday error [{company}]: {e}')
+            break
+    return jobs
+
+
+def scrape_smartrecruiters(company, company_id, seen):
+    """SmartRecruiters public postings API."""
+    jobs = []
+    offset = 0
+    limit = 100
+    while True:
+        try:
+            resp = requests.get(
+                f'https://api.smartrecruiters.com/v1/companies/{company_id}/postings',
+                params={'limit': limit, 'offset': offset},
+                timeout=15,
+            )
+            if resp.status_code in (404, 403):
+                break
+            resp.raise_for_status()
+            data = resp.json()
+            postings = data.get('content', [])
+            if not postings:
+                break
+            for p in postings:
+                title = p.get('name', '')
+                city = p.get('location', {}).get('city', '')
+                region = p.get('location', {}).get('region', '')
+                country = p.get('location', {}).get('country', '')
+                remote = p.get('location', {}).get('remote', False)
+                location = f'{city}, {region}' if city and region else city or region or country
+                if remote:
+                    location = 'Remote (US)'
+                job_id = p.get('id', '')
+                apply_url = f'https://jobs.smartrecruiters.com/{company_id}/{job_id}'
+                key = f'smartrecruiters:{company_id}:{job_id}'
+                if key in seen or not is_internship(title):
+                    continue
+                if country and country.upper() not in ('US', 'CA', 'USA', 'CAN', ''):
+                    continue
+                if location and not is_us_or_canada(location) and not remote:
+                    continue
+                jobs.append({'key': key, 'company': company, 'title': title,
+                             'location': location or 'United States', 'url': apply_url})
+            if len(postings) < limit:
+                break
+            offset += limit
+            time.sleep(0.5)
+        except Exception as e:
+            print(f'SmartRecruiters error [{company}]: {e}')
+            break
+    return jobs
+
+
+def scrape_icims(company, customer_id, seen):
+    """iCIMS public jobs feed (XML/JSON portal)."""
+    jobs = []
+    try:
+        url = (
+            f'https://careers.icims.com/jobs/search?ss=1'
+            f'&searchRelation=keyword_all&searchKeyword=intern'
+            f'&in_iframe=1&hashed=-625951441&mobile=false&width=990'
+            f'&height=500&bga=true&needsRedirect=false&jan1offset=-300'
+            f'&jun1offset=-240&customerId={customer_id}'
+        )
+        # iCIMS also exposes an XML feed at a predictable endpoint
+        feed_url = f'https://careers.icims.com/jobs/search?pr=1&schemaId=&jobFamily=&jobType=&loctype=&startrow=1&listformat=j&in_iframe=1&customerId={customer_id}&searchKeyword=intern'
+        resp = requests.get(feed_url, timeout=15,
+                            headers={'User-Agent': 'Mozilla/5.0'})
+        if resp.status_code != 200:
+            return jobs
+        # iCIMS returns HTML; parse job titles from JSON blob if present
+        matches = re.findall(r'"jobtitle"\s*:\s*"([^"]+)"', resp.text)
+        ids = re.findall(r'"jobid"\s*:\s*"([^"]+)"', resp.text)
+        locs = re.findall(r'"joblocation"\s*:\s*"([^"]+)"', resp.text)
+        for i, title in enumerate(matches):
+            job_id = ids[i] if i < len(ids) else str(i)
+            location = locs[i] if i < len(locs) else ''
+            apply_url = f'https://careers.icims.com/jobs/{job_id}/job'
+            key = f'icims:{customer_id}:{job_id}'
+            if key in seen or not is_internship(title):
+                continue
+            if location and not is_us_or_canada(location):
+                continue
+            jobs.append({'key': key, 'company': company, 'title': title,
+                         'location': location or 'United States', 'url': apply_url})
+    except Exception as e:
+        print(f'iCIMS error [{company}]: {e}')
+    return jobs
+
+
+def scrape_usajobs(seen):
+    """
+    USAJOBS public API — covers DoD, NASA, DOE, national lab internships.
+    Requires USAJOBS_API_KEY and USAJOBS_EMAIL env vars (free registration).
+    """
+    jobs = []
+    api_key = os.environ.get('USAJOBS_API_KEY', '')
+    email = os.environ.get('USAJOBS_EMAIL', '')
+    if not api_key or not email:
+        print('USAJOBS: skipping (no API key/email configured)')
+        return jobs
+
+    keywords = [
+        'electrical engineer intern',
+        'hardware engineer intern',
+        'electronics engineer intern',
+        'rf engineer intern',
+        'FPGA intern',
+        'ASIC intern',
+        'power systems intern',
+        'avionics intern',
+        'signal processing intern',
+    ]
+    headers = {
+        'Authorization-Key': api_key,
+        'User-Agent': email,
+        'Host': 'data.usajobs.gov',
+    }
+    seen_usajobs = set()
+    for keyword in keywords:
+        try:
+            resp = requests.get(
+                'https://data.usajobs.gov/api/search',
+                params={
+                    'Keyword': keyword,
+                    'ResultsPerPage': 50,
+                    'StudentIndicator': 'true',
+                },
+                headers=headers,
+                timeout=15,
+            )
+            resp.raise_for_status()
+            items = (resp.json()
+                     .get('SearchResult', {})
+                     .get('SearchResultItems', []))
+            for item in items:
+                mv = item.get('MatchedObjectDescriptor', {})
+                title = mv.get('PositionTitle', '')
+                apply_url = mv.get('PositionURI', '')
+                job_id = mv.get('PositionID', '')
+                locations = mv.get('PositionLocation', [])
+                location = '; '.join(
+                    f'{l.get("CityName", "")}, {l.get("CountrySubDivisionCode", "")}'.strip(', ')
+                    for l in locations
+                ) if locations else 'United States'
+                key = f'usajobs:{job_id}'
+                if key in seen or job_id in seen_usajobs:
+                    continue
+                seen_usajobs.add(job_id)
+                if not is_internship(title) and 'pathways' not in title.lower():
+                    continue
+                org = mv.get('OrganizationName', 'U.S. Government')
+                jobs.append({'key': key, 'company': org, 'title': title,
+                             'location': location, 'url': apply_url})
+            time.sleep(0.5)
+        except Exception as e:
+            print(f'USAJOBS error [{keyword}]: {e}')
+    return jobs
+
+
+def scrape_national_lab(company, base_url, workday_tenant, workday_site, workday_num, seen):
+    """National labs that run on Workday (Sandia, Oak Ridge, NREL, LANL)."""
+    return scrape_workday(company, workday_tenant, workday_site, workday_num, seen)
 
 
 # ---------------------------------------------------------------------------
 # GitHub issue creation
 # ---------------------------------------------------------------------------
 def create_github_issue(token, repo, company, role, location, url, season):
-    """Create a 'needs review' issue for a lower-confidence match."""
     title = f'[JOB] {company} — {role} ({season})'
     body = (
         f'### Company Name\n{company}\n\n'
@@ -334,7 +546,8 @@ def create_github_issue(token, repo, company, role, location, url, season):
                 'Authorization': f'token {token}',
                 'Accept': 'application/vnd.github+json',
             },
-            json={'title': title, 'body': body, 'labels': ['new listing', 'needs review']},
+            json={'title': title, 'body': body,
+                  'labels': ['new listing', 'needs review']},
             timeout=15,
         )
         resp.raise_for_status()
@@ -344,37 +557,17 @@ def create_github_issue(token, repo, company, role, location, url, season):
 
 
 # ---------------------------------------------------------------------------
-# Add confirmed listing
+# Company lists
 # ---------------------------------------------------------------------------
-def add_listing(listings, entry):
-    """Add entry to listings list if not a duplicate."""
-    norm = normalize_url(entry['url'])
-    for existing in listings:
-        if normalize_url(existing.get('url', '')) == norm:
-            return False
-        if (existing['company'].lower() == entry['company'].lower()
-                and existing['role'].lower() == entry['role'].lower()):
-            return False
-    listings.append(entry)
-    return True
 
-
-# ---------------------------------------------------------------------------
-# Platforms config
-# ---------------------------------------------------------------------------
 GREENHOUSE_COMPANIES = [
+    # Semiconductors
     ('Analog Devices', 'analogdevices'),
-    ('Anduril', 'anduril'),
-    ('Aurora Innovation', 'aurora'),
     ('Broadcom', 'broadcom'),
     ('Cadence Design Systems', 'cadence'),
     ('Cirrus Logic', 'cirruslogic'),
-    ('Eaton', 'eaton'),
-    ('GE Aerospace', 'geaerospace'),
-    ('Keysight Technologies', 'keysight'),
     ('Lattice Semiconductor', 'latticesemiconductor'),
     ('Lumentum', 'lumentum'),
-    ('Lucid Motors', 'lucidmotors'),
     ('Marvell Technology', 'marvell'),
     ('Microchip Technology', 'microchip'),
     ('Micron Technology', 'micron'),
@@ -383,22 +576,36 @@ GREENHOUSE_COMPANIES = [
     ('NXP Semiconductors', 'nxp'),
     ('ON Semiconductor', 'onsemi'),
     ('Qualcomm', 'qualcomm'),
-    ('Rocket Lab', 'rocketlab'),
     ('Skyworks Solutions', 'skyworks'),
-    ('SpaceX', 'spacex'),
-    ('Teradyne', 'teradyne'),
-    ('Texas Instruments', 'ti'),
     ('Tenstorrent', 'tenstorrent'),
-    ('Verkada', 'verkada'),
-    ('Waymo', 'waymo'),
     ('Wolfspeed', 'wolfspeed'),
+    # Aerospace / defense
+    ('Anduril', 'anduril'),
+    ('Aurora Innovation', 'aurora'),
+    ('Rocket Lab', 'rocketlab'),
+    ('SpaceX', 'spacex'),
+    # Automotive / EV
+    ('Lucid Motors', 'lucidmotors'),
+    ('Rivian', 'rivian'),
+    # Test & instruments
+    ('Keysight Technologies', 'keysight'),
+    ('Teradyne', 'teradyne'),
+    # Power / energy
+    ('Eaton', 'eaton'),
+    ('GE Aerospace', 'geaerospace'),
+    # Other hardware
+    ('Waymo', 'waymo'),
+    ('Verkada', 'verkada'),
+    ('Texas Instruments', 'ti'),
 ]
 
 LEVER_COMPANIES = [
     ('Blue Origin', 'blueorigin'),
-    ('Plus', 'plus-ai'),
     ('Shield AI', 'shieldai'),
     ('Zoox', 'zoox'),
+    ('Sarcos Technology', 'sarcos'),
+    ('Electra', 'electra'),
+    ('Joby Aviation', 'jobyaviation'),
 ]
 
 ASHBY_COMPANIES = [
@@ -409,6 +616,81 @@ ASHBY_COMPANIES = [
     ('Etched', 'etched'),
     ('Groq', 'groq'),
     ('Tenstorrent', 'tenstorrent'),
+    ('Astranis', 'astranis'),
+    ('Varda Space', 'varda'),
+    ('Relativity Space', 'relativityspace'),
+    ('Hermeus', 'hermeus'),
+    ('Archer Aviation', 'archeraviation'),
+    ('Wisk Aero', 'wisk'),
+]
+
+# (company, tenant, site, board_num)
+WORKDAY_COMPANIES = [
+    ('Intel', 'intel', 'External', '1'),
+    ('Texas Instruments', 'ti', 'TICareersSite', '3'),
+    ('Analog Devices', 'analogdevices', 'External', '1'),
+    ('Qualcomm', 'qualcomm', 'External', '1'),
+    ('NVIDIA', 'nvidia', 'NVIDIAExternalCareerSite', '1'),
+    ('AMD', 'amd', 'External', '1'),
+    ('Micron Technology', 'micron', 'External', '5'),
+    ('Skyworks Solutions', 'skyworks', 'External', '1'),
+    ('Qorvo', 'qorvo', 'ExternalCareerSite', '1'),
+    ('GlobalFoundries', 'globalfoundries', 'External', '1'),
+    ('Boeing', 'boeing', 'EXTERNAL_CAREER_SITE', '5'),
+    ('Northrop Grumman', 'northropgrumman', 'External', '1'),
+    ('Raytheon', 'rtx', 'RTXCareers', '5'),
+    ('Lockheed Martin', 'lmt', 'LMCareers', '3'),
+    ('BAE Systems', 'baesystems', 'External', '1'),
+    ('Blue Origin', 'blueorigin', 'External', '1'),
+    ('L3Harris Technologies', 'l3harris', 'ExternalCareerSite', '5'),
+    ('General Dynamics', 'gd', 'External', '1'),
+    ('Leidos', 'leidos', 'External', '1'),
+    ('SAIC', 'saic', 'ExternalCareers', '1'),
+    ('Rivian', 'rivian', 'External', '1'),
+    ('Ford Motor Company', 'ford', 'fordmotorcompany', '5'),
+    ('General Motors', 'gm', 'External', '5'),
+    ('Tesla', 'tesla', 'TeslaCareers', '1'),
+    ('Schneider Electric', 'schneider', 'External', '1'),
+    ('Eaton Corporation', 'eaton', 'External', '5'),
+    ('Siemens', 'siemens', 'External', '1'),
+    ('GE Vernova', 'gevernova', 'External', '1'),
+    ('Keysight Technologies', 'keysight', 'External', '1'),
+    ('National Instruments / NI', 'ni', 'External', '1'),
+    ('Sandia National Laboratories', 'sandia', 'ExternalCareers', '1'),
+    ('Oak Ridge National Laboratory', 'ornl', 'External', '1'),
+    ('NREL', 'nrel', 'External', '1'),
+    ('Los Alamos National Laboratory', 'lanl', 'External', '1'),
+    ('Amphenol', 'amphenol', 'External', '1'),
+    ('TE Connectivity', 'te', 'TEConnectivity', '5'),
+    ('Moog', 'moog', 'ExternalCareers', '1'),
+    ('Curtiss-Wright', 'curtisswright', 'External', '1'),
+    ('Viasat', 'viasat', 'External', '1'),
+    ('Garmin', 'garmin', 'External', '1'),
+    ('Motorola Solutions', 'motorolasolutions', 'External', '1'),
+]
+
+SMARTRECRUITERS_COMPANIES = [
+    ('Canva', 'Canva'),
+    ('Western Digital', 'WesternDigital'),
+    ('Vishay Intertechnology', 'Vishay'),
+    ('Iteris', 'Iteris'),
+    ('Benchmark Electronics', 'BenchmarkElectronics'),
+]
+
+ICIMS_COMPANIES = [
+    # customer_id values from iCIMS portal
+    ('BAE Systems US', '3767'),
+    ('Collins Aerospace', '3771'),
+    ('Parker Hannifin', '3024'),
+    ('Textron', '2236'),
+]
+
+# National labs with dedicated Workday tenants
+NATIONAL_LABS = [
+    ('Sandia National Laboratories', 'https://sandia.gov/careers', 'sandia', 'ExternalCareers', '1'),
+    ('Oak Ridge National Laboratory', 'https://ornl.gov/careers', 'ornl', 'External', '1'),
+    ('NREL', 'https://nrel.gov/careers', 'nrel', 'External', '1'),
+    ('Los Alamos National Laboratory', 'https://lanl.gov/careers', 'lanl', 'External', '1'),
 ]
 
 
@@ -428,45 +710,78 @@ def main():
     today = datetime.date.today().isoformat()
     candidates = []
 
-    # --- Greenhouse ---
+    print('=== Greenhouse ===')
     for company, token in GREENHOUSE_COMPANIES:
-        for job in scrape_greenhouse(company, token, seen):
-            candidates.append(job)
-        time.sleep(0.5)
+        found = scrape_greenhouse(company, token, seen)
+        candidates.extend(found)
+        if found:
+            print(f'  {company}: {len(found)} candidates')
+        time.sleep(0.4)
 
-    # --- Lever ---
+    print('=== Lever ===')
     for company, slug in LEVER_COMPANIES:
-        for job in scrape_lever(company, slug, seen):
-            candidates.append(job)
-        time.sleep(0.5)
+        found = scrape_lever(company, slug, seen)
+        candidates.extend(found)
+        if found:
+            print(f'  {company}: {len(found)} candidates')
+        time.sleep(0.4)
 
-    # --- Ashby ---
+    print('=== Ashby ===')
     for company, slug in ASHBY_COMPANIES:
-        for job in scrape_ashby(company, slug, seen):
-            candidates.append(job)
-        time.sleep(0.5)
+        found = scrape_ashby(company, slug, seen)
+        candidates.extend(found)
+        if found:
+            print(f'  {company}: {len(found)} candidates')
+        time.sleep(0.4)
 
-    print(f'Found {len(candidates)} candidate postings')
+    print('=== Workday ===')
+    for company, tenant, site, num in WORKDAY_COMPANIES:
+        found = scrape_workday(company, tenant, site, num, seen)
+        candidates.extend(found)
+        if found:
+            print(f'  {company}: {len(found)} candidates')
+        time.sleep(0.6)
 
-    # --- Classify ---
-    titles_to_classify = [
+    print('=== SmartRecruiters ===')
+    for company, company_id in SMARTRECRUITERS_COMPANIES:
+        found = scrape_smartrecruiters(company, company_id, seen)
+        candidates.extend(found)
+        if found:
+            print(f'  {company}: {len(found)} candidates')
+        time.sleep(0.4)
+
+    print('=== iCIMS ===')
+    for company, customer_id in ICIMS_COMPANIES:
+        found = scrape_icims(company, customer_id, seen)
+        candidates.extend(found)
+        if found:
+            print(f'  {company}: {len(found)} candidates')
+        time.sleep(0.4)
+
+    print('=== USAJOBS ===')
+    usajobs_found = scrape_usajobs(seen)
+    candidates.extend(usajobs_found)
+    if usajobs_found:
+        print(f'  USAJOBS: {len(usajobs_found)} candidates')
+
+    print(f'\nTotal candidates: {len(candidates)}')
+
+    # --- Classify via Gemini ---
+    titles_to_classify = list({
         c['title'] for c in candidates
         if c['title'] not in classifications
-    ]
+    })
     if titles_to_classify and gemini_key:
-        new_classifications = classify_titles_gemini(
-            titles_to_classify, gemini_key, gemini_usage
-        )
-        classifications.update(new_classifications)
+        new_cls = classify_titles_gemini(titles_to_classify, gemini_key, gemini_usage)
+        classifications.update(new_cls)
         save_json(CLASSIFICATIONS_FILE, classifications)
 
     confirmed = []
     needs_review = []
     for c in candidates:
         title = c['title']
-        keyword_match = is_ee_title_keyword(title)
+        keyword_match = is_ee_title(title)
         gemini_result = classifications.get(title)
-
         if gemini_result is True or (gemini_result is None and keyword_match):
             confirmed.append(c)
         elif keyword_match:
@@ -496,15 +811,14 @@ def main():
 
     if added:
         save_json(LISTINGS_FILE, listings)
-        import subprocess
         subprocess.run(['python3', '.github/scripts/rebuild_readme.py'], check=True)
 
     if github_token and repo:
         for c in needs_review:
-            listing_type, season = classify_season(c['title'])
+            _, season = classify_season(c['title'])
             create_github_issue(
                 github_token, repo,
-                c['company'], c['title'], c['location'], c['url'], season
+                c['company'], c['title'], c['location'], c['url'], season,
             )
             seen[c['key']] = today
             time.sleep(1)
