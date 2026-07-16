@@ -164,7 +164,7 @@ export default function JobsClient({ data }: { data: ListingsData }) {
             </p>
           </div>
           <a
-            href="https://github.com/aprameyak/shabajaba"
+            href="https://github.com/aprameyak/shabajoba"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View on GitHub"
@@ -225,7 +225,7 @@ export default function JobsClient({ data }: { data: ListingsData }) {
         <p className="mt-4 text-center text-xs text-gray-400">
           If this helped you,{' '}
           <a
-            href="https://github.com/aprameyak/shabajaba"
+            href="https://github.com/aprameyak/shabajoba"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:text-gray-600"
