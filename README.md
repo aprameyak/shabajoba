@@ -8,18 +8,18 @@
 
 ## Summer 2027 Internships
 
+<!-- TABLE_START summer -->
 | Company | Role | Location | Education | Apply | Date Added |
 | ------- | ---- | -------- | --------- | ----- | ---------- |
-<!-- TABLE_START summer -->
 <!-- TABLE_END summer -->
 
 ---
 
 ## Off-Cycle Internships & Co-ops
 
+<!-- TABLE_START offcycle -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
-<!-- TABLE_START offcycle -->
 <!-- TABLE_END offcycle -->
 
 ---
