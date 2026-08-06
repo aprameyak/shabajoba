@@ -1,23 +1,22 @@
-# 2027 Electrical Engineering Jobs — Internships & Co-ops
-
-> Community-maintained list of **electrical engineering internships and co-ops for 2027** in the United States, Canada, and remote.
-
 **Legend:** 🛂 = No visa sponsorship &nbsp;|&nbsp; 🇺🇸 = U.S. citizenship required &nbsp;|&nbsp; 🔒 = Application closed
-
----
-
-## Internships & Co-ops
 
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| BAE Systems, Inc. | 2027 Co-Op (Spring-Summer or Summer-Fall) Electrical Engineer (onsite) | Cedar Rapids, IA | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-co-op-spring-summer-or-summer-fall-electrical-engineer-onsite-at-bae-systems-inc-4429413834?position=6&pageNum=0&refId=heG2krfs7m1mzbPsqIsiiQ%3D%3D&trackingId=a2rWWfOX2bvG86QkTxdjsA%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| ↳ | Electrical Engineering Coop (Spring/Summer 2027), Onsite | Cedar Rapids, IA | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-coop-spring-summer-2027-onsite-at-bae-systems-inc-4446221962?position=7&pageNum=0&refId=heG2krfs7m1mzbPsqIsiiQ%3D%3D&trackingId=%2FdVvPDYadrJp6mB6Ck%2F%2Fdg%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| Crown Equipment Corporation | Electrical Engineering Co-op - Spring 2027 | New Bremen, OH | Spring 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-co-op-spring-2027-at-crown-equipment-corporation-4440063647?position=23&pageNum=0&refId=heG2krfs7m1mzbPsqIsiiQ%3D%3D&trackingId=Plzk8rWSvY9KgisVYPe2FQ%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| Flint Hills Resources | Summer 2027 Electrical Engineering Intern | Corpus Christi, TX | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/summer-2027-electrical-engineering-intern-at-flint-hills-resources-4446637134?position=25&pageNum=0&refId=heG2krfs7m1mzbPsqIsiiQ%3D%3D&trackingId=VJ0LRMFG5bzn22XjVW5f7w%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| GE Appliances, a Haier company | Electrical Engineering Co-op_Summer 2027 | Louisville, KY | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-co-op-summer-2027-at-ge-appliances-a-haier-company-4449915155?position=4&pageNum=0&refId=heG2krfs7m1mzbPsqIsiiQ%3D%3D&trackingId=be%2FUH3bLFAe%2Bg0%2FPfos%2BmQ%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| Hargrove Engineers & Constructors | Electrical Engineering Co-Op | New Johnsonville, TN | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-co-op-at-hargrove-engineers-constructors-4422971815?position=14&pageNum=0&refId=IT8zoiZsZoktsvILJOM43w%3D%3D&trackingId=MBaGFVSi74N4Dv7qQbPH%2BQ%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| Second Order Effects | Electrical Engineering Intern (Summer 2027) | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-summer-2027-at-second-order-effects-4439663447?position=20&pageNum=0&refId=heG2krfs7m1mzbPsqIsiiQ%3D%3D&trackingId=%2Bk8mlxyp7YdAGppbyoeukg%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| The Mosaic Company | Electrical Engineer Co-Op/Intern - Summer 2027 | Bartow, FL | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-co-op-intern-summer-2027-at-the-mosaic-company-4442927763?position=10&pageNum=0&refId=heG2krfs7m1mzbPsqIsiiQ%3D%3D&trackingId=VSivJcbYRMkoOmEPJWXaRw%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| U.S. Energy | Electrical Engineer Intern - U.S. Energy | Appleton, WI | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-intern-u-s-energy-at-u-s-energy-4447231340?position=14&pageNum=0&refId=heG2krfs7m1mzbPsqIsiiQ%3D%3D&trackingId=aGSUPTeY4pL41l5lrFEN9A%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| Western Digital | Summer 2027 Intern - Hardware Engineering | San Jose, CA | Summer 2027 | Undergrad | <a href="https://jobs.smartrecruiters.com/WesternDigital/744000140949875" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| Zoox | Part-Time Student Worker System Test Engineer | Foster City, CA | Summer 2027 | Undergrad | <a href="https://jobs.lever.co/zoox/c794f77e-c39d-44f2-9309-8bc904e0f868" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
 | Rocket Lab | Electrical Engineering Intern Fall 2026 | Long Beach, CA | Fall 2026 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7725243003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Jul 16 |
 | ↳ | Systems Engineering Intern Fall 2026 | Long Beach, CA | Fall 2026 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7725384003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Jul 16 |
 | Verkada | Hardware Engineer (Fall Co-op) | San Mateo, CA United States | Co-op | Undergrad | <a href="https://job-boards.greenhouse.io/verkada/jobs/4321159007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Jul 16 |
+| Astranis | Electrical Integration Associate - Avionics (Fall 2026) | San Francisco, CA | Fall 2026 | Undergrad | <a href="https://job-boards.greenhouse.io/astranis/jobs/4679108006" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Jul 15 |
 <!-- TABLE_END listings -->
 
----
-
-## Contributing
-
-Submit a job via [GitHub Issues](../../issues/new/choose) or open a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) for full instructions.
