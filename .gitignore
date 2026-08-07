@@ -1,0 +1,20 @@
+# Claude Code local instructions — never push
+CLAUDE.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Playwright
+playwright-report/
+test-results/
+
+# Logs
+*.log
