@@ -41,7 +41,6 @@ from scrape_jobs import (
 # ---------------------------------------------------------------------------
 
 GREENHOUSE_COMPANIES = [
-    # Confirmed working
     ('SpaceX', 'spacex'),
     ('Rocket Lab', 'rocketlab'),
     ('Waymo', 'waymo'),
@@ -54,20 +53,25 @@ GREENHOUSE_COMPANIES = [
     ('Flex Ltd', 'flex'),
     ('Mercury Systems', 'mercury'),
     ('Graphcore', 'graphcore'),
+    ('Ampere Computing', 'amperecomputing'),
+    ('SambaNova Systems', 'sambanova'),
+    ('Joby Aviation', 'jobyaviation'),
+    ('Lilium', 'lilium'),
+    ('Saildrone', 'saildrone'),
+    ('Fortive', 'fortive'),
 ]
 
 LEVER_COMPANIES = [
-    # Existing
     ('Blue Origin', 'blueorigin'),
     ('Shield AI', 'shieldai'),
     ('Zoox', 'zoox'),
-    # New additions
     ('Exowatt', 'exowatt'),
     ('Plus', 'plus-ai'),
+    ('Sarcos Technology', 'sarcos'),
+    ('Epirus', 'epirus'),
 ]
 
 ASHBY_COMPANIES = [
-    # Confirmed working
     ('Anduril Industries', 'anduril'),
     ('Applied Intuition', 'appliedintuition'),
     ('Astera Labs', 'asteralabs'),
@@ -85,7 +89,6 @@ ASHBY_COMPANIES = [
     ('Perceive', 'perceive'),
     ('Untether AI', 'untether-ai'),
     ('Charge Robotics', 'charge-robotics'),
-    # Newly verified working
     ('Form Energy', 'formenergy'),
     ('d-Matrix', 'd-matrix'),
     ('REGENT Craft', 'regent'),
@@ -94,21 +97,37 @@ ASHBY_COMPANIES = [
     ('ATLAS Space Operations', 'atlas'),
     ('Wayve', 'wayve'),
     ('Ghost Autonomy', 'ghost'),
+    ('Atomic Semi', 'atomic-semi'),
+    ('Fervo Energy', 'fervoenergy'),
+    ('Electra Aero', 'electra'),
+    ('Parallel Systems', 'parallel-systems'),
 ]
 
 WORKDAY_COMPANIES = [
-    # Verified working without CSRF (returns 200)
     ('Analog Devices', 'analogdevices', 'External', '1'),
-    # Legacy entries (may need CSRF - will fail gracefully)
     ('Intel', 'intel', 'External', '1'),
     ('NVIDIA', 'nvidia', 'NVIDIAExternalCareerSite', '5'),
     ('Micron Technology', 'micron', 'External', '1'),
     ('Leidos', 'leidos', 'External', '5'),
+    ('ON Semiconductor', 'onsemi', 'External', '1'),
+    ('Lam Research', 'lamresearch', 'External', '1'),
+    ('KLA Corporation', 'kla', 'External', '1'),
+    ('Marvell Technology', 'marvell', 'External', '1'),
+    ('Keysight Technologies', 'keysight', 'External', '1'),
+    ('Coherent Corp', 'coherent', 'External', '1'),
+    ('Raytheon', 'rtx', 'External', '1'),
+    ('Northrop Grumman', 'ngc', 'External', '1'),
+    ('L3Harris', 'l3harris', 'External', '1'),
+    ('Honeywell', 'honeywell', 'External', '1'),
+    ('TE Connectivity', 'te', 'External', '1'),
+    ('Broadcom', 'broadcom', 'External', '1'),
+    ('Qualcomm', 'qualcomm', 'External', '1'),
 ]
 
 SMARTRECRUITERS_COMPANIES = [
     ('Western Digital', 'WesternDigital'),
     ('Vishay Intertechnology', 'Vishay'),
+    ('Teradyne', 'Teradyne'),
 ]
 
 # ---------------------------------------------------------------------------

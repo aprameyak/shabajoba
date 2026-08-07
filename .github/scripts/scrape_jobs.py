@@ -595,12 +595,27 @@ GREENHOUSE_COMPANIES = [
     ('Lucid Motors', 'lucidmotors'),
     ('Tenstorrent', 'tenstorrent'),
     ('Astranis', 'astranis'),
+    ('Nuro', 'nuro'),
+    ('Lattice Semiconductor', 'lattice'),
+    ('Flex Ltd', 'flex'),
+    ('Mercury Systems', 'mercury'),
+    ('Graphcore', 'graphcore'),
+    ('Ampere Computing', 'amperecomputing'),
+    ('SambaNova Systems', 'sambanova'),
+    ('Joby Aviation', 'jobyaviation'),
+    ('Lilium', 'lilium'),
+    ('Saildrone', 'saildrone'),
+    ('Fortive', 'fortive'),
 ]
 
 LEVER_COMPANIES = [
     ('Blue Origin', 'blueorigin'),
     ('Shield AI', 'shieldai'),
     ('Zoox', 'zoox'),
+    ('Exowatt', 'exowatt'),
+    ('Plus', 'plus-ai'),
+    ('Sarcos Technology', 'sarcos'),
+    ('Epirus', 'epirus'),
 ]
 
 ASHBY_COMPANIES = [
@@ -615,18 +630,51 @@ ASHBY_COMPANIES = [
     ('Hermeus', 'hermeus'),
     ('Archer Aviation', 'archeraviation'),
     ('Wisk Aero', 'wisk'),
+    ('Axcelis Technologies', 'axcelis'),
+    ('Figure', 'figure-ai'),
+    ('NextSilicon', 'nextsilicon'),
+    ('Perceive', 'perceive'),
+    ('Untether AI', 'untether-ai'),
+    ('Charge Robotics', 'charge-robotics'),
+    ('Form Energy', 'formenergy'),
+    ('d-Matrix', 'd-matrix'),
+    ('REGENT Craft', 'regent'),
+    ('Rain Neuromorphics', 'rain'),
+    ('Airspeed', 'airspeed'),
+    ('ATLAS Space Operations', 'atlas'),
+    ('Wayve', 'wayve'),
+    ('Ghost Autonomy', 'ghost'),
+    ('Atomic Semi', 'atomic-semi'),
+    ('Fervo Energy', 'fervoenergy'),
+    ('Electra Aero', 'electra'),
+    ('Parallel Systems', 'parallel-systems'),
 ]
 
 WORKDAY_COMPANIES = [
+    ('Analog Devices', 'analogdevices', 'External', '1'),
     ('Intel', 'intel', 'External', '1'),
     ('NVIDIA', 'nvidia', 'NVIDIAExternalCareerSite', '5'),
     ('Micron Technology', 'micron', 'External', '1'),
     ('Leidos', 'leidos', 'External', '5'),
+    ('ON Semiconductor', 'onsemi', 'External', '1'),
+    ('Lam Research', 'lamresearch', 'External', '1'),
+    ('KLA Corporation', 'kla', 'External', '1'),
+    ('Marvell Technology', 'marvell', 'External', '1'),
+    ('Keysight Technologies', 'keysight', 'External', '1'),
+    ('Coherent Corp', 'coherent', 'External', '1'),
+    ('Raytheon', 'rtx', 'External', '1'),
+    ('Northrop Grumman', 'ngc', 'External', '1'),
+    ('L3Harris', 'l3harris', 'External', '1'),
+    ('Honeywell', 'honeywell', 'External', '1'),
+    ('TE Connectivity', 'te', 'External', '1'),
+    ('Broadcom', 'broadcom', 'External', '1'),
+    ('Qualcomm', 'qualcomm', 'External', '1'),
 ]
 
 SMARTRECRUITERS_COMPANIES = [
     ('Western Digital', 'WesternDigital'),
     ('Vishay Intertechnology', 'Vishay'),
+    ('Teradyne', 'Teradyne'),
 ]
 
 
@@ -674,14 +722,16 @@ def main():
     print(f'\nTotal candidates: {len(candidates)}')
 
     # --- EE title classification ---
-    # Prefer Claude Haiku; fall back to Gemini; fall back to keyword matching.
+    # When LLM key is available: classify ALL internship candidates (not just keyword matches)
+    # so borderline titles like "Systems Test Engineer" or "Integration Associate" aren't missed.
+    # Without LLM: fall back to keyword matching only.
     titles_to_classify = list({
         c['title'] for c in candidates
         if c['title'] not in classifications
     })
 
     if titles_to_classify and claude_key:
-        print(f'Classifying {len(titles_to_classify)} titles with Claude Haiku ...')
+        print(f'Classifying {len(titles_to_classify)} titles with LLM ...')
         new_cls = batch_classify_ee_claude(titles_to_classify, claude_key)
         classifications.update(new_cls)
         save_json(CLASSIFICATIONS_FILE, classifications)
@@ -697,10 +747,20 @@ def main():
         title = c['title']
         keyword_match = is_ee_title(title)
         llm_result = classifications.get(title)
-        if llm_result is True or (llm_result is None and keyword_match):
+
+        if llm_result is True:
+            # LLM confirmed EE
             confirmed.append(c)
-        elif keyword_match:
+        elif llm_result is False:
+            # LLM rejected — skip entirely
+            pass
+        elif llm_result is None and keyword_match:
+            # No LLM result but keyword match — add directly
+            confirmed.append(c)
+        elif llm_result is None and not keyword_match and (claude_key or gemini_key):
+            # LLM was available but this title wasn't classified (API error) — flag for review
             needs_review.append(c)
+        # else: no LLM and no keyword match — drop silently
 
     print(f'Confirmed: {len(confirmed)}, Needs review: {len(needs_review)}')
 
