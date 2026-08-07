@@ -41,5 +41,5 @@ jobs:
           git config user.name "Aprameya Kannan"
           git config user.email "aprameyakannan@gmail.com"
           git add README.md listings.json
-          git diff --staged --quiet || git commit -m "x"
+          git diff --staged --quiet || git commit -m "add approved listings from issues"
           git pull --rebase -X ours && git push
