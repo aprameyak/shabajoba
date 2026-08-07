@@ -33,6 +33,7 @@ from scrape_jobs import (
     load_json, save_json,
     scrape_greenhouse, scrape_lever, scrape_ashby,
     scrape_workday, scrape_smartrecruiters,
+    batch_classify_ee_claude, extract_job_metadata_claude,
 )
 
 # ---------------------------------------------------------------------------
@@ -217,6 +218,8 @@ def main():
     print('Comprehensive EE Internship Scraper 2027')
     print('=' * 60)
 
+    claude_key = os.environ.get('ANTHROPIC_API_KEY', '')
+
     listings = load_json(LISTINGS_FILE, [])
     seen = load_json(SEEN_FILE, {})
 
@@ -265,13 +268,34 @@ def main():
 
     print(f'\nTotal raw candidates: {len(candidates)}')
 
-    # ---- Filter to EE internships ----
+    # ---- EE title classification (LLM preferred, keyword fallback) ----
+    internship_candidates = [c for c in candidates if is_internship(c['title'])]
+    titles_needing_llm = [
+        c['title'] for c in internship_candidates
+        if not is_ee_title(c['title'])  # only send ambiguous titles to LLM
+    ]
+    llm_classifications = {}
+    if titles_needing_llm and claude_key:
+        print(f'Classifying {len(titles_needing_llm)} ambiguous titles via LLM ...')
+        llm_classifications = batch_classify_ee_claude(list(set(titles_needing_llm)), claude_key)
+
     confirmed = []
-    for c in candidates:
-        if is_internship(c['title']) and is_ee_title(c['title']):
+    for c in internship_candidates:
+        if is_ee_title(c['title']) or llm_classifications.get(c['title']):
             confirmed.append(c)
 
     print(f'After EE+internship filter: {len(confirmed)}')
+
+    # ---- Sponsorship/citizenship extraction from descriptions ----
+    if claude_key:
+        print('Extracting sponsorship/citizenship from job descriptions ...')
+        for c in confirmed:
+            desc = c.get('description', '')
+            if desc:
+                meta = extract_job_metadata_claude(c['title'], desc, claude_key)
+                c['sponsorship'] = meta.get('sponsorship', 'Unknown')
+                c['citizenship'] = meta.get('citizenship', 'Unknown')
+                time.sleep(0.3)
 
     # ---- Add to listings ----
     added = 0
@@ -285,8 +309,8 @@ def main():
             'season': season,
             'education': infer_education(c['title']),
             'url': c['url'],
-            'sponsorship': 'Unknown',
-            'citizenship': 'Unknown',
+            'sponsorship': c.get('sponsorship', 'Unknown'),
+            'citizenship': c.get('citizenship', 'Unknown'),
             'date_added': today,
         }
         if add_listing(listings, entry):
