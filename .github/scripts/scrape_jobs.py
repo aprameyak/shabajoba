@@ -15,6 +15,9 @@ SEEN_FILE = Path('.github/data/seen_jobs.json')
 CLASSIFICATIONS_FILE = Path('.github/data/title_classifications.json')
 GEMINI_USAGE_FILE = Path('.github/data/gemini_usage.json')
 
+CLAUDE_MODEL = 'claude-haiku-4-5-20251001'
+ANTHROPIC_API_URL = 'https://api.anthropic.com/v1/messages'
+
 EE_TITLE_KEYWORDS = [
     'electrical engineer', 'hardware engineer', 'analog engineer',
     'rf engineer', 'rf design', 'power engineer', 'signal integrity',
@@ -159,6 +162,109 @@ def add_listing(listings, entry):
     return True
 
 
+def strip_html(html_text):
+    """Strip HTML tags and collapse whitespace."""
+    text = re.sub(r'<[^>]+>', ' ', html_text or '')
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
+
+def batch_classify_ee_claude(titles, api_key):
+    """
+    Classify a batch of job titles as EE-relevant using Claude Haiku.
+    Returns dict of title -> bool. Falls back to keyword matching on error.
+    """
+    if not api_key or not titles:
+        return {}
+    results = {}
+    batch_size = 20
+    for i in range(0, len(titles), batch_size):
+        batch = titles[i:i + batch_size]
+        numbered = '\n'.join(f'{j + 1}. "{t}"' for j, t in enumerate(batch))
+        prompt = (
+            'For each job title below, determine if it is an electrical or hardware engineering role.\n'
+            'EE = true: electrical engineering, hardware engineering, RF/analog/mixed-signal, '
+            'power electronics, VLSI/ASIC/FPGA, PCB design, test engineering (hardware), avionics, '
+            'signal processing, photonics, embedded hardware, silicon/semiconductor/IC design.\n'
+            'EE = false: software engineering, firmware-only software, data science, ML, '
+            'mechanical, civil, chemical, business, finance, HR.\n\n'
+            f'Titles:\n{numbered}\n\n'
+            'Return ONLY a JSON array of booleans in the same order as the titles, e.g. [true, false, true]'
+        )
+        try:
+            resp = requests.post(
+                ANTHROPIC_API_URL,
+                headers={
+                    'x-api-key': api_key,
+                    'anthropic-version': '2023-06-01',
+                    'content-type': 'application/json',
+                },
+                json={
+                    'model': CLAUDE_MODEL,
+                    'max_tokens': 128,
+                    'messages': [{'role': 'user', 'content': prompt}],
+                },
+                timeout=30,
+            )
+            resp.raise_for_status()
+            raw = resp.json()['content'][0]['text'].strip()
+            parsed = json.loads(raw)
+            for j, title in enumerate(batch):
+                if j < len(parsed):
+                    results[title] = bool(parsed[j])
+            time.sleep(0.5)
+        except Exception as e:
+            print(f'Claude batch classify error (batch {i // batch_size}): {e}')
+    return results
+
+
+def extract_job_metadata_claude(title, description_text, api_key):
+    """
+    Extract sponsorship and citizenship info from a job description using Claude Haiku.
+    Returns dict with 'sponsorship' and 'citizenship' keys.
+    """
+    if not api_key or not description_text:
+        return {'sponsorship': 'Unknown', 'citizenship': 'Unknown'}
+    truncated = description_text[:2500]
+    prompt = (
+        'Analyze this job posting and return JSON with exactly these two fields:\n\n'
+        '"sponsorship": one of:\n'
+        '  "Yes — sponsorship available" — if posting explicitly offers/provides visa sponsorship\n'
+        '  "No — does NOT offer sponsorship" — if posting says must be authorized to work, '
+        'no sponsorship available, or requires existing US work authorization\n'
+        '  "Unknown" — if not mentioned\n\n'
+        '"citizenship": one of:\n'
+        '  "Yes — U.S. citizenship required" — if US citizenship is required, or if the role '
+        'requires a security clearance (Secret, Top Secret, TS/SCI)\n'
+        '  "No" — if explicitly states citizenship is not required\n'
+        '  "Unknown" — if not mentioned\n\n'
+        f'Title: "{title}"\n'
+        f'Description:\n{truncated}\n\n'
+        'Return ONLY valid JSON: {"sponsorship": "...", "citizenship": "..."}'
+    )
+    try:
+        resp = requests.post(
+            ANTHROPIC_API_URL,
+            headers={
+                'x-api-key': api_key,
+                'anthropic-version': '2023-06-01',
+                'content-type': 'application/json',
+            },
+            json={
+                'model': CLAUDE_MODEL,
+                'max_tokens': 64,
+                'messages': [{'role': 'user', 'content': prompt}],
+            },
+            timeout=30,
+        )
+        resp.raise_for_status()
+        raw = resp.json()['content'][0]['text'].strip()
+        return json.loads(raw)
+    except Exception as e:
+        print(f'Claude metadata error [{title[:50]}]: {e}')
+        return {'sponsorship': 'Unknown', 'citizenship': 'Unknown'}
+
+
 def classify_titles_gemini(titles, api_key, usage):
     if not api_key or usage['count'] >= GEMINI_DAILY_LIMIT:
         return {}
@@ -208,8 +314,10 @@ def scrape_greenhouse(company, board_token, seen):
             key = f'greenhouse:{board_token}:{job_id}'
             if key in seen or not is_internship(title) or not is_us_or_canada(location):
                 continue
+            description = strip_html(job.get('content', ''))
             jobs.append({'key': key, 'company': company, 'title': title,
-                         'location': location, 'url': apply_url})
+                         'location': location, 'url': apply_url,
+                         'description': description})
     except Exception as e:
         print(f'Greenhouse error [{company}]: {e}')
     return jobs
@@ -231,8 +339,14 @@ def scrape_lever(company, slug, seen):
                 continue
             if location and not is_us_or_canada(location):
                 continue
+            desc_html = posting.get('descriptionHtml', '') or posting.get('description', '')
+            lists_html = ' '.join(
+                item.get('content', '') for item in posting.get('lists', [])
+            )
+            description = strip_html(desc_html + ' ' + lists_html)
             jobs.append({'key': key, 'company': company, 'title': title,
-                         'location': location or 'United States', 'url': apply_url})
+                         'location': location or 'United States', 'url': apply_url,
+                         'description': description})
     except Exception as e:
         print(f'Lever error [{company}]: {e}')
     return jobs
@@ -520,7 +634,8 @@ SMARTRECRUITERS_COMPANIES = [
 def main():
     github_token = os.environ.get('GITHUB_TOKEN', '')
     repo = os.environ.get('GITHUB_REPOSITORY', '')
-    gemini_key = os.environ.get('GEMINI_API_KEY', '')
+    claude_key = os.environ.get('ANTHROPIC_API_KEY', '')
+    gemini_key = os.environ.get('GEMINI_API_KEY', '')  # kept for fallback
 
     listings = load_json(LISTINGS_FILE, [])
     seen = load_json(SEEN_FILE, {})
@@ -558,11 +673,20 @@ def main():
 
     print(f'\nTotal candidates: {len(candidates)}')
 
+    # --- EE title classification ---
+    # Prefer Claude Haiku; fall back to Gemini; fall back to keyword matching.
     titles_to_classify = list({
         c['title'] for c in candidates
         if c['title'] not in classifications
     })
-    if titles_to_classify and gemini_key:
+
+    if titles_to_classify and claude_key:
+        print(f'Classifying {len(titles_to_classify)} titles with Claude Haiku ...')
+        new_cls = batch_classify_ee_claude(titles_to_classify, claude_key)
+        classifications.update(new_cls)
+        save_json(CLASSIFICATIONS_FILE, classifications)
+    elif titles_to_classify and gemini_key:
+        print(f'Classifying {len(titles_to_classify)} titles with Gemini (fallback) ...')
         new_cls = classify_titles_gemini(titles_to_classify, gemini_key, gemini_usage)
         classifications.update(new_cls)
         save_json(CLASSIFICATIONS_FILE, classifications)
@@ -572,13 +696,24 @@ def main():
     for c in candidates:
         title = c['title']
         keyword_match = is_ee_title(title)
-        gemini_result = classifications.get(title)
-        if gemini_result is True or (gemini_result is None and keyword_match):
+        llm_result = classifications.get(title)
+        if llm_result is True or (llm_result is None and keyword_match):
             confirmed.append(c)
         elif keyword_match:
             needs_review.append(c)
 
     print(f'Confirmed: {len(confirmed)}, Needs review: {len(needs_review)}')
+
+    # --- Sponsorship/citizenship extraction from descriptions ---
+    # Run Claude on each confirmed candidate that has a description.
+    if claude_key:
+        for c in confirmed:
+            desc = c.get('description', '')
+            if desc:
+                meta = extract_job_metadata_claude(c['title'], desc, claude_key)
+                c['sponsorship'] = meta.get('sponsorship', 'Unknown')
+                c['citizenship'] = meta.get('citizenship', 'Unknown')
+                time.sleep(0.3)
 
     added = 0
     for c in confirmed:
@@ -591,8 +726,8 @@ def main():
             'season': season,
             'education': infer_education(c['title']),
             'url': c['url'],
-            'sponsorship': 'Unknown',
-            'citizenship': 'Unknown',
+            'sponsorship': c.get('sponsorship', 'Unknown'),
+            'citizenship': c.get('citizenship', 'Unknown'),
             'date_added': today,
         }
         if add_listing(listings, entry):
