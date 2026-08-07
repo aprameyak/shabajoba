@@ -45,5 +45,5 @@ jobs:
           git config user.name "Aprameya Kannan"
           git config user.email "aprameyakannan@gmail.com"
           git add .github/data/seen_jobs.json .github/data/title_classifications.json .github/data/gemini_usage.json listings.json README.md
-          git diff --staged --quiet || git commit -m "x"
+          git diff --staged --quiet || git commit -m "scrape: add new listings and update seen cache"
           git pull --rebase -X ours && git push
