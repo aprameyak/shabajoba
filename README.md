@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Akuna Capital | Hardware Engineer Intern | Chicago, IL | Summer 2027 | Undergrad | <a href="https://akunacapital.com/careers/job/8018880/" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
 | BAE Systems, Inc. | 2027 Co-Op (Spring-Summer or Summer-Fall) Electrical Engineer (onsite) | Cedar Rapids, IA | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-co-op-spring-summer-or-summer-fall-electrical-engineer-onsite-at-bae-systems-inc-4429413834" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
 | ↳ | Electrical Engineering Coop (Spring/Summer 2027), Onsite | Cedar Rapids, IA | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-coop-spring-summer-2027-onsite-at-bae-systems-inc-4446221962" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
 | ByteDance | ASIC Design Engineer Intern - Video Silicon IP | San Jose, CA | Summer 2027 | Undergrad | <a href="https://jobs.bytedance.com/en/position/7670332179383699717/detail" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
