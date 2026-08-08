@@ -322,5 +322,29 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-08-06"
+  },
+  {
+    "company": "Amazon Web Services (AWS)",
+    "role": "Chip Design Student",
+    "location": "Will County, IL",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://www.linkedin.com/jobs/view/chip-design-student-chip-design-student-at-amazon-web-services-aws-4451300089",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-08-08"
+  },
+  {
+    "company": "Raytheon",
+    "role": "Electrical Engineering Intern",
+    "location": "Plano, TX",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://www.linkedin.com/jobs/view/raytheon-electrical-engineering-intern-summer-2027-onsite-at-raytheon-4451057545",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-08-08"
   }
 ]
