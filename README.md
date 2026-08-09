@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Bosch | Wireless Systems Research Intern | Sunnyvale, CA | Fall 2026 | Undergrad | <a href="https://jobs.smartrecruiters.com/BoschGroup/744000141552037" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 9 |
 | Carnegie Mellon University | RF Cyber Lab Intern | Pittsburgh, PA | Summer 2027 | Undergrad | <a href="https://cmu.wd5.myworkdayjobs.com/cmu/job/Pittsburgh-PA/RF-Cyber-Lab-Intern_2024547" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 9 |
 | Figure AI | Electrical Engineering Intern | San Jose, CA | Fall 2026 | Undergrad | <a href="https://job-boards.greenhouse.io/figureai/jobs/4676467006" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 9 |
 | Agilent Technologies | Electrical Engineering Intern | Wilmington, DE | Summer 2027 | Undergrad | <a href="https://agilent.wd5.myworkdayjobs.com/Agilent_Student_Careers/job/US-DE-Wilmington/Electrical-Engineering-Intern_4038526" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 8 |
