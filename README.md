@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Cadence | SSG Design Engineering Intern | San Jose, CA | Fall 2026 | Undergrad | <a href="https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/SSG-Design-Engineering-Intern--Fall-2026-_R52641" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
 | Schaeffler | Co-op Electrical Engineering | Troy, MI | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/co-op-electrical-engineering-summer-2027-at-schaeffler-4452624155" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
 | ↳ | Co-op Electrical Engineering | Troy, MI | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/co-op-electrical-engineering-fall-2027-at-schaeffler-4452611940" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
 | Vertiv | Electrical Engineering Intern | Westerville, OH | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-summer-2027-at-vertiv-4451550786" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 10 |
