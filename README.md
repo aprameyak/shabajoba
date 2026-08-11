@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Vertiv | Electrical Engineering Intern | Westerville, OH | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-summer-2027-at-vertiv-4451550786" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 10 |
 | Apple | Hardware Undergrad Engineering Internships | Cupertino, CA | Summer 2027 | Undergrad | <a href="https://jobs.apple.com/en-us/details/200663981/hardware-undergrad-engineering-internships" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 9 |
 | ↳ | Hardware Masters Engineering Internships | Cupertino, CA | Summer 2027 | Masters | <a href="https://jobs.apple.com/en-us/details/200664419/hardware-masters-engineering-internships" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 9 |
 | ↳ | Hardware Technologies Masters Engineering Internships | Cupertino, CA | Summer 2027 | Masters | <a href="https://jobs.apple.com/en-us/details/200664383/hardware-technologies-masters-engineering-internships" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 9 |
