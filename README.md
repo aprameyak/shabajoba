@@ -48,8 +48,8 @@
 | Virtu Financial | Hardware Engineer Intern - FPGA | Austin, TX | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/virtu/jobs/8657286002" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
 | Western Digital | Hardware Engineering Intern | San Jose, CA | Summer 2027 | Undergrad | <a href="https://jobs.smartrecruiters.com/WesternDigital/744000140949875" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Jul 31 |
 | Astranis | Electrical Integration Associate - Avionics | San Francisco, CA | Fall 2026 | Undergrad | 🔒 | Jul 16 |
-| Rocket Lab | Electrical Engineering Intern Fall 2026 | Long Beach, CA | Fall 2026 | Undergrad | 🔒 | Jul 16 |
-| ↳ | Systems Engineering Intern Fall 2026 | Long Beach, CA | Fall 2026 | Undergrad | 🔒 | Jul 16 |
+| Rocket Lab | Electrical Engineering Intern | Long Beach, CA | Fall 2026 | Undergrad | 🔒 | Jul 16 |
+| ↳ | Systems Engineering Intern | Long Beach, CA | Fall 2026 | Undergrad | 🔒 | Jul 16 |
 | Verkada | Hardware Engineer (Fall Co-op) | San Mateo, CA | Co-op | Undergrad | 🔒 | Jul 16 |
 <!-- TABLE_END listings -->
 
