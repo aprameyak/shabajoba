@@ -4,6 +4,7 @@
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
 | Cadence | SSG Design Engineering Intern | San Jose, CA | Fall 2026 | Undergrad | <a href="https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/SSG-Design-Engineering-Intern--Fall-2026-_R52641?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
+| Marvell Technology | Analog Design Intern | Westlake Village, CA | Fall 2026 | Masters | <a href="https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Westlake-Village-CA/Analog-Design-Intern---Master-s-Degree--Quarter-Schools---Fall-2026-Start-Dates-_2502475-1?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
 | Micron Technology | Intern - Process Development Engineer, 3D DRAM CMP | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 11 |
 | ↳ | Intern - DRAM Design Engineer | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 11 |
 | ↳ | Intern - DRAM IP Circuits Design Engineer | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 11 |
