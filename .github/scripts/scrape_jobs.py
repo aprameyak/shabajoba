@@ -105,6 +105,16 @@ def normalize_url(url):
     return url.rstrip('/')
 
 
+def normalize_location(loc):
+    """Strip trailing site/campus suffixes from ATS locations like 'Boise, ID - Main Site'."""
+    if not loc:
+        return loc
+    m = re.match(r'^(.+,\s*[A-Z]{2})\s*[-–\u2013].+$', loc)
+    if m:
+        return m.group(1).strip()
+    return loc
+
+
 def is_us_or_canada(location_text):
     if not location_text:
         return True
@@ -422,7 +432,9 @@ def scrape_workday(company, tenant, site, board_num, seen):
                 break
             for job in job_postings:
                 title = job.get('title', '')
-                location = job.get('locationsText', '') or job.get('primaryLocationText', '')
+                location = normalize_location(
+                    job.get('locationsText', '') or job.get('primaryLocationText', '')
+                )
                 external_path = job.get('externalPath', '')
                 apply_url = f'{base}{external_path}' if external_path else ''
                 key = f'workday:{tenant}:{external_path or title}'
@@ -781,7 +793,7 @@ def main():
         entry = {
             'company': c['company'],
             'role': c['title'],
-            'location': c['location'],
+            'location': normalize_location(c['location']),
             'type': listing_type,
             'season': season,
             'education': infer_education(c['title']),
