@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Applied Intuition | Software Engineer New Grad | <details><summary>**2 locations**</summary>Ann Arbor, MI</br>Sunnyvale, CA</details> | 2027 (New Grad — no specific season) | Undergrad | <a href="https://jobs.ashbyhq.com/applied/a837cbd6-9fe4-4d74-a2dc-84f602c40694/application?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 14 |
 | Micron Technology | Intern - DRAM Process Integration | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 14 |
 | ↳ | Intern - Advanced DRAM Cell/Device Engineer | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 14 |
 | ↳ | Intern - Wafer Bonding Process Development | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 14 |
