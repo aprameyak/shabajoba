@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Micron Technology | Intern - DRAM PI | Boise, ID | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/job/Boise-ID---Main-Site/Intern---DRAM-PI_JR107483?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 16 |
 | Micron Technology | Intern - DRAM Process Integration | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 14 |
 | ↳ | Intern - Advanced DRAM Cell/Device Engineer | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 14 |
 | ↳ | Intern - Wafer Bonding Process Development | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 14 |
