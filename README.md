@@ -4,6 +4,7 @@
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
 | CMTA, Inc. | Electrical Engineer Intern/Co-op | Brentwood, TN | Spring 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-intern-co-op-spring-2027-multiple-locations-at-cmta-inc-4453149083" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 16 |
+| GE Aerospace | Systems Engineering Intern - Electrical Engineering & Computer Engineering/Science (Avionics) | Grand Rapids, MI | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/systems-engineering-intern-electrical-engineering-computer-engineering-science-avionics-us-summer-2027-at-ge-aerospace-4455243579" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 16 |
 | Micron Technology | Intern - DRAM PI | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 16 |
 | Micron Technology | Intern - DRAM Process Integration | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 14 |
 | ↳ | Intern - Advanced DRAM Cell/Device Engineer | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 14 |
