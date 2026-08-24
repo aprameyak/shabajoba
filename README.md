@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Hitachi Energy | Electrical Engineering Intern | Raleigh, NC | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-summer-electrical-engineering-intern-raleigh-at-hitachi-energy-4457820149" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
 | Nexus Engineering Group | Electrical Engineering Internship or Co-Op | Oak Brook, IL | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-internship-or-co-op-summer-2027-at-nexus-engineering-group-4457009037" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
 | Anduril Industries | Electrical Engineer Intern | Seattle, WA | Summer 2027 | Undergrad | 🔒 | Aug 21 |
 | Cowboy Space Corporation | Intern, Electrical Engineering | Seattle, WA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/intern-electrical-engineering-2027-at-cowboy-space-corporation-4455982402" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
