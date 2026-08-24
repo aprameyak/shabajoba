@@ -3,7 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
-| Anduril Industries | Electrical Engineer Intern | Seattle, WA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-electrical-engineer-intern-at-anduril-industries-4427648537" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
+| Anduril Industries | Electrical Engineer Intern | Seattle, WA | Summer 2027 | Undergrad | 🔒 | Aug 21 |
 | Cowboy Space Corporation | Intern, Electrical Engineering | Seattle, WA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/intern-electrical-engineering-2027-at-cowboy-space-corporation-4455982402" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
 | Dashiell Corporation | Electrical Engineering Intern | New Gloucester, ME | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-at-dashiell-corporation-4452722330" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
 | Dennis Group | Electrical Engineer Intern | Salt Lake City, UT | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-intern-start-summer-2027-at-dennis-group-4456087395" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
