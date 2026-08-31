@@ -3,7 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
-| Micron Technology | Intern - DRAM Product Test Engineer | Boise, ID | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/job/Boise-ID---Main-Site/DRAM-Product-Test-Engineer-Intern_JR110025" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 30 |
+| Micron Technology | Intern - DRAM Product Test Engineer | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 30 |
 | Micron Technology | Intern - ADV DRAM Process Integration Engineer | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 27 |
 | Micron Technology | Intern - Process Development Engineer, 3D DRAM Photo | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 25 |
 | ↳ | Intern - Realtime Defect Analysis (RDA) Yield Technology | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 25 |
