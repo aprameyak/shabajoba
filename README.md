@@ -3,7 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
-| Micron Technology | Intern - DRAM Test Structure Design and Layout Engineering | Boise, ID | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/job/Boise-ID---Main-Site/Intern---DRAM-Test-Structure-Design-and-Layout-Engineering_JR110341" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 7 |
+| Micron Technology | Intern - DRAM Test Structure Design and Layout Engineering | Boise, ID | Summer 2027 | Undergrad | 🔒 | Sep 7 |
 | Bayer | Electrical Engineer Co-Op | Chesterfield, MO | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-co-op-at-bayer-4461564133" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
 | ↳ | Electrical Engineering Co-Op | Indianola, PA | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-co-op-at-bayer-4461554367" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
 | Booz Allen Hamilton | Electronic Warfare FPGA Engineer Intern | Beavercreek, OH | Summer 2027 | Undergrad | <a href="https://bah.wd1.myworkdayjobs.com/bah_jobs/job/Beavercreek-OH/University---Summer-2027-Electronic-Warfare-FPGA-Engineering-Intern_R0248465-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
