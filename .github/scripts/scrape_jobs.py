@@ -147,6 +147,23 @@ def infer_education(title):
     return 'Undergrad'
 
 
+def sanitize_listing_role(company, role):
+    """Normalize scraped titles so validate_listings.py passes."""
+    role = re.sub(r',?\s*(Onsite|On-site|Remote|Hybrid)\s*$', '', role, flags=re.I)
+    role = re.sub(r'\(Onsite\)|\(On-site\)|\(Remote\)|\(Hybrid\)', '', role, flags=re.I)
+    role = re.sub(r'\s*\((Summer|Fall|Spring|Winter)\s+20\d\d\)\s*$', '', role, flags=re.I)
+    role = re.sub(r'\s*\(Summer of 20\d\d\)\s*$', '', role, flags=re.I)
+    role = re.sub(r'\s+(Summer|Fall|Spring|Winter)\s+20\d\d\s*$', '', role, flags=re.I)
+    role = re.sub(r'^(Summer|Fall|Spring|Winter)\s+20\d\d\s+', '', role, flags=re.I)
+    role = re.sub(r'^20\d\d\s+(Spring|Summer|Fall|Winter)\s+', '', role, flags=re.I)
+    role = re.sub(r'^NVIDIA 2027 Internships:\s*', '', role, flags=re.I)
+    role = re.sub(r'\s*\(R\d+\)\s*$', '', role)
+    if company:
+        role = re.sub(re.escape(company), '', role, flags=re.I)
+    role = re.sub(r'\s+', ' ', role).strip(' -')
+    return role
+
+
 def classify_season(title):
     t = title.lower()
     if 'fall 2026' in t:
@@ -160,16 +177,64 @@ def classify_season(title):
     return ('summer', 'Summer 2027')
 
 
-def add_listing(listings, entry):
-    norm = normalize_url(entry['url'])
+def listing_exists(listings, url, company, role):
+    norm = normalize_url(url)
     for existing in listings:
         if existing.get('url') and normalize_url(existing['url']) == norm:
-            return False
-        if (existing['company'].lower() == entry['company'].lower()
-                and existing['role'].lower() == entry['role'].lower()):
-            return False
+            return True
+        if (existing['company'].lower() == company.lower()
+                and existing['role'].lower() == role.lower()):
+            return True
+    return False
+
+
+def add_listing(listings, entry):
+    if listing_exists(listings, entry['url'], entry['company'], entry['role']):
+        return False
     listings.append(entry)
     return True
+
+
+def title_excluded_by_keyword(title):
+    t = title.lower()
+    return any(kw in t for kw in EXCLUDE_TITLE_KEYWORDS)
+
+
+def should_llm_classify_title(title, classifications):
+    if title in classifications:
+        return False
+    if is_ee_title(title) or title_excluded_by_keyword(title):
+        if title not in classifications:
+            classifications[title] = is_ee_title(title)
+        return False
+    return True
+
+
+def candidate_passes_scope(c):
+    return is_internship(c['title']) and is_us_or_canada(c['location'])
+
+
+def resolve_ambiguous_candidates(candidates, classifications, claude_key, gemini_key, gemini_usage):
+    """Retry LLM for titles that failed first pass; returns newly confirmed jobs."""
+    if not candidates:
+        return []
+    titles = list({c['title'] for c in candidates if c['title'] not in classifications})
+    if titles and claude_key:
+        classifications.update(batch_classify_ee_claude(titles, claude_key))
+    elif titles and gemini_key:
+        classifications.update(
+            classify_titles_gemini(titles, gemini_key, gemini_usage)
+        )
+    confirmed = []
+    for c in candidates:
+        title = c['title']
+        llm_result = classifications.get(title)
+        if llm_result is True or (llm_result is None and is_ee_title(title)):
+            confirmed.append(c)
+        elif llm_result is None:
+            classifications[title] = False
+            print(f'Skip (unclassified): {c["company"]} — {title}')
+    return confirmed
 
 
 def strip_html(html_text):
@@ -192,14 +257,11 @@ def batch_classify_ee_claude(titles, api_key):
         batch = titles[i:i + batch_size]
         numbered = '\n'.join(f'{j + 1}. "{t}"' for j, t in enumerate(batch))
         prompt = (
-            'For each job title below, determine if it is an electrical or hardware engineering role.\n'
-            'EE = true: electrical engineering, hardware engineering, RF/analog/mixed-signal, '
-            'power electronics, VLSI/ASIC/FPGA, PCB design, test engineering (hardware), avionics, '
-            'signal processing, photonics, embedded hardware, silicon/semiconductor/IC design.\n'
-            'EE = false: software engineering, firmware-only software, data science, ML, '
-            'mechanical, civil, chemical, business, finance, HR.\n\n'
-            f'Titles:\n{numbered}\n\n'
-            'Return ONLY a JSON array of booleans in the same order as the titles, e.g. [true, false, true]'
+            'EE hardware/electrical intern/co-op titles only. '
+            'true=EE/hardware/RF/VLSI/ASIC/FPGA/PCB/test/avionics/power silicon; '
+            'false=SWE/DS/ML/ME/civil/business/HR.\n'
+            f'{numbered}\n'
+            'JSON booleans only, same order.'
         )
         try:
             resp = requests.post(
@@ -568,37 +630,6 @@ def scrape_usajobs(seen):
     return jobs
 
 
-def create_github_issue(token, repo, company, role, location, url, season):
-    title = f'[JOB] {company} — {role} ({season})'
-    body = (
-        f'### Company Name\n{company}\n\n'
-        f'### Role / Job Title\n{role}\n\n'
-        f'### Listing Type\nInternship\n\n'
-        f'### Season / Term\n{season}\n\n'
-        f'### Location\n{location}\n\n'
-        f'### Visa Sponsorship?\nUnknown\n\n'
-        f'### U.S. Citizenship Required?\nUnknown\n\n'
-        f'### Education Level\nUndergrad\n\n'
-        f'### Direct Application Link\n{url}\n\n'
-        f'### Additional Notes\n_Auto-discovered — needs human review_\n'
-    )
-    try:
-        resp = requests.post(
-            f'https://api.github.com/repos/{repo}/issues',
-            headers={
-                'Authorization': f'token {token}',
-                'Accept': 'application/vnd.github+json',
-            },
-            json={'title': title, 'body': body,
-                  'labels': ['new listing', 'needs review']},
-            timeout=15,
-        )
-        resp.raise_for_status()
-        print(f'Created issue: {title}')
-    except Exception as e:
-        print(f'Issue creation error: {e}')
-
-
 GREENHOUSE_COMPANIES = [
     ('SpaceX', 'spacex'),
     ('Rocket Lab', 'rocketlab'),
@@ -692,8 +723,6 @@ SMARTRECRUITERS_COMPANIES = [
 
 
 def main():
-    github_token = os.environ.get('GITHUB_TOKEN', '')
-    repo = os.environ.get('GITHUB_REPOSITORY', '')
     claude_key = os.environ.get('ANTHROPIC_API_KEY', '')
     gemini_key = os.environ.get('GEMINI_API_KEY', '')  # kept for fallback
 
@@ -733,13 +762,15 @@ def main():
 
     print(f'\nTotal candidates: {len(candidates)}')
 
-    # --- EE title classification ---
-    # When LLM key is available: classify ALL internship candidates (not just keyword matches)
-    # so borderline titles like "Systems Test Engineer" or "Integration Associate" aren't missed.
-    # Without LLM: fall back to keyword matching only.
+    in_scope = [c for c in candidates if candidate_passes_scope(c)]
+    out_scope = len(candidates) - len(in_scope)
+    if out_scope:
+        print(f'Out of scope (not intern/co-op or not US/Canada): {out_scope}')
+
+    # --- EE title classification (ambiguous titles only; obvious EE/exclusions skip LLM) ---
     titles_to_classify = list({
-        c['title'] for c in candidates
-        if c['title'] not in classifications
+        c['title'] for c in in_scope
+        if should_llm_classify_title(c['title'], classifications)
     })
 
     if titles_to_classify and claude_key:
@@ -754,32 +785,37 @@ def main():
         save_json(CLASSIFICATIONS_FILE, classifications)
 
     confirmed = []
-    needs_review = []
-    for c in candidates:
+    ambiguous = []
+    for c in in_scope:
         title = c['title']
         keyword_match = is_ee_title(title)
         llm_result = classifications.get(title)
 
-        if llm_result is True:
-            # LLM confirmed EE
+        if llm_result is True or (llm_result is None and keyword_match):
             confirmed.append(c)
         elif llm_result is False:
-            # LLM rejected — skip entirely
             pass
-        elif llm_result is None and keyword_match:
-            # No LLM result but keyword match — add directly
-            confirmed.append(c)
         elif llm_result is None and not keyword_match and (claude_key or gemini_key):
-            # LLM was available but this title wasn't classified (API error) — flag for review
-            needs_review.append(c)
-        # else: no LLM and no keyword match — drop silently
+            ambiguous.append(c)
+        elif llm_result is None and not keyword_match:
+            print(f'Skip (no LLM): {c["company"]} — {title}')
 
-    print(f'Confirmed: {len(confirmed)}, Needs review: {len(needs_review)}')
+    if ambiguous:
+        print(f'Ambiguous after first pass: {len(ambiguous)} — retrying LLM')
+        confirmed.extend(
+            resolve_ambiguous_candidates(
+                ambiguous, classifications, claude_key, gemini_key, gemini_usage,
+            )
+        )
+        save_json(CLASSIFICATIONS_FILE, classifications)
 
-    # --- Sponsorship/citizenship extraction from descriptions ---
-    # Run Claude on each confirmed candidate that has a description.
+    print(f'Confirmed for add: {len(confirmed)}')
+
+    # --- Sponsorship/citizenship (only for listings that will be added) ---
     if claude_key:
         for c in confirmed:
+            if listing_exists(listings, c['url'], c['company'], c['title']):
+                continue
             desc = c.get('description', '')
             if desc:
                 meta = extract_job_metadata_claude(c['title'], desc, claude_key)
@@ -790,9 +826,10 @@ def main():
     added = 0
     for c in confirmed:
         listing_type, season = classify_season(c['title'])
+        role = sanitize_listing_role(c['company'], c['title'])
         entry = {
             'company': c['company'],
-            'role': c['title'],
+            'role': role,
             'location': normalize_location(c['location']),
             'type': listing_type,
             'season': season,
@@ -805,22 +842,15 @@ def main():
         if add_listing(listings, entry):
             added += 1
             print(f'Added: {c["company"]} — {c["title"]}')
-        seen[c['key']] = today
 
     if added:
         save_json(LISTINGS_FILE, listings)
         subprocess.run(['python3', '.github/scripts/rebuild_readme.py'], check=True)
 
-    if github_token and repo:
-        for c in needs_review:
-            _, season = classify_season(c['title'])
-            create_github_issue(
-                github_token, repo,
-                c['company'], c['title'], c['location'], c['url'], season,
-            )
-            seen[c['key']] = today
-            time.sleep(1)
+    for c in candidates:
+        seen[c['key']] = today
 
+    save_json(CLASSIFICATIONS_FILE, classifications)
     save_json(SEEN_FILE, seen)
     print('Done.')
 

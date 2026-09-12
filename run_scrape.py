@@ -30,6 +30,7 @@ sys.path.insert(0, str(REPO_ROOT / '.github' / 'scripts'))
 from scrape_jobs import (
     is_ee_title, is_internship, is_us_or_canada,
     classify_season, infer_education, add_listing, normalize_url,
+    sanitize_listing_role,
     load_json, save_json,
     scrape_greenhouse, scrape_lever, scrape_ashby,
     scrape_workday, scrape_smartrecruiters,
@@ -322,7 +323,7 @@ def main():
         listing_type, season = classify_season(c['title'])
         entry = {
             'company': c['company'],
-            'role': c['title'],
+            'role': sanitize_listing_role(c['company'], c['title']),
             'location': c['location'],
             'type': listing_type,
             'season': season,
