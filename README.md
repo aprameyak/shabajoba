@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Antares | Electrical Engineering Intern | Los Angeles, CA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-summer-2027-at-antares-4465606996?position=19&pageNum=0&refId=jYiJlmlOpGY3bzZyZ4gIXA%3D%3D&trackingId=j361evudcPwZayRNvKSxgw%3D%3D" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | Micron Technology | Intern - DRAM Test Structure Design and Layout Engineering | Boise, ID | Summer 2027 | Undergrad | 🔒 | Sep 7 |
 | Bayer | Electrical Engineer Co-Op | Chesterfield, MO | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-co-op-at-bayer-4461564133" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
 | ↳ | Electrical Engineering Co-Op | Indianola, PA | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-co-op-at-bayer-4461554367" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
