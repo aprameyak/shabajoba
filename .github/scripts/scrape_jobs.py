@@ -244,6 +244,58 @@ def strip_html(html_text):
     return text.strip()
 
 
+def infer_metadata_keywords(text):
+    """Cheap keyword pass; avoids Claude when posting language is explicit."""
+    if not text:
+        return {'sponsorship': 'Unknown', 'citizenship': 'Unknown'}
+    t = text.lower()
+    sponsorship = 'Unknown'
+    citizenship = 'Unknown'
+    no_sponsor = (
+        'will not sponsor', 'will not provide sponsorship', 'unable to sponsor',
+        'no sponsorship', 'not provide sponsorship', 'without immigration sponsorship',
+        'must be authorized to work', 'must have authorization to work',
+        'eligible to work in the us without sponsorship',
+    )
+    yes_sponsor = (
+        'visa sponsorship available', 'will sponsor', 'provide sponsorship',
+        'h-1b', 'h1b visa', 'immigration sponsorship',
+    )
+    if any(p in t for p in no_sponsor):
+        sponsorship = 'No — does NOT offer sponsorship'
+    elif any(p in t for p in yes_sponsor):
+        sponsorship = 'Yes — sponsorship available'
+    cit_req = (
+        'u.s. citizenship required', 'us citizenship required', 'must be a u.s. citizen',
+        'must be us citizen', 'united states citizen required', 'top secret clearance',
+        'ts/sci', 'secret clearance required', 'ability to obtain security clearance',
+    )
+    if any(p in t for p in cit_req):
+        citizenship = 'Yes — U.S. citizenship required'
+    elif 'citizenship is not required' in t or 'without regard to citizenship' in t:
+        citizenship = 'No'
+    return {'sponsorship': sponsorship, 'citizenship': citizenship}
+
+
+def extract_job_metadata(title, description_text, api_key):
+    inferred = infer_metadata_keywords(description_text)
+    if inferred['sponsorship'] != 'Unknown' and inferred['citizenship'] != 'Unknown':
+        return inferred
+    if not api_key or not description_text:
+        return inferred
+    claude = extract_job_metadata_claude(title, description_text, api_key)
+    return {
+        'sponsorship': (
+            claude.get('sponsorship')
+            if claude.get('sponsorship') not in (None, 'Unknown') else inferred['sponsorship']
+        ),
+        'citizenship': (
+            claude.get('citizenship')
+            if claude.get('citizenship') not in (None, 'Unknown') else inferred['citizenship']
+        ),
+    }
+
+
 def batch_classify_ee_claude(titles, api_key):
     """
     Classify a batch of job titles as EE-relevant using Claude Haiku.
@@ -252,7 +304,7 @@ def batch_classify_ee_claude(titles, api_key):
     if not api_key or not titles:
         return {}
     results = {}
-    batch_size = 20
+    batch_size = 40
     for i in range(0, len(titles), batch_size):
         batch = titles[i:i + batch_size]
         numbered = '\n'.join(f'{j + 1}. "{t}"' for j, t in enumerate(batch))
@@ -297,22 +349,12 @@ def extract_job_metadata_claude(title, description_text, api_key):
     """
     if not api_key or not description_text:
         return {'sponsorship': 'Unknown', 'citizenship': 'Unknown'}
-    truncated = description_text[:2500]
+    truncated = description_text[:1200]
     prompt = (
-        'Analyze this job posting and return JSON with exactly these two fields:\n\n'
-        '"sponsorship": one of:\n'
-        '  "Yes — sponsorship available" — if posting explicitly offers/provides visa sponsorship\n'
-        '  "No — does NOT offer sponsorship" — if posting says must be authorized to work, '
-        'no sponsorship available, or requires existing US work authorization\n'
-        '  "Unknown" — if not mentioned\n\n'
-        '"citizenship": one of:\n'
-        '  "Yes — U.S. citizenship required" — if US citizenship is required, or if the role '
-        'requires a security clearance (Secret, Top Secret, TS/SCI)\n'
-        '  "No" — if explicitly states citizenship is not required\n'
-        '  "Unknown" — if not mentioned\n\n'
-        f'Title: "{title}"\n'
-        f'Description:\n{truncated}\n\n'
-        'Return ONLY valid JSON: {"sponsorship": "...", "citizenship": "..."}'
+        'JSON only: {"sponsorship":"Yes — sponsorship available"|'
+        '"No — does NOT offer sponsorship"|"Unknown",'
+        '"citizenship":"Yes — U.S. citizenship required"|"No"|"Unknown"}\n'
+        f'Title: {title}\n{truncated}'
     )
     try:
         resp = requests.post(
@@ -812,16 +854,21 @@ def main():
     print(f'Confirmed for add: {len(confirmed)}')
 
     # --- Sponsorship/citizenship (only for listings that will be added) ---
-    if claude_key:
-        for c in confirmed:
-            if listing_exists(listings, c['url'], c['company'], c['title']):
-                continue
-            desc = c.get('description', '')
-            if desc:
-                meta = extract_job_metadata_claude(c['title'], desc, claude_key)
-                c['sponsorship'] = meta.get('sponsorship', 'Unknown')
-                c['citizenship'] = meta.get('citizenship', 'Unknown')
-                time.sleep(0.3)
+    for c in confirmed:
+        role = sanitize_listing_role(c['company'], c['title'])
+        if listing_exists(listings, c['url'], c['company'], role):
+            continue
+        desc = c.get('description', '')
+        if not desc:
+            continue
+        before = infer_metadata_keywords(desc)
+        meta = extract_job_metadata(c['title'], desc, claude_key)
+        c['sponsorship'] = meta.get('sponsorship', 'Unknown')
+        c['citizenship'] = meta.get('citizenship', 'Unknown')
+        if claude_key and (
+            before['sponsorship'] == 'Unknown' or before['citizenship'] == 'Unknown'
+        ):
+            time.sleep(0.2)
 
     added = 0
     for c in confirmed:

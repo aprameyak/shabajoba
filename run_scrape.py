@@ -28,13 +28,15 @@ SEEN_FILE = REPO_ROOT / '.github' / 'data' / 'seen_jobs.json'
 # ---------------------------------------------------------------------------
 sys.path.insert(0, str(REPO_ROOT / '.github' / 'scripts'))
 from scrape_jobs import (
-    is_ee_title, is_internship, is_us_or_canada,
-    classify_season, infer_education, add_listing, normalize_url,
+    is_ee_title,
+    classify_season, infer_education, add_listing,
     sanitize_listing_role,
-    load_json, save_json,
+    load_json, save_json, CLASSIFICATIONS_FILE,
+    candidate_passes_scope, should_llm_classify_title,
+    listing_exists, extract_job_metadata, infer_metadata_keywords,
+    resolve_ambiguous_candidates, batch_classify_ee_claude,
     scrape_greenhouse, scrape_lever, scrape_ashby,
     scrape_workday, scrape_smartrecruiters,
-    batch_classify_ee_claude, extract_job_metadata_claude,
 )
 
 # ---------------------------------------------------------------------------
@@ -242,6 +244,7 @@ def main():
 
     listings = load_json(LISTINGS_FILE, [])
     seen = load_json(SEEN_FILE, {})
+    classifications = load_json(CLASSIFICATIONS_FILE, {})
 
     today = datetime.date.today().isoformat()
     candidates = []
@@ -288,34 +291,53 @@ def main():
 
     print(f'\nTotal raw candidates: {len(candidates)}')
 
-    # ---- EE title classification (LLM preferred, keyword fallback) ----
-    internship_candidates = [c for c in candidates if is_internship(c['title'])]
-    titles_needing_llm = [
-        c['title'] for c in internship_candidates
-        if not is_ee_title(c['title'])  # only send ambiguous titles to LLM
-    ]
-    llm_classifications = {}
-    if titles_needing_llm and claude_key:
-        print(f'Classifying {len(titles_needing_llm)} ambiguous titles via LLM ...')
-        llm_classifications = batch_classify_ee_claude(list(set(titles_needing_llm)), claude_key)
+    in_scope = [c for c in candidates if candidate_passes_scope(c)]
+    print(f'In scope (intern/co-op, US/Canada): {len(in_scope)}')
+
+    titles_to_classify = list({
+        c['title'] for c in in_scope
+        if should_llm_classify_title(c['title'], classifications)
+    })
+    if titles_to_classify and claude_key:
+        print(f'Classifying {len(titles_to_classify)} ambiguous titles via LLM ...')
+        classifications.update(batch_classify_ee_claude(titles_to_classify, claude_key))
 
     confirmed = []
-    for c in internship_candidates:
-        if is_ee_title(c['title']) or llm_classifications.get(c['title']):
+    ambiguous = []
+    for c in in_scope:
+        title = c['title']
+        keyword_match = is_ee_title(title)
+        llm_result = classifications.get(title)
+        if llm_result is True or (llm_result is None and keyword_match):
             confirmed.append(c)
+        elif llm_result is False:
+            pass
+        elif llm_result is None and not keyword_match and claude_key:
+            ambiguous.append(c)
 
-    print(f'After EE+internship filter: {len(confirmed)}')
+    if ambiguous:
+        print(f'Retrying {len(ambiguous)} ambiguous titles ...')
+        confirmed.extend(
+            resolve_ambiguous_candidates(ambiguous, classifications, claude_key, '', {})
+        )
 
-    # ---- Sponsorship/citizenship extraction from descriptions ----
-    if claude_key:
-        print('Extracting sponsorship/citizenship from job descriptions ...')
-        for c in confirmed:
-            desc = c.get('description', '')
-            if desc:
-                meta = extract_job_metadata_claude(c['title'], desc, claude_key)
-                c['sponsorship'] = meta.get('sponsorship', 'Unknown')
-                c['citizenship'] = meta.get('citizenship', 'Unknown')
-                time.sleep(0.3)
+    print(f'After EE filter: {len(confirmed)}')
+
+    for c in confirmed:
+        role = sanitize_listing_role(c['company'], c['title'])
+        if listing_exists(listings, c['url'], c['company'], role):
+            continue
+        desc = c.get('description', '')
+        if not desc:
+            continue
+        before = infer_metadata_keywords(desc)
+        meta = extract_job_metadata(c['title'], desc, claude_key)
+        c['sponsorship'] = meta.get('sponsorship', 'Unknown')
+        c['citizenship'] = meta.get('citizenship', 'Unknown')
+        if claude_key and (
+            before['sponsorship'] == 'Unknown' or before['citizenship'] == 'Unknown'
+        ):
+            time.sleep(0.2)
 
     # ---- Add to listings ----
     added = 0
@@ -348,7 +370,8 @@ def main():
     # ---- Save files ----
     save_json(LISTINGS_FILE, listings)
     save_json(SEEN_FILE, seen)
-    print('Saved listings.json and seen_jobs.json')
+    save_json(CLASSIFICATIONS_FILE, classifications)
+    print('Saved listings.json, seen_jobs.json, and title_classifications.json')
 
     # ---- Rebuild README ----
     print('\nRebuilding README ...')
