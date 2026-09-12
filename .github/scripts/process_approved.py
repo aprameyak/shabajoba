@@ -7,6 +7,8 @@ import subprocess
 from pathlib import Path
 import requests
 
+from scrape_jobs import sanitize_listing_role
+
 LISTINGS_FILE = Path('listings.json')
 
 US_STATES = {
@@ -163,7 +165,9 @@ def main():
         fields = parse_issue_body(body)
 
         company = fields.get('Company Name', '').strip()
-        role = fields.get('Role / Job Title', '').strip()
+        role = sanitize_listing_role(
+            company, fields.get('Role / Job Title', '').strip()
+        )
         listing_type_str = fields.get('Listing Type', 'Internship')
         season_str = fields.get('Season / Term', 'Summer 2027')
         location_raw = fields.get('Location', '').strip()
@@ -171,6 +175,8 @@ def main():
         citizenship = fields.get('U.S. Citizenship Required?', 'Unknown').strip()
         education = fields.get('Education Level', 'Undergrad').strip()
         apply_link = fields.get('Direct Application Link', '').strip()
+        if 'linkedin.com' in apply_link:
+            apply_link = apply_link.split('?')[0]
 
         if not all([company, role, location_raw, apply_link]):
             print(f'Issue #{number}: missing required fields, skipping')

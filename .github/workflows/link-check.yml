@@ -31,6 +31,9 @@ jobs:
       - name: Check links
         run: python .github/scripts/check_links.py
 
+      - name: Validate listings
+        run: python .github/scripts/validate_listings.py
+
       - name: Commit closed positions
         run: |
           git config user.name "Aprameya Kannan"
