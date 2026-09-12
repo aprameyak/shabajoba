@@ -7,14 +7,13 @@ on:
 
 concurrency:
   group: readme-updates
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      issues: write
 
     steps:
       - uses: actions/checkout@v4
@@ -32,8 +31,6 @@ jobs:
       - name: Scrape job boards
         timeout-minutes: 50
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           USAJOBS_API_KEY: ${{ secrets.USAJOBS_API_KEY }}
