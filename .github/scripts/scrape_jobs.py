@@ -852,6 +852,8 @@ def main():
 
     save_json(CLASSIFICATIONS_FILE, classifications)
     save_json(SEEN_FILE, seen)
+    if gemini_key:
+        save_gemini_usage(gemini_usage)
     print('Done.')
 
 
