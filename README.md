@@ -91,7 +91,7 @@
 | Dennis Group | Electrical Engineer Intern | Springfield, MA | Spring 2027 | Undergrad | 🔒 | Sep 3 |
 | ↳ | Electrical Engineer Intern | Springfield, MA | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | Eaton | Electrical Engineer Intern/Co-op - Research & Development Engineering | Moon Township, PA | Summer 2027 | Undergrad | <a href="https://eaton.eightfold.ai/careers/job/687238596674" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
-| Emerson | Digital Hardware Engineer Intern | Austin, TX | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/digital-hardware-engineer-intern-at-emerson-4461782677" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
+| Emerson | Digital Hardware Engineer Intern | Austin, TX | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | GE Healthcare | Engineering Development Program Intern - Hardware | Waukesha, WI | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | Hudson River Trading | Hardware Engineer Intern | New York, NY | Summer 2027 | Undergrad | <a href="https://www.hudsonrivertrading.com/careers/job/?gh_jid=7899574" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | IMC | Hardware Engineer Intern | Chicago, IL | Summer 2027 | Undergrad | <a href="https://www.imc.com/us/careers/jobs/4823945101" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
