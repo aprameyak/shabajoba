@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Micron Technology | Intern - Semiconductor Research & Technology Development | Albany, NY | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/job/Albany-NY/Intern---Semiconductor-Research---Technology-Development_JR110876" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 15 |
 | Antares | Electrical Engineering Intern | Los Angeles, CA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-summer-2027-at-antares-4465606996" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | Black & Veatch | Electrical Engineer Intern - Water | Overland Park, KS | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-intern-water-at-black-veatch-4463661093" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | Enercon Services, Inc. | Intern - Electrical Engineer - Nuclear Design Team | Fort Worth, TX | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/intern-electrical-engineer-nuclear-design-team-at-enercon-services-inc-4461936076" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
