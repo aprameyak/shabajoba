@@ -4,6 +4,8 @@
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
 | Rocket Lab 🇺🇸 | RF Engineering Intern | Long Beach, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7991657003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 17 |
+| ↳ | Test Engineering Intern - Manufacturing | Long Beach, CA | Spring 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7987042003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 17 |
+| ↳ | Test Engineering Intern | Stennis Space Center, MS | Spring 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7990352003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 17 |
 | Micron Technology | Intern - Semiconductor Research & Technology Development | Albany, NY | Summer 2027 | Undergrad | 🔒 | Sep 15 |
 | Antares | Electrical Engineering Intern | Los Angeles, CA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-summer-2027-at-antares-4465606996" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | Black & Veatch | Electrical Engineer Intern - Water | Overland Park, KS | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-intern-water-at-black-veatch-4463661093" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
