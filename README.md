@@ -3,6 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Micron Technology | Intern - ASIC Digital Design | Minneapolis, MN | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/job/Minneapolis-MN/Intern---ASIC-Digital-Design_JR112163" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 18 |
 | Rocket Lab 🇺🇸 | RF Engineering Intern | Long Beach, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7991657003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 17 |
 | ↳ | Test Engineering Intern - Manufacturing | Long Beach, CA | Spring 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7987042003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 17 |
 | ↳ | Test Engineering Intern | Stennis Space Center, MS | Spring 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7990352003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 17 |
