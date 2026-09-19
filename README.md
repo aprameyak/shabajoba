@@ -3,7 +3,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
-| Micron Technology | Intern - ASIC Digital Design | Minneapolis, MN | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/job/Minneapolis-MN/Intern---ASIC-Digital-Design_JR112163" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 18 |
+| Micron Technology | Intern - ASIC Digital Design | Minneapolis, MN | Summer 2027 | Undergrad | 🔒 | Sep 18 |
 | Rocket Lab 🇺🇸 | RF Engineering Intern | Long Beach, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7991657003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 17 |
 | ↳ | Test Engineering Intern - Manufacturing | Long Beach, CA | Spring 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7987042003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 17 |
 | ↳ | Test Engineering Intern | Stennis Space Center, MS | Spring 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7990352003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 17 |
@@ -17,7 +17,7 @@
 | IBM | Quantum Hardware EDA & Circuit Design Intern | Yorktown Heights, NY | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/quantum-hardware-eda-circuit-design-intern-2027-at-ibm-4461412068" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | Invenergy | Internships - Electrical Engineering (Grid Focus) | Chicago, IL | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-summer-internships-electrical-engineering-grid-focus-at-invenergy-4464904129" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | ITW Food Equipment Group | Electrical Engineering Intern | Troy, OH | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-at-itw-food-equipment-group-4463397857" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
-| Kiewit | Electrical Engineer Intern - Nuclear Solutions | Lenexa, KS | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-intern-kiewit-nuclear-solutions-summer-2027-at-kiewit-4462917911" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
+| Kiewit | Electrical Engineer Intern - Nuclear Solutions | Lenexa, KS | Summer 2027 | Undergrad | 🔒 | Sep 12 |
 | ↳ | Electrical Engineer Intern - Power Engineering | Lenexa, KS | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-intern-kiewit-power-engineering-summer-2027-at-kiewit-4461997537" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | ↳ | Substation Engineer Intern - Power Engineering | Lenexa, KS | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/substation-engineer-intern-kiewit-power-engineering-summer-2027-at-kiewit-4463189755" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | MKS Inc. | Electrical Engineering Intern | Andover, MA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-spring-electrical-engineering-intern-r20852-at-mks-inc-4464130054" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
@@ -229,7 +229,7 @@
 | Zipline | Long Range Platform Hardware Engineering Intern | South San Francisco, CA | Summer 2027 | Undergrad | 🔒 | Aug 19 |
 | Accelevation | Electrical Engineering Intern | Miamisburg, OH | Summer 2027 | Undergrad | 🔒 | Aug 17 |
 | CF Industries | Intern, Electrical Engineer | Claremore, OK | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/intern-electrical-engineer-at-cf-industries-4455337708" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 17 |
-| IMEG | Electrical Engineering Intern | Madison, WI | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-madison-wi-at-imeg-4454411597" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 17 |
+| IMEG | Electrical Engineering Intern | Madison, WI | Summer 2027 | Undergrad | 🔒 | Aug 17 |
 | Micron Technology | Intern - EUV & Materials Lithography | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 17 |
 | ↳ | Intern - Process Development Engineer, Thin Films | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 17 |
 | ↳ | Intern - Wet Etch Process Development Engineer | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 17 |
