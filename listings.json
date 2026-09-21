@@ -806,7 +806,7 @@
   {
     "company": "Texas Instruments",
     "role": "Digital IC Design Engineer Intern",
-    "location": "Knoxville, TNDallas, TXTucson, AZ",
+    "location": "Knoxville, TN; Dallas, TX; Tucson, AZ",
     "type": "offcycle",
     "season": "Fall 2026",
     "education": "Masters",
@@ -842,7 +842,7 @@
   {
     "company": "Boeing",
     "role": "Microelectronics R&D Intern - Engineering & Technology Innovation",
-    "location": "Tukwila, WAHuntington Beach, CA",
+    "location": "Tukwila, WA; Huntington Beach, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Masters",
@@ -3517,18 +3517,6 @@
   },
   {
     "company": "Blue Origin",
-    "role": "Avionics Software Intern - Undergraduate",
-    "location": "Seattle, WA",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://blueorigin.wd5.myworkdayjobs.com/blueorigin/job/Greater-Seattle-Area/Summer-2027-Avionics-Software-Internship---Undergraduate_R71424",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-01"
-  },
-  {
-    "company": "Blue Origin",
     "role": "Test Engineer Intern",
     "location": "Denver, CO; Huntsville, AL; Van Horn, TX",
     "type": "summer",
@@ -3703,18 +3691,6 @@
     "season": "Fall 2026",
     "education": "Undergrad; Masters",
     "url": "https://careers.qorvo.com/job/Greensboro-Characterization-Engineering-Intern-NC-27409/1424342800/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Software Characterization Engineer Intern",
-    "location": "Greensboro, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Greensboro-Software-Characterization-Eng-Intern-NC-27409/1420018600/?ats=successfactors",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-08-31"
@@ -6606,18 +6582,6 @@
     "type": "offcycle",
     "season": "Fall 2026",
     "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-10"
-  },
-  {
-    "company": "Blue Origin",
-    "role": "Avionics Software Intern",
-    "location": "Seattle, WA; Longmont, CO; Denver, CO",
-    "type": "offcycle",
-    "season": "Spring 2027",
-    "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",

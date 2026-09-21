@@ -48,11 +48,13 @@ INTERNSHIP_SIGNAL = re.compile(
 OUT_OF_SCOPE_ROLE = re.compile(
     r'entry[\s-]?level|new[\s-]?grad|'
     r'(?<!electro-)(?<!electro )mechanical engineer|'
-    r'software engineer|data scientist|'
+    r'\bsoftware\b|data scientist|'
     r'(?<!radar )(?<!asic )machine learning|full[\s-]?stack|'
     r'civil engineer|chemical engineer|manufacturing process',
     re.I,
 )
+
+MASHED_LOCATION = re.compile(r',\s*[A-Z]{2}[A-Z]')
 
 
 def validate_entry(entry):
@@ -119,6 +121,8 @@ def validate_entry(entry):
 
     # Location format (check each semicolon-separated segment)
     if url:  # only check live listings
+        if MASHED_LOCATION.search(location):
+            violations.append(f'mashed multi-city location: {location!r}')
         for seg in location.split(';'):
             seg = seg.strip()
             if not seg:

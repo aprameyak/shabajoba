@@ -167,8 +167,23 @@ CA_PROVINCE_NAMES = {
 }
 
 
+def unmash_locations(loc):
+    """Fix mashed multi-city strings like `City, STCity, ST` → `City, ST; City, ST`."""
+    if not loc:
+        return loc
+    parts = []
+    for seg in str(loc).split(';'):
+        seg = seg.strip()
+        if not seg:
+            continue
+        fixed = re.sub(r'(,\s*[A-Z]{2})(?=[A-Z])', r'\1; ', seg)
+        parts.extend(p.strip() for p in fixed.split(';') if p.strip())
+    return '; '.join(parts)
+
+
 def normalize_location(loc):
     """Normalize ATS locations to `City, ST` / `Remote (US|Canada)`."""
+    loc = unmash_locations(loc)
     if not loc:
         return loc
     loc = loc.strip()
@@ -256,8 +271,8 @@ def is_ee_title(title):
     t = title.lower()
     if any(kw in t for kw in EXCLUDE_TITLE_KEYWORDS):
         return False
-    # "Software / Hardware" and similar hybrids are usually SWE-primary
-    if 'software' in t and 'hardware' in t:
+    # EE-only list: any software-titled role is out (avionics software, etc.)
+    if 'software' in t:
         return False
     # Bare "systems engineer" is too ambiguous (often IT/SWE) — require EE signals
     if 'systems engineer' in t or 'systems engineering' in t:
@@ -1054,7 +1069,7 @@ def scrape_simplify(seen):
         company = (e.get('company_name') or '').strip()
         apply_url = (e.get('url') or '').strip()
         locs = e.get('locations') or []
-        location = '; '.join(locs)
+        location = unmash_locations('; '.join(str(x).strip() for x in locs if str(x).strip()))
         active = e.get('active', True)
         if not company or not title:
             continue
