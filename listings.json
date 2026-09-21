@@ -7522,5 +7522,89 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-01-27"
+  },
+  {
+    "company": "General Motors",
+    "role": "Global Manufacturing Electrical & SDV Intern",
+    "location": "Warren, MI",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://generalmotors.wd5.myworkdayjobs.com/job/Warren-Michigan-United-States-of-America/XMLNAME-2027-Summer-Intern---Global-Manufacturing-Electrical---SDV_JR-202619352",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-21"
+  },
+  {
+    "company": "Micron Technology",
+    "role": "DRAM Technology Physical Design and Block-Level PPA Optimization Intern",
+    "location": "Boise, ID",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://micron.wd1.myworkdayjobs.com/job/Boise-ID---Main-Site/Intern---DRAM-Technology-Physical-Design-and-Block-Level-PPA-Optimization_JR109584",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-21"
+  },
+  {
+    "company": "RTX",
+    "role": "Semiconductor Foundry Intern",
+    "location": "Andover-Ar2, MA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://globalhr.wd5.myworkdayjobs.com/job/US-MA-ANDOVER-AR2--362-Lowell-St--AR2-PLYMOUTH-BLDG/Semiconductor-Foundry-Intern--Summer-2027-_01875840",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-21"
+  },
+  {
+    "company": "Stryker",
+    "role": "Electrical Engineering - Michigan Intern",
+    "location": "Portage, MI",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://stryker.wd1.myworkdayjobs.com/job/Portage-Michigan/Summer-2027-Internship---Electrical-Engineering---Michigan_R572609",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-21"
+  },
+  {
+    "company": "Stryker",
+    "role": "Electrical Engineering - Florida Intern",
+    "location": "Weston, FL",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://stryker.wd1.myworkdayjobs.com/job/Weston-Florida/Electrical-Engineering-Intern---Weston--FL_R572740",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-21"
+  },
+  {
+    "company": "Zoox",
+    "role": "Part-Time Student Worker - Test Engineering",
+    "location": "San Mateo, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad; Masters; PhD",
+    "url": "",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-21"
+  },
+  {
+    "company": "Qorvo",
+    "role": "Product Management Engineer Intern - High Performance Analog",
+    "location": "Richardson, TX",
+    "type": "offcycle",
+    "season": "Fall 2026",
+    "education": "Undergrad",
+    "url": "https://careers.qorvo.com/job/Richardson-Product-Management-Engineering-Intern-TX-75081/1424705200/?ats=successfactors",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-21"
   }
 ]
