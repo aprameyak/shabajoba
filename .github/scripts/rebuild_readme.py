@@ -136,6 +136,22 @@ def main():
 
     content = replace_table(content, 'listings', build_table(listings))
 
+    # Refresh open/total counts in the README blurb if present
+    open_n = sum(1 for e in listings if e.get('url'))
+    total = len(listings)
+    summer_open = sum(1 for e in listings if e.get('type') == 'summer' and e.get('url'))
+    off_open = sum(1 for e in listings if e.get('type') == 'offcycle' and e.get('url'))
+    content = re.sub(
+        r'\*\*\d+ open\*\* · \d+ total · Summer 2027 \(\d+ open\) · Off-cycle & co-ops \(\d+ open\)',
+        f'**{open_n} open** · {total} total · Summer 2027 ({summer_open} open) · Off-cycle & co-ops ({off_open} open)',
+        content,
+    )
+    content = re.sub(
+        r'open%20roles-\d+',
+        f'open%20roles-{open_n}',
+        content,
+    )
+
     with open(README_FILE, 'w', encoding='utf-8') as f:
         f.write(content)
 

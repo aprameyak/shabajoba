@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Validate listings.json for the shabajaba EE internship repo.
+Validate listings.json for the shabajoba EE internship repo.
 Exits 0 if clean, 1 if violations are found.
 """
 
@@ -41,6 +41,18 @@ COUNTRY_IN_LOCATION = re.compile(r'United States|Canada(?!\))', re.I)
 
 LINKEDIN_TRACKING = re.compile(r'linkedin\.com.*\?(?!utm_source=aprameyak)')
 INTERNAL_API_URL = re.compile(r'api\.smartrecruiters|/v1/candidates|/v1/')
+
+INTERNSHIP_SIGNAL = re.compile(
+    r'intern|internship|co-?op|student|pathways', re.I
+)
+OUT_OF_SCOPE_ROLE = re.compile(
+    r'entry[\s-]?level|new[\s-]?grad|'
+    r'(?<!electro-)(?<!electro )mechanical engineer|'
+    r'software engineer|data scientist|'
+    r'(?<!radar )(?<!asic )machine learning|full[\s-]?stack|'
+    r'civil engineer|chemical engineer|manufacturing process',
+    re.I,
+)
 
 
 def validate_entry(entry):
@@ -100,6 +112,10 @@ def validate_entry(entry):
         violations.append('location annotation in role title')
     if company.lower() in role.lower():
         violations.append('company name appears in role title')
+    if role and not INTERNSHIP_SIGNAL.search(role):
+        violations.append('role missing internship/co-op signal')
+    if role and OUT_OF_SCOPE_ROLE.search(role):
+        violations.append('role appears out of scope (new-grad/non-EE)')
 
     # Location format (check each semicolon-separated segment)
     if url:  # only check live listings

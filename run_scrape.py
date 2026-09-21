@@ -2,32 +2,24 @@
 """
 Comprehensive EE internship scraper for 2027.
 Run from repo root: python3 run_scrape.py
+
+Uses companies.yml + .github/scripts/scrape_jobs.py (Greenhouse, Lever, Ashby,
+Workday, SmartRecruiters, Workable, Oracle, iCIMS, USAJOBS).
+Optionally scrapes LinkedIn via Playwright when installed.
 """
 
 import sys
 import os
-import json
-import re
 import time
 import datetime
 import subprocess
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-import requests
-
-# ---------------------------------------------------------------------------
-# Paths (relative to repo root)
-# ---------------------------------------------------------------------------
 REPO_ROOT = Path(__file__).parent
-LISTINGS_FILE = REPO_ROOT / 'listings.json'
-SEEN_FILE = REPO_ROOT / '.github' / 'data' / 'seen_jobs.json'
-
-# ---------------------------------------------------------------------------
-# Import helper functions and scrapers from existing script
-# ---------------------------------------------------------------------------
 sys.path.insert(0, str(REPO_ROOT / '.github' / 'scripts'))
-from scrape_jobs import (
+
+from scrape_jobs import (  # noqa: E402
     is_ee_title,
     classify_season, infer_education, add_listing,
     sanitize_listing_role,
@@ -35,110 +27,14 @@ from scrape_jobs import (
     candidate_passes_scope, should_llm_classify_title,
     listing_exists, extract_job_metadata, infer_metadata_keywords,
     resolve_ambiguous_candidates, batch_classify_ee_claude,
-    scrape_greenhouse, scrape_lever, scrape_ashby,
-    scrape_workday, scrape_smartrecruiters,
+    build_scrape_tasks, scrape_usajobs,
+    LISTINGS_FILE, SEEN_FILE, normalize_url, is_internship, is_us_or_canada,
+    normalize_location,
 )
 
-# ---------------------------------------------------------------------------
-# Extended company lists
-# ---------------------------------------------------------------------------
-
-GREENHOUSE_COMPANIES = [
-    ('SpaceX', 'spacex'),
-    ('Rocket Lab', 'rocketlab'),
-    ('Waymo', 'waymo'),
-    ('Verkada', 'verkada'),
-    ('Lucid Motors', 'lucidmotors'),
-    ('Tenstorrent', 'tenstorrent'),
-    ('Astranis', 'astranis'),
-    ('Nuro', 'nuro'),
-    ('Lattice Semiconductor', 'lattice'),
-    ('Flex Ltd', 'flex'),
-    ('Mercury Systems', 'mercury'),
-    ('Graphcore', 'graphcore'),
-    ('Ampere Computing', 'amperecomputing'),
-    ('SambaNova Systems', 'sambanova'),
-    ('Joby Aviation', 'jobyaviation'),
-    ('Lilium', 'lilium'),
-    ('Saildrone', 'saildrone'),
-    ('Fortive', 'fortive'),
-]
-
-LEVER_COMPANIES = [
-    ('Blue Origin', 'blueorigin'),
-    ('Shield AI', 'shieldai'),
-    ('Zoox', 'zoox'),
-    ('Exowatt', 'exowatt'),
-    ('Plus', 'plus-ai'),
-    ('Sarcos Technology', 'sarcos'),
-    ('Epirus', 'epirus'),
-]
-
-ASHBY_COMPANIES = [
-    ('Anduril Industries', 'anduril'),
-    ('Applied Intuition', 'appliedintuition'),
-    ('Astera Labs', 'asteralabs'),
-    ('Cerebras Systems', 'cerebras'),
-    ('Etched', 'etched'),
-    ('Groq', 'groq'),
-    ('Varda Space', 'varda'),
-    ('Relativity Space', 'relativityspace'),
-    ('Hermeus', 'hermeus'),
-    ('Archer Aviation', 'archeraviation'),
-    ('Wisk Aero', 'wisk'),
-    ('Axcelis Technologies', 'axcelis'),
-    ('Figure', 'figure-ai'),
-    ('NextSilicon', 'nextsilicon'),
-    ('Perceive', 'perceive'),
-    ('Untether AI', 'untether-ai'),
-    ('Charge Robotics', 'charge-robotics'),
-    ('Form Energy', 'formenergy'),
-    ('d-Matrix', 'd-matrix'),
-    ('REGENT Craft', 'regent'),
-    ('Rain Neuromorphics', 'rain'),
-    ('Airspeed', 'airspeed'),
-    ('ATLAS Space Operations', 'atlas'),
-    ('Wayve', 'wayve'),
-    ('Ghost Autonomy', 'ghost'),
-    ('Atomic Semi', 'atomic-semi'),
-    ('Fervo Energy', 'fervoenergy'),
-    ('Electra Aero', 'electra'),
-    ('Parallel Systems', 'parallel-systems'),
-]
-
-WORKDAY_COMPANIES = [
-    ('Analog Devices', 'analogdevices', 'External', '1'),
-    ('Intel', 'intel', 'External', '1'),
-    ('NVIDIA', 'nvidia', 'NVIDIAExternalCareerSite', '5'),
-    ('Micron Technology', 'micron', 'External', '1'),
-    ('Leidos', 'leidos', 'External', '5'),
-    ('ON Semiconductor', 'onsemi', 'External', '1'),
-    ('Lam Research', 'lamresearch', 'External', '1'),
-    ('KLA Corporation', 'kla', 'External', '1'),
-    ('Marvell Technology', 'marvell', 'External', '1'),
-    ('Keysight Technologies', 'keysight', 'External', '1'),
-    ('Coherent Corp', 'coherent', 'External', '1'),
-    ('Raytheon', 'rtx', 'External', '1'),
-    ('Northrop Grumman', 'ngc', 'External', '1'),
-    ('L3Harris', 'l3harris', 'External', '1'),
-    ('Honeywell', 'honeywell', 'External', '1'),
-    ('TE Connectivity', 'te', 'External', '1'),
-    ('Broadcom', 'broadcom', 'External', '1'),
-    ('Qualcomm', 'qualcomm', 'External', '1'),
-]
-
-SMARTRECRUITERS_COMPANIES = [
-    ('Western Digital', 'WesternDigital'),
-    ('Vishay Intertechnology', 'Vishay'),
-    ('Teradyne', 'Teradyne'),
-]
-
-# ---------------------------------------------------------------------------
-# LinkedIn scraping via Playwright
-# ---------------------------------------------------------------------------
 
 def scrape_linkedin(seen):
-    """Try to scrape LinkedIn public job search pages with Playwright."""
+    """LinkedIn guest search via Playwright (optional dependency)."""
     jobs = []
     try:
         from playwright.sync_api import sync_playwright, TimeoutError as PWTimeout
@@ -148,50 +44,16 @@ def scrape_linkedin(seen):
 
     queries = [
         'electrical engineer intern 2027',
+        'electrical engineering co-op 2027',
         'hardware engineer intern 2027',
-        'EE intern summer 2027',
+        'FPGA intern 2027',
+        'ASIC intern 2027',
+        'analog design intern 2027',
+        'RF engineer intern 2027',
+        'power systems intern 2027',
+        'VLSI intern 2027',
+        'PCB design intern 2027',
     ]
-
-    def _extract_jobs_from_page(page, query):
-        found = []
-        try:
-            items = page.query_selector_all('li.jobs-search__results-list > *')
-            if not items:
-                items = page.query_selector_all('div.base-card')
-            for item in items[:30]:
-                try:
-                    title_el = item.query_selector('h3.base-search-card__title, h3.job-search-card__title')
-                    company_el = item.query_selector('h4.base-search-card__subtitle, a.hidden-nested-link')
-                    location_el = item.query_selector('span.job-search-card__location')
-                    link_el = item.query_selector('a.base-card__full-link, a[href*="/jobs/view/"]')
-
-                    title = title_el.inner_text().strip() if title_el else ''
-                    company = company_el.inner_text().strip() if company_el else ''
-                    location = location_el.inner_text().strip() if location_el else ''
-                    url = link_el.get_attribute('href') if link_el else ''
-
-                    if not title or not url:
-                        continue
-                    if not is_internship(title) or not is_ee_title(title):
-                        continue
-                    if location and not is_us_or_canada(location):
-                        continue
-
-                    key = f'linkedin:{normalize_url(url)}'
-                    if key in seen:
-                        continue
-                    found.append({
-                        'key': key,
-                        'company': company or 'Unknown',
-                        'title': title,
-                        'location': location or 'United States',
-                        'url': url,
-                    })
-                except Exception:
-                    continue
-        except Exception as e:
-            print(f'LinkedIn parse error: {e}')
-        return found
 
     try:
         with sync_playwright() as pw:
@@ -210,18 +72,112 @@ def scrape_linkedin(seen):
                 url = (
                     f'https://www.linkedin.com/jobs/search/'
                     f'?keywords={kw}&f_TPR=r2592000&f_JT=I'
+                    f'&location=United%20States'
                 )
                 print(f'LinkedIn: fetching "{query}" ...')
                 try:
                     page.goto(url, timeout=20000, wait_until='domcontentloaded')
                     page.wait_for_timeout(3000)
-                    found = _extract_jobs_from_page(page, query)
-                    print(f'  LinkedIn "{query}": {len(found)} matches')
-                    jobs.extend(found)
+                    items = page.query_selector_all('li.jobs-search__results-list > *')
+                    if not items:
+                        items = page.query_selector_all('div.base-card')
+                    found = 0
+                    for item in items[:40]:
+                        try:
+                            title_el = item.query_selector(
+                                'h3.base-search-card__title, h3.job-search-card__title'
+                            )
+                            company_el = item.query_selector(
+                                'h4.base-search-card__subtitle, a.hidden-nested-link'
+                            )
+                            location_el = item.query_selector(
+                                'span.job-search-card__location'
+                            )
+                            link_el = item.query_selector(
+                                'a.base-card__full-link, a[href*="/jobs/view/"]'
+                            )
+                            title = title_el.inner_text().strip() if title_el else ''
+                            company = company_el.inner_text().strip() if company_el else ''
+                            location = location_el.inner_text().strip() if location_el else ''
+                            apply_url = link_el.get_attribute('href') if link_el else ''
+                            if not title or not apply_url:
+                                continue
+                            if not is_internship(title) or not is_ee_title(title):
+                                continue
+                            if location and not is_us_or_canada(location):
+                                continue
+                            key = f'linkedin:{normalize_url(apply_url)}'
+                            if key in seen:
+                                continue
+                            jobs.append({
+                                'key': key,
+                                'company': company or 'Unknown',
+                                'title': title,
+                                'location': location or 'United States',
+                                'url': apply_url,
+                            })
+                            found += 1
+                        except Exception:
+                            continue
+                    print(f'  LinkedIn "{query}": {found} matches')
                 except PWTimeout:
                     print(f'  LinkedIn "{query}": timeout, skipping')
                 except Exception as e:
                     print(f'  LinkedIn "{query}": {e}')
+                time.sleep(2)
+
+            # Also Canada search for a few high-signal queries
+            for query in queries[:4]:
+                kw = query.replace(' ', '+')
+                url = (
+                    f'https://www.linkedin.com/jobs/search/'
+                    f'?keywords={kw}&f_TPR=r2592000&f_JT=I'
+                    f'&location=Canada'
+                )
+                print(f'LinkedIn CA: fetching "{query}" ...')
+                try:
+                    page.goto(url, timeout=20000, wait_until='domcontentloaded')
+                    page.wait_for_timeout(2500)
+                    items = page.query_selector_all('div.base-card')
+                    found = 0
+                    for item in items[:30]:
+                        try:
+                            title_el = item.query_selector('h3.base-search-card__title')
+                            company_el = item.query_selector(
+                                'h4.base-search-card__subtitle, a.hidden-nested-link'
+                            )
+                            location_el = item.query_selector(
+                                'span.job-search-card__location'
+                            )
+                            link_el = item.query_selector(
+                                'a.base-card__full-link, a[href*="/jobs/view/"]'
+                            )
+                            title = title_el.inner_text().strip() if title_el else ''
+                            company = company_el.inner_text().strip() if company_el else ''
+                            location = location_el.inner_text().strip() if location_el else ''
+                            apply_url = link_el.get_attribute('href') if link_el else ''
+                            if not title or not apply_url:
+                                continue
+                            if not is_internship(title) or not is_ee_title(title):
+                                continue
+                            if location and not is_us_or_canada(location):
+                                continue
+                            key = f'linkedin:{normalize_url(apply_url)}'
+                            if key in seen:
+                                continue
+                            jobs.append({
+                                'key': key,
+                                'company': company or 'Unknown',
+                                'title': title,
+                                'location': location or 'Canada',
+                                'url': apply_url,
+                            })
+                            found += 1
+                        except Exception:
+                            continue
+                    print(f'  LinkedIn CA "{query}": {found} matches')
+                except Exception as e:
+                    print(f'  LinkedIn CA "{query}": {e}')
                 time.sleep(2)
 
             browser.close()
@@ -230,10 +186,6 @@ def scrape_linkedin(seen):
 
     return jobs
 
-
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
 
 def main():
     print('=' * 60)
@@ -245,21 +197,16 @@ def main():
     listings = load_json(LISTINGS_FILE, [])
     seen = load_json(SEEN_FILE, {})
     classifications = load_json(CLASSIFICATIONS_FILE, {})
-
     today = datetime.date.today().isoformat()
     candidates = []
 
-    # ---- Build task list ----
-    tasks = (
-        [(scrape_greenhouse, (c, t, seen)) for c, t in GREENHOUSE_COMPANIES] +
-        [(scrape_lever, (c, s, seen)) for c, s in LEVER_COMPANIES] +
-        [(scrape_ashby, (c, s, seen)) for c, s in ASHBY_COMPANIES] +
-        [(scrape_smartrecruiters, (c, i, seen)) for c, i in SMARTRECRUITERS_COMPANIES]
-    )
-
-    print(f'\nRunning {len(tasks)} parallel API scrapers ...')
+    tasks = build_scrape_tasks(seen)
+    print(f'\nRunning {len(tasks)} ATS scrapers ...')
     with ThreadPoolExecutor(max_workers=12) as pool:
-        futures = {pool.submit(fn, *args): args[0] for fn, args in tasks}
+        futures = {
+            pool.submit(fn, *args): label
+            for fn, args, label in tasks
+        }
         for future in as_completed(futures):
             company = futures[future]
             try:
@@ -272,17 +219,17 @@ def main():
             except Exception as e:
                 print(f'  {company} thread error: {e}')
 
-    # ---- Workday (sequential to avoid rate limiting) ----
-    print('\nRunning Workday scrapers sequentially ...')
-    for company, tenant, site, board_num in WORKDAY_COMPANIES:
-        found = scrape_workday(company, tenant, site, board_num, seen)
-        if found:
-            print(f'  {company}: {len(found)} candidates')
-            candidates.extend(found)
-        else:
-            print(f'  {company}: 0')
+    print('\n=== USAJOBS ===')
+    usajobs_found = scrape_usajobs(seen)
+    candidates.extend(usajobs_found)
+    if usajobs_found:
+        print(f'  USAJOBS: {len(usajobs_found)} candidates')
 
-    # ---- LinkedIn ----
+    print('\n=== SimplifyJobs Hardware/EE ===')
+    from scrape_jobs import scrape_simplify
+    simplify_found = scrape_simplify(seen)
+    candidates.extend(simplify_found)
+
     print('\nRunning LinkedIn scraper ...')
     linkedin_found = scrape_linkedin(seen)
     if linkedin_found:
@@ -339,14 +286,13 @@ def main():
         ):
             time.sleep(0.2)
 
-    # ---- Add to listings ----
     added = 0
     for c in confirmed:
         listing_type, season = classify_season(c['title'])
         entry = {
             'company': c['company'],
             'role': sanitize_listing_role(c['company'], c['title']),
-            'location': c['location'],
+            'location': normalize_location(c['location']),
             'type': listing_type,
             'season': season,
             'education': infer_education(c['title']),
@@ -358,22 +304,17 @@ def main():
         if add_listing(listings, entry):
             added += 1
             print(f'  Added: {c["company"]} — {c["title"]}')
-        # Always mark seen
         seen[c['key']] = today
 
-    # Also mark all candidates as seen (even filtered-out ones) to avoid re-processing
     for c in candidates:
         seen[c['key']] = today
 
     print(f'\nNew listings added: {added}')
 
-    # ---- Save files ----
     save_json(LISTINGS_FILE, listings)
     save_json(SEEN_FILE, seen)
     save_json(CLASSIFICATIONS_FILE, classifications)
-    print('Saved listings.json, seen_jobs.json, and title_classifications.json')
 
-    # ---- Rebuild README ----
     print('\nRebuilding README ...')
     result = subprocess.run(
         ['python3', '.github/scripts/rebuild_readme.py'],

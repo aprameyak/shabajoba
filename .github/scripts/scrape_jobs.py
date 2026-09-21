@@ -19,22 +19,49 @@ CLAUDE_MODEL = 'claude-haiku-4-5-20251001'
 ANTHROPIC_API_URL = 'https://api.anthropic.com/v1/messages'
 
 EE_TITLE_KEYWORDS = [
-    'electrical engineer', 'hardware engineer', 'analog engineer',
-    'rf engineer', 'rf design', 'power engineer', 'signal integrity',
+    'electrical engineer', 'electrical engineering', 'electrical',
+    'electronics engineer', 'electronics', 'interconnect',
+    'hardware engineer', 'hardware engineering', 'hardware intern',
+    'hardware r&d', 'hardware design', 'hardware development',
+    'hardware systems', 'hardware developer', 'hardware quality',
+    'hardware embedded',     'analog engineer', 'analog design', 'analog validation', 'analog ',
+    'digital design', 'digital circuit',
+    'rf engineer', 'rf design', 'rf cyber', 'rf technology', 'wireless',
+    'power engineer', 'power design', 'signal integrity',
     'pcb design', 'pcb engineer', 'vlsi', 'asic', 'fpga', 'embedded hardware',
-    'test engineer', 'systems engineer', 'signal processing', 'circuit design',
-    'photonics', 'mixed signal', 'mixed-signal', 'power electronics', 'silicon',
-    'semiconductor', 'ic design', 'chip design', 'soc design', 'soc engineer',
-    'verification engineer', 'physical design', 'layout engineer',
-    'product engineer', 'applications engineer', 'field applications engineer',
-    'power systems', 'electric vehicle', 'battery systems', 'battery engineer',
-    'motor control', 'avionics', 'electrical systems', 'microelectronics',
-    'optoelectronics', 'electro-optical', 'radar engineer', 'antenna engineer',
-    'electromagnetics', 'high voltage', 'power conversion', 'inverter',
-    'substations', 'silicon photonics', 'test development engineer',
+    'test engineer', 'test engineering', 'test solutions', 'signal processing',
+    'circuit design', 'circuitry', 'circuit analysis', 'circuits',
+    'soi design', 'soi ',
+    'photonics', 'photonic', 'mixed signal', 'mixed-signal', 'power electronics',
+    'silicon', 'semiconductor', 'ic design', 'chip design', 'chip simulation',
+    'soc design', 'soc engineer', 'verification engineer', 'physical design',
+    'layout engineer', 'layout design', 'field applications engineer',
+    'hardware applications', 'power systems', 'electric vehicle',
+    'battery systems', 'battery engineer', 'motor control', 'avionics',
+    'electrical systems', 'microelectronics', 'optoelectronics', 'electro-optical',
+    'radar', 'antenna', 'electromagnetics', 'high voltage', 'power conversion',
+    'inverter', 'substation', 'relay protection', 'protection engineer',
+    'silicon photonics', 'test development engineer',
     'hardware validation', 'hardware verification', 'chip validation',
-    'characterization engineer', 'process integration', 'device engineer',
+    'characterization engineer', 'device characterization', 'device engineer',
+    'dft ', 'design for test', 'electrical intern', 'analog intern', 'rf intern',
+    'fpga intern', 'asic intern', 'vlsi intern', 'pcb intern',
+    'rfid', 'electro-mechanical', 'electromechanical', 'power engineering',
+    'grid engineering', 'transmission engineer', 'distribution engineer',
+    'dram', 'sram', 'nand', 'flash design', 'computer architecture',
+    'hardware technolog', 'mems', 'lithography', 'photomask',
+    'process integration', 'wafer', 'chiplet', 'serdes', 'phy design',
+    'design verification', 'dsp/', 'dsp engineer', 'optical',
+    'show control hardware', 'hardware undergrad', 'hardware masters',
+    'automated test', 'product test', 'board design', 'schematic',
+    'hardware reliability', 'hardware test', 'electrical platform',
+    'platform hardware', 'firmware/hardware', 'hardware/firmware',
+    'integration and test', 'audio test', 'instrumentation', 'i&c',
+    'high performance analog', 'electronics hardware', 'electronics design',
+    'vehicle electronics', 'subsystem test', 'computer-aided design',
+    'cad engineer',
 ]
+
 
 EXCLUDE_TITLE_KEYWORDS = [
     'software engineer', 'software developer', 'data scientist',
@@ -45,12 +72,22 @@ EXCLUDE_TITLE_KEYWORDS = [
     'civil engineer', 'chemical engineer', 'product manager',
     'program manager', 'business analyst', 'supply chain', 'counsel',
     'industrial engineer', 'manufacturing engineer', 'operations analyst',
+    'entry level', 'entry-level', 'new grad', 'new graduate', 'full-time',
+    'full time', 'process engineer', 'manufacturing process',
+    'quality engineer', 'facilities', 'human resources',
+    'software test', 'software quality', 'qa engineer', 'sdet',
+    'servicenow', 'salesforce', 'product analyst', 'business intern',
+    'embedded software', 'software development', 'gen-ai', 'gen ai',
+    'machine learning software', 'ml software', 'ai software',
+    'structural engineer', 'civil engineer', 'architect intern',
+    'asset management', 'business intelligence', 'firmware engineer',
+    'project engineer', 'grid data', 'digital grid management',
 ]
+
 
 INTERNSHIP_KEYWORDS = [
     'intern', 'internship', 'co-op', 'coop', 'co op',
-    'student', 'summer 2027', 'fall 2026', 'spring 2027', 'winter 2027',
-    'pathways', 'college hire', 'early career',
+    'student', 'pathways', 'coöop',
 ]
 
 US_CA_LOCATION_TOKENS = {
@@ -105,23 +142,112 @@ def normalize_url(url):
     return url.rstrip('/')
 
 
+US_STATE_NAMES = {
+    'alabama': 'AL', 'alaska': 'AK', 'arizona': 'AZ', 'arkansas': 'AR',
+    'california': 'CA', 'colorado': 'CO', 'connecticut': 'CT', 'delaware': 'DE',
+    'florida': 'FL', 'georgia': 'GA', 'hawaii': 'HI', 'idaho': 'ID',
+    'illinois': 'IL', 'indiana': 'IN', 'iowa': 'IA', 'kansas': 'KS',
+    'kentucky': 'KY', 'louisiana': 'LA', 'maine': 'ME', 'maryland': 'MD',
+    'massachusetts': 'MA', 'michigan': 'MI', 'minnesota': 'MN', 'mississippi': 'MS',
+    'missouri': 'MO', 'montana': 'MT', 'nebraska': 'NE', 'nevada': 'NV',
+    'new hampshire': 'NH', 'new jersey': 'NJ', 'new mexico': 'NM', 'new york': 'NY',
+    'north carolina': 'NC', 'north dakota': 'ND', 'ohio': 'OH', 'oklahoma': 'OK',
+    'oregon': 'OR', 'pennsylvania': 'PA', 'rhode island': 'RI', 'south carolina': 'SC',
+    'south dakota': 'SD', 'tennessee': 'TN', 'texas': 'TX', 'utah': 'UT',
+    'vermont': 'VT', 'virginia': 'VA', 'washington': 'WA', 'west virginia': 'WV',
+    'wisconsin': 'WI', 'wyoming': 'WY', 'district of columbia': 'DC',
+}
+
+CA_PROVINCE_NAMES = {
+    'ontario': 'ON', 'quebec': 'QC', 'british columbia': 'BC', 'alberta': 'AB',
+    'manitoba': 'MB', 'saskatchewan': 'SK', 'nova scotia': 'NS',
+    'new brunswick': 'NB', 'newfoundland': 'NL', 'newfoundland and labrador': 'NL',
+    'prince edward island': 'PE', 'northwest territories': 'NT', 'nunavut': 'NU',
+    'yukon': 'YT',
+}
+
+
 def normalize_location(loc):
-    """Strip trailing site/campus suffixes from ATS locations like 'Boise, ID - Main Site'."""
+    """Normalize ATS locations to `City, ST` / `Remote (US|Canada)`."""
     if not loc:
         return loc
+    loc = loc.strip()
+    # Drop pure country-only
+    if loc.lower() in ('united states', 'usa', 'us', 'u.s.', 'u.s.a.'):
+        return 'Remote (US)'
+    if loc.lower() in ('canada',):
+        return 'Remote (Canada)'
+
+    # Workday-style: US-MD-Baltimore / US-CA-EL SEGUNDO-R01 ~ ...
+    m = re.match(r'^US-([A-Z]{2})-([A-Za-z0-9 .\'-]+)', loc)
+    if m:
+        city = re.split(r'\s*~\s*', m.group(2))[0].strip()
+        city = re.sub(r'-\d+.*$', '', city).strip(' -')
+        city = city.title() if city.isupper() or city.islower() else city
+        return f'{city}, {m.group(1).upper()}'
+
+    # United States-Maryland-Baltimore / Canada-Ontario-Toronto
+    m = re.match(r'^United States-([A-Za-z ]+)-(.+)$', loc, re.I)
+    if m:
+        abbr = US_STATE_NAMES.get(m.group(1).strip().lower())
+        if abbr:
+            return f'{m.group(2).strip()}, {abbr}'
+    m = re.match(r'^Canada-([A-Za-z ]+)-(.+)$', loc, re.I)
+    if m:
+        abbr = CA_PROVINCE_NAMES.get(m.group(1).strip().lower())
+        if abbr:
+            return f'{m.group(2).strip()}, {abbr}'
+
+    # Strip trailing country / zip
+    loc = re.sub(r',?\s*United States( of America)?\s*$', '', loc, flags=re.I)
+    loc = re.sub(r',?\s*USA\s*$', '', loc, flags=re.I)
+    loc = re.sub(r',?\s*Canada\s*$', '', loc, flags=re.I)
+    loc = re.sub(r',\s*\d{5}(-\d{4})?\s*$', '', loc)
+    loc = loc.strip(' ,')
+
+    # City, FullState -> City, ST
+    for name, abbr in {**US_STATE_NAMES, **CA_PROVINCE_NAMES}.items():
+        m = re.match(rf'^(.+),\s*{re.escape(name)}\s*$', loc, re.I)
+        if m:
+            return f'{m.group(1).strip()}, {abbr}'
+
+    # "Salem VA USA" / "City ST"
+    m = re.match(r'^([A-Za-z .\'-]+?)\s+([A-Z]{2})\s*(USA)?$', loc)
+    if m and m.group(2).lower() in US_CA_LOCATION_TOKENS:
+        return f'{m.group(1).strip()}, {m.group(2).upper()}'
+
+    # "MI - Detroit Sales Office"
+    m = re.match(r'^([A-Z]{2})\s*[-–]\s*([A-Za-z .]+)', loc)
+    if m and m.group(1).lower() in US_CA_LOCATION_TOKENS:
+        city = re.sub(r'\s+(Sales Office|Office|Site|Campus).*$', '', m.group(2), flags=re.I)
+        return f'{city.strip()}, {m.group(1).upper()}'
+
+    # Existing City, ST — strip campus suffixes
     m = re.match(r'^(.+,\s*[A-Z]{2})\s*[-–\u2013].+$', loc)
     if m:
         return m.group(1).strip()
+
     return loc
 
 
 def is_us_or_canada(location_text):
     if not location_text:
-        return True
-    loc = location_text.lower()
+        return False
+    loc = location_text.lower().strip()
     for phrase in US_CA_LOCATION_PHRASES:
         if phrase in loc:
             return True
+    foreign_phrases = (
+        'united kingdom', 'germany', 'france', 'india', 'china',
+        'singapore', 'japan', 'south korea', 'taiwan', 'israel', 'australia',
+        'netherlands', 'ireland', 'switzerland', 'sweden', 'mexico', 'brazil',
+        'hong kong', 'united arab emirates', 'dubai', 'remote - europe', 'emea',
+    )
+    if any(f in loc for f in foreign_phrases):
+        if not any(p in loc for p in ('united states', 'canada', 'u.s.', 'usa')):
+            tokens = re.findall(r'\b([a-z]{2})\b', loc)
+            if not any(t in US_CA_LOCATION_TOKENS for t in tokens):
+                return False
     tokens = re.findall(r'\b([a-z]{2})\b', loc)
     return any(t in US_CA_LOCATION_TOKENS for t in tokens)
 
@@ -130,11 +256,23 @@ def is_ee_title(title):
     t = title.lower()
     if any(kw in t for kw in EXCLUDE_TITLE_KEYWORDS):
         return False
+    # "Software / Hardware" and similar hybrids are usually SWE-primary
+    if 'software' in t and 'hardware' in t:
+        return False
+    # Bare "systems engineer" is too ambiguous (often IT/SWE) — require EE signals
+    if 'systems engineer' in t or 'systems engineering' in t:
+        if not any(x in t for x in (
+            'electrical', 'avionics', 'hardware', 'power', 'rf', 'embedded',
+            'radar', 'antenna', 'fpga', 'asic', 'analog', 'digital',
+        )):
+            return False
     return any(kw in t for kw in EE_TITLE_KEYWORDS)
 
 
 def is_internship(title):
     t = title.lower()
+    if any(x in t for x in ('entry level', 'entry-level', 'new grad', 'new graduate')):
+        return False
     return any(kw in t for kw in INTERNSHIP_KEYWORDS)
 
 
@@ -151,16 +289,50 @@ def sanitize_listing_role(company, role):
     """Normalize scraped titles so validate_listings.py passes."""
     role = re.sub(r',?\s*(Onsite|On-site|Remote|Hybrid)\s*$', '', role, flags=re.I)
     role = re.sub(r'\(Onsite\)|\(On-site\)|\(Remote\)|\(Hybrid\)', '', role, flags=re.I)
+    role = re.sub(r'\s*\[(Summer|Fall|Spring|Winter)\s+20\d\d\]\s*', ' ', role, flags=re.I)
     role = re.sub(r'\s*\((Summer|Fall|Spring|Winter)\s+20\d\d\)\s*$', '', role, flags=re.I)
     role = re.sub(r'\s*\(Summer of 20\d\d\)\s*$', '', role, flags=re.I)
+    role = re.sub(
+        r'\s*\((?:Summer|Fall|Spring|Winter)(?:\s*/\s*(?:Summer|Fall|Spring|Winter))?\s*20\d\d\)\s*',
+        ' ', role, flags=re.I,
+    )
+    role = re.sub(
+        r'\s*\((?:Winter|Spring|Summer|Fall)\s*/\s*(?:Winter|Spring|Summer|Fall)(?:\s*20\d\d)?\)\s*',
+        ' ', role, flags=re.I,
+    )
+    role = re.sub(
+        r'\s*\((?:January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|July|Jul|'
+        r'August|Aug|September|Sep|October|Oct|November|Nov|December|Dec)'
+        r'(?:\s*[-–—]\s*(?:January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|July|Jul|'
+        r'August|Aug|September|Sep|October|Oct|November|Nov|December|Dec))?'
+        r'(?:\s+20\d\d)?\)\s*',
+        ' ', role, flags=re.I,
+    )
+    role = re.sub(
+        r'\s*[-–—]\s*(Winter|Spring|Summer|Fall)(?:\s*/\s*|\s+)(Winter|Spring|Summer|Fall)?\s*20\d\d.*$',
+        '', role, flags=re.I,
+    )
+    role = re.sub(r'\s*[-–—]\s*(Summer|Fall|Spring|Winter)\s+20\d\d.*$', '', role, flags=re.I)
     role = re.sub(r'\s+(Summer|Fall|Spring|Winter)\s+20\d\d\s*$', '', role, flags=re.I)
     role = re.sub(r'^(Summer|Fall|Spring|Winter)\s+20\d\d\s+', '', role, flags=re.I)
     role = re.sub(r'^20\d\d\s+(Spring|Summer|Fall|Winter)\s+', '', role, flags=re.I)
+    role = re.sub(r'^20\d\d\s+(US\s+)?', '', role, flags=re.I)
+    role = re.sub(r'\s*[-–—]\s*20\d\d\b.*$', '', role)
+    role = re.sub(r'\b20\d\d\b', '', role)
     role = re.sub(r'^NVIDIA 2027 Internships:\s*', '', role, flags=re.I)
     role = re.sub(r'\s*\(R\d+\)\s*$', '', role)
+    role = re.sub(r'\s*[-–—]\s*Plus one semester\s*$', '', role, flags=re.I)
+    role = re.sub(r'\s*[-–—]\s*Fall\s+20\d\d\s+Start Date\s*$', '', role, flags=re.I)
+    role = re.sub(r'\s*\([A-Za-z .]+,\s*[A-Z]{2}\)\s*$', '', role)  # (Novi, MI)
+    role = re.sub(r'^Intern(?:ship)?\s*[—–\-:]\s*', '', role, flags=re.I)
+    role = re.sub(r'^Intern,\s*', '', role, flags=re.I)
     if company:
         role = re.sub(re.escape(company), '', role, flags=re.I)
-    role = re.sub(r'\s+', ' ', role).strip(' -')
+    role = re.sub(r'\bCo-op/Intern\b', 'Intern/Co-op', role, flags=re.I)
+    role = re.sub(r'\s+', ' ', role).strip(' -–—/')
+    # Ensure internship/co-op signal survives aggressive year/season stripping
+    if role and not re.search(r'intern|co-?op|student|pathways', role, re.I):
+        role = role + ' Intern'
     return role
 
 
@@ -507,54 +679,74 @@ def scrape_ashby(company, ashby_id, seen):
 
 
 def scrape_workday(company, tenant, site, board_num, seen):
+    """Search Workday campus boards with EE/intern keywords and paginate."""
     jobs = []
     base = f'https://{tenant}.wd{board_num}.myworkdayjobs.com'
     endpoint = f'{base}/wday/cxs/{tenant}/{site}/jobs'
     headers = {
         'Content-Type': 'application/json',
-        'User-Agent': 'Mozilla/5.0',
+        'User-Agent': 'Mozilla/5.0 (compatible; shabajoba-scraper/1.0)',
+        'Accept': 'application/json',
     }
-    offset = 0
+    search_terms = [
+        'intern', 'internship', 'co-op', 'electrical', 'hardware', 'FPGA', 'ASIC', '2027',
+    ]
+    seen_paths = set()
     limit = 20
-    max_pages = 5
-    page = 0
-    while page < max_pages:
-        payload = {
-            'appliedFacets': {},
-            'limit': limit,
-            'offset': offset,
-            'searchText': '',
-        }
-        try:
-            resp = requests.post(endpoint, json=payload, headers=headers, timeout=15)
-            if resp.status_code in (404, 403):
+    max_pages_per_term = 4
+
+    for term in search_terms:
+        offset = 0
+        for _ in range(max_pages_per_term):
+            payload = {
+                'appliedFacets': {},
+                'limit': limit,
+                'offset': offset,
+                'searchText': term,
+            }
+            try:
+                resp = requests.post(endpoint, json=payload, headers=headers, timeout=20)
+                if resp.status_code in (404, 403):
+                    break
+                if resp.status_code != 200:
+                    break
+                data = resp.json()
+                job_postings = data.get('jobPostings', [])
+                if not job_postings:
+                    break
+                for job in job_postings:
+                    title = job.get('title', '')
+                    location = normalize_location(
+                        job.get('locationsText', '') or job.get('primaryLocationText', '')
+                    )
+                    external_path = job.get('externalPath', '')
+                    if not external_path or external_path in seen_paths:
+                        continue
+                    seen_paths.add(external_path)
+                    apply_url = f'{base}/en-US/{site}{external_path}' if external_path else ''
+                    # Prefer cleaner URL form used by boards
+                    if external_path.startswith('/'):
+                        apply_url = f'{base}{external_path}'
+                    key = f'workday:{tenant}:{external_path}'
+                    if key in seen or not is_internship(title):
+                        continue
+                    if location and not is_us_or_canada(location):
+                        continue
+                    jobs.append({
+                        'key': key,
+                        'company': company,
+                        'title': title,
+                        'location': location or 'United States',
+                        'url': apply_url,
+                    })
+                total = data.get('total', 0)
+                offset += len(job_postings)
+                if offset >= total or len(job_postings) < limit:
+                    break
+                time.sleep(0.12)
+            except Exception as e:
+                print(f'Workday error [{company}] "{term}": {e}')
                 break
-            resp.raise_for_status()
-            data = resp.json()
-            job_postings = data.get('jobPostings', [])
-            if not job_postings:
-                break
-            for job in job_postings:
-                title = job.get('title', '')
-                location = normalize_location(
-                    job.get('locationsText', '') or job.get('primaryLocationText', '')
-                )
-                external_path = job.get('externalPath', '')
-                apply_url = f'{base}{external_path}' if external_path else ''
-                key = f'workday:{tenant}:{external_path or title}'
-                if key in seen or not is_internship(title):
-                    continue
-                if location and not is_us_or_canada(location):
-                    continue
-                jobs.append({'key': key, 'company': company, 'title': title,
-                             'location': location or 'United States', 'url': apply_url})
-            if len(job_postings) < limit:
-                break
-            offset += limit
-            page += 1
-        except Exception as e:
-            print(f'Workday error [{company}]: {e}')
-            break
     return jobs
 
 
@@ -606,6 +798,292 @@ def scrape_smartrecruiters(company, company_id, seen):
     return jobs
 
 
+def scrape_workable(company, slug, seen):
+    jobs = []
+    try:
+        resp = requests.get(
+            f'https://apply.workable.com/api/v1/widget/accounts/{slug}',
+            headers={'User-Agent': 'Mozilla/5.0'},
+            timeout=20,
+        )
+        if resp.status_code != 200:
+            return jobs
+        for job in resp.json().get('jobs', []):
+            title = job.get('title', '')
+            loc = job.get('location', {}) or {}
+            country = (loc.get('countryCode') or loc.get('country') or '').lower()
+            remote = bool(loc.get('remote', False))
+            city = loc.get('city', '') or ''
+            region = loc.get('region', '') or ''
+            if country and country not in ('us', 'ca', 'usa', 'united states', 'canada') and not remote:
+                continue
+            if remote and country in ('ca', 'canada'):
+                location = 'Remote (Canada)'
+            elif remote:
+                location = 'Remote (US)'
+            elif city and region:
+                location = f'{city}, {region}'
+            elif city:
+                location = city
+            else:
+                location = 'United States' if country in ('us', 'usa', '') else country.upper()
+            if not is_internship(title):
+                continue
+            if location and not is_us_or_canada(location):
+                continue
+            job_id = job.get('shortcode', job.get('id', ''))
+            key = f'workable:{slug}:{job_id}'
+            if key in seen:
+                continue
+            jobs.append({
+                'key': key,
+                'company': company,
+                'title': title,
+                'location': location,
+                'url': f'https://apply.workable.com/{slug}/j/{job_id}/',
+            })
+    except Exception as e:
+        print(f'Workable error [{company}]: {e}')
+    return jobs
+
+
+def scrape_oracle(company, host, site_number, seen):
+    """Oracle HCM Candidate Experience recruiting API."""
+    host = host.strip().removeprefix('https://').removeprefix('http://').rstrip('/')
+    site_number = str(site_number).strip()
+    api_base = (
+        f'https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions'
+    )
+    headers = {'Accept': 'application/json', 'User-Agent': 'Mozilla/5.0'}
+    search_terms = [
+        'intern', 'internship', 'co-op', 'electrical', 'hardware', 'FPGA', 'ASIC', '2027',
+    ]
+    jobs = []
+    seen_ids = set()
+    page_size = 50
+
+    for search_term in search_terms:
+        offset = 0
+        for _ in range(3):
+            finder = (
+                f'findReqs;siteNumber={site_number},'
+                'facetsList=LOCATIONS;WORK_LOCATIONS;WORKPLACE_TYPES;TITLES;'
+                'CATEGORIES;ORGANIZATIONS;JOB_FAMILY;JOB_FUNCTION;WORK_LEVEL;'
+                f'WORKER_TYPES,limit={page_size},offset={offset},'
+                f'keyword={search_term}'
+            )
+            try:
+                resp = requests.get(
+                    api_base,
+                    params={
+                        'onlyData': 'true',
+                        'expand': 'requisitionList.secondaryLocations',
+                        'finder': finder,
+                    },
+                    headers=headers,
+                    timeout=30,
+                )
+                if resp.status_code != 200:
+                    break
+                data = resp.json()
+                items = data.get('items') or []
+                block = items[0] if items else {}
+                reqs = block.get('requisitionList') or []
+                if not reqs:
+                    break
+                for job in reqs:
+                    job_id = str(job.get('Id') or '').strip()
+                    if not job_id or job_id in seen_ids:
+                        continue
+                    title = (job.get('Title') or '').strip()
+                    location = normalize_location((job.get('PrimaryLocation') or '').strip())
+                    if not title or not is_internship(title):
+                        continue
+                    if location and not is_us_or_canada(location):
+                        continue
+                    seen_ids.add(job_id)
+                    key = f'oracle:{site_number}:{job_id}'
+                    if key in seen:
+                        continue
+                    url = (
+                        f'https://{host}/hcmUI/CandidateExperience/en/sites/'
+                        f'{site_number}/job/{job_id}'
+                    )
+                    jobs.append({
+                        'key': key,
+                        'company': company,
+                        'title': title,
+                        'location': location or 'United States',
+                        'url': url,
+                    })
+                total = block.get('TotalJobsCount') or block.get('totalJobsCount')
+                offset += len(reqs)
+                if total is not None and offset >= int(total):
+                    break
+                if len(reqs) < page_size:
+                    break
+                time.sleep(0.2)
+            except Exception as e:
+                print(f'Oracle error [{company}] "{search_term}": {e}')
+                break
+    return jobs
+
+
+def scrape_icims(company, host, seen, keywords=None):
+    """Best-effort iCIMS campus search scrape."""
+    import html as _html
+    keywords = keywords or [
+        '2027', 'Intern', 'Internship', 'co-op', 'Electrical', 'Hardware', 'FPGA', 'ASIC',
+    ]
+    jobs = []
+    seen_ids = set()
+    base = f'https://{host}'
+    headers = {'User-Agent': 'Mozilla/5.0'}
+
+    for keyword in keywords:
+        for page in range(0, 3):
+            try:
+                resp = requests.get(
+                    f'{base}/jobs/search',
+                    params={
+                        'ss': '1',
+                        'searchKeyword': keyword,
+                        'searchRelation': 'keyword_all',
+                        'in_iframe': '1',
+                        'pr': str(page),
+                    },
+                    headers=headers,
+                    timeout=20,
+                )
+                if resp.status_code != 200:
+                    break
+                html = resp.text
+                cards = re.findall(
+                    r'<li class="iCIMS_JobCardItem">(.*?)</li>',
+                    html,
+                    re.S | re.I,
+                )
+                if not cards:
+                    break
+                found_new = False
+                for card in cards:
+                    m = re.search(
+                        r'href="(https?://[^"]+/jobs/(\d+)/[^"]+/job)[^"]*"[^>]*'
+                        r'class="iCIMS_Anchor"[^>]*title="([^"]+)"',
+                        card,
+                        re.I,
+                    )
+                    if not m:
+                        m = re.search(
+                            r'href="(/jobs/(\d+)/[^"]+/job)[^"]*"[^>]*'
+                            r'class="iCIMS_Anchor"[^>]*title="([^"]+)"',
+                            card,
+                            re.I,
+                        )
+                    if not m:
+                        continue
+                    url, job_id, title_attr = m.group(1), m.group(2), m.group(3)
+                    if job_id in seen_ids:
+                        continue
+                    seen_ids.add(job_id)
+                    found_new = True
+                    title = re.sub(r'^\d+\s*-\s*', '', _html.unescape(title_attr)).strip()
+                    h3 = re.search(r'<h3[^>]*>(.*?)</h3>', card, re.S | re.I)
+                    if h3:
+                        title = re.sub(r'<[^>]+>', '', _html.unescape(h3.group(1))).strip() or title
+                    loc_m = re.search(
+                        r'Job Locations?</span>.*?<span[^>]*>\s*([^<]+)',
+                        card,
+                        re.S | re.I,
+                    )
+                    location = ''
+                    if loc_m:
+                        raw = loc_m.group(1).strip()
+                        parts = []
+                        for piece in re.split(r'\s*\|\s*', raw):
+                            mm = re.match(r'^US-([A-Z]{2})-(.+)$', piece.strip(), re.I)
+                            if mm:
+                                parts.append(f'{mm.group(2).strip()}, {mm.group(1).upper()}')
+                            else:
+                                parts.append(piece.strip())
+                        location = normalize_location('; '.join(parts))
+                    if not location:
+                        location = 'United States'
+                    if url.startswith('/'):
+                        url = f'{base}{url}'
+                    url = re.sub(r'\?.*$', '', url)
+                    key = f'icims:{host}:{job_id}'
+                    if key in seen or not is_internship(title):
+                        continue
+                    if location and not is_us_or_canada(location):
+                        continue
+                    jobs.append({
+                        'key': key,
+                        'company': company,
+                        'title': title,
+                        'location': location,
+                        'url': url,
+                    })
+                if not found_new:
+                    break
+                time.sleep(0.15)
+            except Exception as e:
+                print(f'iCIMS error [{company}] "{keyword}" p{page}: {e}')
+                break
+    return jobs
+
+
+def scrape_simplify(seen):
+    """Pull Hardware/EE roles from SimplifyJobs Summer2027 listings feed."""
+    url = (
+        'https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/'
+        'dev/.github/scripts/listings.json'
+    )
+    jobs = []
+    try:
+        resp = requests.get(url, timeout=60)
+        resp.raise_for_status()
+        data = resp.json()
+    except Exception as e:
+        print(f'Simplify error: {e}')
+        return jobs
+
+    for e in data:
+        cat = e.get('category') or ''
+        title = (e.get('title') or '').strip()
+        company = (e.get('company_name') or '').strip()
+        apply_url = (e.get('url') or '').strip()
+        locs = e.get('locations') or []
+        location = '; '.join(locs)
+        active = e.get('active', True)
+        if not company or not title:
+            continue
+        if cat not in ('Hardware', 'Hardware Engineering') and not is_ee_title(title):
+            continue
+        if not is_internship(title) or not is_ee_title(title):
+            continue
+        if location and not is_us_or_canada(location):
+            continue
+        terms = ' '.join(e.get('terms') or []).lower()
+        if '2026' in terms and '2027' not in terms and 'fall 2026' not in terms:
+            continue
+        key = f"simplify:{e.get('id') or normalize_url(apply_url) or title}"
+        if key in seen:
+            continue
+        jobs.append({
+            'key': key,
+            'company': company,
+            'title': title,
+            'location': location or 'United States',
+            'url': apply_url if active else '',
+            'terms': e.get('terms') or [],
+            'degrees': e.get('degrees') or [],
+            'sponsorship_raw': e.get('sponsorship') or '',
+        })
+    print(f'Simplify: {len(jobs)} EE/hardware candidates')
+    return jobs
+
+
 def scrape_usajobs(seen):
     jobs = []
     api_key = os.environ.get('USAJOBS_API_KEY', '')
@@ -624,6 +1102,8 @@ def scrape_usajobs(seen):
         'power systems intern',
         'avionics intern',
         'signal processing intern',
+        'electrical engineering co-op',
+        'pathways electrical',
     ]
     headers = {
         'Authorization-Key': api_key,
@@ -672,101 +1152,64 @@ def scrape_usajobs(seen):
     return jobs
 
 
-GREENHOUSE_COMPANIES = [
-    ('SpaceX', 'spacex'),
-    ('Rocket Lab', 'rocketlab'),
-    ('Waymo', 'waymo'),
-    ('Verkada', 'verkada'),
-    ('Lucid Motors', 'lucidmotors'),
-    ('Tenstorrent', 'tenstorrent'),
-    ('Astranis', 'astranis'),
-    ('Nuro', 'nuro'),
-    ('Lattice Semiconductor', 'lattice'),
-    ('Flex Ltd', 'flex'),
-    ('Mercury Systems', 'mercury'),
-    ('Graphcore', 'graphcore'),
-    ('Ampere Computing', 'amperecomputing'),
-    ('SambaNova Systems', 'sambanova'),
-    ('Joby Aviation', 'jobyaviation'),
-    ('Lilium', 'lilium'),
-    ('Saildrone', 'saildrone'),
-    ('Fortive', 'fortive'),
-]
+def load_companies():
+    """Load ATS company boards from companies.yml (YAML-driven scraping)."""
+    try:
+        import yaml
+    except ImportError:
+        print('PyYAML not installed — using empty company lists')
+        return {}
+    path = Path('companies.yml')
+    if not path.exists():
+        print('companies.yml not found')
+        return {}
+    with open(path) as f:
+        return yaml.safe_load(f) or {}
 
-LEVER_COMPANIES = [
-    ('Blue Origin', 'blueorigin'),
-    ('Shield AI', 'shieldai'),
-    ('Zoox', 'zoox'),
-    ('Exowatt', 'exowatt'),
-    ('Plus', 'plus-ai'),
-    ('Sarcos Technology', 'sarcos'),
-    ('Epirus', 'epirus'),
-]
 
-ASHBY_COMPANIES = [
-    ('Anduril Industries', 'anduril'),
-    ('Applied Intuition', 'appliedintuition'),
-    ('Astera Labs', 'asteralabs'),
-    ('Cerebras Systems', 'cerebras'),
-    ('Etched', 'etched'),
-    ('Groq', 'groq'),
-    ('Varda Space', 'varda'),
-    ('Relativity Space', 'relativityspace'),
-    ('Hermeus', 'hermeus'),
-    ('Archer Aviation', 'archeraviation'),
-    ('Wisk Aero', 'wisk'),
-    ('Axcelis Technologies', 'axcelis'),
-    ('Figure', 'figure-ai'),
-    ('NextSilicon', 'nextsilicon'),
-    ('Perceive', 'perceive'),
-    ('Untether AI', 'untether-ai'),
-    ('Charge Robotics', 'charge-robotics'),
-    ('Form Energy', 'formenergy'),
-    ('d-Matrix', 'd-matrix'),
-    ('REGENT Craft', 'regent'),
-    ('Rain Neuromorphics', 'rain'),
-    ('Airspeed', 'airspeed'),
-    ('ATLAS Space Operations', 'atlas'),
-    ('Wayve', 'wayve'),
-    ('Ghost Autonomy', 'ghost'),
-    ('Atomic Semi', 'atomic-semi'),
-    ('Fervo Energy', 'fervoenergy'),
-    ('Electra Aero', 'electra'),
-    ('Parallel Systems', 'parallel-systems'),
-]
+def build_scrape_tasks(seen):
+    """Build (fn, args, label) tasks from companies.yml."""
+    cfg = load_companies()
+    tasks = []
 
-WORKDAY_COMPANIES = [
-    ('Analog Devices', 'analogdevices', 'External', '1'),
-    ('Intel', 'intel', 'External', '1'),
-    ('NVIDIA', 'nvidia', 'NVIDIAExternalCareerSite', '5'),
-    ('Micron Technology', 'micron', 'External', '1'),
-    ('Leidos', 'leidos', 'External', '5'),
-    ('ON Semiconductor', 'onsemi', 'External', '1'),
-    ('Lam Research', 'lamresearch', 'External', '1'),
-    ('KLA Corporation', 'kla', 'External', '1'),
-    ('Marvell Technology', 'marvell', 'External', '1'),
-    ('Keysight Technologies', 'keysight', 'External', '1'),
-    ('Coherent Corp', 'coherent', 'External', '1'),
-    ('Raytheon', 'rtx', 'External', '1'),
-    ('Northrop Grumman', 'ngc', 'External', '1'),
-    ('L3Harris', 'l3harris', 'External', '1'),
-    ('Honeywell', 'honeywell', 'External', '1'),
-    ('TE Connectivity', 'te', 'External', '1'),
-    ('Broadcom', 'broadcom', 'External', '1'),
-    ('Qualcomm', 'qualcomm', 'External', '1'),
-]
-
-SMARTRECRUITERS_COMPANIES = [
-    ('Western Digital', 'WesternDigital'),
-    ('Vishay Intertechnology', 'Vishay'),
-    ('Teradyne', 'Teradyne'),
-]
-
+    for e in cfg.get('greenhouse', []):
+        tasks.append((scrape_greenhouse, (e['name'], e['slug'], seen), e['name']))
+    for e in cfg.get('lever', []):
+        tasks.append((scrape_lever, (e['name'], e['slug'], seen), e['name']))
+    for e in cfg.get('ashby', []):
+        tasks.append((scrape_ashby, (e['name'], e['slug'], seen), e['name']))
+    for e in cfg.get('smartrecruiters', []):
+        tasks.append((
+            scrape_smartrecruiters,
+            (e['name'], e['identifier'], seen),
+            e['name'],
+        ))
+    for e in cfg.get('workday', []):
+        tasks.append((
+            scrape_workday,
+            (e['name'], e['tenant'], e['site'], str(e.get('board_num', '1')), seen),
+            e['name'],
+        ))
+    for e in cfg.get('workable', []):
+        tasks.append((scrape_workable, (e['name'], e['slug'], seen), e['name']))
+    for e in cfg.get('oracle', []):
+        tasks.append((
+            scrape_oracle,
+            (e['name'], e['host'], e['site'], seen),
+            e['name'],
+        ))
+    for e in cfg.get('icims', []):
+        tasks.append((
+            scrape_icims,
+            (e['name'], e['host'], seen, e.get('keywords')),
+            e['name'],
+        ))
+    return tasks
 
 
 def main():
     claude_key = os.environ.get('ANTHROPIC_API_KEY', '')
-    gemini_key = os.environ.get('GEMINI_API_KEY', '')  # kept for fallback
+    gemini_key = os.environ.get('GEMINI_API_KEY', '')
 
     listings = load_json(LISTINGS_FILE, [])
     seen = load_json(SEEN_FILE, {})
@@ -776,16 +1219,14 @@ def main():
     today = datetime.date.today().isoformat()
     candidates = []
 
-    tasks = (
-        [(scrape_greenhouse, (c, t, seen)) for c, t in GREENHOUSE_COMPANIES] +
-        [(scrape_lever, (c, s, seen)) for c, s in LEVER_COMPANIES] +
-        [(scrape_ashby, (c, s, seen)) for c, s in ASHBY_COMPANIES] +
-        [(scrape_workday, (c, t, s, n, seen)) for c, t, s, n in WORKDAY_COMPANIES] +
-        [(scrape_smartrecruiters, (c, i, seen)) for c, i in SMARTRECRUITERS_COMPANIES]
-    )
+    tasks = build_scrape_tasks(seen)
+    print(f'Scraping {len(tasks)} ATS boards ...')
 
-    with ThreadPoolExecutor(max_workers=10) as pool:
-        futures = {pool.submit(fn, *args): args[0] for fn, args in tasks}
+    with ThreadPoolExecutor(max_workers=12) as pool:
+        futures = {
+            pool.submit(fn, *args): label
+            for fn, args, label in tasks
+        }
         for future in as_completed(futures):
             company = futures[future]
             try:
@@ -802,6 +1243,10 @@ def main():
     if usajobs_found:
         print(f'  USAJOBS: {len(usajobs_found)} candidates')
 
+    print('=== SimplifyJobs Hardware/EE ===')
+    simplify_found = scrape_simplify(seen)
+    candidates.extend(simplify_found)
+
     print(f'\nTotal candidates: {len(candidates)}')
 
     in_scope = [c for c in candidates if candidate_passes_scope(c)]
@@ -809,7 +1254,6 @@ def main():
     if out_scope:
         print(f'Out of scope (not intern/co-op or not US/Canada): {out_scope}')
 
-    # --- EE title classification (ambiguous titles only; obvious EE/exclusions skip LLM) ---
     titles_to_classify = list({
         c['title'] for c in in_scope
         if should_llm_classify_title(c['title'], classifications)
@@ -853,7 +1297,6 @@ def main():
 
     print(f'Confirmed for add: {len(confirmed)}')
 
-    # --- Sponsorship/citizenship (only for listings that will be added) ---
     for c in confirmed:
         role = sanitize_listing_role(c['company'], c['title'])
         if listing_exists(listings, c['url'], c['company'], role):
@@ -873,16 +1316,48 @@ def main():
     added = 0
     for c in confirmed:
         listing_type, season = classify_season(c['title'])
+        # Prefer Simplify term metadata when present
+        terms = c.get('terms') or []
+        if terms:
+            joined = ' '.join(terms).lower()
+            if 'summer 2027' in joined:
+                listing_type, season = 'summer', 'Summer 2027'
+            elif 'fall 2026' in joined:
+                listing_type, season = 'offcycle', 'Fall 2026'
+            elif 'spring 2027' in joined:
+                listing_type, season = 'offcycle', 'Spring 2027'
+            elif 'co-op' in joined or 'coop' in joined:
+                listing_type, season = 'offcycle', 'Co-op'
         role = sanitize_listing_role(c['company'], c['title'])
+        education = infer_education(c['title'])
+        degrees = c.get('degrees') or []
+        if degrees:
+            parts = []
+            joined = ' '.join(d.lower() for d in degrees)
+            if 'bachelor' in joined or 'undergrad' in joined:
+                parts.append('Undergrad')
+            if 'master' in joined:
+                parts.append('Masters')
+            if 'phd' in joined or 'doctor' in joined:
+                parts.append('PhD')
+            if parts:
+                education = '; '.join(parts)
+        sponsorship = c.get('sponsorship', 'Unknown')
+        raw_sp = (c.get('sponsorship_raw') or '').lower()
+        if raw_sp:
+            if 'does not' in raw_sp or raw_sp in ('no', 'unavailable'):
+                sponsorship = 'No — does NOT offer sponsorship'
+            elif 'available' in raw_sp or raw_sp == 'yes':
+                sponsorship = 'Yes — sponsorship available'
         entry = {
             'company': c['company'],
             'role': role,
             'location': normalize_location(c['location']),
             'type': listing_type,
             'season': season,
-            'education': infer_education(c['title']),
+            'education': education,
             'url': c['url'],
-            'sponsorship': c.get('sponsorship', 'Unknown'),
+            'sponsorship': sponsorship,
             'citizenship': c.get('citizenship', 'Unknown'),
             'date_added': today,
         }
@@ -901,7 +1376,7 @@ def main():
     save_json(SEEN_FILE, seen)
     if gemini_key:
         save_gemini_usage(gemini_usage)
-    print('Done.')
+    print(f'Done. Added {added} new listings.')
 
 
 if __name__ == '__main__':

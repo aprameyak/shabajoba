@@ -27,7 +27,14 @@ def load_workday_boards():
         return {}
     with open(COMPANIES_FILE) as f:
         data = yaml.safe_load(f)
-    return data.get('workday', {}).get('boards', {})
+    workday = data.get('workday', {})
+    # Legacy dict form: {boards: {Company: tenant}}
+    if isinstance(workday, dict) and 'boards' in workday:
+        return workday.get('boards', {})
+    # New list form: [{name, tenant, site, board_num}, ...]
+    if isinstance(workday, list):
+        return {e['name']: e.get('tenant', '') for e in workday if isinstance(e, dict)}
+    return {}
 
 
 def skip_domain(url):

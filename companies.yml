@@ -1,130 +1,567 @@
 greenhouse:
-  - Analog Devices
-  - Anduril
-  - Apple
-  - Aurora Innovation
-  - Broadcom
-  - Cadence Design Systems
-  - Celestica
-  - Cirrus Logic
-  - Cloudflare
-  - Cree (Wolfspeed)
-  - Danfoss
-  - Eaton
-  - Emerson Electric
-  - Faraday Future
-  - Flex
-  - GE Aerospace
-  - Infineon Technologies
-  - Keysight Technologies
-  - Lattice Semiconductor
-  - Lumentum
-  - Lucid Motors
-  - Marvell Technology
-  - Maxim Integrated
-  - Microchip Technology
-  - Micron Technology
-  - Monolithic Power Systems
-  - Nuro
-  - NVIDIA
-  - NXP Semiconductors
-  - ON Semiconductor
-  - Qualcomm
-  - Renesas Electronics
-  - Rocket Lab
-  - Skyworks Solutions
-  - SpaceX
-  - STMicroelectronics
-  - Teradyne
-  - Texas Instruments
-  - Tenstorrent
-  - Tower Semiconductor
-  - Verkada
-  - Waymo
-  - Wolfspeed
-  - Xilinx (AMD)
-
+- name: Akuna Capital
+  slug: akunacapital
+- name: Ampere Computing
+  slug: amperecomputing
+- name: Amperesand
+  slug: amperesand
+- name: Anduril
+  slug: andurilindustries
+- name: Aquatic
+  slug: aquaticcapitalmanagement
+- name: Archer Aviation
+  slug: archer56
+- name: Astera Labs
+  slug: AsteraLabs
+- name: Astranis Space Technologies
+  slug: astranis
+- name: Aurora Innovation
+  slug: aurorainnovation
+- name: Captivation
+  slug: captivation
+- name: CHAOS Industries
+  slug: chaosindustries
+- name: DRW
+  slug: drweng
+- name: Figure AI
+  slug: figureai
+- name: Figure AI
+  slug: figure
+- name: Five Rings
+  slug: fiveringsllc
+- name: Flex Ltd
+  slug: flex
+- name: Fortive
+  slug: fortive
+- name: Hometap
+  slug: hometapjobs
+- name: Hyannis Port Research
+  slug: hyannisportresearch
+- name: IMC Trading
+  slug: imc
+- name: Joby Aviation
+  slug: jobyaviation
+- name: Klaviyo
+  slug: klaviyo
+- name: Klaviyo
+  slug: klaviyocampus
+- name: Lattice Semiconductor
+  slug: lattice
+- name: Lucid Motors
+  slug: lucidmotors
+- name: Mercury
+  slug: mercury
+- name: Nuro
+  slug: nuro
+- name: Optiver
+  slug: optiverprivate
+- name: Pacific Fusion
+  slug: pacificfusion
+- name: Rocket Lab
+  slug: rocketlab
+- name: Saildrone
+  slug: saildrone
+- name: SambaNova Systems
+  slug: sambanova
+- name: Samsung Research America
+  slug: samsungresearchamericainternship
+- name: SpaceX
+  slug: spacex
+- name: Tenstorrent
+  slug: tenstorrent
+- name: Tenstorrent
+  slug: tenstorrentuniversity
+- name: Tower Research Capital
+  slug: towerresearchcapital
+- name: True Anomaly
+  slug: trueanomalyinc
+- name: UVIMCO
+  slug: uvimco
+- name: Varda Space
+  slug: vardaspace
+- name: Verkada
+  slug: verkada
+- name: Virtu Financial
+  slug: virtu
+- name: Waymo
+  slug: waymo
 lever:
-  - Blue Origin
-  - Exowatt
-  - Plus
-  - Shield AI
-  - Zoox
-
-workday:
-  boards:
-    3M: 3m
-    ABB: abb
-    Accenture: accenture
-    Advanced Energy Industries: advancedenergy
-    Agilent Technologies: agilent
-    Amphenol: amphenol
-    Aptiv: aptiv
-    BAE Systems: baesystems
-    Baker Hughes: bakerhughes
-    Belden: belden
-    Boeing: boeing
-    Broadcom: broadcom
-    Cisco: cisco
-    Collins Aerospace: collinsaerospace
-    Danaher: danaher
-    Dell Technologies: dell
-    Emerson Electric: emerson
-    Garmin: garmin
-    General Dynamics: generaldynamics
-    Honeywell: honeywell
-    Intel: intel
-    ITT: itt
-    Jabil: jabil
-    L3Harris Technologies: l3harris
-    Leidos: leidos
-    Lockheed Martin: lockheedmartin
-    Moog: moog
-    Motorola Solutions: motorolasolutions
-    Northrop Grumman: northropgrumman
-    Parker Hannifin: parker
-    Raytheon Technologies: rtx
-    Rockwell Automation: rockwellautomation
-    Sandia National Laboratories: sandia
-    Schneider Electric: schneider
-    Siemens: siemens
-    TE Connectivity: te
-    Textron: textron
-    Thales: thales
-    USAA: usaa
-    Viasat: viasat
-    Vishay Intertechnology: vishay
-    Xylem: xylem
-
-linkedin:
-  - Apple
-  - Alphabet (Google)
-  - Amazon
-  - IBM
-  - Meta
-  - Microsoft
-  - Qualcomm
-  - Samsung
-
+- name: Blue Origin
+  slug: blueorigin
+- name: Epirus
+  slug: epirus
+- name: Exowatt
+  slug: exowatt
+- name: Hermeus
+  slug: hermeus
+- name: Last Energy
+  slug: last-energy
+- name: Last Energy
+  slug: lastenergy
+- name: Mainspring Energy
+  slug: mainspringenergy
+- name: PingWind
+  slug: pingwind
+- name: Plus
+  slug: plus-2
+- name: Plus
+  slug: plus-ai
+- name: Rigetti
+  slug: rigetti
+- name: Shield AI
+  slug: shieldai
+- name: Xcimer Energy
+  slug: xcimer
+- name: Zoox
+  slug: zoox
 ashby:
-  - Anduril Industries
-  - Applied Intuition
-  - Astera Labs
-  - Axcelis Technologies
-  - Cerebras Systems
-  - Charge Robotics
-  - Cohere
-  - Etched
-  - Figure
-  - Fractile
-  - Groq
-  - Isolation Network
-  - Matician
-  - NextSilicon
-  - Nuro
-  - Perceive
-  - Reduct
-  - Sievert Larsen
-  - Tangent
-  - Tenstorrent
-  - Untether AI
+- name: Airspeed
+  slug: airspeed
+- name: Anduril Industries
+  slug: anduril
+- name: Antares
+  slug: antares
+- name: Applied Intuition
+  slug: appliedintuition
+- name: Archer Aviation
+  slug: archeraviation
+- name: Astera Labs
+  slug: asteralabs
+- name: ATLAS Space Operations
+  slug: atlas
+- name: Atomic Semi
+  slug: fab2
+- name: Atomic Semi
+  slug: atomic-semi
+- name: Axcelis Technologies
+  slug: axcelis
+- name: Base Power Company
+  slug: base-power
+- name: Cerebras
+  slug: cerebras
+- name: Charge Robotics
+  slug: charge-robotics
+- name: Crusoe Energy Systems
+  slug: crusoe
+- name: d-Matrix
+  slug: d-Matrix
+- name: Electra Aero
+  slug: electra
+- name: Epirus
+  slug: epirus
+- name: Etched
+  slug: etched
+- name: Fervo Energy
+  slug: fervoenergy
+- name: Figure
+  slug: figure
+- name: Figure
+  slug: figure-ai
+- name: Flow Engineering
+  slug: flowengineering
+- name: Form Energy
+  slug: formenergy
+- name: Groq
+  slug: groq
+- name: Hermeus
+  slug: hermeus
+- name: Heron Power
+  slug: heron-power
+- name: Latent Defense
+  slug: Latent Defense
+- name: Latent Defense
+  slug: latent%20defense
+- name: Maximor AI
+  slug: maximor
+- name: NextSilicon
+  slug: nextsilicon
+- name: Parallel Systems
+  slug: parallel-systems
+- name: Perceive
+  slug: perceive
+- name: Physical Intelligence
+  slug: physicalintelligence
+- name: Radiant
+  slug: radiant-industries
+- name: Radiant Nuclear
+  slug: radiantnuclear
+- name: Rain Neuromorphics
+  slug: rain
+- name: REGENT Craft
+  slug: regent
+- name: Relativity Space
+  slug: relativityspace
+- name: Rivian and Volkswagen Group Technologies
+  slug: rivianvw.tech
+- name: Untether AI
+  slug: untether-ai
+- name: Varda Space
+  slug: varda
+- name: Wisk Aero
+  slug: wisk
+smartrecruiters:
+- name: AbbVie
+  identifier: AbbVie
+- name: Bosch
+  identifier: BoschGroup
+- name: Bosch
+  identifier: Bosch
+- name: CACI
+  identifier: NextCenturyCorporation
+- name: General Dynamics Mission Systems
+  identifier: GDMSI
+- name: Honeywell
+  identifier: Honeywell
+- name: Raytheon Technologies
+  identifier: RaytheonTechnologies
+- name: SanDisk
+  identifier: Sandisk
+- name: Solidigm
+  identifier: Solidigm
+- name: Teradyne
+  identifier: Teradyne
+- name: Vishay Intertechnology
+  identifier: Vishay
+- name: Western Digital
+  identifier: WesternDigital
+workday:
+- name: 3M
+  tenant: 3m
+  site: Search
+  board_num: '1'
+- name: ABB
+  tenant: abb
+  site: external_career_page
+  board_num: '3'
+- name: Abbott Laboratories
+  tenant: abbott
+  site: abbottcareers
+  board_num: '5'
+- name: Agilent Technologies
+  tenant: agilent
+  site: Agilent_Careers
+  board_num: '5'
+- name: Altera
+  tenant: altera
+  site: altera
+  board_num: '1'
+- name: Analog Devices
+  tenant: analogdevices
+  site: External
+  board_num: '1'
+- name: Applied Materials
+  tenant: amat
+  site: External
+  board_num: '1'
+- name: Aptiv
+  tenant: aptiv
+  site: aptiv_careers
+  board_num: '5'
+- name: ASML
+  tenant: asml
+  site: asmlext1
+  board_num: '3'
+- name: Axcelis
+  tenant: axcelis
+  site: axcelis
+  board_num: '1'
+- name: Axiom Space
+  tenant: axiomspace
+  site: External_Career_Site
+  board_num: '5'
+- name: Baker Hughes
+  tenant: bakerhughes
+  site: BakerHughes
+  board_num: '5'
+- name: Blue Origin
+  tenant: blueorigin
+  site: blueorigin
+  board_num: '5'
+- name: Boeing
+  tenant: boeing
+  site: EXTERNAL_CAREERS
+  board_num: '1'
+- name: CACI
+  tenant: caci
+  site: external
+  board_num: '1'
+- name: Cadence Design Systems
+  tenant: cadence
+  site: External_Careers
+  board_num: '1'
+- name: Continental Resources
+  tenant: clr
+  site: CLR_Careers
+  board_num: '5'
+- name: Danaher Corporation
+  tenant: danaher
+  site: danaherjobs
+  board_num: '1'
+- name: Dell Technologies
+  tenant: dell
+  site: External
+  board_num: '1'
+- name: Enphase Energy
+  tenant: enphaseenergy
+  site: enphase
+  board_num: '1'
+- name: Excellus BCBS
+  tenant: lthc
+  site: excellusbcbscareers
+  board_num: '1'
+- name: Flex
+  tenant: flextronics
+  site: Careers
+  board_num: '1'
+- name: GE Aerospace
+  tenant: geaerospace
+  site: GE_ExternalSite
+  board_num: '5'
+- name: GE HealthCare
+  tenant: gehc
+  site: gehc_externalsite
+  board_num: '5'
+- name: GE Vernova
+  tenant: gevernova
+  site: vernova_externalsite
+  board_num: '5'
+- name: General Dynamics Information Technology
+  tenant: gdit
+  site: external_career_site
+  board_num: '5'
+- name: General Motors
+  tenant: generalmotors
+  site: Careers_GM
+  board_num: '5'
+- name: GlobalFoundries
+  tenant: globalfoundries
+  site: External
+  board_num: '1'
+- name: Hitachi
+  tenant: hitachi
+  site: hitachi
+  board_num: '1'
+- name: Inmar Intelligence
+  tenant: inmar
+  site: inmarcareers
+  board_num: '1'
+- name: Intel
+  tenant: intel
+  site: External
+  board_num: '1'
+- name: Intelcom
+  tenant: intelcomgroup
+  site: Intelcom
+  board_num: '3'
+- name: Jabil
+  tenant: jabil
+  site: Jabil_Careers
+  board_num: '5'
+- name: KLA
+  tenant: kla
+  site: Search
+  board_num: '1'
+- name: Leidos
+  tenant: leidos
+  site: External
+  board_num: '5'
+- name: Magna
+  tenant: magna
+  site: magna
+  board_num: '3'
+- name: Marvell Technology
+  tenant: marvell
+  site: marvellcareers
+  board_num: '1'
+- name: Medtronic
+  tenant: medtronic
+  site: medtroniccareers
+  board_num: '1'
+- name: Microchip Technology
+  tenant: microchiphr
+  site: External
+  board_num: '5'
+- name: Micron Technology
+  tenant: micron
+  site: External
+  board_num: '1'
+- name: Mobileye
+  tenant: mobileye
+  site: Mobileye
+  board_num: '3'
+- name: Monolithic Power Systems
+  tenant: monolithicpower
+  site: MPS_Careers
+  board_num: '12'
+- name: Moog
+  tenant: moog
+  site: MOOG_External_Career_Site
+  board_num: '5'
+- name: Motorola Solutions
+  tenant: motorolasolutions
+  site: Careers
+  board_num: '5'
+- name: Nightwing
+  tenant: nwis
+  site: NW
+  board_num: '12'
+- name: Northrop Grumman
+  tenant: ngc
+  site: northrop_grumman_external_site
+  board_num: '1'
+- name: NVIDIA
+  tenant: nvidia
+  site: NVIDIAExternalCareerSite
+  board_num: '5'
+- name: NXP Semiconductors
+  tenant: nxp
+  site: careers
+  board_num: '3'
+- name: Philips
+  tenant: philips
+  site: jobs-and-careers
+  board_num: '3'
+- name: PIMCO
+  tenant: pimco
+  site: pimco-careers
+  board_num: '1'
+- name: Rockwell Automation
+  tenant: rockwellautomation
+  site: external_rockwell_automation
+  board_num: '1'
+- name: RTX
+  tenant: globalhr
+  site: REC_RTX_Ext_Gateway
+  board_num: '5'
+- name: Samsung
+  tenant: sec
+  site: Samsung_Careers
+  board_num: '3'
+- name: Schweitzer Engineering Laboratories
+  tenant: selinc
+  site: SEL
+  board_num: '1'
+- name: Sony
+  tenant: sonyglobal
+  site: sonyglobalcareers
+  board_num: '1'
+- name: Sony Pictures Entertainment
+  tenant: spe
+  site: SonyPicturesEntertainment
+  board_num: '1'
+- name: Stryker
+  tenant: stryker
+  site: StrykerCareers
+  board_num: '1'
+- name: The Hartford
+  tenant: thehartford
+  site: Careers_External
+  board_num: '5'
+- name: Thermo Fisher Scientific
+  tenant: thermofisher
+  site: ThermoFisherCareers
+  board_num: '5'
+- name: Xcel Energy
+  tenant: xcelenergy
+  site: External
+  board_num: '1'
+icims:
+- name: AMD
+  host: campus-amd.icims.com
+  keywords:
+  - '2027'
+  - Intern
+  - Internship
+  - co-op
+  - Co-op
+  - Electrical
+  - Hardware
+  - FPGA
+  - ASIC
+- name: AMD
+  host: careers-amd.icims.com
+  keywords:
+  - '2027'
+  - Intern
+  - Internship
+  - co-op
+  - Co-op
+  - Electrical
+  - Hardware
+  - FPGA
+  - ASIC
+- name: General Dynamics
+  host: careers-gdeb.icims.com
+  keywords:
+  - '2027'
+  - Intern
+  - Internship
+  - co-op
+  - Co-op
+  - Electrical
+  - Hardware
+  - FPGA
+  - ASIC
+- name: General Dynamics Mission Systems
+  host: careers-gdms.icims.com
+  keywords:
+  - '2027'
+  - Intern
+  - Internship
+  - co-op
+  - Co-op
+  - Electrical
+  - Hardware
+  - FPGA
+  - ASIC
+- name: Sargent & Lundy
+  host: careers-sargentlundy.icims.com
+  keywords:
+  - '2027'
+  - Intern
+  - Internship
+  - co-op
+  - Co-op
+  - Electrical
+  - Hardware
+  - FPGA
+  - ASIC
+oracle:
+- name: Berkshire Hathaway Energy
+  host: fa-essf-saasfaprod1.fa.ocs.oraclecloud.com
+  site: CX_1
+- name: Cummins
+  host: fa-espx-saasfaprod1.fa.ocs.oraclecloud.com
+  site: CX_1
+- name: Dell Technologies
+  host: iawmqy.fa.ocs.oraclecloud.com
+  site: careers
+- name: Emerson Electric
+  host: hdjq.fa.us2.oraclecloud.com
+  site: CX_1
+- name: Honeywell
+  host: ibqbjb.fa.ocs.oraclecloud.com
+  site: Honeywell
+- name: Howmet Aerospace
+  host: fa-exty-saasfaprod1.fa.ocs.oraclecloud.com
+  site: CX_1
+- name: Nokia
+  host: fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com
+  site: CX_1
+- name: onsemi
+  host: hctz.fa.us2.oraclecloud.com
+  site: CX_1001
+- name: Texas Instruments
+  host: edbz.fa.us2.oraclecloud.com
+  site: CX
+- name: Vertiv
+  host: egup.fa.us2.oraclecloud.com
+  site: CX
+- name: WSP
+  host: emit.fa.ca3.oraclecloud.com
+  site: CX_2001
+workable:
+- name: Flexion Robotics
+  slug: flexion-robotics
+- name: RAVE Aerospace
+  slug: raveaerospace
