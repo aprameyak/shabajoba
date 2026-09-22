@@ -7642,5 +7642,53 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-09-21"
+  },
+  {
+    "company": "Marvell",
+    "role": "Test Engineering Intern",
+    "location": "Irvine, CA; Santa Clara, CA; Westlake Village, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers2/job/Santa-Clara-CA/Test-Engineering-Intern--BS---Summer-2027_2604537",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-22"
+  },
+  {
+    "company": "Symbotic",
+    "role": "Hardware Engineer Intern - Hardware Engineering",
+    "location": "Wilmington, MA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://symbotic.wd504.myworkdayjobs.com/Symbotic/job/USA-Wilmington-MA---ITC/Hardware-Engineer_R8101",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-22"
+  },
+  {
+    "company": "Marvell",
+    "role": "Test Engineering Intern - BS",
+    "location": "Irvine, CA; Santa Clara, CA; Westlake Village, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Santa-Clara-CA/Test-Engineering-Intern--BS---Summer-2027_2604537-1",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-22"
+  },
+  {
+    "company": "Tesla",
+    "role": "Reliability Test Engineer Intern - Energy Engineering",
+    "location": "Palo Alto, CA",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://www.tesla.com/careers/search/job/284278",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-22"
   }
 ]
