@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**351 open** · 648 total · Summer 2027 (228 open) · Off-cycle & co-ops (123 open) · Updated September 21, 2026
+**352 open** · 649 total · Summer 2027 (229 open) · Off-cycle & co-ops (123 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-351-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-352-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -36,6 +36,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | CACI | Electrical Engineering Intern | Florham Park, NJ, US | Summer 2027 | Undergrad | <a href="https://caci.wd1.myworkdayjobs.com/job/Florham-Park-NJ-US/Electrical-Engineering-Intern---Summer-2027_332470" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Ciena | Verification Engineer Intern | Atlanta, GA | Spring 2027 | Undergrad; Masters | <a href="https://ciena.wd5.myworkdayjobs.com/Careers/job/Atlanta/Verification-Engineer-Intern--Spring-2027-_R031686" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Danaher Corporation | Hardware Engineering Co-op | Concord, ON | Co-op | Undergrad | <a href="https://danaher.wd1.myworkdayjobs.com/job/Concord-Ontario-Canada/Hardware-Engineering-Co-op_R1317537" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
+| General Dynamics Mission Systems | Electrical Intern Engineer | Canonsburg, PA | Summer 2027 | Undergrad | <a href="https://careers-gdms.icims.com/jobs/75111/electrical-intern-engineer/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Johns Hopkins Applied Physics Laboratory | Electrical/Computer Engineering Intern - Space Science Electronics | Laurel, MD | Summer 2027 | Undergrad; Masters | <a href="https://careers.jhuapl.edu/jobs/60123?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Marvell | Test Engineering Intern | <details><summary>**3 locations**</summary>Irvine, CA</br>Santa Clara, CA</br>Westlake Village, CA</details> | Summer 2027 | Undergrad | <a href="https://marvell.wd1.myworkdayjobs.com/MarvellCareers2/job/Santa-Clara-CA/Test-Engineering-Intern--BS---Summer-2027_2604537" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | ↳ | Test Engineering Intern - BS | <details><summary>**3 locations**</summary>Irvine, CA</br>Santa Clara, CA</br>Westlake Village, CA</details> | Summer 2027 | Undergrad | <a href="https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Santa-Clara-CA/Test-Engineering-Intern--BS---Summer-2027_2604537-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
