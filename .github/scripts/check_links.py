@@ -64,14 +64,24 @@ def try_workday_fix(url, workday_boards, company_name):
     board_id = workday_boards.get(company_name)
     if not board_id:
         return None
-    match = re.search(r'/(apply|job)/([^/]+)', url)
+    # Keep the full Workday job path (location + posting slug). Capturing only
+    # the first segment collapses distinct jobs onto the same location page.
+    match = re.search(r'/(?:apply|job)/(.+?)(?:\?|$)', url)
     if not match:
         return None
-    job_id = match.group(2)
-    fixed = f'https://{board_id}.wd1.myworkdayjobs.com/en-US/External/job/{job_id}'
+    job_path = match.group(1).rstrip('/')
+    if not job_path or '/' not in job_path:
+        return None
+    fixed = f'https://{board_id}.wd1.myworkdayjobs.com/en-US/External/job/{job_path}'
+    if fixed.rstrip('/') == url.split('?')[0].rstrip('/'):
+        return None
     if check_url(fixed):
         return fixed
     return None
+
+
+def url_key(url):
+    return url.split('?', 1)[0].lower().rstrip('/')
 
 
 def main():
@@ -79,6 +89,11 @@ def main():
         listings = json.load(f)
 
     workday_boards = load_workday_boards()
+    used_urls = {
+        url_key(e.get('url', ''))
+        for e in listings
+        if e.get('url', '').strip()
+    }
 
     changed = False
     for entry in listings:
@@ -92,12 +107,27 @@ def main():
         if not is_live:
             fixed = try_workday_fix(url, workday_boards, entry.get('company', ''))
             if fixed:
-                print(f'Fixed Workday URL for {entry["company"]}: {fixed}')
-                entry['url'] = fixed
-                changed = True
-                time.sleep(REQUEST_DELAY)
+                fixed_key = url_key(fixed)
+                old_key = url_key(url)
+                if fixed_key != old_key and fixed_key in used_urls:
+                    # Same posting already listed under the canonical Workday URL.
+                    print(
+                        f'Dropping duplicate after Workday fix: '
+                        f'{entry["company"]} — {entry["role"]}'
+                    )
+                    used_urls.discard(old_key)
+                    entry['url'] = ''
+                    changed = True
+                else:
+                    print(f'Fixed Workday URL for {entry["company"]}: {fixed}')
+                    used_urls.discard(old_key)
+                    used_urls.add(fixed_key)
+                    entry['url'] = fixed
+                    changed = True
+                    time.sleep(REQUEST_DELAY)
             else:
                 print(f'Marking closed: {entry["company"]} — {entry["role"]}')
+                used_urls.discard(url_key(url))
                 entry['url'] = ''
                 changed = True
 
