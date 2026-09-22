@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**344 open** · 641 total · Summer 2027 (223 open) · Off-cycle & co-ops (121 open) · Updated September 21, 2026
+**345 open** · 642 total · Summer 2027 (224 open) · Off-cycle & co-ops (121 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-344-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-345-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -35,6 +35,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
 | Marvell | Test Engineering Intern | <details><summary>**3 locations**</summary>Irvine, CA</br>Santa Clara, CA</br>Westlake Village, CA</details> | Summer 2027 | Undergrad | <a href="https://marvell.wd1.myworkdayjobs.com/MarvellCareers2/job/Santa-Clara-CA/Test-Engineering-Intern--BS---Summer-2027_2604537" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | ↳ | Test Engineering Intern - BS | <details><summary>**3 locations**</summary>Irvine, CA</br>Santa Clara, CA</br>Westlake Village, CA</details> | Summer 2027 | Undergrad | <a href="https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Santa-Clara-CA/Test-Engineering-Intern--BS---Summer-2027_2604537-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
+| Northrop Grumman | Electrical Engineer Intern - San Diego CA | San Diego, CA | Summer 2027 | Undergrad | <a href="https://ngc.wd1.myworkdayjobs.com/job/United-States-California-San-Diego/XMLNAME-2027-Electrical-Engineer-Intern---San-Diego-CA_R10252060" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Symbotic | Hardware Engineer Intern - Hardware Engineering | Wilmington, MA | Summer 2027 | Undergrad | <a href="https://symbotic.wd504.myworkdayjobs.com/Symbotic/job/USA-Wilmington-MA---ITC/Hardware-Engineer_R8101" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Tesla | Reliability Test Engineer Intern - Energy Engineering | Palo Alto, CA | Spring 2027 | Undergrad | <a href="https://www.tesla.com/careers/search/job/284278" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Amperesand | Power Electronics Control Intern | <details><summary>**2 locations**</summary>Reno, NV</br>San Francisco, CA</details> | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/amperesand/jobs/4164330009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 21 |
