@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**355 open** · 658 total · Summer 2027 (231 open) · Off-cycle & co-ops (124 open) · Updated September 21, 2026
+**357 open** · 660 total · Summer 2027 (233 open) · Off-cycle & co-ops (124 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-355-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-357-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -40,8 +40,10 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | ↳ | Electrical Validation Intern - BS | Santa Clara, CA | Summer 2027 | Undergrad | <a href="https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Santa-Clara-CA/Electrical-Validation-Intern--BS---Summer-2027_2603795-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 23 |
 | Marvell Technology | Digital IC Design Intern | Petah Tikva, IL | Summer 2027 | Undergrad | <a href="https://marvell.wd1.myworkdayjobs.com/job/IL---Petah-Tikva/Digital-IC-Design-Intern_2604490" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 23 |
 | Nokia | Photonic Integrated Circuits Test Coop | Remote (US) | Co-op | Undergrad | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/40743" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 23 |
+| Northrop Grumman | Electrical Engineer Intern – Woodland Hills CA | Woodland Hills, CA | Summer 2027 | Undergrad | <a href="https://ngc.wd1.myworkdayjobs.com/job/United-States-California-Woodland-Hills/XMLNAME-2027-Electrical-Engineer-Intern---Woodland-Hills-CA_R10249521" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 23 |
 | RTX | Avionics Computer Systems Engineering Co-op | Cedar Rapids, IA | Co-op | Undergrad | <a href="https://globalhr.wd5.myworkdayjobs.com/job/US-IA-CEDAR-RAPIDS-193--1120-Collins-Rd-NE--BLDG193/Avionics-Computer-Systems-Engineering-Co-op--Summer-Fall-2027----Onsite_01872715" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 23 |
 | ↳ | Antenna and Microwave Intern | Tewksbury-Tb1, MA | Summer 2027 | Undergrad | <a href="https://globalhr.wd5.myworkdayjobs.com/job/US-MA-TEWKSBURY-TB1--50-Apple-Hill-Dr--ASSABET-BLDG/Antenna-and-Microwave-Intern--Summer-2027-_01873423" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 23 |
+| ↳ | Receiver, Exciter & Processing Architecture Electrical Engineer Intern | Tewksbury-Tb1, MA | Summer 2027 | Undergrad | <a href="https://globalhr.wd5.myworkdayjobs.com/job/US-MA-TEWKSBURY-TB1--50-Apple-Hill-Dr--ASSABET-BLDG/Receiver--Exciter---Processing-Architecture-Electrical-Engineer-Intern--Summer-2027-_01873437" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 23 |
 | CACI | Electrical Engineering Intern | Florham Park, NJ, US | Summer 2027 | Undergrad | <a href="https://caci.wd1.myworkdayjobs.com/en-US/External/job/Florham-Park-NJ-US/Electrical-Engineering-Intern---Summer-2027_332470" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Ciena | Verification Engineer Intern | Atlanta, GA | Spring 2027 | Undergrad; Masters | <a href="https://ciena.wd5.myworkdayjobs.com/Careers/job/Atlanta/Verification-Engineer-Intern--Spring-2027-_R031686" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Danaher Corporation | Hardware Engineering Co-op | Concord, ON | Co-op | Undergrad | 🔒 | Sep 22 |
