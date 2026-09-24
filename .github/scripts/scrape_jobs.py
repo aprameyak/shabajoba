@@ -666,6 +666,30 @@ def extract_job_metadata(title, description_text, api_key):
     }
 
 
+def sanitize_sponsorship(value):
+    v = (value or 'Unknown').strip()
+    low = v.lower()
+    if low == 'unknown' or low.startswith('no —') or low.startswith('yes —'):
+        return v if low != 'unknown' else 'Unknown'
+    if low in ('no', 'none', 'false'):
+        return 'No — does NOT offer sponsorship'
+    if low in ('yes', 'true'):
+        return 'Yes — sponsorship available'
+    return 'Unknown'
+
+
+def sanitize_citizenship(value):
+    v = (value or 'Unknown').strip()
+    low = v.lower()
+    if low in ('no', 'unknown'):
+        return 'No' if low == 'no' else 'Unknown'
+    if low.startswith('yes —') or low.startswith('yes -'):
+        return v.replace('yes -', 'Yes —').replace('yes —', 'Yes —') if low.startswith('yes') else v
+    if 'citizen' in low:
+        return 'Yes — U.S. citizenship required'
+    return 'Unknown'
+
+
 def batch_extract_metadata_claude(candidates, api_key):
     """
     One Haiku call per small batch instead of one call per listing.
@@ -706,10 +730,10 @@ def batch_extract_metadata_claude(candidates, api_key):
                 if j >= len(parsed) or not isinstance(parsed[j], dict):
                     continue
                 meta = parsed[j]
-                if meta.get('sponsorship') not in (None, 'Unknown'):
-                    c['sponsorship'] = meta['sponsorship']
-                if meta.get('citizenship') not in (None, 'Unknown'):
-                    c['citizenship'] = meta['citizenship']
+                if c.get('sponsorship') == 'Unknown' and meta.get('sponsorship') not in (None, 'Unknown'):
+                    c['sponsorship'] = sanitize_sponsorship(meta.get('sponsorship'))
+                if c.get('citizenship') == 'Unknown' and meta.get('citizenship') not in (None, 'Unknown'):
+                    c['citizenship'] = sanitize_citizenship(meta.get('citizenship'))
         except Exception as e:
             print(f'Claude metadata batch error (batch {i // batch_size}): {e}')
 
@@ -1525,15 +1549,15 @@ def main():
         role = sanitize_listing_role(c['company'], c['title'])
         if listing_exists(listings, c['url'], c['company'], role):
             continue
-        if not c.get('description'):
-            continue
         c['_role'] = role
         to_add.append(c)
 
-    if to_add and claude_key:
-        batch_extract_metadata_claude(to_add, claude_key)
-    else:
-        for c in to_add:
+    # Metadata Claude only when there is description text to read
+    need_meta = [c for c in to_add if c.get('description')]
+    if need_meta and claude_key:
+        batch_extract_metadata_claude(need_meta, claude_key)
+    for c in to_add:
+        if 'sponsorship' not in c:
             inferred = infer_metadata_keywords(c.get('description', ''))
             c['sponsorship'] = inferred['sponsorship']
             c['citizenship'] = inferred['citizenship']

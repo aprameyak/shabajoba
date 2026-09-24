@@ -286,15 +286,14 @@ def main():
         role = sanitize_listing_role(c['company'], c['title'])
         if listing_exists(listings, c['url'], c['company'], role):
             continue
-        if not c.get('description'):
-            continue
         c['_role'] = role
         to_add.append(c)
 
-    if to_add and claude_key:
-        batch_extract_metadata_claude(to_add, claude_key)
-    else:
-        for c in to_add:
+    need_meta = [c for c in to_add if c.get('description')]
+    if need_meta and claude_key:
+        batch_extract_metadata_claude(need_meta, claude_key)
+    for c in to_add:
+        if 'sponsorship' not in c:
             inferred = infer_metadata_keywords(c.get('description', ''))
             c['sponsorship'] = inferred['sponsorship']
             c['citizenship'] = inferred['citizenship']
