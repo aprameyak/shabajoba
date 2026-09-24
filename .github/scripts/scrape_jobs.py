@@ -339,6 +339,29 @@ def parse_claude_json(raw):
         return json.loads(text[start:])
 
 
+def _claude_message(api_key, prompt, max_tokens):
+    """Single Haiku Messages call. Raises on HTTP/empty body."""
+    resp = requests.post(
+        ANTHROPIC_API_URL,
+        headers={
+            'x-api-key': api_key,
+            'anthropic-version': '2023-06-01',
+            'content-type': 'application/json',
+        },
+        json={
+            'model': CLAUDE_MODEL,
+            'max_tokens': max_tokens,
+            'messages': [{'role': 'user', 'content': prompt}],
+        },
+        timeout=30,
+    )
+    resp.raise_for_status()
+    content = resp.json().get('content') or []
+    if not content or not content[0].get('text'):
+        raise ValueError('empty Claude response')
+    return content[0]['text']
+
+
 def batch_normalize_locations_claude(raw_locations, api_key, cache):
     """
     Cheap Haiku fallback for ATS location strings regex couldn't normalize.
@@ -364,28 +387,14 @@ def batch_normalize_locations_claude(raw_locations, api_key, cache):
 
     numbered = '\n'.join(f'{i + 1}. {loc}' for i, loc in enumerate(pending))
     prompt = (
-        'Normalize US/Canada job locations to City, ST (2-letter) or '
-        'Remote (US) / Remote (Canada). Multi-city: join with "; ". '
-        'If not US/Canada, return "". JSON string array only, same order.\n'
+        'US/CA only → City, ST or Remote (US|Canada); multi="; "; else "". '
+        'JSON string array, same order.\n'
         f'{numbered}'
     )
     try:
-        resp = requests.post(
-            ANTHROPIC_API_URL,
-            headers={
-                'x-api-key': api_key,
-                'anthropic-version': '2023-06-01',
-                'content-type': 'application/json',
-            },
-            json={
-                'model': CLAUDE_MODEL,
-                'max_tokens': 200,
-                'messages': [{'role': 'user', 'content': prompt}],
-            },
-            timeout=30,
+        raw = _claude_message(
+            api_key, prompt, max_tokens=min(200, 16 + 12 * len(pending)),
         )
-        resp.raise_for_status()
-        raw = resp.json()['content'][0]['text']
         parsed = parse_claude_json(raw)
         if not isinstance(parsed, list):
             raise ValueError(f'expected JSON array, got {type(parsed).__name__}')
@@ -571,14 +580,17 @@ def candidate_passes_scope(c):
     return is_internship(c['title']) and is_us_or_canada(c['location'])
 
 
-def resolve_ambiguous_candidates(candidates, classifications, claude_key, gemini_key, gemini_usage):
-    """Retry LLM for titles that failed first pass; returns newly confirmed jobs."""
+def resolve_ambiguous_candidates(candidates, classifications, claude_key, gemini_key, gemini_usage,
+                                  already_tried_claude=None):
+    """Confirm leftover titles. Avoids a second Claude pass for titles already attempted."""
     if not candidates:
         return []
+    already_tried_claude = already_tried_claude or set()
     titles = list({c['title'] for c in candidates if c['title'] not in classifications})
-    if titles and claude_key:
-        classifications.update(batch_classify_ee_claude(titles, claude_key))
-    elif titles and gemini_key:
+    need_claude = [t for t in titles if t not in already_tried_claude]
+    if need_claude and claude_key:
+        classifications.update(batch_classify_ee_claude(need_claude, claude_key))
+    elif titles and gemini_key and not claude_key:
         classifications.update(
             classify_titles_gemini(titles, gemini_key, gemini_usage)
         )
@@ -635,6 +647,7 @@ def infer_metadata_keywords(text):
 
 
 def extract_job_metadata(title, description_text, api_key):
+    """Keyword-first; single-job Claude only when batching isn't used."""
     inferred = infer_metadata_keywords(description_text)
     if inferred['sponsorship'] != 'Unknown' and inferred['citizenship'] != 'Unknown':
         return inferred
@@ -653,6 +666,54 @@ def extract_job_metadata(title, description_text, api_key):
     }
 
 
+def batch_extract_metadata_claude(candidates, api_key):
+    """
+    One Haiku call per small batch instead of one call per listing.
+    Mutates candidates with sponsorship/citizenship. Skips when keywords suffice.
+    """
+    if not api_key or not candidates:
+        return
+    pending = []
+    for c in candidates:
+        inferred = infer_metadata_keywords(c.get('description', ''))
+        c['sponsorship'] = inferred['sponsorship']
+        c['citizenship'] = inferred['citizenship']
+        if inferred['sponsorship'] == 'Unknown' or inferred['citizenship'] == 'Unknown':
+            pending.append(c)
+    if not pending:
+        return
+
+    batch_size = 8
+    for i in range(0, len(pending), batch_size):
+        batch = pending[i:i + batch_size]
+        parts = []
+        for j, c in enumerate(batch):
+            desc = strip_html(c.get('description', ''))[:400]
+            parts.append(f'{j + 1}. {c["title"]}\n{desc}')
+        prompt = (
+            'For each job, JSON array of '
+            '{"sponsorship":"Yes — sponsorship available"|'
+            '"No — does NOT offer sponsorship"|"Unknown",'
+            '"citizenship":"Yes — U.S. citizenship required"|"No"|"Unknown"}. '
+            'Same order. JSON only.\n' + '\n'.join(parts)
+        )
+        try:
+            raw = _claude_message(api_key, prompt, max_tokens=min(400, 40 * len(batch)))
+            parsed = parse_claude_json(raw)
+            if not isinstance(parsed, list):
+                raise ValueError('expected JSON array')
+            for j, c in enumerate(batch):
+                if j >= len(parsed) or not isinstance(parsed[j], dict):
+                    continue
+                meta = parsed[j]
+                if meta.get('sponsorship') not in (None, 'Unknown'):
+                    c['sponsorship'] = meta['sponsorship']
+                if meta.get('citizenship') not in (None, 'Unknown'):
+                    c['citizenship'] = meta['citizenship']
+        except Exception as e:
+            print(f'Claude metadata batch error (batch {i // batch_size}): {e}')
+
+
 def batch_classify_ee_claude(titles, api_key):
     """
     Classify a batch of job titles as EE-relevant using Claude Haiku.
@@ -664,73 +725,41 @@ def batch_classify_ee_claude(titles, api_key):
     batch_size = 40
     for i in range(0, len(titles), batch_size):
         batch = titles[i:i + batch_size]
-        numbered = '\n'.join(f'{j + 1}. "{t}"' for j, t in enumerate(batch))
+        numbered = '\n'.join(f'{j + 1}. {t}' for j, t in enumerate(batch))
         prompt = (
-            'EE hardware/electrical intern/co-op titles only. '
-            'true=EE/hardware/RF/VLSI/ASIC/FPGA/PCB/test/avionics/power silicon; '
+            'EE hardware/electrical intern/co-op? '
+            'true=EE/hardware/RF/VLSI/ASIC/FPGA/PCB/test/avionics/power/silicon; '
             'false=SWE/DS/ML/ME/civil/business/HR.\n'
             f'{numbered}\n'
-            'JSON booleans only, same order.'
+            'JSON boolean array only, same order.'
         )
         try:
-            resp = requests.post(
-                ANTHROPIC_API_URL,
-                headers={
-                    'x-api-key': api_key,
-                    'anthropic-version': '2023-06-01',
-                    'content-type': 'application/json',
-                },
-                json={
-                    'model': CLAUDE_MODEL,
-                    'max_tokens': 128,
-                    'messages': [{'role': 'user', 'content': prompt}],
-                },
-                timeout=30,
-            )
-            resp.raise_for_status()
-            raw = resp.json()['content'][0]['text'].strip()
+            # ~1 token per bool + overhead; keep headroom without overpaying
+            raw = _claude_message(api_key, prompt, max_tokens=min(256, 24 + 4 * len(batch)))
             parsed = parse_claude_json(raw)
+            if not isinstance(parsed, list):
+                raise ValueError('expected JSON array')
             for j, title in enumerate(batch):
                 if j < len(parsed):
                     results[title] = bool(parsed[j])
-            time.sleep(0.5)
         except Exception as e:
             print(f'Claude batch classify error (batch {i // batch_size}): {e}')
     return results
 
 
 def extract_job_metadata_claude(title, description_text, api_key):
-    """
-    Extract sponsorship and citizenship info from a job description using Claude Haiku.
-    Returns dict with 'sponsorship' and 'citizenship' keys.
-    """
+    """Single-listing fallback (prefer batch_extract_metadata_claude)."""
     if not api_key or not description_text:
         return {'sponsorship': 'Unknown', 'citizenship': 'Unknown'}
-    truncated = description_text[:1200]
+    truncated = strip_html(description_text)[:400]
     prompt = (
         'JSON only: {"sponsorship":"Yes — sponsorship available"|'
         '"No — does NOT offer sponsorship"|"Unknown",'
         '"citizenship":"Yes — U.S. citizenship required"|"No"|"Unknown"}\n'
-        f'Title: {title}\n{truncated}'
+        f'{title}\n{truncated}'
     )
     try:
-        resp = requests.post(
-            ANTHROPIC_API_URL,
-            headers={
-                'x-api-key': api_key,
-                'anthropic-version': '2023-06-01',
-                'content-type': 'application/json',
-            },
-            json={
-                'model': CLAUDE_MODEL,
-                'max_tokens': 64,
-                'messages': [{'role': 'user', 'content': prompt}],
-            },
-            timeout=30,
-        )
-        resp.raise_for_status()
-        raw = resp.json()['content'][0]['text'].strip()
-        return parse_claude_json(raw)
+        return parse_claude_json(_claude_message(api_key, prompt, max_tokens=64))
     except Exception as e:
         print(f'Claude metadata error [{title[:50]}]: {e}')
         return {'sponsorship': 'Unknown', 'citizenship': 'Unknown'}
@@ -1444,11 +1473,17 @@ def main():
         c['title'] for c in in_scope
         if should_llm_classify_title(c['title'], classifications)
     })
+    claude_titles_tried = set()
 
     if titles_to_classify and claude_key:
         print(f'Classifying {len(titles_to_classify)} titles with LLM ...')
         new_cls = batch_classify_ee_claude(titles_to_classify, claude_key)
         classifications.update(new_cls)
+        claude_titles_tried.update(titles_to_classify)
+        # Don't burn a second Claude pass on the same titles this run
+        for t in titles_to_classify:
+            if t not in classifications:
+                classifications[t] = False
         save_json(CLASSIFICATIONS_FILE, classifications)
     elif titles_to_classify and gemini_key:
         print(f'Classifying {len(titles_to_classify)} titles with Gemini (fallback) ...')
@@ -1473,41 +1508,45 @@ def main():
             print(f'Skip (no LLM): {c["company"]} — {title}')
 
     if ambiguous:
-        print(f'Ambiguous after first pass: {len(ambiguous)} — retrying LLM')
+        print(f'Ambiguous after first pass: {len(ambiguous)} — resolving without re-billing Claude')
         confirmed.extend(
             resolve_ambiguous_candidates(
                 ambiguous, classifications, claude_key, gemini_key, gemini_usage,
+                already_tried_claude=claude_titles_tried,
             )
         )
         save_json(CLASSIFICATIONS_FILE, classifications)
 
     print(f'Confirmed for add: {len(confirmed)}')
 
+    # Only spend Claude on listings we are actually about to insert
+    to_add = []
     for c in confirmed:
         role = sanitize_listing_role(c['company'], c['title'])
         if listing_exists(listings, c['url'], c['company'], role):
             continue
-        desc = c.get('description', '')
-        if not desc:
+        if not c.get('description'):
             continue
-        before = infer_metadata_keywords(desc)
-        meta = extract_job_metadata(c['title'], desc, claude_key)
-        c['sponsorship'] = meta.get('sponsorship', 'Unknown')
-        c['citizenship'] = meta.get('citizenship', 'Unknown')
-        if claude_key and (
-            before['sponsorship'] == 'Unknown' or before['citizenship'] == 'Unknown'
-        ):
-            time.sleep(0.2)
+        c['_role'] = role
+        to_add.append(c)
+
+    if to_add and claude_key:
+        batch_extract_metadata_claude(to_add, claude_key)
+    else:
+        for c in to_add:
+            inferred = infer_metadata_keywords(c.get('description', ''))
+            c['sponsorship'] = inferred['sponsorship']
+            c['citizenship'] = inferred['citizenship']
 
     added = 0
     needs_loc_llm = [
-        c['location'] for c in confirmed
+        c['location'] for c in to_add
         if not location_passes_validation(normalize_location(c['location']))
     ]
     if needs_loc_llm and claude_key:
         batch_normalize_locations_claude(needs_loc_llm, claude_key, location_cache)
 
-    for c in confirmed:
+    for c in to_add:
         listing_type, season = classify_season(c['title'])
         # Prefer Simplify term metadata when present
         terms = c.get('terms') or []
@@ -1521,7 +1560,7 @@ def main():
                 listing_type, season = 'offcycle', 'Spring 2027'
             elif 'co-op' in joined or 'coop' in joined:
                 listing_type, season = 'offcycle', 'Co-op'
-        role = sanitize_listing_role(c['company'], c['title'])
+        role = c.get('_role') or sanitize_listing_role(c['company'], c['title'])
         education = infer_education(c['title'])
         degrees = c.get('degrees') or []
         if degrees:

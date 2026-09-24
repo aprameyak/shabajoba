@@ -30,7 +30,8 @@ from scrape_jobs import (  # noqa: E402
     batch_normalize_locations_claude, resolve_location,
     build_scrape_tasks, scrape_usajobs,
     LISTINGS_FILE, SEEN_FILE, normalize_url, is_internship, is_us_or_canada,
-    normalize_location, location_passes_validation,
+    normalize_location, location_passes_validation, batch_extract_metadata_claude,
+    infer_metadata_keywords,
 )
 
 
@@ -247,9 +248,14 @@ def main():
         c['title'] for c in in_scope
         if should_llm_classify_title(c['title'], classifications)
     })
+    claude_titles_tried = set()
     if titles_to_classify and claude_key:
         print(f'Classifying {len(titles_to_classify)} ambiguous titles via LLM ...')
         classifications.update(batch_classify_ee_claude(titles_to_classify, claude_key))
+        claude_titles_tried.update(titles_to_classify)
+        for t in titles_to_classify:
+            if t not in classifications:
+                classifications[t] = False
 
     confirmed = []
     ambiguous = []
@@ -265,38 +271,43 @@ def main():
             ambiguous.append(c)
 
     if ambiguous:
-        print(f'Retrying {len(ambiguous)} ambiguous titles ...')
+        print(f'Resolving {len(ambiguous)} ambiguous titles without re-billing Claude ...')
         confirmed.extend(
-            resolve_ambiguous_candidates(ambiguous, classifications, claude_key, '', {})
+            resolve_ambiguous_candidates(
+                ambiguous, classifications, claude_key, '', {},
+                already_tried_claude=claude_titles_tried,
+            )
         )
 
     print(f'After EE filter: {len(confirmed)}')
 
+    to_add = []
     for c in confirmed:
         role = sanitize_listing_role(c['company'], c['title'])
         if listing_exists(listings, c['url'], c['company'], role):
             continue
-        desc = c.get('description', '')
-        if not desc:
+        if not c.get('description'):
             continue
-        before = infer_metadata_keywords(desc)
-        meta = extract_job_metadata(c['title'], desc, claude_key)
-        c['sponsorship'] = meta.get('sponsorship', 'Unknown')
-        c['citizenship'] = meta.get('citizenship', 'Unknown')
-        if claude_key and (
-            before['sponsorship'] == 'Unknown' or before['citizenship'] == 'Unknown'
-        ):
-            time.sleep(0.2)
+        c['_role'] = role
+        to_add.append(c)
+
+    if to_add and claude_key:
+        batch_extract_metadata_claude(to_add, claude_key)
+    else:
+        for c in to_add:
+            inferred = infer_metadata_keywords(c.get('description', ''))
+            c['sponsorship'] = inferred['sponsorship']
+            c['citizenship'] = inferred['citizenship']
 
     added = 0
     needs_loc_llm = [
-        c['location'] for c in confirmed
+        c['location'] for c in to_add
         if not location_passes_validation(normalize_location(c['location']))
     ]
     if needs_loc_llm and claude_key:
         batch_normalize_locations_claude(needs_loc_llm, claude_key, location_cache)
 
-    for c in confirmed:
+    for c in to_add:
         listing_type, season = classify_season(c['title'])
         location = resolve_location(c['location'], location_cache)
         if not location:
@@ -307,7 +318,7 @@ def main():
             continue
         entry = {
             'company': c['company'],
-            'role': sanitize_listing_role(c['company'], c['title']),
+            'role': c.get('_role') or sanitize_listing_role(c['company'], c['title']),
             'location': location,
             'type': listing_type,
             'season': season,
