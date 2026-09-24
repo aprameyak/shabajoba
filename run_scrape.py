@@ -29,7 +29,7 @@ from scrape_jobs import (  # noqa: E402
     resolve_ambiguous_candidates, batch_classify_ee_claude,
     build_scrape_tasks, scrape_usajobs,
     LISTINGS_FILE, SEEN_FILE, normalize_url, is_internship, is_us_or_canada,
-    normalize_location,
+    normalize_location, location_passes_validation,
 )
 
 
@@ -289,10 +289,17 @@ def main():
     added = 0
     for c in confirmed:
         listing_type, season = classify_season(c['title'])
+        location = normalize_location(c['location'])
+        if not location_passes_validation(location):
+            print(
+                f'  Skip (bad location): {c["company"]} — {c["title"]} '
+                f'({c["location"]!r} → {location!r})'
+            )
+            continue
         entry = {
             'company': c['company'],
             'role': sanitize_listing_role(c['company'], c['title']),
-            'location': normalize_location(c['location']),
+            'location': location,
             'type': listing_type,
             'season': season,
             'education': infer_education(c['title']),

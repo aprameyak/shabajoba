@@ -299,6 +299,25 @@ def normalize_location(loc):
     return '; '.join(parts)
 
 
+_LOCATION_SEGMENT_OK = re.compile(r',\s*[A-Z]{2}$|Remote\s*\(', re.I)
+_COUNTRY_IN_LOCATION = re.compile(r'United States|Canada(?!\))', re.I)
+
+
+def location_passes_validation(loc):
+    """Match validate_listings.py rules so we never commit a format that fails CI."""
+    if not loc or not str(loc).strip():
+        return False
+    if _COUNTRY_IN_LOCATION.search(loc):
+        return False
+    for seg in str(loc).split(';'):
+        seg = seg.strip()
+        if not seg:
+            continue
+        if not _LOCATION_SEGMENT_OK.search(seg):
+            return False
+    return True
+
+
 def is_us_or_canada(location_text):
     if not location_text:
         return False
@@ -1418,10 +1437,17 @@ def main():
                 sponsorship = 'No — does NOT offer sponsorship'
             elif 'available' in raw_sp or raw_sp == 'yes':
                 sponsorship = 'Yes — sponsorship available'
+        location = normalize_location(c['location'])
+        if not location_passes_validation(location):
+            print(
+                f'Skip (bad location after normalize): '
+                f'{c["company"]} — {c["title"]} ({c["location"]!r} → {location!r})'
+            )
+            continue
         entry = {
             'company': c['company'],
             'role': role,
-            'location': normalize_location(c['location']),
+            'location': location,
             'type': listing_type,
             'season': season,
             'education': education,
