@@ -23,10 +23,11 @@ from scrape_jobs import (  # noqa: E402
     is_ee_title,
     classify_season, infer_education, add_listing,
     sanitize_listing_role,
-    load_json, save_json, CLASSIFICATIONS_FILE,
+    load_json, save_json, CLASSIFICATIONS_FILE, LOCATION_CACHE_FILE,
     candidate_passes_scope, should_llm_classify_title,
     listing_exists, extract_job_metadata, infer_metadata_keywords,
     resolve_ambiguous_candidates, batch_classify_ee_claude,
+    batch_normalize_locations_claude, resolve_location,
     build_scrape_tasks, scrape_usajobs,
     LISTINGS_FILE, SEEN_FILE, normalize_url, is_internship, is_us_or_canada,
     normalize_location, location_passes_validation,
@@ -197,6 +198,7 @@ def main():
     listings = load_json(LISTINGS_FILE, [])
     seen = load_json(SEEN_FILE, {})
     classifications = load_json(CLASSIFICATIONS_FILE, {})
+    location_cache = load_json(LOCATION_CACHE_FILE, {})
     today = datetime.date.today().isoformat()
     candidates = []
 
@@ -287,13 +289,20 @@ def main():
             time.sleep(0.2)
 
     added = 0
+    needs_loc_llm = [
+        c['location'] for c in confirmed
+        if not location_passes_validation(normalize_location(c['location']))
+    ]
+    if needs_loc_llm and claude_key:
+        batch_normalize_locations_claude(needs_loc_llm, claude_key, location_cache)
+
     for c in confirmed:
         listing_type, season = classify_season(c['title'])
-        location = normalize_location(c['location'])
-        if not location_passes_validation(location):
+        location = resolve_location(c['location'], location_cache)
+        if not location:
             print(
                 f'  Skip (bad location): {c["company"]} — {c["title"]} '
-                f'({c["location"]!r} → {location!r})'
+                f'({c["location"]!r})'
             )
             continue
         entry = {
@@ -321,6 +330,7 @@ def main():
     save_json(LISTINGS_FILE, listings)
     save_json(SEEN_FILE, seen)
     save_json(CLASSIFICATIONS_FILE, classifications)
+    save_json(LOCATION_CACHE_FILE, location_cache)
 
     print('\nRebuilding README ...')
     result = subprocess.run(

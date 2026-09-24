@@ -13,6 +13,7 @@ import requests
 LISTINGS_FILE = Path('listings.json')
 SEEN_FILE = Path('.github/data/seen_jobs.json')
 CLASSIFICATIONS_FILE = Path('.github/data/title_classifications.json')
+LOCATION_CACHE_FILE = Path('.github/data/location_normalizations.json')
 GEMINI_USAGE_FILE = Path('.github/data/gemini_usage.json')
 
 CLAUDE_MODEL = 'claude-haiku-4-5-20251001'
@@ -318,6 +319,102 @@ def location_passes_validation(loc):
     return True
 
 
+def parse_claude_json(raw):
+    """Parse Claude text that may include markdown fences or leading prose."""
+    text = (raw or '').strip()
+    if not text:
+        raise ValueError('empty Claude response')
+    fence = re.search(r'```(?:json)?\s*([\s\S]*?)```', text, re.I)
+    if fence:
+        text = fence.group(1).strip()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        start = min(
+            (i for i in (text.find('['), text.find('{')) if i >= 0),
+            default=-1,
+        )
+        if start < 0:
+            raise
+        return json.loads(text[start:])
+
+
+def batch_normalize_locations_claude(raw_locations, api_key, cache):
+    """
+    Cheap Haiku fallback for ATS location strings regex couldn't normalize.
+    One tiny batched call per scrape; results cached forever by raw string.
+    """
+    if not api_key:
+        return {}
+    pending = []
+    seen = set()
+    for raw in raw_locations:
+        key = (raw or '').strip()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        cached = cache.get(key)
+        if cached and location_passes_validation(cached):
+            continue
+        if cached == '':
+            continue  # previously marked unfixable
+        pending.append(key)
+    if not pending:
+        return {k: cache[k] for k in seen if cache.get(k)}
+
+    numbered = '\n'.join(f'{i + 1}. {loc}' for i, loc in enumerate(pending))
+    prompt = (
+        'Normalize US/Canada job locations to City, ST (2-letter) or '
+        'Remote (US) / Remote (Canada). Multi-city: join with "; ". '
+        'If not US/Canada, return "". JSON string array only, same order.\n'
+        f'{numbered}'
+    )
+    try:
+        resp = requests.post(
+            ANTHROPIC_API_URL,
+            headers={
+                'x-api-key': api_key,
+                'anthropic-version': '2023-06-01',
+                'content-type': 'application/json',
+            },
+            json={
+                'model': CLAUDE_MODEL,
+                'max_tokens': 200,
+                'messages': [{'role': 'user', 'content': prompt}],
+            },
+            timeout=30,
+        )
+        resp.raise_for_status()
+        raw = resp.json()['content'][0]['text']
+        parsed = parse_claude_json(raw)
+        if not isinstance(parsed, list):
+            raise ValueError(f'expected JSON array, got {type(parsed).__name__}')
+        for i, key in enumerate(pending):
+            if i >= len(parsed):
+                break
+            fixed = str(parsed[i] or '').strip()
+            if fixed and location_passes_validation(fixed):
+                cache[key] = fixed
+            else:
+                cache[key] = ''  # do not retry this raw string
+        print(f'Claude location normalize: fixed {sum(1 for k in pending if cache.get(k))}/{len(pending)}')
+    except Exception as e:
+        print(f'Claude location normalize error: {e}')
+    return {k: cache[k] for k in seen if cache.get(k)}
+
+
+def resolve_location(raw_loc, cache=None):
+    """Regex normalize first; use Haiku cache hits when regex still fails."""
+    location = normalize_location(raw_loc)
+    if location_passes_validation(location):
+        return location
+    if cache is not None:
+        cached = cache.get((raw_loc or '').strip())
+        if cached and location_passes_validation(cached):
+            return cached
+    return None
+
+
 def is_us_or_canada(location_text):
     if not location_text:
         return False
@@ -592,7 +689,7 @@ def batch_classify_ee_claude(titles, api_key):
             )
             resp.raise_for_status()
             raw = resp.json()['content'][0]['text'].strip()
-            parsed = json.loads(raw)
+            parsed = parse_claude_json(raw)
             for j, title in enumerate(batch):
                 if j < len(parsed):
                     results[title] = bool(parsed[j])
@@ -633,7 +730,7 @@ def extract_job_metadata_claude(title, description_text, api_key):
         )
         resp.raise_for_status()
         raw = resp.json()['content'][0]['text'].strip()
-        return json.loads(raw)
+        return parse_claude_json(raw)
     except Exception as e:
         print(f'Claude metadata error [{title[:50]}]: {e}')
         return {'sponsorship': 'Unknown', 'citizenship': 'Unknown'}
@@ -1302,6 +1399,7 @@ def main():
     listings = load_json(LISTINGS_FILE, [])
     seen = load_json(SEEN_FILE, {})
     classifications = load_json(CLASSIFICATIONS_FILE, {})
+    location_cache = load_json(LOCATION_CACHE_FILE, {})
     gemini_usage = load_gemini_usage()
 
     today = datetime.date.today().isoformat()
@@ -1402,6 +1500,13 @@ def main():
             time.sleep(0.2)
 
     added = 0
+    needs_loc_llm = [
+        c['location'] for c in confirmed
+        if not location_passes_validation(normalize_location(c['location']))
+    ]
+    if needs_loc_llm and claude_key:
+        batch_normalize_locations_claude(needs_loc_llm, claude_key, location_cache)
+
     for c in confirmed:
         listing_type, season = classify_season(c['title'])
         # Prefer Simplify term metadata when present
@@ -1437,11 +1542,11 @@ def main():
                 sponsorship = 'No — does NOT offer sponsorship'
             elif 'available' in raw_sp or raw_sp == 'yes':
                 sponsorship = 'Yes — sponsorship available'
-        location = normalize_location(c['location'])
-        if not location_passes_validation(location):
+        location = resolve_location(c['location'], location_cache)
+        if not location:
             print(
                 f'Skip (bad location after normalize): '
-                f'{c["company"]} — {c["title"]} ({c["location"]!r} → {location!r})'
+                f'{c["company"]} — {c["title"]} ({c["location"]!r})'
             )
             continue
         entry = {
@@ -1468,6 +1573,7 @@ def main():
         seen[c['key']] = today
 
     save_json(CLASSIFICATIONS_FILE, classifications)
+    save_json(LOCATION_CACHE_FILE, location_cache)
     save_json(SEEN_FILE, seen)
     if gemini_key:
         save_gemini_usage(gemini_usage)

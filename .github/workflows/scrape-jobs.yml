@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name "Aprameya Kannan"
           git config user.email "aprameyakannan@gmail.com"
-          git add .github/data/seen_jobs.json .github/data/title_classifications.json .github/data/gemini_usage.json listings.json README.md
+          git add .github/data/seen_jobs.json .github/data/title_classifications.json .github/data/gemini_usage.json .github/data/location_normalizations.json listings.json README.md
           if ! git diff --staged --quiet; then
             git commit -m "scrape: add new listings and update seen cache"
             for i in 1 2 3 4 5; do git pull --rebase -X ours && git push && break; sleep $((i*5)); done
