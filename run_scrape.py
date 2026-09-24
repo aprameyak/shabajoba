@@ -25,7 +25,7 @@ from scrape_jobs import (  # noqa: E402
     sanitize_listing_role,
     load_json, save_json, CLASSIFICATIONS_FILE, LOCATION_CACHE_FILE,
     candidate_passes_scope, should_llm_classify_title,
-    listing_exists, extract_job_metadata, infer_metadata_keywords,
+    listing_exists, infer_metadata_keywords,
     resolve_ambiguous_candidates, batch_classify_ee_claude,
     batch_normalize_locations_claude, resolve_location,
     build_scrape_tasks, scrape_usajobs,
