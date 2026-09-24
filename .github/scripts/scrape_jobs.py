@@ -83,6 +83,8 @@ EXCLUDE_TITLE_KEYWORDS = [
     'structural engineer', 'civil engineer', 'architect intern',
     'asset management', 'business intelligence', 'firmware engineer',
     'project engineer', 'grid data', 'digital grid management',
+    'mechanical design', 'structures intern', 'mba', 'cnc ',
+    'market access', 'systems administrator', 'ehs', 'pricing',
 ]
 
 
@@ -393,7 +395,7 @@ def batch_normalize_locations_claude(raw_locations, api_key, cache):
     )
     try:
         raw = _claude_message(
-            api_key, prompt, max_tokens=min(200, 16 + 12 * len(pending)),
+            api_key, prompt, max_tokens=min(512, 32 + 24 * len(pending)),
         )
         parsed = parse_claude_json(raw)
         if not isinstance(parsed, list):
@@ -404,8 +406,9 @@ def batch_normalize_locations_claude(raw_locations, api_key, cache):
             fixed = str(parsed[i] or '').strip()
             if fixed and location_passes_validation(fixed):
                 cache[key] = fixed
-            else:
-                cache[key] = ''  # do not retry this raw string
+            elif fixed == '':
+                cache[key] = ''  # model said non-US/CA; do not retry
+            # incomplete/invalid answers: leave uncached so a later run can retry
         print(f'Claude location normalize: fixed {sum(1 for k in pending if cache.get(k))}/{len(pending)}')
     except Exception as e:
         print(f'Claude location normalize error: {e}')
@@ -829,6 +832,9 @@ def scrape_greenhouse(company, board_token, seen):
     try:
         url = f'https://boards-api.greenhouse.io/v1/boards/{board_token}/jobs?content=true'
         resp = requests.get(url, timeout=15)
+        if resp.status_code == 404:
+            print(f'Greenhouse dead board [{company}]: {board_token}')
+            return jobs
         resp.raise_for_status()
         for job in resp.json().get('jobs', []):
             title = job.get('title', '')
@@ -852,6 +858,9 @@ def scrape_lever(company, slug, seen):
     try:
         url = f'https://api.lever.co/v0/postings/{slug}?mode=json'
         resp = requests.get(url, timeout=15)
+        if resp.status_code == 404:
+            print(f'Lever dead board [{company}]: {slug}')
+            return jobs
         resp.raise_for_status()
         for posting in resp.json():
             title = posting.get('text', '')
@@ -868,8 +877,11 @@ def scrape_lever(company, slug, seen):
                 item.get('content', '') for item in posting.get('lists', [])
             )
             description = strip_html(desc_html + ' ' + lists_html)
+            loc = normalize_location(location) if location else 'Remote (US)'
+            if not location_passes_validation(loc):
+                loc = 'Remote (US)'
             jobs.append({'key': key, 'company': company, 'title': title,
-                         'location': location or 'United States', 'url': apply_url,
+                         'location': loc, 'url': apply_url,
                          'description': description})
     except Exception as e:
         print(f'Lever error [{company}]: {e}')
@@ -895,8 +907,11 @@ def scrape_ashby(company, ashby_id, seen):
             json=payload, timeout=15,
         )
         resp.raise_for_status()
-        postings = (resp.json().get('data', {})
-                    .get('jobBoard', {}).get('jobPostings', []))
+        board = (resp.json().get('data') or {}).get('jobBoard') or {}
+        postings = board.get('jobPostings') or []
+        if not postings and board == {}:
+            # null jobBoard from Ashby — skip quietly
+            return jobs
         for p in postings:
             title = p.get('title', '')
             location = p.get('locationName', '') or ''
@@ -909,8 +924,11 @@ def scrape_ashby(company, ashby_id, seen):
                 continue
             if location and not is_us_or_canada(location):
                 continue
+            loc = normalize_location(location) if location else 'Remote (US)'
+            if not location_passes_validation(loc):
+                loc = 'Remote (US)'
             jobs.append({'key': key, 'company': company, 'title': title,
-                         'location': location or 'United States', 'url': apply_url})
+                         'location': loc, 'url': apply_url})
     except Exception as e:
         print(f'Ashby error [{company}]: {e}')
     return jobs
@@ -926,12 +944,11 @@ def scrape_workday(company, tenant, site, board_num, seen):
         'User-Agent': 'Mozilla/5.0 (compatible; shabajoba-scraper/1.0)',
         'Accept': 'application/json',
     }
-    search_terms = [
-        'intern', 'internship', 'co-op', 'electrical', 'hardware', 'FPGA', 'ASIC', '2027',
-    ]
+    # Keep term list short — each term can cost multiple pages across ~60 boards
+    search_terms = ['intern', 'co-op', 'electrical', 'hardware']
     seen_paths = set()
     limit = 20
-    max_pages_per_term = 4
+    max_pages_per_term = 2
 
     for term in search_terms:
         offset = 0
@@ -945,7 +962,7 @@ def scrape_workday(company, tenant, site, board_num, seen):
             try:
                 resp = requests.post(endpoint, json=payload, headers=headers, timeout=20)
                 if resp.status_code in (404, 403):
-                    break
+                    return jobs  # board gone — skip remaining terms
                 if resp.status_code != 200:
                     break
                 data = resp.json()
@@ -961,27 +978,28 @@ def scrape_workday(company, tenant, site, board_num, seen):
                     if not external_path or external_path in seen_paths:
                         continue
                     seen_paths.add(external_path)
-                    apply_url = f'{base}/en-US/{site}{external_path}' if external_path else ''
-                    # Prefer cleaner URL form used by boards
-                    if external_path.startswith('/'):
-                        apply_url = f'{base}{external_path}'
+                    if not external_path.startswith('/'):
+                        external_path = '/' + external_path
+                    # Public boards use /{site}{externalPath} (externalPath already has /job/...)
+                    apply_url = f'{base}/{site}{external_path}'
                     key = f'workday:{tenant}:{external_path}'
                     if key in seen or not is_internship(title):
                         continue
                     if location and not is_us_or_canada(location):
                         continue
+                    loc = location if location_passes_validation(location) else 'Remote (US)'
                     jobs.append({
                         'key': key,
                         'company': company,
                         'title': title,
-                        'location': location or 'United States',
+                        'location': loc,
                         'url': apply_url,
                     })
                 total = data.get('total', 0)
                 offset += len(job_postings)
                 if offset >= total or len(job_postings) < limit:
                     break
-                time.sleep(0.12)
+                time.sleep(0.08)
             except Exception as e:
                 print(f'Workday error [{company}] "{term}": {e}')
                 break
@@ -1025,7 +1043,7 @@ def scrape_smartrecruiters(company, company_id, seen):
                 if location and not is_us_or_canada(location) and not remote:
                     continue
                 jobs.append({'key': key, 'company': company, 'title': title,
-                             'location': location or 'United States', 'url': apply_url})
+                             'location': location if location else 'Remote (US)', 'url': apply_url})
             if len(postings) < limit:
                 break
             offset += limit
@@ -1064,7 +1082,7 @@ def scrape_workable(company, slug, seen):
             elif city:
                 location = city
             else:
-                location = 'United States' if country in ('us', 'usa', '') else country.upper()
+                location = 'Remote (US)' if country in ('us', 'usa', '') else (country.upper() if country else 'Remote (US)')
             if not is_internship(title):
                 continue
             if location and not is_us_or_canada(location):
@@ -1151,7 +1169,7 @@ def scrape_oracle(company, host, site_number, seen):
                         'key': key,
                         'company': company,
                         'title': title,
-                        'location': location or 'United States',
+                        'location': location if location else 'Remote (US)',
                         'url': url,
                     })
                 total = block.get('TotalJobsCount') or block.get('totalJobsCount')
@@ -1246,7 +1264,7 @@ def scrape_icims(company, host, seen, keywords=None):
                                 parts.append(piece.strip())
                         location = normalize_location('; '.join(parts))
                     if not location:
-                        location = 'United States'
+                        location = 'Remote (US)'
                     if url.startswith('/'):
                         url = f'{base}{url}'
                     url = re.sub(r'\?.*$', '', url)
@@ -1312,7 +1330,7 @@ def scrape_simplify(seen):
             'key': key,
             'company': company,
             'title': title,
-            'location': location or 'United States',
+            'location': location if location else 'Remote (US)',
             'url': apply_url if active else '',
             'terms': e.get('terms') or [],
             'degrees': e.get('degrees') or [],
@@ -1374,7 +1392,7 @@ def scrape_usajobs(seen):
                 location = '; '.join(
                     f'{l.get("CityName", "")}, {l.get("CountrySubDivisionCode", "")}'.strip(', ')
                     for l in locations
-                ) if locations else 'United States'
+                ) if locations else 'Remote (US)'
                 key = f'usajobs:{job_id}'
                 if key in seen or job_id in seen_usajobs:
                     continue
@@ -1504,10 +1522,7 @@ def main():
         new_cls = batch_classify_ee_claude(titles_to_classify, claude_key)
         classifications.update(new_cls)
         claude_titles_tried.update(titles_to_classify)
-        # Don't burn a second Claude pass on the same titles this run
-        for t in titles_to_classify:
-            if t not in classifications:
-                classifications[t] = False
+        # Only persist titles Claude answered — never blacklist on API blips
         save_json(CLASSIFICATIONS_FILE, classifications)
     elif titles_to_classify and gemini_key:
         print(f'Classifying {len(titles_to_classify)} titles with Gemini (fallback) ...')

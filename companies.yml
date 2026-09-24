@@ -1,8 +1,6 @@
 greenhouse:
 - name: Akuna Capital
   slug: akunacapital
-- name: Ampere Computing
-  slug: amperecomputing
 - name: Amperesand
   slug: amperesand
 - name: Anduril
@@ -15,8 +13,6 @@ greenhouse:
   slug: AsteraLabs
 - name: Astranis Space Technologies
   slug: astranis
-- name: Aurora Innovation
-  slug: aurorainnovation
 - name: Captivation
   slug: captivation
 - name: CHAOS Industries
@@ -31,16 +27,12 @@ greenhouse:
   slug: fiveringsllc
 - name: Flex Ltd
   slug: flex
-- name: Fortive
-  slug: fortive
 - name: Hometap
   slug: hometapjobs
 - name: Hyannis Port Research
   slug: hyannisportresearch
 - name: IMC Trading
   slug: imc
-- name: Joby Aviation
-  slug: jobyaviation
 - name: Klaviyo
   slug: klaviyo
 - name: Klaviyo
@@ -59,10 +51,6 @@ greenhouse:
   slug: pacificfusion
 - name: Rocket Lab
   slug: rocketlab
-- name: Saildrone
-  slug: saildrone
-- name: SambaNova Systems
-  slug: sambanova
 - name: Samsung Research America
   slug: samsungresearchamericainternship
 - name: SpaceX
@@ -86,26 +74,18 @@ greenhouse:
 - name: Waymo
   slug: waymo
 lever:
-- name: Blue Origin
-  slug: blueorigin
-- name: Epirus
-  slug: epirus
 - name: Exowatt
   slug: exowatt
 - name: Hermeus
   slug: hermeus
 - name: Last Energy
   slug: last-energy
-- name: Last Energy
-  slug: lastenergy
 - name: Mainspring Energy
   slug: mainspringenergy
 - name: PingWind
   slug: pingwind
 - name: Plus
   slug: plus-2
-- name: Plus
-  slug: plus-ai
 - name: Rigetti
   slug: rigetti
 - name: Shield AI
@@ -117,24 +97,12 @@ lever:
 ashby:
 - name: Airspeed
   slug: airspeed
-- name: Anduril Industries
-  slug: anduril
 - name: Antares
   slug: antares
-- name: Applied Intuition
-  slug: appliedintuition
-- name: Archer Aviation
-  slug: archeraviation
-- name: Astera Labs
-  slug: asteralabs
 - name: ATLAS Space Operations
   slug: atlas
 - name: Atomic Semi
   slug: fab2
-- name: Atomic Semi
-  slug: atomic-semi
-- name: Axcelis Technologies
-  slug: axcelis
 - name: Base Power Company
   slug: base-power
 - name: Cerebras
@@ -145,60 +113,28 @@ ashby:
   slug: crusoe
 - name: d-Matrix
   slug: d-Matrix
-- name: Electra Aero
-  slug: electra
-- name: Epirus
-  slug: epirus
 - name: Etched
   slug: etched
-- name: Fervo Energy
-  slug: fervoenergy
-- name: Figure
-  slug: figure
-- name: Figure
-  slug: figure-ai
 - name: Flow Engineering
   slug: flowengineering
 - name: Form Energy
   slug: formenergy
-- name: Groq
-  slug: groq
-- name: Hermeus
-  slug: hermeus
 - name: Heron Power
   slug: heron-power
 - name: Latent Defense
   slug: Latent Defense
-- name: Latent Defense
-  slug: latent%20defense
 - name: Maximor AI
   slug: maximor
-- name: NextSilicon
-  slug: nextsilicon
-- name: Parallel Systems
-  slug: parallel-systems
-- name: Perceive
-  slug: perceive
 - name: Physical Intelligence
   slug: physicalintelligence
 - name: Radiant
   slug: radiant-industries
-- name: Radiant Nuclear
-  slug: radiantnuclear
 - name: Rain Neuromorphics
   slug: rain
 - name: REGENT Craft
   slug: regent
-- name: Relativity Space
-  slug: relativityspace
 - name: Rivian and Volkswagen Group Technologies
   slug: rivianvw.tech
-- name: Untether AI
-  slug: untether-ai
-- name: Varda Space
-  slug: varda
-- name: Wisk Aero
-  slug: wisk
 smartrecruiters:
 - name: AbbVie
   identifier: AbbVie

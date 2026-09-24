@@ -253,9 +253,6 @@ def main():
         print(f'Classifying {len(titles_to_classify)} ambiguous titles via LLM ...')
         classifications.update(batch_classify_ee_claude(titles_to_classify, claude_key))
         claude_titles_tried.update(titles_to_classify)
-        for t in titles_to_classify:
-            if t not in classifications:
-                classifications[t] = False
 
     confirmed = []
     ambiguous = []

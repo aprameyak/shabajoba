@@ -30,10 +30,22 @@ def load_workday_boards():
     workday = data.get('workday', {})
     # Legacy dict form: {boards: {Company: tenant}}
     if isinstance(workday, dict) and 'boards' in workday:
-        return workday.get('boards', {})
+        return {
+            name: {'tenant': tenant, 'site': 'External', 'board_num': '1'}
+            for name, tenant in (workday.get('boards') or {}).items()
+        }
     # New list form: [{name, tenant, site, board_num}, ...]
     if isinstance(workday, list):
-        return {e['name']: e.get('tenant', '') for e in workday if isinstance(e, dict)}
+        out = {}
+        for e in workday:
+            if not isinstance(e, dict) or not e.get('tenant'):
+                continue
+            out[e['name']] = {
+                'tenant': e['tenant'],
+                'site': e.get('site') or 'External',
+                'board_num': str(e.get('board_num', '1')),
+            }
+        return out
     return {}
 
 
@@ -61,8 +73,16 @@ def check_url(url):
 def try_workday_fix(url, workday_boards, company_name):
     if 'myworkdayjobs.com' not in url and 'workday.com' not in url:
         return None
-    board_id = workday_boards.get(company_name)
-    if not board_id:
+    info = workday_boards.get(company_name)
+    if not info:
+        return None
+    if isinstance(info, str):
+        tenant, site, board_num = info, 'External', '1'
+    else:
+        tenant = info.get('tenant') or ''
+        site = info.get('site') or 'External'
+        board_num = str(info.get('board_num') or '1')
+    if not tenant:
         return None
     # Keep the full Workday job path (location + posting slug). Capturing only
     # the first segment collapses distinct jobs onto the same location page.
@@ -72,11 +92,32 @@ def try_workday_fix(url, workday_boards, company_name):
     job_path = match.group(1).rstrip('/')
     if not job_path or '/' not in job_path:
         return None
-    fixed = f'https://{board_id}.wd1.myworkdayjobs.com/en-US/External/job/{job_path}'
-    if fixed.rstrip('/') == url.split('?')[0].rstrip('/'):
-        return None
-    if check_url(fixed):
-        return fixed
+
+    candidates = [
+        f'https://{tenant}.wd{board_num}.myworkdayjobs.com/{site}/job/{job_path}',
+        f'https://{tenant}.wd{board_num}.myworkdayjobs.com/en-US/{site}/job/{job_path}',
+        f'https://{tenant}.wd{board_num}.myworkdayjobs.com/job/{job_path}',
+    ]
+    host_match = re.match(
+        r'(https://[^/]+\.wd\d+\.myworkdayjobs\.com)(?:/en-US)?(/[^/]+)?/job/',
+        url,
+    )
+    if host_match:
+        host = host_match.group(1)
+        existing_site = (host_match.group(2) or '').lstrip('/')
+        if existing_site:
+            candidates.insert(0, f'{host}/{existing_site}/job/{job_path}')
+        candidates.insert(0, f'{host}/job/{job_path}')
+
+    seen = set()
+    for fixed in candidates:
+        if fixed in seen:
+            continue
+        seen.add(fixed)
+        if fixed.rstrip('/') == url.split('?')[0].rstrip('/'):
+            continue
+        if check_url(fixed):
+            return fixed
     return None
 
 

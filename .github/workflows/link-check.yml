@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: readme-updates
+  group: link-check
   cancel-in-progress: false
 
 jobs:
