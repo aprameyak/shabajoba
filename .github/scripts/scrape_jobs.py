@@ -166,6 +166,17 @@ CA_PROVINCE_NAMES = {
     'yukon': 'YT',
 }
 
+# Major CA cities when ATS gives `Canada, City` with no province.
+CA_CITY_PROVINCES = {
+    'toronto': 'ON', 'ottawa': 'ON', 'mississauga': 'ON', 'hamilton': 'ON',
+    'london': 'ON', 'kitchener': 'ON', 'waterloo': 'ON', 'markham': 'ON',
+    'montreal': 'QC', 'quebec': 'QC', 'quebec city': 'QC',
+    'vancouver': 'BC', 'victoria': 'BC', 'burnaby': 'BC', 'richmond': 'BC',
+    'calgary': 'AB', 'edmonton': 'AB',
+    'winnipeg': 'MB', 'saskatoon': 'SK', 'regina': 'SK',
+    'halifax': 'NS',
+}
+
 
 def unmash_locations(loc):
     """Fix mashed multi-city strings like `City, STCity, ST` → `City, ST; City, ST`."""
@@ -181,9 +192,15 @@ def unmash_locations(loc):
     return '; '.join(parts)
 
 
-def normalize_location(loc):
-    """Normalize ATS locations to `City, ST` / `Remote (US|Canada)`."""
-    loc = unmash_locations(loc)
+def _ca_region_abbr(token):
+    token = token.strip()
+    if len(token) == 2 and token.lower() in US_CA_LOCATION_TOKENS:
+        return token.upper()
+    return CA_PROVINCE_NAMES.get(token.lower())
+
+
+def normalize_location_segment(loc):
+    """Normalize one ATS location segment to `City, ST` / `Remote (US|Canada)`."""
     if not loc:
         return loc
     loc = loc.strip()
@@ -192,6 +209,30 @@ def normalize_location(loc):
         return 'Remote (US)'
     if loc.lower() in ('canada',):
         return 'Remote (Canada)'
+
+    # Country-first commas: US, CA, Santa Clara / United States, CA, Santa Clara
+    m = re.match(
+        r'^(?:US|USA|U\.S\.A?\.?|United States),\s*([A-Z]{2}),\s*(.+)$',
+        loc, re.I,
+    )
+    if m and m.group(1).lower() in US_CA_LOCATION_TOKENS:
+        city = m.group(2).strip().strip(' ,')
+        return f'{city}, {m.group(1).upper()}'
+
+    # Canada, ON, Toronto / Canada, Ontario, Toronto
+    m = re.match(r'^Canada,\s*([^,]+),\s*(.+)$', loc, re.I)
+    if m:
+        abbr = _ca_region_abbr(m.group(1))
+        if abbr:
+            return f'{m.group(2).strip().strip(" ,")}, {abbr}'
+
+    # Canada, Toronto (city only — no province)
+    m = re.match(r'^Canada,\s*(.+)$', loc, re.I)
+    if m:
+        city = m.group(1).strip().strip(' ,')
+        abbr = CA_CITY_PROVINCES.get(city.lower())
+        if abbr:
+            return f'{city}, {abbr}'
 
     # Workday-style: US-MD-Baltimore / US-CA-EL SEGUNDO-R01 ~ ...
     m = re.match(r'^US-([A-Z]{2})-([A-Za-z0-9 .\'-]+)', loc)
@@ -243,6 +284,19 @@ def normalize_location(loc):
         return m.group(1).strip()
 
     return loc
+
+
+def normalize_location(loc):
+    """Normalize ATS locations to `City, ST` / `Remote (US|Canada)`."""
+    loc = unmash_locations(loc)
+    if not loc:
+        return loc
+    parts = [
+        normalize_location_segment(p.strip())
+        for p in loc.split(';')
+        if p.strip()
+    ]
+    return '; '.join(parts)
 
 
 def is_us_or_canada(location_text):
