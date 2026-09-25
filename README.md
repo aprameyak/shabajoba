@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**391 open** · 704 total · Summer 2027 (256 open) · Off-cycle & co-ops (135 open) · Updated September 21, 2026
+**389 open** · 704 total · Summer 2027 (255 open) · Off-cycle & co-ops (134 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-391-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-389-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -474,10 +474,10 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | H3X Technologies | Power Electronics Engineering Intern (Spring) | Louisville, CO | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/power-electronics-engineering-intern-spring-at-h3x-technologies-4456107201" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
 | IMEG | Electrical Engineer Intern | Chicago, IL | Summer 2027 | Undergrad | 🔒 | Aug 21 |
 | Infineon Technologies | Analog Mixed-Signal Design Intern | San Jose, CA | Summer 2027 | Undergrad | 🔒 | Aug 21 |
-| Marathon Petroleum Corporation | Intern/Co-op - Refining Electrical Engineering | Martinez, CA | Spring 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/intern-co-op-refining-electrical-engineering-spring-2027-at-marathon-petroleum-corporation-4364955182" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
+| Marathon Petroleum Corporation | Intern/Co-op - Refining Electrical Engineering | Martinez, CA | Spring 2027 | Undergrad | 🔒 | Aug 21 |
 | Moog Inc. | Electrical Engineering Intern | Buffalo, NY | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/intern-electrical-engineering-at-moog-inc-4457331613" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
 | Rendezvous Robotics | Avionics Engineering Intern | Golden, CO | Spring 2027 | Undergrad | 🔒 | Aug 21 |
-| Rivian | UIUC Research Park Intern - FPGA Design | Champaign, IL | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/uiuc-research-park-intern-fpga-design-at-rivian-4454287567" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
+| Rivian | UIUC Research Park Intern - FPGA Design | Champaign, IL | Summer 2027 | Undergrad | 🔒 | Aug 21 |
 | Salas O'Brien | Electrical Engineering Intern | Boston, MA | Spring 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-spring-2027-at-salas-o-brien-4454937780" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
 | Shield AI | Electrical Engineering Spring Co-op | Boston, MA | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-spring-co-op-january-2027-r4475-at-shield-ai-4424110045" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
 | Siemens | Protection & Automation Electrical Engineering Internship | Wendell, NC | Spring 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/protection-automation-electrical-engineering-internship-spring-2027-at-siemens-4435507097" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
