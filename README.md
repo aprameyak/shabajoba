@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**389 open** · 704 total · Summer 2027 (255 open) · Off-cycle & co-ops (134 open) · Updated September 21, 2026
+**390 open** · 705 total · Summer 2027 (255 open) · Off-cycle & co-ops (135 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-389-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-390-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,6 +33,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Tesla | Optical Engineer Intern - Electronic Systems | Palo Alto, CA | Spring 2027 | Undergrad | <a href="https://www.tesla.com/careers/search/job/284607" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 25 |
 | Acuity | Hardware Development Intern - Hardware | Brossard, QC | Summer 2027 | Undergrad | <a href="https://careers.acuityinc.com/job/Brossard-Stagiaire-d%C3%A9veloppement-mat%C3%A9riel-(hardware)-Qu%C3%A9b-J4Y-0C4/1433678100/?ats=successfactors" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 24 |
 | Analog Devices | Analog Design Engineering Intern | Toronto, ON | Summer 2027 | Undergrad | <a href="https://analogdevices.wd1.myworkdayjobs.com/en-US/External/job/Canada-Toronto/Analog-Design-Engineering-Intern_R266614" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 24 |
 | Anduril | Chief Engineer, International Air Defense | <details><summary>**4 locations**</summary>Huntsville, AL</br>Irvine, CA</br>Seattle, WA</br>Washington, DC</details> | Summer 2027 | Undergrad | <a href="https://boards.greenhouse.io/andurilindustries/jobs/5248044007?gh_jid=5248044007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 24 |
