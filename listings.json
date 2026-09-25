@@ -8494,5 +8494,29 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-09-25"
+  },
+  {
+    "company": "onsemi",
+    "role": "Test Engineer Intern",
+    "location": "Nampa, ID",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2506604",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-25"
+  },
+  {
+    "company": "onsemi",
+    "role": "Validation Engineering Intern",
+    "location": "Nampa, ID",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2506611",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-25"
   }
 ]
