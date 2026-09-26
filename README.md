@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**399 open** · 714 total · Summer 2027 (262 open) · Off-cycle & co-ops (137 open) · Updated September 21, 2026
+**400 open** · 715 total · Summer 2027 (262 open) · Off-cycle & co-ops (138 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-399-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-400-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -35,6 +35,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
 | Neogen | Electrical Engineer Intern - Instrumentation | Oakdale, MN | Summer 2027 | Undergrad; Masters | <a href="https://neogen.wd5.myworkdayjobs.com/neogencareers/job/Oakdale/Electrical-Engineer-Intern_REQ-11065" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 26 |
 | Philips | Electrical Engineering - Cambridge, MA Intern | Cambridge (US), MA | Summer 2027 | Undergrad | <a href="https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Cambridge-US-Massachusetts-United-States/Intern---Electrical-Engineering---Cambridge--MA---Summer-2027_592605" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 26 |
+| Tesla | Silicon Validation Engineer Intern - AI Hardware | Palo Alto, CA | Spring 2027 | Undergrad | <a href="https://www.tesla.com/careers/search/job/284821" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 26 |
 | The Toro Company | Electrical Engineer Intern | Bloomington, MN | Summer 2027 | Undergrad | <a href="https://ttc.wd1.myworkdayjobs.com/Toro_External_Careers/job/Bloomington-MN/Electrical-Engineering-Intern---The-Toro-Company_JR17124" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 26 |
 | Zurn Elkay Water Solutions | Embedded Hardware Intern | Milwaukee, WI | Summer 2027 | Undergrad; Masters | <a href="https://elkay.wd1.myworkdayjobs.com/Elkay_External/job/Milwaukee-WI/Embedded-Hardware-Intern--Summer-2027-_REQ-020151" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 26 |
 | Bosch | Engineering Intern - Airbag ECU | Plymouth, MI | Summer 2027 | Undergrad | <a href="https://jobs.smartrecruiters.com/BoschGroup/744000151900549" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 25 |
