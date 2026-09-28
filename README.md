@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**403 open** · 718 total · Summer 2027 (263 open) · Off-cycle & co-ops (140 open) · Updated September 21, 2026
+**402 open** · 718 total · Summer 2027 (263 open) · Off-cycle & co-ops (139 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-403-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-402-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -473,7 +473,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Daktronics | Hardware Design Intern/Co-op - Firmware | Brookings, SD | Summer 2027 | Undergrad | <a href="https://careers-daktronics.icims.com/jobs/7518/job?mobile=true&needsRedirect=false" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
 | Hitachi Energy | Electrical Engineering Intern | Raleigh, NC | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-summer-electrical-engineering-intern-raleigh-at-hitachi-energy-4457820149" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
 | Nexus Engineering Group | Electrical Engineering Internship or Co-Op | Oak Brook, IL | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-internship-or-co-op-summer-2027-at-nexus-engineering-group-4457009037" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
-| RoboForce | Robotics Electrical Engineering Intern | Milpitas, CA | Fall 2026 | Undergrad; Masters; PhD | <a href="https://job-boards.greenhouse.io/roboforce/jobs/5181214008" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
+| RoboForce | Robotics Electrical Engineering Intern | Milpitas, CA | Fall 2026 | Undergrad; Masters; PhD | 🔒 | Aug 24 |
 | The Walt Disney Company | Show Control Hardware Intern | <details><summary>**3 locations**</summary>Orlando, FL</br>Celebration, FL</br>Glendale, CA</details> | Spring 2027 | Undergrad | 🔒 | Aug 24 |
 | Albedo | Electrical Engineer Intern | Broomfield, CO | Fall 2026 | Undergrad; Masters | 🔒 | Aug 21 |
 | AMD | Field Applications Engineer Intern - Masters | San Jose, CA | Summer 2027 | Masters | 🔒 | Aug 21 |
