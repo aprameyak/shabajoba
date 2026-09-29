@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**440 open** · 756 total · Summer 2027 (287 open) · Off-cycle & co-ops (153 open) · Updated September 21, 2026
+**435 open** · 756 total · Summer 2027 (285 open) · Off-cycle & co-ops (150 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-440-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-435-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -286,7 +286,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Tesla | System Integration and Test Automation Engineer Intern - Energy Engineering | Palo Alto, CA | Spring 2027 | Undergrad | <a href="https://www.tesla.com/careers/search/job/283396" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 14 |
 | NVIDIA | PhD Research Intern - Circuits | <details><summary>**2 locations**</summary>Santa Clara, CA</br>Durham, NC</details> | Summer 2027 | PhD | 🔒 | Sep 13 |
 | Antares | Electrical Engineering Intern | Los Angeles, CA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-summer-2027-at-antares-4465606996" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
-| Black & Veatch | Electrical Engineer Intern - Water | Overland Park, KS | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-intern-water-at-black-veatch-4463661093" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
+| Black & Veatch | Electrical Engineer Intern - Water | Overland Park, KS | Summer 2027 | Undergrad | 🔒 | Sep 12 |
 | Enercon Services, Inc. | Electrical Engineer - Nuclear Design Team Intern | Fort Worth, TX | Summer 2027 | Undergrad | 🔒 | Sep 12 |
 | EQT Corporation | Midstream Electrical Engineer Intern | Canonsburg, PA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/midstream-electrical-engineer-intern-at-eqt-corporation-4465851386" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | IBM | Quantum Hardware EDA & Circuit Design Intern | Yorktown Heights, NY | Summer 2027 | Undergrad | 🔒 | Sep 12 |
@@ -409,7 +409,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | IMC | Hardware Engineer Intern | Chicago, IL | Summer 2027 | Undergrad | <a href="https://www.imc.com/us/careers/jobs/4823945101" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | Johns Hopkins Applied Physics Laboratory | Electrical Engineer – Networked Systems & Integrated Fires Intern | Laurel, MD | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | Johnson & Johnson | Electrical Engineering Co-op | Cincinnati, OH | Summer 2027 | Undergrad | <a href="https://jj.wd5.myworkdayjobs.com/JJ/job/Cincinnati-Ohio-United-States-of-America/Electrical-Engineering-Co-Op--Summer-2027_R-096736" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
-| Johnson & Johnson MedTech | Electrical Engineering Co-Op | Cincinnati, OH | Spring 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-co-op-spring-2027-at-johnson-johnson-medtech-4459603408" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
+| Johnson & Johnson MedTech | Electrical Engineering Co-Op | Cincinnati, OH | Spring 2027 | Undergrad | 🔒 | Sep 3 |
 | K2 Space Corporation | Electrical Engineering Intern | Los Angeles, CA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-%E2%80%93-summer-2027-at-k2-space-corporation-4459280130" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | Kiewit | Electrical Engineer Intern - Industrial & Water Engineering | Lenexa, KS | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-intern-kiewit-industrial-water-engineering-summer-2027-at-kiewit-4460671450" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | Micron Technology | EUV Lithography Intern | Boise, ID | Summer 2027 | Undergrad | 🔒 | Sep 3 |
@@ -527,11 +527,11 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | IMEG | Electrical Engineer Intern | Chicago, IL | Summer 2027 | Undergrad | 🔒 | Aug 21 |
 | Infineon Technologies | Analog Mixed-Signal Design Intern | San Jose, CA | Summer 2027 | Undergrad | 🔒 | Aug 21 |
 | Marathon Petroleum Corporation | Intern/Co-op - Refining Electrical Engineering | Martinez, CA | Spring 2027 | Undergrad | 🔒 | Aug 21 |
-| Moog Inc. | Electrical Engineering Intern | Buffalo, NY | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/intern-electrical-engineering-at-moog-inc-4457331613" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
+| Moog Inc. | Electrical Engineering Intern | Buffalo, NY | Summer 2027 | Undergrad | 🔒 | Aug 21 |
 | Rendezvous Robotics | Avionics Engineering Intern | Golden, CO | Spring 2027 | Undergrad | 🔒 | Aug 21 |
 | Rivian | UIUC Research Park Intern - FPGA Design | Champaign, IL | Summer 2027 | Undergrad | 🔒 | Aug 21 |
 | Salas O'Brien | Electrical Engineering Intern | Boston, MA | Spring 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-spring-2027-at-salas-o-brien-4454937780" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
-| Shield AI | Electrical Engineering Spring Co-op | Boston, MA | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-spring-co-op-january-2027-r4475-at-shield-ai-4424110045" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
+| Shield AI | Electrical Engineering Spring Co-op | Boston, MA | Co-op | Undergrad | 🔒 | Aug 21 |
 | Siemens | Protection & Automation Electrical Engineering Internship | Wendell, NC | Spring 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/protection-automation-electrical-engineering-internship-spring-2027-at-siemens-4435507097" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
 | Techtronic Industries - TTI | Electrical Engineer Internship | Anderson, SC | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-internship-at-techtronic-industries-tti-4441824294" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
 | Teledyne Qioptiq | Electrical Engineering Intern | Miamisburg, OH | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-at-teledyne-qioptiq-4449554813" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 21 |
@@ -625,7 +625,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Amazon Web Services (AWS) | Chip Design Student Intern | Naperville, IL | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/chip-design-student-chip-design-student-at-amazon-web-services-aws-4451300089" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 8 |
 | Ambarella | ASIC Design Engineer Intern | Santa Clara, CA | Summer 2027 | Undergrad | <a href="https://ambarella.wd108.myworkdayjobs.com/ambarella/job/US-Headquarters/ASIC-Design-Engineer-Intern_JR100100?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 8 |
 | Base Power | Hardware Engineering Intern | Austin, TX | Summer 2027 | Undergrad | 🔒 | Aug 8 |
-| Formlabs | Hardware R&D Engineering Intern | Somerville, MA | Fall 2026 | Undergrad | <a href="https://careers.formlabs.com/job/8097694/apply/?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 8 |
+| Formlabs | Hardware R&D Engineering Intern | Somerville, MA | Fall 2026 | Undergrad | 🔒 | Aug 8 |
 | HP Inc | Technology & Innovation Organization Electrical Engineering Internship | Corvallis, OR | Summer 2027 | Undergrad | <a href="https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Corvallis-Oregon-United-States-of-America/Technology---Innovation-Organization-Electrical-Engineering-Internship_3167270-1?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 8 |
 | HyperLight | Integrated Photonics Intern | Cambridge, MA | Fall 2026 | Masters; PhD | 🔒 | Aug 8 |
 | Jump Trading | FPGA Engineer Intern | Chicago, IL | Summer 2027 | Undergrad | <a href="https://www.jumptrading.com/hr/job?gh_jid=8003013&utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 8 |
