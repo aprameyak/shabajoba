@@ -89,6 +89,9 @@ EXCLUDE_TITLE_KEYWORDS = [
     'project engineer', 'grid data', 'digital grid management',
     'mechanical design', 'structures intern', 'mba', 'cnc ',
     'market access', 'systems administrator', 'ehs', 'pricing',
+    'propulsion', 'structural dynamics', 'flight loads',
+    'lab technician', 'test technician', 'optics r&d technician',
+    'reliability and statistics', 'technician intern',
 ]
 
 
@@ -526,11 +529,29 @@ def sanitize_listing_role(company, role):
     role = re.sub(r'\s*\(R\d+\)\s*$', '', role)
     role = re.sub(r'\s*[-–—]\s*Plus one semester\s*$', '', role, flags=re.I)
     role = re.sub(r'\s*[-–—]\s*Fall\s+20\d\d\s+Start Date\s*$', '', role, flags=re.I)
-    role = re.sub(r'\s*\([A-Za-z .]+,\s*[A-Z]{2}\)\s*$', '', role)  # (Novi, MI)
+    role = re.sub(r'\s*\([A-Za-z .]+,\s*[A-Z]{2}\)\s*$', '', role)
     role = re.sub(r'^Intern(?:ship)?\s*[—–\-:]\s*', '', role, flags=re.I)
     role = re.sub(r'^Intern,\s*', '', role, flags=re.I)
+    role = re.sub(r'^Summer\s+Intern\s*[—–\-:]\s*', '', role, flags=re.I)
     role = re.sub(r'\s*[&/]\s*New\s*Grads?\b', '', role, flags=re.I)
     role = re.sub(r'\s*[-–—,]?\s*New\s*Grads?\b', '', role, flags=re.I)
+    role = re.sub(r'\s*[-–—]\s*\d{3,}\s*$', '', role)
+    role = re.sub(
+        r'\s*[-–—]\s*[A-Z][a-zA-Z .]+,\s*(?:[A-Z]{2}|[A-Z][a-z]+)\s*$',
+        '', role,
+    )
+    role = re.sub(
+        r'\s+(January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|'
+        r'July|Jul|August|Aug|September|Sep|October|Oct|November|Nov|December|Dec)'
+        r'\s*[-–—/]\s*(January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|'
+        r'July|Jul|August|Aug|September|Sep|October|Oct|November|Nov|December|Dec)\b.*$',
+        '', role, flags=re.I,
+    )
+    role = re.sub(r'\s*\(\s*Winter\s*[-–—]\s*\d+\s*months?\s*\)\s*$', '', role, flags=re.I)
+    role = re.sub(
+        r'\s+(Summer|Fall|Spring|Winter)\s+(Intern(?:ship)?|Co-?op)\b',
+        r' \2', role, flags=re.I,
+    )
     if company:
         role = re.sub(
             r'\s*[-–—,:]\s*' + re.escape(company) + r'(?:\s+\w+)?\s*$',
