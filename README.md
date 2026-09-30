@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**560 open** · 882 total · Summer 2027 (387 open) · Off-cycle & co-ops (173 open) · Updated September 21, 2026
+**562 open** · 884 total · Summer 2027 (389 open) · Off-cycle & co-ops (173 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-560-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-562-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -92,8 +92,10 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Koch Industries | Optical Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://koch.avature.net/en_US/careers/JobDetail/194820" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ↳ | Optical System Test Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://koch.avature.net/en_US/careers/JobDetail/194772" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | L3Harris Technologies | Integration/Test Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://jobs.l3harris.com/job/Melbourne-IntegrationTest-Engineering-Intern-FL-32901/1428454000/?ats=successfactors" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| Leidos | Embedded Design Engineering Intern – Firmware | Huntsville, AL | Summer 2027 | Undergrad | <a href="https://leidos.wd5.myworkdayjobs.com/External/job/Huntsville-AL/Embedded-Design-Engineering-Intern---Firmware_R-00193574" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | Lightmatter | Silicon Intern - Hardware & Photonics Engineering | Remote (US) | Summer 2027 | Undergrad | <a href="https://boards.greenhouse.io/lightmatter/jobs/5425407008" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | Mach Industries | Engineering Internship, Electrical | Huntington Beach, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/machindustries/jobs/4420623009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| Marvell Technology | Test Engineering Intern, MS | Santa Clara, CA | Summer 2027 | Masters | <a href="https://marvell.wd1.myworkdayjobs.com/marvellcareers/job/Santa-Clara-CA/Test-Engineering-Intern--MS---Summer-2027_2604002-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | Micron Technology | Product Engineer Intern - DRAM Technology - Node Development | Remote (US) | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---Node-Development-Product-Engineer---DRAM-Technology_JR111846" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ↳ | PHY Digital Design & Automation Engineer Intern - HBM | Remote (US) | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Richardson-TX/Intern---PHY-Digital-Design---Automation-Engineer--HBM_JR110641" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ↳ | DRAM Customer Enablement Engineering Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---DRAM-Customer-Enablement-Engineering_JR106521" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
