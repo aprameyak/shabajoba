@@ -472,9 +472,11 @@ def is_ee_title(title):
 
 def is_internship(title):
     t = title.lower()
+    if any(kw in t for kw in INTERNSHIP_KEYWORDS):
+        return True
     if any(x in t for x in ('entry level', 'entry-level', 'new grad', 'new graduate')):
         return False
-    return any(kw in t for kw in INTERNSHIP_KEYWORDS)
+    return False
 
 
 def infer_education(title):
@@ -527,6 +529,8 @@ def sanitize_listing_role(company, role):
     role = re.sub(r'\s*\([A-Za-z .]+,\s*[A-Z]{2}\)\s*$', '', role)  # (Novi, MI)
     role = re.sub(r'^Intern(?:ship)?\s*[—–\-:]\s*', '', role, flags=re.I)
     role = re.sub(r'^Intern,\s*', '', role, flags=re.I)
+    role = re.sub(r'\s*[&/]\s*New\s*Grads?\b', '', role, flags=re.I)
+    role = re.sub(r'\s*[-–—,]?\s*New\s*Grads?\b', '', role, flags=re.I)
     if company:
         role = re.sub(
             r'\s*[-–—,:]\s*' + re.escape(company) + r'(?:\s+\w+)?\s*$',
@@ -865,10 +869,10 @@ def scrape_greenhouse(company, board_token, seen):
     return jobs
 
 
-def scrape_lever(company, slug, seen):
+def scrape_lever(company, slug, seen, api_host='api.lever.co'):
     jobs = []
     try:
-        url = f'https://api.lever.co/v0/postings/{slug}?mode=json'
+        url = f'https://{api_host}/v0/postings/{slug}?mode=json'
         resp = requests.get(url, timeout=15)
         if resp.status_code == 404:
             print(f'Lever dead board [{company}]: {slug}')
@@ -1352,6 +1356,88 @@ def scrape_simplify(seen):
     return jobs
 
 
+COMPETITOR_LIST_FEEDS = [
+    (
+        'chieler',
+        'https://raw.githubusercontent.com/Chieler/Summer-2027-SWE-Internships/main/README.md',
+    ),
+    (
+        'zapply',
+        'https://raw.githubusercontent.com/zapplyjobs/Internships-2027/main/README.md',
+    ),
+]
+
+COMPETITOR_URL_BLOCKLIST = re.compile(
+    r'zapply\.jobs|dreamworkhq\.com|simplify\.jobs|github\.com|linkedin\.com|'
+    r'shields\.io|utm_source=github',
+    re.I,
+)
+
+
+def scrape_competitor_lists(seen):
+    jobs = []
+    seen_urls = set()
+    for source, feed_url in COMPETITOR_LIST_FEEDS:
+        try:
+            resp = requests.get(feed_url, timeout=60)
+            resp.raise_for_status()
+            text = resp.text
+        except Exception as e:
+            print(f'Competitor list error [{source}]: {e}')
+            continue
+        found = 0
+        for line in text.splitlines():
+            if not line.startswith('|'):
+                continue
+            parts = [p.strip() for p in line.strip('|').split('|')]
+            if len(parts) < 2:
+                continue
+            company = re.sub(r'\*\*|`|^↳\s*', '', parts[0]).strip()
+            role = re.sub(r'\*\*|`', '', parts[1]).strip()
+            if not company or not role or company.lower() in ('company', 'role'):
+                continue
+            if not is_internship(role) or not is_ee_title(role):
+                continue
+            urls = re.findall(r'https?://[^\s\)\]\|<>"]+', line)
+            apply_url = ''
+            for u in urls:
+                u = u.rstrip(').,]')
+                if COMPETITOR_URL_BLOCKLIST.search(u):
+                    continue
+                apply_url = u
+                break
+            if not apply_url:
+                continue
+            norm = normalize_url(apply_url)
+            if not norm or norm in seen_urls:
+                continue
+            location = ''
+            for part in parts[2:]:
+                clean = re.sub(r'\*\*|`', '', part).strip()
+                if re.search(r',\s*[A-Z]{2}\b|Remote|United States|Canada', clean, re.I):
+                    location = clean
+                    break
+            if location and not is_us_or_canada(location):
+                continue
+            loc = normalize_location(location) if location else 'Remote (US)'
+            if not location_passes_validation(loc):
+                loc = 'Remote (US)'
+            key = f'competitor:{source}:{norm}'
+            if key in seen:
+                continue
+            seen_urls.add(norm)
+            jobs.append({
+                'key': key,
+                'company': company,
+                'title': role,
+                'location': loc,
+                'url': apply_url,
+            })
+            found += 1
+        print(f'Competitor [{source}]: {found} EE candidates')
+    return jobs
+
+
 def scrape_usajobs(seen):
     jobs = []
     api_key = os.environ.get('USAJOBS_API_KEY', '')
@@ -1443,7 +1529,11 @@ def build_scrape_tasks(seen):
     for e in cfg.get('greenhouse', []):
         tasks.append((scrape_greenhouse, (e['name'], e['slug'], seen), e['name']))
     for e in cfg.get('lever', []):
-        tasks.append((scrape_lever, (e['name'], e['slug'], seen), e['name']))
+        tasks.append((
+            scrape_lever,
+            (e['name'], e['slug'], seen, e.get('api_host', 'api.lever.co')),
+            e['name'],
+        ))
     for e in cfg.get('ashby', []):
         tasks.append((scrape_ashby, (e['name'], e['slug'], seen), e['name']))
     for e in cfg.get('smartrecruiters', []):
@@ -1515,6 +1605,10 @@ def main():
     print('=== SimplifyJobs Hardware/EE ===')
     simplify_found = scrape_simplify(seen)
     candidates.extend(simplify_found)
+
+    print('=== Competitor EE lists ===')
+    competitor_found = scrape_competitor_lists(seen)
+    candidates.extend(competitor_found)
 
     print(f'\nTotal candidates: {len(candidates)}')
 

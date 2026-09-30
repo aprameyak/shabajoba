@@ -20,9 +20,9 @@ greenhouse:
 - name: DRW
   slug: drweng
 - name: Figure AI
-  slug: figureai
-- name: Figure AI
   slug: figure
+- name: Figure AI
+  slug: figureai
 - name: Five Rings
   slug: fiveringsllc
 - name: Flex Ltd
@@ -39,10 +39,18 @@ greenhouse:
   slug: klaviyocampus
 - name: Lattice Semiconductor
   slug: lattice
+- name: Lightmatter
+  slug: lightmatter
 - name: Lucid Motors
   slug: lucidmotors
+- name: Mach Industries
+  slug: machindustries
 - name: Mercury
   slug: mercury
+- name: Mill
+  slug: mill
+- name: Muon Space
+  slug: muonspace
 - name: Nuro
   slug: nuro
 - name: Optiver
@@ -74,6 +82,8 @@ greenhouse:
 - name: Waymo
   slug: waymo
 lever:
+- name: CesiumAstro
+  slug: CesiumAstro
 - name: Exowatt
   slug: exowatt
 - name: Hermeus
@@ -86,6 +96,9 @@ lever:
   slug: pingwind
 - name: Plus
   slug: plus-2
+- name: Quantinuum
+  slug: quantinuum
+  api_host: api.eu.lever.co
 - name: Rigetti
   slug: rigetti
 - name: Shield AI
@@ -105,6 +118,8 @@ ashby:
   slug: fab2
 - name: Base Power Company
   slug: base-power
+- name: Bedrock Robotics
+  slug: bedrock-robotics
 - name: Cerebras
   slug: cerebras
 - name: Charge Robotics
@@ -138,10 +153,12 @@ ashby:
 smartrecruiters:
 - name: AbbVie
   identifier: AbbVie
-- name: Bosch
-  identifier: BoschGroup
+- name: Arista Networks
+  identifier: AristaNetworks
 - name: Bosch
   identifier: Bosch
+- name: Bosch
+  identifier: BoschGroup
 - name: CACI
   identifier: NextCenturyCorporation
 - name: General Dynamics Mission Systems
@@ -173,9 +190,17 @@ workday:
   tenant: abbott
   site: abbottcareers
   board_num: '5'
+- name: Aerospace Corporation
+  tenant: aero
+  site: External
+  board_num: '5'
 - name: Agilent Technologies
   tenant: agilent
   site: Agilent_Careers
+  board_num: '5'
+- name: Allegion
+  tenant: allegion
+  site: careers
   board_num: '5'
 - name: Altera
   tenant: altera
@@ -225,6 +250,10 @@ workday:
   tenant: cadence
   site: External_Careers
   board_num: '1'
+- name: Ciena
+  tenant: ciena
+  site: Careers
+  board_num: '5'
 - name: Continental Resources
   tenant: clr
   site: CLR_Careers
@@ -261,6 +290,10 @@ workday:
   tenant: gevernova
   site: vernova_externalsite
   board_num: '5'
+- name: Generac
+  tenant: generac
+  site: External
+  board_num: '5'
 - name: General Dynamics Information Technology
   tenant: gdit
   site: external_career_site
@@ -273,10 +306,26 @@ workday:
   tenant: globalfoundries
   site: External
   board_num: '1'
+- name: Graco
+  tenant: graco
+  site: Graco_Careers
+  board_num: '501'
 - name: Hitachi
   tenant: hitachi
   site: hitachi
   board_num: '1'
+- name: HP
+  tenant: hp
+  site: EXTEU-AC-CareerSite
+  board_num: '5'
+- name: HP
+  tenant: hp
+  site: externalcareersite
+  board_num: '5'
+- name: HPE
+  tenant: hpe
+  site: jobsathpe
+  board_num: '5'
 - name: Inmar Intelligence
   tenant: inmar
   site: inmarcareers
@@ -289,6 +338,10 @@ workday:
   tenant: intelcomgroup
   site: Intelcom
   board_num: '3'
+- name: iRhythm Technologies
+  tenant: irhythmtech
+  site: irhythm
+  board_num: '5'
 - name: Jabil
   tenant: jabil
   site: Jabil_Careers
@@ -337,10 +390,18 @@ workday:
   tenant: motorolasolutions
   site: Careers
   board_num: '5'
+- name: Neogen
+  tenant: neogen
+  site: neogencareers
+  board_num: '5'
 - name: Nightwing
   tenant: nwis
   site: NW
   board_num: '12'
+- name: Nordson
+  tenant: nordsonhcm
+  site: nordsoncareers
+  board_num: '501'
 - name: Northrop Grumman
   tenant: ngc
   site: northrop_grumman_external_site
@@ -377,6 +438,14 @@ workday:
   tenant: selinc
   site: SEL
   board_num: '1'
+- name: Semtech
+  tenant: semtech
+  site: SemtechCareers
+  board_num: '1'
+- name: Sonos
+  tenant: sonos
+  site: sonos
+  board_num: '1'
 - name: Sony
   tenant: sonyglobal
   site: sonyglobalcareers
@@ -385,18 +454,34 @@ workday:
   tenant: spe
   site: SonyPicturesEntertainment
   board_num: '1'
+- name: Stanley Black & Decker
+  tenant: sbdinc
+  site: Stanley_Black_Decker_Career_Site
+  board_num: '1'
 - name: Stryker
   tenant: stryker
   site: StrykerCareers
   board_num: '1'
+- name: Symbotic
+  tenant: symbotic
+  site: Symbotic
+  board_num: '504'
 - name: The Hartford
   tenant: thehartford
   site: Careers_External
   board_num: '5'
+- name: The Toro Company
+  tenant: ttc
+  site: Toro_External_Careers
+  board_num: '1'
 - name: Thermo Fisher Scientific
   tenant: thermofisher
   site: ThermoFisherCareers
   board_num: '5'
+- name: Viavi Solutions
+  tenant: viavisolutions
+  site: careers
+  board_num: '1'
 - name: Xcel Energy
   tenant: xcelenergy
   site: External
@@ -440,6 +525,18 @@ icims:
   - ASIC
 - name: General Dynamics Mission Systems
   host: careers-gdms.icims.com
+  keywords:
+  - '2027'
+  - Intern
+  - Internship
+  - co-op
+  - Co-op
+  - Electrical
+  - Hardware
+  - FPGA
+  - ASIC
+- name: Keysight Technologies
+  host: careers-keysight.icims.com
   keywords:
   - '2027'
   - Intern
