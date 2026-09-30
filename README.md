@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**452 open** · 773 total · Summer 2027 (296 open) · Off-cycle & co-ops (156 open) · Updated September 21, 2026
+**455 open** · 776 total · Summer 2027 (297 open) · Off-cycle & co-ops (158 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-452-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-455-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,6 +33,9 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| AMCA | Electrical Engineering Internship | El Segundo, CA | Summer 2027 | Undergrad; Masters; PhD | <a href="https://job-boards.greenhouse.io/amca/jobs/4396690009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| DEKA Research & Development Corp. | Electrical Engineer Co-op | Manchester, NH | Spring 2027 | Undergrad | <a href="https://deka.applytojob.com/apply/IGTaMelH6z/Electrical-Engineer-CoOp-Spring-2027" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| Tesla | AI Hardware Design Verification Engineer Intern - AI Hardware - AI | <details><summary>**2 locations**</summary>Palo Alto, CA</br>Austin, TX</details> | Spring 2027 | Undergrad | <a href="https://www.tesla.com/careers/search/job/285088" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ABB | R&D Electrical Engineering Co-op | Bloomfield, CT | Spring 2027 | Undergrad | <a href="https://abb.wd3.myworkdayjobs.com/external_career_page/job/USA-CT-Bloomfield/R-D-Electrical-Engineering-Co-op---Spring-2027_JR00047585" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 29 |
 | ↳ | Electrical Engineering Co-Op: Variable Speed and Specialty Motors | Greenville, SC | Co-op | Undergrad | <a href="https://abb.wd3.myworkdayjobs.com/external_career_page/job/Greenville-South-Carolina-United-States-of-America/Electrical-Engineering-Co-Op--Variable-Speed-and-Specialty-Motors_JR00048181" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 29 |
 | Amperesand | Power Electronics Design Intern | San Francisco, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/amperesand/jobs/4425221009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 29 |

@@ -9274,5 +9274,41 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-09-29"
+  },
+  {
+    "company": "AMCA",
+    "role": "Electrical Engineering Internship",
+    "location": "El Segundo, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad; Masters; PhD",
+    "url": "https://job-boards.greenhouse.io/amca/jobs/4396690009",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-30"
+  },
+  {
+    "company": "Tesla",
+    "role": "AI Hardware Design Verification Engineer Intern - AI Hardware - AI",
+    "location": "Palo Alto, CA; Austin, TX",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://www.tesla.com/careers/search/job/285088",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-30"
+  },
+  {
+    "company": "DEKA Research & Development Corp.",
+    "role": "Electrical Engineer Co-op",
+    "location": "Manchester, NH",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://deka.applytojob.com/apply/IGTaMelH6z/Electrical-Engineer-CoOp-Spring-2027",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-09-30"
   }
 ]
