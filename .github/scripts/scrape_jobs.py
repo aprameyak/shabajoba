@@ -3,12 +3,16 @@
 import json
 import os
 import re
+import sys
 import time
 import datetime
 import subprocess
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from validate_listings import validate_duplicate_urls, validate_entry
 
 LISTINGS_FILE = Path('listings.json')
 SEEN_FILE = Path('.github/data/seen_jobs.json')
@@ -524,10 +528,18 @@ def sanitize_listing_role(company, role):
     role = re.sub(r'^Intern(?:ship)?\s*[—–\-:]\s*', '', role, flags=re.I)
     role = re.sub(r'^Intern,\s*', '', role, flags=re.I)
     if company:
-        role = re.sub(re.escape(company), '', role, flags=re.I)
+        role = re.sub(
+            r'\s*[-–—,:]\s*' + re.escape(company) + r'(?:\s+\w+)?\s*$',
+            '', role, flags=re.I,
+        )
+        role = re.sub(
+            r'^' + re.escape(company) + r'\s*[-–—,:]\s*',
+            '', role, flags=re.I,
+        )
+        if company.lower() in role.lower():
+            role = re.sub(re.escape(company), '', role, flags=re.I)
     role = re.sub(r'\bCo-op/Intern\b', 'Intern/Co-op', role, flags=re.I)
     role = re.sub(r'\s+', ' ', role).strip(' -–—/')
-    # Ensure internship/co-op signal survives aggressive year/season stripping
     if role and not re.search(r'intern|co-?op|student|pathways', role, re.I):
         role = role + ' Intern'
     return role
@@ -1639,6 +1651,14 @@ def main():
             'citizenship': c.get('citizenship', 'Unknown'),
             'date_added': today,
         }
+        violations = validate_entry(entry)
+        if violations:
+            reasons = '; '.join(r for _, _, r in violations)
+            print(f'Skip (validation): {c["company"]} — {role} ({reasons})')
+            continue
+        if validate_duplicate_urls(listings + [entry]):
+            print(f'Skip (duplicate URL): {c["company"]} — {role}')
+            continue
         if add_listing(listings, entry):
             added += 1
             print(f'Added: {c["company"]} — {c["title"]}')
