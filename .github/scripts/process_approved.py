@@ -38,7 +38,7 @@ CA_PROVINCES = {
 
 
 def normalize_url(url):
-    url = url.strip().split('?')[0]
+    url = url.strip().split('?')[0].lower()
     for param in ['utm_source', 'utm_medium', 'utm_campaign', 'source', 'ref']:
         url = re.sub(rf'[?&]{param}=[^&]*', '', url)
     return url.rstrip('/')

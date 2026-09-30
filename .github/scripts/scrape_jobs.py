@@ -140,7 +140,7 @@ def save_json(path, data):
 
 
 def normalize_url(url):
-    url = url.strip().split('?')[0]
+    url = url.strip().split('?')[0].lower()
     url = re.sub(r'[?&](utm_\w+|source|ref|gh_src)=[^&]*', '', url)
     return url.rstrip('/')
 
