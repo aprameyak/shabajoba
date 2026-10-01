@@ -10606,5 +10606,77 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-09-30"
+  },
+  {
+    "company": "Philips",
+    "role": "System Test Automation Engineer Intern",
+    "location": "San Diego, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/San-Diego-California-United-States/Intern---System-Test-Automation-Engineer---San-Diego--CA---Summer-2027_592516",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-01"
+  },
+  {
+    "company": "Sargent & Lundy",
+    "role": "Electrical Engineering Intern -- Electrical Analytical Design",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://careers-sargentlundy.icims.com/jobs/27560/electrical-engineering-intern----electrical-analytical-design----%28summer-2027%29/job",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-01"
+  },
+  {
+    "company": "Sargent & Lundy",
+    "role": "Substation Engineer Intern - Grid",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://careers-sargentlundy.icims.com/jobs/26826/substation-engineer-intern---grid-%28summer-2027%29/job",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-01"
+  },
+  {
+    "company": "Rivian",
+    "role": "Engineering Intern/Co-op - Design Verification - Neural Engine",
+    "location": "Palo Alto, CA",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad; Masters; PhD",
+    "url": "https://careers.rivian.com/jobs/33833?icims=1",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-01"
+  },
+  {
+    "company": "Marvell",
+    "role": "Test Engineer Intern",
+    "location": "Santa Clara, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Masters",
+    "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers2/job/Santa-Clara-CA/Test-Engineering-Intern--MS---Summer-2027_2604002",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-01"
+  },
+  {
+    "company": "Rivian",
+    "role": "Audio Hardware Engineer Intern Co-op - Audio Hardware and DSP",
+    "location": "Palo Alto, CA",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad; Masters; PhD",
+    "url": "https://careers.rivian.com/jobs/33874?icims=1",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-01"
   }
 ]
