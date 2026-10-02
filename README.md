@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**592 open** · 921 total · Summer 2027 (414 open) · Off-cycle & co-ops (178 open) · Updated September 21, 2026
+**595 open** · 924 total · Summer 2027 (417 open) · Off-cycle & co-ops (178 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-592-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-595-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,6 +33,9 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Intel | Graphics Hardware Validation Undergraduate Engineering Intern | Toronto, ON | Summer 2027 | Undergrad | <a href="https://intel.wd1.myworkdayjobs.com/External/job/Canada-Toronto/Graphics-Hardware-Validation-Undergraduate-Engineering-Intern_JR0287535" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 2 |
+| Muon Space | Electrical Engineer Intern | San Jose, CA | Summer 2027 | Undergrad; Masters; PhD | <a href="https://job-boards.greenhouse.io/muonspace/jobs/5255112007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 2 |
+| Northrop Grumman | Intern Optical Engineer - Redondo Beach CA | Redondo Beach, CA | Summer 2027 | Undergrad | <a href="https://ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site/job/United-States-California-Redondo-Beach/XMLNAME-2027-Intern-Optical-Engineer---Redondo-Beach-CA_R10254063" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 2 |
 | Base Power | Electrical Engineering Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://jobs.ashbyhq.com/base-power/7284737d-7e04-43e0-af1f-858103f64e97/application?embed=true" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
 | CACI | Optical Engineering Intern | Danbury, CT, US | Summer 2027 | Undergrad | <a href="https://caci.wd1.myworkdayjobs.com/external/job/Danbury-CT-US/Optical-Engineering-Intern---Summer-2027_332752" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
 | General Dynamics | Integrated Power Systems (IPS) COLUMBIA Class Electrical/Mechanical Systems Engineering Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://careers-gdeb.icims.com/jobs/20802/integrated-power-systems-%28ips%29-columbia-class-electrical-mechanical-systems-engineering---2027-engineering-summer-internship/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
