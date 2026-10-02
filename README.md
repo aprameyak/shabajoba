@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**594 open** · 921 total · Summer 2027 (416 open) · Off-cycle & co-ops (178 open) · Updated September 21, 2026
+**592 open** · 921 total · Summer 2027 (414 open) · Off-cycle & co-ops (178 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-594-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-592-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -65,7 +65,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | ↳ | Instrumentation & Controls Engineering Intern - Nuclear | Remote (US) | Summer 2027 | Undergrad | <a href="https://careers-sargentlundy.icims.com/jobs/27584/instrumentation-%26-controls-engineering-intern---nuclear-%28summer-2027%29/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
 | ↳ | Transmission Line Engineer Intern - Grid | Remote (US) | Summer 2027 | Undergrad | <a href="https://careers-sargentlundy.icims.com/jobs/27578/transmission-line-engineer-intern---grid-%28summer-2027%29/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
 | Solidigm | NAND Development Business Operations Intern | Rancho Cordova, CA | Summer 2027 | Undergrad | <a href="https://jobs.smartrecruiters.com/Solidigm/744000152981999" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
-| Space Dynamics Laboratory | FPGA Electrical Engineer Intern - Civil & Commercial Space Division | North Logan, UT | Summer 2027 | Undergrad | <a href="https://spacedynamicslaboratory.applytojob.com/apply/SznZA6uzbW/CVS-FPGA-Electrical-Engineer-Intern" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
+| Space Dynamics Laboratory | FPGA Electrical Engineer Intern - Civil & Commercial Space Division | North Logan, UT | Summer 2027 | Undergrad | 🔒 | Oct 1 |
 | Varda Space | Guidance, Navigation & Controls (GNC) Internship | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/vardaspace/jobs/7865601003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
 | ↳ | Thermal Engineering Internship | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/vardaspace/jobs/8010172003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
 | ↳ | Vehicle Integration & Test Internship | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/vardaspace/jobs/8010170003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
@@ -809,7 +809,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | ↳ | Electrical Engineering Coop | Cedar Rapids, IA | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-coop-spring-summer-2027-onsite-at-bae-systems-inc-4446221962" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
 | ByteDance | ASIC Design Engineer Intern - Video Silicon IP | San Jose, CA | Summer 2027 | Undergrad | <a href="https://jobs.bytedance.com/en/position/7670332179383699717/detail?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
 | Crown Equipment Corporation | Electrical Engineering Co-op | New Bremen, OH | Spring 2027 | Undergrad | 🔒 | Aug 6 |
-| DRW | FPGA Intern | Chicago, IL | Summer 2027 | Undergrad | <a href="https://www.drw.com/work-at-drw/listings/fpga-intern-3484423?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
+| DRW | FPGA Intern | Chicago, IL | Summer 2027 | Undergrad | 🔒 | Aug 6 |
 | Flint Hills Resources | Electrical Engineering Intern | Corpus Christi, TX | Summer 2027 | Undergrad | 🔒 | Aug 6 |
 | GE Appliances, a Haier company | Electrical Engineering Co-op | Louisville, KY | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-co-op-summer-2027-at-ge-appliances-a-haier-company-4449915155" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
 | Hargrove Engineers & Constructors | Electrical Engineering Co-Op | New Johnsonville, TN | Co-op | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-co-op-at-hargrove-engineers-constructors-4422971815" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 6 |
