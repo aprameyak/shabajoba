@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**618 open** · 947 total · Summer 2027 (435 open) · Off-cycle & co-ops (183 open) · Updated September 21, 2026
+**616 open** · 947 total · Summer 2027 (434 open) · Off-cycle & co-ops (182 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-618-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-616-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -126,7 +126,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | CesiumAstro 🇺🇸 | Electrical Engineering Internship, FPGA | Westminster, CO | Summer 2027 | Undergrad | <a href="https://jobs.lever.co/CesiumAstro/e6d87528-5da1-4970-9e42-7b224cfa63a9" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ↳ | Electrical Engineering Internship, Hardware | Austin, TX | Summer 2027 | Undergrad | <a href="https://jobs.lever.co/CesiumAstro/6a953cbc-af69-452c-b357-1a0a3db80bbf" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ↳ | Electrical Engineering Internship, RF | Westminster, CO | Summer 2027 | Undergrad | <a href="https://jobs.lever.co/CesiumAstro/8eb71502-4374-45aa-82fa-2b62a42cd8e9" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
-| ↳ | Power Electronics Internship | Austin, TX | Summer 2027 | Undergrad | <a href="https://jobs.lever.co/CesiumAstro/18d2c72e-30cd-4145-8b12-7db3a492d541" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| ↳ | Power Electronics Internship | Austin, TX | Summer 2027 | Undergrad | 🔒 | Sep 30 |
 | ↳ | Test Engineering Internship | Westminster, CO | Summer 2027 | Undergrad | <a href="https://jobs.lever.co/CesiumAstro/ab7dd1c4-7196-4cae-8fbd-cddec993b9b8" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | Ciena | Hardware (PCBA) Design and Verification Intern | Remote (US) | Winter 2027 | Undergrad | <a href="https://ciena.wd5.myworkdayjobs.com/Careers/job/Canada--Ottawa--383-Terry-Fox--Bldg-C/Hardware--PCBA--Design-and-Verification-Intern--Winter-2027---4-months-_R031752" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | Cyvl | Hardware Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://jobs.ashbyhq.com/cyvl/3590960d-4d02-48bb-a335-cb82e121a01e/application?embed=true" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
@@ -865,7 +865,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Techtronic Industries (TTI) | Electrical Engineer Intern | Anderson, SC | Fall 2026 | Undergrad | 🔒 | Jul 24 |
 | Rantec Power Systems Inc. | PCB Design Engineer Intern | San Luis Obispo, CA | Summer 2027 | Undergrad | 🔒 | Jul 23 |
 | TechInsights | Circuit Analysis Co-op | Ottawa, ON | Fall 2026 | Undergrad | 🔒 | Jul 23 |
-| Kepler Communications | FPGA Digital Design Engineer Intern | Remote (Canada) | Winter 2027 | Undergrad | <a href="https://jobs.lever.co/kepler/f06ca5e6-2e7f-4b76-a5c4-cb423d3cfc03/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Jul 22 |
+| Kepler Communications | FPGA Digital Design Engineer Intern | Remote (Canada) | Winter 2027 | Undergrad | 🔒 | Jul 22 |
 | Blue Robotics | Electronics Design Co-op | Victoria, BC | Fall 2026 | Undergrad | 🔒 | Jul 21 |
 | Leidos | Signal Processing Technical Intern | San Diego, CA | Summer 2027 | Undergrad | 🔒 | Jul 21 |
 | Ciena | Photonic Hardware Intern | Ottawa, ON | Fall 2026 | Undergrad | 🔒 | Jul 20 |
