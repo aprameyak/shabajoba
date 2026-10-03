@@ -11410,5 +11410,53 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-03"
+  },
+  {
+    "company": "CesiumAstro",
+    "role": "Electrical Engineering Intern - FPGA",
+    "location": "El Segundo, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad; Masters; PhD",
+    "url": "https://jobs.lever.co/CesiumAstro/5ac10e3b-f9d7-4029-bf25-73a191ff2636/apply",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-03"
+  },
+  {
+    "company": "Allegion",
+    "role": "Hardware Engineering Intern - Hardware Engineering",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://allegion.wd5.myworkdayjobs.com/careers/job/Indianapolis-IN---Hague-Rd/Summer-Intern---Hardware-Engineering_JR37413-1",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-03"
+  },
+  {
+    "company": "Schweitzer Engineering Laboratories",
+    "role": "Hardware Engineering Intern",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://selinc.wd1.myworkdayjobs.com/SEL/job/Washington---Pullman/Hardware-Engineering-Intern_2026-23159",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-03"
+  },
+  {
+    "company": "Cadence Design Systems",
+    "role": "Digital ASIC Design / Verification Engineer Intern/Co-op",
+    "location": "Remote (US)",
+    "type": "offcycle",
+    "season": "Co-op",
+    "education": "Undergrad",
+    "url": "https://cadence.wd1.myworkdayjobs.com/University_Talent/job/TORONTO-02/Digital-ASIC-Design---Verification-Engineering-Intern-Co-Op_R56320",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-03"
   }
 ]
