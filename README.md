@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**663 open** · 994 total · Summer 2027 (475 open) · Off-cycle & co-ops (188 open) · Updated September 21, 2026
+**662 open** · 994 total · Summer 2027 (474 open) · Off-cycle & co-ops (188 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-663-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-662-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -541,7 +541,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Rocket Lab | Avionics Engineering Intern | Long Beach, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7989733003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | ↳ | Test Engineering Intern - Avionics | Long Beach, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/rocketlab/jobs/7987159003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | Syska Hennessy Group | Electrical Engineer Summer Intern | Boston, MA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineer-summer-intern-at-syska-hennessy-group-4462530154" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
-| TTM Technologies | Electrical Engineering Intern | Syracuse, NY | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-at-ttm-technologies-4465304560" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
+| TTM Technologies | Electrical Engineering Intern | Syracuse, NY | Summer 2027 | Undergrad | 🔒 | Sep 12 |
 | Ulteig | Electrical Engineer Intern- AISP | Sacramento, CA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/summer-2027-electrical-engineer-intern-aisp-at-ulteig-4465088884" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | ↳ | Electrical Engineer Intern- Substation | St Paul, MN | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/summer-2027-electrical-engineer-intern-substation-at-ulteig-4465373411" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 12 |
 | Wiss, Janney, Elstner Associates, Inc. | Internship (Electrical Engineering Students) | Doylestown, PA | Summer 2027 | Undergrad | 🔒 | Sep 12 |
