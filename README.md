@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**706 open** · 1038 total · Summer 2027 (507 open) · Off-cycle & co-ops (199 open) · Updated September 21, 2026
+**716 open** · 1048 total · Summer 2027 (514 open) · Off-cycle & co-ops (202 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-706-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-716-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,6 +33,16 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Allegion | Product Assurance Test Engineer Intern | Colorado Springs, CO | Summer 2027 | Undergrad | <a href="https://allegion.wd5.myworkdayjobs.com/careers/job/Colorado-Springs-CO/Summer-Intern---Product-Assurance-Test-Engineer_JR37380-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| BorgWarner | Electrical Design Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://borgwarner.wd5.myworkdayjobs.com/BorgWarner_Careers/job/Kokomo-Technical-Center---Indiana---USA/Electrical-Design-Engineer-Intern_R2026-3965" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| Figure AI | Validation Engineering Intern | San Jose, CA | Winter 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/figureai/jobs/4606072006" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| GE Healthcare | Electrical Engineering Technician Co-op | Waukesha, WI | Co-op | Undergrad | <a href="https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/Waukesha/Electrical-Engineering-Technician-Co-op_R4046982-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| HPE | Electrical Engineering Labs Intern | Spring, TX | Summer 2027 | Undergrad | <a href="https://hpe.wd5.myworkdayjobs.com/jobsathpe/job/Spring-Texas-United-States-of-America/Electrical-Engineering-Labs-Intern_1213083" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| KLA | Electrical Design Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://kla.wd1.myworkdayjobs.com/UR/job/Ann-Arbor-MI/Electrical-Design-Engineering-Intern_2641708" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| Moog | Electrical Engineer Intern | Torrance, CA | Summer 2027 | Undergrad; Masters | <a href="https://moog.wd5.myworkdayjobs.com/moog_external_career_site/job/Torrance-CA/Intern--Electrical-Engineering_R-26-19827" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| NVIDIA | PCIe Design Verification Intern | Santa Clara, CA | Summer 2027 | Undergrad; Masters | <a href="https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PCIe-Design-Verification-Intern---Spring-2027_JR2026704" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| Renesas Electronics | Post Silicon Validation Intern | Duluth, GA | Summer 2027 | Masters | <a href="https://jobs.smartrecruiters.com/RenesasElectronics/744000153840059" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| Rivian | Engineering Intern Co-op - AI/ML ASIC CAD | Palo Alto, CA | Spring 2027 | Masters; PhD | <a href="https://careers.rivian.com/jobs/34059?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
 | Anduril | Quality & Test Engineer Intern | <details><summary>**5 locations**</summary>Ashville, OH</br>Costa Mesa, CA</br>Irvine, CA</br>Quonset, RI</br>Santa Ana, CA</details> | Summer 2027 | Undergrad | <a href="https://boards.greenhouse.io/andurilindustries/jobs/5257674007?gh_jid=5257674007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | ↳ | Reliability Engineer Intern | Costa Mesa, CA | Summer 2027 | Undergrad | <a href="https://boards.greenhouse.io/andurilindustries/jobs/5257682007?gh_jid=5257682007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | ↳ | Quality & Test Engineer Co-op | <details><summary>**2 locations**</summary>Ashville, OH</br>Santa Ana, CA</details> | Winter 2027 | Undergrad | <a href="https://boards.greenhouse.io/andurilindustries/jobs/5257571007?gh_jid=5257571007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
