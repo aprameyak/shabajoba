@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**716 open** · 1048 total · Summer 2027 (514 open) · Off-cycle & co-ops (202 open) · Updated September 21, 2026
+**713 open** · 1048 total · Summer 2027 (512 open) · Off-cycle & co-ops (201 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-716-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-713-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -190,7 +190,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Sargent & Lundy | Electrical Engineering Intern -- Electrical Analytical Design | Remote (US) | Summer 2027 | Undergrad | <a href="https://careers-sargentlundy.icims.com/jobs/27560/electrical-engineering-intern----electrical-analytical-design----%28summer-2027%29/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
 | ↳ | Substation Engineer Intern - Grid | Remote (US) | Summer 2027 | Undergrad | <a href="https://careers-sargentlundy.icims.com/jobs/26826/substation-engineer-intern---grid-%28summer-2027%29/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
 | ↳ | Instrumentation & Controls Engineering Intern - Nuclear | Remote (US) | Summer 2027 | Undergrad | <a href="https://careers-sargentlundy.icims.com/jobs/27584/instrumentation-%26-controls-engineering-intern---nuclear-%28summer-2027%29/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
-| ↳ | Transmission Line Engineer Intern - Grid | Remote (US) | Summer 2027 | Undergrad | <a href="https://careers-sargentlundy.icims.com/jobs/27578/transmission-line-engineer-intern---grid-%28summer-2027%29/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
+| ↳ | Transmission Line Engineer Intern - Grid | Remote (US) | Summer 2027 | Undergrad | 🔒 | Oct 1 |
 | Solidigm | NAND Development Business Operations Intern | Rancho Cordova, CA | Summer 2027 | Undergrad | <a href="https://jobs.smartrecruiters.com/Solidigm/744000152981999" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
 | Space Dynamics Laboratory | FPGA Electrical Engineer Intern - Civil & Commercial Space Division | North Logan, UT | Summer 2027 | Undergrad | 🔒 | Oct 1 |
 | Varda Space | Guidance, Navigation & Controls (GNC) Internship | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/vardaspace/jobs/7865601003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 1 |
@@ -707,7 +707,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Micron Technology | EUV Lithography Intern | Boise, ID | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | ↳ | Advanced DRAM Cell & Device Technology Intern | Boise, ID | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | ↳ | DRAM Technology DTCO & PPA Assessment Engineer Intern | Boise, ID | Summer 2027 | Undergrad | 🔒 | Sep 3 |
-| Mott MacDonald | Electrical Engineering Internship | Austin, TX | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-internship-2027-at-mott-macdonald-4461247288" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
+| Mott MacDonald | Electrical Engineering Internship | Austin, TX | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | Naval Nuclear Laboratory (FMP) | Electrical Engineering Internship | West Mifflin, PA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-internship-summer-2027-at-naval-nuclear-laboratory-fmp-4461721432" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | Northwood Space | RF Engineer Intern | Torrance, CA | Summer 2027 | Undergrad | <a href="https://jobs.ashbyhq.com/NorthwoodSpace/f086c92a-7e4b-4799-8f2a-2ad8b13111ca" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | NVIDIA | Hardware Verification Intern | Santa Clara, CA | Summer 2027 | Undergrad | 🔒 | Sep 3 |
@@ -902,7 +902,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | OceanComm | Electronics Technician Intern | Chicago, IL | Fall 2026 | Undergrad | 🔒 | Aug 11 |
 | RTX | Electro-Optical Systems Technician Intern - AN/ZSQ-2 | Fort Campbell, KY | Fall 2026 | Undergrad; Masters | 🔒 | Aug 11 |
 | Schaeffler | Co-op Electrical Engineering — Summer | Troy, MI | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/co-op-electrical-engineering-summer-2027-at-schaeffler-4452624155" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
-| ↳ | Co-op Electrical Engineering — Fall | Troy, MI | Fall 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/co-op-electrical-engineering-fall-2027-at-schaeffler-4452611940" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
+| ↳ | Co-op Electrical Engineering — Fall | Troy, MI | Fall 2027 | Undergrad | 🔒 | Aug 11 |
 | SkyGig | RFIC Design Intern | San Jose, CA | Fall 2026 | Masters; PhD | <a href="https://apply.workable.com/skygig/j/10A5A58F9E/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
 | Micron Technology | DRAM Design Engineer Intern | Boise, ID | Fall 2026 | Undergrad; Masters | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---DRAM-Design-Engineer_JR108468" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 10 |
 | ↳ | DRAM IP Circuits Design Engineer Intern - IP Development | Boise, ID | Fall 2026 | Undergrad; Masters; PhD | 🔒 | Aug 10 |
