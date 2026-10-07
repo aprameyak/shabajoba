@@ -2205,5 +2205,15 @@
   "Validation Engineering Intern [Winter 2027]": true,
   "Mission Systems Supplier Quality Intern (Summer 2027)": false,
   "Security Engineer Intern [Winter 2027]": false,
-  "Middleware Intern [Winter 2027]": false
+  "Middleware Intern [Winter 2027]": false,
+  "AI Software Intern": false,
+  "Hardware Intern - Architecture, AI HW & System on a Chip": true,
+  "Intern, Physical Design & DFT": true,
+  "Project Engineering Intern (Summer 2027)": false,
+  "Mechanical Engineer Intern (Summer 2027)": false,
+  "Electrical Engineer Qualification Test Intern": true,
+  "Systems Engineering Test Equipment Intern (Summer 2027)": true,
+  "AI SW Intern, Cloud, Infrastructure & Data Centre Deployment": false,
+  "2027 Summer Intern, MS/PhD,  Research, Perception Foundation Models": false,
+  "Intern, RISC-V CPU ": true
 }
