@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**736 open** · 1074 total · Summer 2027 (531 open) · Off-cycle & co-ops (205 open) · Updated September 21, 2026
+**737 open** · 1075 total · Summer 2027 (532 open) · Off-cycle & co-ops (205 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-736-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-737-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,6 +33,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Northrop Grumman | Electrical/Systems Engineer Intern - Baltimore MD | Baltimore, MD | Summer 2027 | Undergrad | <a href="https://ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site/job/United-States-Maryland-Baltimore/XMLNAME-2027-Electrical-Systems-Engineer-Intern---Baltimore-MD_R10255010" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 8 |
 | Aerospace Corporation | Radiation Effects Graduate Intern | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Radiation-Effects-Graduate-Intern_R016793" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
 | ↳ | Radiation Effects Undergraduate Intern | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Radiation-Effects-Undergraduate-Intern_R016791" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
 | Allegion | Product Assurance Test Engineer Intern | Colorado Springs, CO | Summer 2027 | Undergrad | <a href="https://allegion.wd5.myworkdayjobs.com/careers/job/Colorado-Springs-CO/Summer-Intern---Product-Assurance-Test-Engineer_JR37380-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
