@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**737 open** · 1075 total · Summer 2027 (532 open) · Off-cycle & co-ops (205 open) · Updated September 21, 2026
+**741 open** · 1079 total · Summer 2027 (535 open) · Off-cycle & co-ops (206 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-737-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-741-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,6 +33,10 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| GE Vernova | Co-op / Internship Program | Remote (US) | Co-op | Undergrad | <a href="https://gevernova.wd5.myworkdayjobs.com/vernova_externalsite/job/Remote/Co-op---Internship-Program_R5055348-2" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 8 |
+| L3Harris Technologies | Electro-Optical Engineering Co-op | Waterdown, Hamilton, ON | Summer 2027 | Undergrad | <a href="https://jobs.l3harris.com/job/Waterdown-Electro-Optical-Engineering-Co-Op-(Waterdown,-CAN)-ON-L9H-0C5/1428468700/?ats=successfactors" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 8 |
+| Meta | Optical Engineer Intern - Camera, Depth & Cover Window Optics | Sunnyvale, CA | Summer 2027 | Undergrad | <a href="https://www.metacareers.com/jobs/1092606640401919" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 8 |
+| ↳ | Manufacturing Test Engineer Intern | Sunnyvale, CA | Summer 2027 | Undergrad | <a href="https://www.metacareers.com/jobs/1866862250969693" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 8 |
 | Northrop Grumman | Electrical/Systems Engineer Intern - Baltimore MD | Baltimore, MD | Summer 2027 | Undergrad | <a href="https://ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site/job/United-States-Maryland-Baltimore/XMLNAME-2027-Electrical-Systems-Engineer-Intern---Baltimore-MD_R10255010" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 8 |
 | Aerospace Corporation | Radiation Effects Graduate Intern | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Radiation-Effects-Graduate-Intern_R016793" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
 | ↳ | Radiation Effects Undergraduate Intern | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Radiation-Effects-Undergraduate-Intern_R016791" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
