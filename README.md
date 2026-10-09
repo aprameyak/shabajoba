@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**754 open** · 1092 total · Summer 2027 (545 open) · Off-cycle & co-ops (209 open) · Updated September 21, 2026
+**751 open** · 1092 total · Summer 2027 (542 open) · Off-cycle & co-ops (209 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-754-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-751-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -773,7 +773,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Southern California Edison (SCE) | Summer Internship - Electrical Engineering (Westminster) | Westminster, CA | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | ↳ | Summer Internship - Electrical Engineering (Alhambra/Pomona/Rosemead) | Rosemead, CA | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | STV | Electrical Engineering Intern | Boston, MA | Spring 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-intern-spring-2027-at-stv-4458027846" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
-| Susquehanna International Group | FPGA Engineer Intern | Bala Cynwyd, PA | Summer 2027 | Undergrad | <a href="https://careers-sig.icims.com/jobs/11446/job?mobile=true&needsRedirect=false" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
+| Susquehanna International Group | FPGA Engineer Intern | Bala Cynwyd, PA | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | Texas Instruments | Digital IC Design Engineering Intern - Bachelors | Dallas, TX | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/digital-ic-design-engineering-intern-bachelors-at-texas-instruments-4461336505" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | Textron Specialized Vehicles | Electrical Engineer Intern | Augusta, GA | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-electrical-engineer-intern-at-textron-specialized-vehicles-4460675081" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | Verkada | Hardware Engineer (Winter Co-op) | San Mateo, CA | Co-op | Undergrad | <a href="https://job-boards.greenhouse.io/verkada/jobs/4321158007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
@@ -844,7 +844,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Moog | Hardware Engineer Intern | Mineral Wells, TX | Summer 2027 | Undergrad; Masters | 🔒 | Aug 25 |
 | AMD | Hardware Engineer Intern/Co-op | <details><summary>**2 locations**</summary>San Jose, CA</br>Santa Clara, CA</details> | Summer 2027 | Undergrad | <a href="https://careers.amd.com/jobs/90894" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
 | Analog Devices | Digital Design Engineer Intern | <details><summary>**2 locations**</summary>San Jose, CA</br>Durham, NC</details> | Fall 2026 | Undergrad; Masters | <a href="https://analogdevices.wd1.myworkdayjobs.com/External/job/US-NC-Durham/Digital-Design-Engineer-Intern_R265298" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
-| Daktronics | Hardware Design Intern/Co-op - Firmware | Brookings, SD | Summer 2027 | Undergrad | <a href="https://careers-daktronics.icims.com/jobs/7518/job?mobile=true&needsRedirect=false" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
+| Daktronics | Hardware Design Intern/Co-op - Firmware | Brookings, SD | Summer 2027 | Undergrad | 🔒 | Aug 24 |
 | Hitachi Energy | Electrical Engineering Intern | Raleigh, NC | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-summer-electrical-engineering-intern-raleigh-at-hitachi-energy-4457820149" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
 | Nexus Engineering Group | Electrical Engineering Internship or Co-Op | Oak Brook, IL | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/electrical-engineering-internship-or-co-op-summer-2027-at-nexus-engineering-group-4457009037" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
 | RoboForce | Robotics Electrical Engineering Intern | Milpitas, CA | Fall 2026 | Undergrad; Masters; PhD | 🔒 | Aug 24 |
@@ -907,7 +907,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Accelevation | Electrical Engineering Intern | Miamisburg, OH | Summer 2027 | Undergrad | 🔒 | Aug 17 |
 | Brunswick | Electrical Engineer Intern | Edgewater, FL | Summer 2027 | Undergrad | 🔒 | Aug 17 |
 | CF Industries | Electrical Engineer Intern | Claremore, OK | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/intern-electrical-engineer-at-cf-industries-4455337708" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 17 |
-| Daktronics | Firmware/Hardware Design Student | Rapid City, SD | Summer 2027 | Undergrad | <a href="https://careers-daktronics.icims.com/jobs/7492/job?mobile=true&needsRedirect=false" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 17 |
+| Daktronics | Firmware/Hardware Design Student | Rapid City, SD | Summer 2027 | Undergrad | 🔒 | Aug 17 |
 | GE Aerospace | Systems Engineer Co-op - Electrical Engineering & Computer Engineering/Science - Avionics | <details><summary>**2 locations**</summary>Grand Rapids, MI</br>Clearwater, FL</details> | Fall 2027 | Undergrad; Masters | 🔒 | Aug 17 |
 | GE Vernova | Power Conversion & Storage Engineer Intern/Co-op | Findlay Township, PA | Spring 2027 | Undergrad | 🔒 | Aug 17 |
 | IMEG | Electrical Engineering Intern | Madison, WI | Summer 2027 | Undergrad | 🔒 | Aug 17 |
