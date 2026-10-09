@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**754 open** · 1095 total · Summer 2027 (545 open) · Off-cycle & co-ops (209 open) · Updated September 21, 2026
+**757 open** · 1098 total · Summer 2027 (547 open) · Off-cycle & co-ops (210 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-754-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-757-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,8 +33,11 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Applied Materials | Electrical Engineer Intern - Controls/PCB | Gloucester, MA | Summer 2027 | Undergrad; Masters | <a href="https://amat.wd1.myworkdayjobs.com/External/job/GloucesterMA/XMLNAME-2027-Summer-Electrical-Engineer--Intern--Controls-PCB----BS-or-MS--Gloucester--MA-_R2630658" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | General Motors | Fleet Reliability & Test Engineering, ASD Intern | Milford, MI | Summer 2027 | Undergrad | <a href="https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Milford-Michigan-United-States-of-America/XMLNAME-2027-Summer-Intern--Fleet-Reliability---Test-Engineering--ASD_JR-202622071" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | HPE | Wireless Networking Intern | San Jose, CA | Summer 2027 | Undergrad | <a href="https://hpe.wd5.myworkdayjobs.com/jobsathpe/job/San-Jose-California-United-States-of-America/Wireless-Networking-Intern_1214969" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
+| Jabil | Metrology & Quality Technician - Internship / Co-op | Clinton, MA | Co-op | Undergrad | <a href="https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Clinton-MA/Metrology---Quality-Technician---Internship---Co-op_J2467577" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
+| Micron Technology | Fab Equipment Maintenance Technician Intern | Manassas, VA | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Manassas-VA----Fab-6/Intern---Fab-Equipment-Maintenance-Technician_JR114722" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | Northrop Grumman | Internal Only: Sr Principal Integration and Test Engineer (26-454) | Colorado Springs, CO | Summer 2027 | Undergrad | <a href="https://ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site/job/United-States-Colorado-Colorado-Springs/Internal-Only--Sr-Principal-Integration-and-Test-Engineer--26-454-_R10255322" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | SharkNinja | Electrical Engineering Co-op | Needham, MA | Spring 2027 | Undergrad; Masters; PhD | <a href="https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4718702006" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | Sierra Nevada Corporation | Test Engineer 1 Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://snc.wd1.myworkdayjobs.com/snc_external_career_site/job/Lone-Tree-CO/Test-Engineer-I--For-SNC-Summer-2026-Interns-Only-_R0030967" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
