@@ -13258,5 +13258,65 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-09"
+  },
+  {
+    "company": "Applied Materials",
+    "role": "Electrical Engineer Intern",
+    "location": "Santa Clara, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad; Masters",
+    "url": "https://amat.wd1.myworkdayjobs.com/External/job/Santa-ClaraCA/XMLNAME-2027-Summer-Intern---Electrical-Engineer---BS-MS-Degree---Santa-Clara-_R2629428",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-10"
+  },
+  {
+    "company": "Astera Labs",
+    "role": "Analog Mixed Signal Engineer Intern",
+    "location": "San Jose, CA; Irvine, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Masters; PhD",
+    "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4739767005",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-10"
+  },
+  {
+    "company": "Intel",
+    "role": "AI-Driven Physical Design Engineering PhD Intern",
+    "location": "Austin, TX; Santa Clara, CA; Hillsboro, OR; Fort Collins, CO; Worcester, MA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "PhD",
+    "url": "https://intel.wd1.myworkdayjobs.com/en-us/external/job/US-California-Santa-Clara/AI-Driven-Physical-Design-Engineering--PhD-Intern-_JR0287661",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-10"
+  },
+  {
+    "company": "Harbinger Motors",
+    "role": "Test Engineering Intern",
+    "location": "Garden Grove, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad; Masters; PhD",
+    "url": "https://job-boards.greenhouse.io/harbingermotors/jobs/5255968007",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-10"
+  },
+  {
+    "company": "Meter",
+    "role": "Hardware Engineer Intern",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://jobs.ashbyhq.com/meter/a5f1e4c3-2930-4933-ab38-8f600486494b/application?embed=true",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-10"
   }
 ]
