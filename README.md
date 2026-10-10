@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**768 open** · 1110 total · Summer 2027 (557 open) · Off-cycle & co-ops (211 open) · Updated September 21, 2026
+**770 open** · 1112 total · Summer 2027 (558 open) · Off-cycle & co-ops (212 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-768-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-770-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -35,9 +35,11 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
 | Applied Materials | Electrical Engineer Intern | Santa Clara, CA | Summer 2027 | Undergrad; Masters | <a href="https://amat.wd1.myworkdayjobs.com/External/job/Santa-ClaraCA/XMLNAME-2027-Summer-Intern---Electrical-Engineer---BS-MS-Degree---Santa-Clara-_R2629428" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | Astera Labs | Analog Mixed Signal Engineer Intern | <details><summary>**2 locations**</summary>San Jose, CA</br>Irvine, CA</details> | Summer 2027 | Masters; PhD | <a href="https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4739767005" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
+| GlobalFoundries | APL Quantum Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/APL-Quantum-Intern--Summer-2027-_JR-2604434" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | Harbinger Motors | Test Engineering Intern | Garden Grove, CA | Summer 2027 | Undergrad; Masters; PhD | <a href="https://job-boards.greenhouse.io/harbingermotors/jobs/5255968007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | Intel | AI-Driven Physical Design Engineering PhD Intern | <details><summary>**5 locations**</summary>Austin, TX</br>Santa Clara, CA</br>Hillsboro, OR</br>Fort Collins, CO</br>Worcester, MA</details> | Summer 2027 | PhD | <a href="https://intel.wd1.myworkdayjobs.com/en-us/external/job/US-California-Santa-Clara/AI-Driven-Physical-Design-Engineering--PhD-Intern-_JR0287661" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | Meter | Hardware Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://jobs.ashbyhq.com/meter/a5f1e4c3-2930-4933-ab38-8f600486494b/application?embed=true" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
+| Thea Energy | Test Engineer Intern | Kearny, NJ | Spring 2027 | Undergrad; Masters; PhD | <a href="https://jobs.lever.co/thea.energy/5912ba14-1003-4f4f-84f2-74f7155e49ad/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | AMD | AI Agentic Flow for GPU ASIC Design Co-op Intern | Orlando, FL | Summer 2027 | Undergrad; Masters; PhD | <a href="https://careers.amd.com/jobs/91341?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | Applied Materials | Electrical Engineer Intern - Controls/PCB | Gloucester, MA | Summer 2027 | Undergrad; Masters | <a href="https://amat.wd1.myworkdayjobs.com/External/job/GloucesterMA/XMLNAME-2027-Summer-Electrical-Engineer--Intern--Controls-PCB----BS-or-MS--Gloucester--MA-_R2630658" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | General Motors | Fleet Reliability & Test Engineering, ASD Intern | Milford, MI | Summer 2027 | Undergrad | <a href="https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Milford-Michigan-United-States-of-America/XMLNAME-2027-Summer-Intern--Fleet-Reliability---Test-Engineering--ASD_JR-202622071" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
