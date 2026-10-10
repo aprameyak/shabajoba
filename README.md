@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**770 open** · 1112 total · Summer 2027 (558 open) · Off-cycle & co-ops (212 open) · Updated September 21, 2026
+**771 open** · 1113 total · Summer 2027 (559 open) · Off-cycle & co-ops (212 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-770-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-771-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -38,6 +38,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | GlobalFoundries | APL Quantum Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/APL-Quantum-Intern--Summer-2027-_JR-2604434" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | Harbinger Motors | Test Engineering Intern | Garden Grove, CA | Summer 2027 | Undergrad; Masters; PhD | <a href="https://job-boards.greenhouse.io/harbingermotors/jobs/5255968007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | Intel | AI-Driven Physical Design Engineering PhD Intern | <details><summary>**5 locations**</summary>Austin, TX</br>Santa Clara, CA</br>Hillsboro, OR</br>Fort Collins, CO</br>Worcester, MA</details> | Summer 2027 | PhD | <a href="https://intel.wd1.myworkdayjobs.com/en-us/external/job/US-California-Santa-Clara/AI-Driven-Physical-Design-Engineering--PhD-Intern-_JR0287661" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
+| Marvell Technology | Test Solutions Engineering Intern, BS | Burlington, VT | Summer 2027 | Undergrad | <a href="https://marvell.wd1.myworkdayjobs.com/marvellcareers/job/Burlington-VT/Test-Solutions-Engineering-Intern--BS---Summer-2027_2603835" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | Meter | Hardware Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://jobs.ashbyhq.com/meter/a5f1e4c3-2930-4933-ab38-8f600486494b/application?embed=true" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | Thea Energy | Test Engineer Intern | Kearny, NJ | Spring 2027 | Undergrad; Masters; PhD | <a href="https://jobs.lever.co/thea.energy/5912ba14-1003-4f4f-84f2-74f7155e49ad/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | AMD | AI Agentic Flow for GPU ASIC Design Co-op Intern | Orlando, FL | Summer 2027 | Undergrad; Masters; PhD | <a href="https://careers.amd.com/jobs/91341?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
