@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**764 open** · 1105 total · Summer 2027 (553 open) · Off-cycle & co-ops (211 open) · Updated September 21, 2026
+**763 open** · 1105 total · Summer 2027 (552 open) · Off-cycle & co-ops (211 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-764-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-763-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -754,7 +754,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Geotab | Hardware Developer Intern | Oakville, ON | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | GlobalFoundries | Silicon Photonics Advanced Packaging Intern | Malta, NY | Summer 2027 | Undergrad; Masters | 🔒 | Sep 3 |
 | ↳ | RF Technology Development Automation Engineer Intern | Malta, NY | Summer 2027 | Undergrad; Masters; PhD | 🔒 | Sep 3 |
-| Hudson River Trading | Hardware Engineer Intern | New York, NY | Summer 2027 | Undergrad | <a href="https://www.hudsonrivertrading.com/careers/job/?gh_jid=7899574" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
+| Hudson River Trading | Hardware Engineer Intern | New York, NY | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | IMC | Hardware Engineer Intern | Chicago, IL | Summer 2027 | Undergrad | <a href="https://www.imc.com/us/careers/jobs/4823945101" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | Johns Hopkins Applied Physics Laboratory | Electrical Engineer – Networked Systems & Integrated Fires Intern | Laurel, MD | Summer 2027 | Undergrad | 🔒 | Sep 3 |
 | Johnson & Johnson | Electrical Engineering Co-op | Cincinnati, OH | Summer 2027 | Undergrad | <a href="https://jj.wd5.myworkdayjobs.com/JJ/job/Cincinnati-Ohio-United-States-of-America/Electrical-Engineering-Co-Op--Summer-2027_R-096736" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
