@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**765 open** · 1114 total · Summer 2027 (554 open) · Off-cycle & co-ops (211 open) · Updated September 21, 2026
+**774 open** · 1123 total · Summer 2027 (561 open) · Off-cycle & co-ops (213 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-765-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-774-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,6 +33,15 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Aptiv | HVP/Cert Engineering Intern | CAN Kanata (2), ON | Summer 2027 | Undergrad | <a href="https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/CAN-Kanata-2-ON---WR/HVP-Cert-Engineering-Intern_J000704377" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 12 |
+| HPE | Hardware Service Engineer Intern | All, IL | Summer 2027 | Undergrad | <a href="https://hpe.wd5.myworkdayjobs.com/jobsathpe/job/All-Illinois-United-States-of-America/Hardware-Service-Engineer-Intern_1213405" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 12 |
+| Keysight Technologies | Test Engineering Intern Tech 3 | Santa Clara, CA | Summer 2027 | Undergrad; Masters | <a href="https://jobs.keysight.com/jobs/54786?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 12 |
+| Meta | Signal Integrity Intern | Menlo Park, CA | Summer 2027 | Undergrad | <a href="https://www.metacareers.com/jobs/1134883748976209" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 12 |
+| Micron Technology | ID1 ATE PI Engineer Intern | Boise, ID | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---ID1/Intern---ID1-ATE-PI-Engineer_JR114304" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 12 |
+| ↳ | Yield Enhancement Engineer Intern | Boise, ID | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---ID1/Intern---Yield-Enhancement--Engineer_JR114471" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 12 |
+| ↳ | SSD Hardware Engineering Intern | Longmont-MAX- Office, CO | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Longmont-MAX--Office-CO/Intern---SSD-Hardware-Engineering_JR114232" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 12 |
+| Nokia | Hardware Development Co-Op | Remote (US) | Co-op | Undergrad | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/40268" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 12 |
+| Western Digital | Spring Co-op - Recording Electronics Data Analytics & Optimization | Rochester, MN | Co-op | Undergrad | <a href="https://jobs.smartrecruiters.com/WesternDigital/744000155109379" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 12 |
 | HPE | Bachelors Tech Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://hpe.wd5.myworkdayjobs.com/jobsathpe/job/Santiago-Region-Metropolitana-de-Santiago-Chile/Intern---Bachelors-Tech_1212993" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 11 |
 | Applied Materials | Electrical Engineer Intern | Santa Clara, CA | Summer 2027 | Undergrad; Masters | <a href="https://amat.wd1.myworkdayjobs.com/External/job/Santa-ClaraCA/XMLNAME-2027-Summer-Intern---Electrical-Engineer---BS-MS-Degree---Santa-Clara-_R2629428" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
 | Astera Labs | Analog Mixed Signal Engineer Intern | <details><summary>**2 locations**</summary>San Jose, CA</br>Irvine, CA</details> | Summer 2027 | Masters; PhD | <a href="https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4739767005" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 10 |
