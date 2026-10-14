@@ -43,8 +43,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config user.name "Aprameya Kannan"
-          git config user.email "aprameyakannan@gmail.com"
+          git config user.name "baldmeya"
+          git config user.email "akannan8@umd.edu"
           git add .github/data/seen_jobs.json .github/data/title_classifications.json .github/data/gemini_usage.json .github/data/location_normalizations.json listings.json README.md
           if ! git diff --staged --quiet; then
             git commit -m "scrape: add new listings and update seen cache"
