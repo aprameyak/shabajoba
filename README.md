@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**775 open** · 1176 total · Summer 2027 (563 open) · Off-cycle & co-ops (212 open) · Updated September 21, 2026
+**777 open** · 1178 total · Summer 2027 (564 open) · Off-cycle & co-ops (213 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-775-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-777-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,6 +33,8 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Rockwell Automation | Co-op, Electrical Engineer | Chelmsford, MA | Co-op | Undergrad | <a href="https://rockwellautomation.wd1.myworkdayjobs.com/external_rockwell_automation/job/Chelmsford-Massachusetts-United-States/Co-op--Electrical-Engineer--June---Dec-2027-_R26-7706-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 15 |
+| ↳ | Electrical Engineer Co-op | Chelmsford, MA | Summer 2027 | Undergrad | <a href="https://rockwellautomation.wd1.myworkdayjobs.com/External-Rockwell-Automation-Early-Careers/job/Chelmsford-Massachusetts-United-States/Co-op--Electrical-Engineer--June---Dec-2027-_R26-7706" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 15 |
 | Aerospace Corporation | Photonics Device Characterization Undergraduate Intern | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Photonics-Device-Characterization-Undergraduate-Intern_R016860" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 14 |
 | ↳ | Sensor Modeling and Simulation Undergrad Intern | Chantilly, VA | Summer 2027 | Undergrad | <a href="https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/XMLNAME-2027-Sensor-Modeling-and-Simulation-Undergrad-Intern_R016876" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 14 |
 | ↳ | Sensor Modeling and Simulation Grad Intern | Chantilly, VA | Summer 2027 | Undergrad | <a href="https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/XMLNAME-2027-Sensor-Modeling-and-Simulation-Grad-Intern_R016875" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 14 |
