@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**807 open** · 1213 total · Summer 2027 (591 open) · Off-cycle & co-ops (216 open) · Updated September 21, 2026
+**802 open** · 1213 total · Summer 2027 (587 open) · Off-cycle & co-ops (215 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-807-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-802-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -418,7 +418,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | ↳ | EDA AI/ML Layout Engineering Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://jobs.keysight.com/jobs/54606?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | KLA | Optical Engineer Intern | Milpitas, CA | Summer 2027 | Undergrad | <a href="https://kla.wd1.myworkdayjobs.com/Search/job/Milpitas-CA/Optical-Engineer-Intern_2641712-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | Knobelsdorff Enterprises | Hardware Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://jobs.smartrecruiters.com/KnobelsdorffEnterprises/744000148834290" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
-| Koch Industries | Optical Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://koch.avature.net/en_US/careers/JobDetail/194820" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| Koch Industries | Optical Engineer Intern | Remote (US) | Summer 2027 | Undergrad | 🔒 | Sep 30 |
 | ↳ | Optical System Test Engineer Intern | Remote (US) | Summer 2027 | Undergrad | 🔒 | Sep 30 |
 | L3Harris Technologies | Integration/Test Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://jobs.l3harris.com/job/Melbourne-IntegrationTest-Engineering-Intern-FL-32901/1428454000/?ats=successfactors" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | Leidos | Embedded Design Engineering Intern – Firmware | Huntsville, AL | Summer 2027 | Undergrad | <a href="https://leidos.wd5.myworkdayjobs.com/External/job/Huntsville-AL/Embedded-Design-Engineering-Intern---Firmware_R-00193574" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
@@ -729,7 +729,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Nokia | Hardware Engineer Intern/Co-op - IP Routing | Remote (Canada) | Winter 2027 | Undergrad | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39600" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 15 |
 | NVIDIA | Physical Design and Timing Engineer Intern | Santa Clara, CA | Summer 2027 | Masters; PhD | 🔒 | Sep 15 |
 | Tesla | Solar Hardware Engineer Intern - Energy Engineering | Palo Alto, CA | Spring 2027 | Undergrad | <a href="https://www.tesla.com/careers/search/job/283423" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 15 |
-| Dell Technologies | Hardware Engineering Intern - Infrastructure Solutions Group | <details><summary>**2 locations**</summary>Round Rock, TX</br>Hopkinton, MA</details> | Summer 2027 | Undergrad | <a href="https://iawmqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/careers/job/297770" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 14 |
+| Dell Technologies | Hardware Engineering Intern - Infrastructure Solutions Group | <details><summary>**2 locations**</summary>Round Rock, TX</br>Hopkinton, MA</details> | Summer 2027 | Undergrad | 🔒 | Sep 14 |
 | Engenious Design | Electrical Engineering Intern | Prairie Village, KS | Summer 2027 | Undergrad | 🔒 | Sep 14 |
 | EquipmentShare | Electrical Engineering Intern - Embedded | Columbia, MO | Summer 2027 | Undergrad | <a href="https://www.equipmentshare.com/careers/openings/?gh_jid=8142763" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 14 |
 | Google | Silicon Engineering Intern | <details><summary>**3 locations**</summary>Madison, WI</br>Austin, TX</br>Sunnyvale, CA</details> | Summer 2027 | PhD | <a href="https://www.google.com/about/careers/applications/jobs/results/136529930677560006" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 14 |
@@ -771,7 +771,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Nokia | Optical Test Intern/Co-op | Ottawa, ON | Winter 2027 | Undergrad; Masters | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/39964" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 11 |
 | NXP Semiconductors | Test Engineer Intern | Austin, TX | Summer 2027 | Undergrad; Masters | 🔒 | Sep 11 |
 | Ciena | Modem Hardware Engineer Intern/Co-op | Remote (Canada) | Winter 2027 | Undergrad | <a href="https://ciena.wd5.myworkdayjobs.com/Careers/job/Ottawa/Wavelogic-Modem-HW-Engineering-Intern-Co-op--Winter-2027---4-month-_R031652" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 10 |
-| Dell Technologies | Hardware Engineering Intern - Client Solutions Group Engineering | Austin, TX | Summer 2027 | Undergrad | <a href="https://iawmqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/careers/job/298216" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 10 |
+| Dell Technologies | Hardware Engineering Intern - Client Solutions Group Engineering | Austin, TX | Summer 2027 | Undergrad | 🔒 | Sep 10 |
 | Impulse Space | RF Test Engineer Intern | Redondo Beach, CA | Summer 2027 | Undergrad; Masters | <a href="https://impulsespace.pinpointhq.com/en/postings/2b03cd5d-4a58-48a0-81f4-ea8c8c7bcd2a?ats=pinpointhq" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 10 |
 | Insulet | Electrical Engineering Co-op - R&D | Acton, MA | Winter 2027 | Undergrad | <a href="https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Co-op--Electrical-Engineering--January---June-2027--Hybrid-_REQ-2026-18076" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 10 |
 | ↳ | R&D Electronics Engineering Co-op | Acton, MA | Winter 2027 | Undergrad | 🔒 | Sep 10 |
@@ -845,7 +845,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Texas Instruments | Analog IC Design Engineering Intern | Dallas, TX | Summer 2027 | Undergrad | <a href="https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/25017543" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
 | Thornton Tomasetti | Electrical Engineer Intern | New York, NY | Summer 2027 | Undergrad | <a href="https://tt.wd503.myworkdayjobs.com/thorntontomasetti/job/New-York-NY-USA/Electrical-Engineer-Intern_R7269" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
 | Viavi Solutions | Optical and Electrical Engineering Intern | Indianapolis, IN | Summer 2027 | Undergrad | <a href="https://viavisolutions.wd1.myworkdayjobs.com/careers/job/Indianapolis-IN-USA/Optical---Electrical-Engineering-Intern_260004968-2" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
-| Advanced Energy | Electrical Engineer Intern | Wilmington, MA | Fall 2026 | Undergrad | <a href="https://www.linkedin.com/jobs/view/intern-electrical-engineer-fall-2026-at-advanced-energy-4455442178" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
+| Advanced Energy | Electrical Engineer Intern | Wilmington, MA | Fall 2026 | Undergrad | 🔒 | Sep 3 |
 | AMD | Hardware Design Engineer Intern/Co-op | Markham, ON | Summer 2027 | Undergrad | <a href="https://careers.amd.com/jobs/91360?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | ↳ | ASIC Package Engineering Intern/Co-op | <details><summary>**2 locations**</summary>San Jose, CA</br>Santa Clara, CA</details> | Summer 2027 | Undergrad | <a href="https://careers.amd.com/jobs/91471?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
 | ↳ | ASIC Verification Engineer Intern/Co-op | Remote (Canada) | Summer 2027 | Undergrad | <a href="https://careers.amd.com/jobs/91207?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
@@ -1066,7 +1066,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Micron Technology | DRAM IP Circuits Design Engineer Intern | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 11 |
 | OceanComm | Electronics Technician Intern | Chicago, IL | Fall 2026 | Undergrad | 🔒 | Aug 11 |
 | RTX | Electro-Optical Systems Technician Intern - AN/ZSQ-2 | Fort Campbell, KY | Fall 2026 | Undergrad; Masters | 🔒 | Aug 11 |
-| Schaeffler | Co-op Electrical Engineering — Summer | Troy, MI | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/co-op-electrical-engineering-summer-2027-at-schaeffler-4452624155" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
+| Schaeffler | Co-op Electrical Engineering — Summer | Troy, MI | Summer 2027 | Undergrad | 🔒 | Aug 11 |
 | ↳ | Co-op Electrical Engineering — Fall | Troy, MI | Fall 2027 | Undergrad | 🔒 | Aug 11 |
 | SkyGig | RFIC Design Intern | San Jose, CA | Fall 2026 | Masters; PhD | <a href="https://apply.workable.com/skygig/j/10A5A58F9E/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 11 |
 | Micron Technology | DRAM Design Engineer Intern | Boise, ID | Fall 2026 | Undergrad; Masters | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---DRAM-Design-Engineer_JR108468" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 10 |
