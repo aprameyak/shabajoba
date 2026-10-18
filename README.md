@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**802 open** · 1213 total · Summer 2027 (587 open) · Off-cycle & co-ops (215 open) · Updated September 21, 2026
+**804 open** · 1215 total · Summer 2027 (589 open) · Off-cycle & co-ops (215 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-802-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-804-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,6 +33,8 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Leonardo | Electronics Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Bristol---Coldharbour-Lane/Industrial-Placement-Electronics_R0034212" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 18 |
+| ↳ | Hardware Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Luton---Cap-Green-300/Industrial-Placement-Hardware-Engineer_R0032911" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 18 |
 | ADT | Hardware Engineering & Connected Devices Intern | Boca Raton, FL | Summer 2027 | Undergrad; Masters | <a href="https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022475" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 17 |
 | Boston Scientific | Electrical Hardware Engineer Intern | Arden Hills, MN | Summer 2027 | Undergrad; Masters | <a href="https://bostonscientific.eightfold.ai/careers/job/563602813563527" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 17 |
 | DoorDash | Electrical Engineer Intern - Labs | Oakland, CA | Summer 2027 | Undergrad; Masters | <a href="https://job-boards.greenhouse.io/doordashusa/jobs/8274095" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 17 |
