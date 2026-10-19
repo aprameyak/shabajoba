@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**806 open** · 1217 total · Summer 2027 (591 open) · Off-cycle & co-ops (215 open) · Updated September 21, 2026
+**815 open** · 1226 total · Summer 2027 (600 open) · Off-cycle & co-ops (215 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-806-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-815-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -33,8 +33,17 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Anduril | Field Test Engineer Intern | <details><summary>**2 locations**</summary>Costa Mesa, CA</br>Quincy, MA</details> | Summer 2027 | Undergrad | <a href="https://boards.greenhouse.io/andurilindustries/jobs/5268689007?gh_jid=5268689007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
+| ↳ | Guidance, Navigation, & Control Engineer Intern | Costa Mesa, CA | Summer 2027 | Undergrad | <a href="https://boards.greenhouse.io/andurilindustries/jobs/5268736007?gh_jid=5268736007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
+| ↳ | Low Observables Engineer Intern | Costa Mesa, CA | Summer 2027 | Undergrad | <a href="https://boards.greenhouse.io/andurilindustries/jobs/5268752007?gh_jid=5268752007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
 | Bosch | AI Research Intern: Wireless Foundation Models | Pittsburgh, PA | Summer 2027 | Undergrad | <a href="https://jobs.smartrecruiters.com/BoschGroup/744000156323136" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
+| CACI | Production Engineering Intern | Danbury, CT, US | Summer 2027 | Undergrad | <a href="https://caci.wd1.myworkdayjobs.com/external/job/Danbury-CT-US/Production-Engineering-Intern---Summer-2027_333767" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
+| Generac | Micro-Grid Systems Engineering Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://generac.wd5.myworkdayjobs.com/External/job/USA---CO-Fort-Collins/Micro-Grid-Systems-Engineering-Summer-Intern_JR17432" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
+| HP | Audio and DSP Development Engineering Intern | Scotts Valley, CA | Summer 2027 | Undergrad | <a href="https://hp.wd5.myworkdayjobs.com/EXTEU-AC-CareerSite/job/Scotts-Valley-California-United-States-of-America/Audio-and-DSP-Development-Engineering-Intern_UNI4508-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
+| Johns Hopkins Applied Physics Laboratory | Electrical and Computer Engineer Intern | Laurel, MD | Summer 2027 | Undergrad; Masters | <a href="https://careers.jhuapl.edu/jobs/60390?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
 | Northrop Grumman | Electrical Engineer 1 Intern | Chandler, AZ | Summer 2027 | Undergrad | <a href="https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Arizona-Chandler/XMLNAME--Skillbridge----Electrical-Engineer-1_R10256539" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
+| ↳ | Survivability Engineer Intern | Palmdale, CA | Summer 2027 | Undergrad | <a href="https://ngc.wd1.myworkdayjobs.com/northrop_grumman_external_site/job/United-States-California-Palmdale/XMLNAME-2027-Intern---Survivability-Engineer_R10256592" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
+| Xcimer Energy 🇺🇸 | Electrical Engineering Intern | Denver, CO | Summer 2027 | Undergrad | <a href="https://jobs.lever.co/xcimer/87bceb04-faeb-4365-9fed-d8f5cd3fb8ac" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 19 |
 | Leonardo | Electronics Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Bristol---Coldharbour-Lane/Industrial-Placement-Electronics_R0034212" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 18 |
 | ↳ | Hardware Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Luton---Cap-Green-300/Industrial-Placement-Hardware-Engineer_R0032911" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 18 |
 | ADT | Hardware Engineering & Connected Devices Intern | Boca Raton, FL | Summer 2027 | Undergrad; Masters | <a href="https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022475" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 17 |
