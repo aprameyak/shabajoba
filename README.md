@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**839 open** · 1262 total · Summer 2027 (622 open) · Off-cycle & co-ops (217 open) · Updated September 21, 2026
+**838 open** · 1262 total · Summer 2027 (621 open) · Off-cycle & co-ops (217 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-839-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-838-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -283,7 +283,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | ↳ | VLSI Design Verification Intern | Chippewa Falls, WI | Summer 2027 | Undergrad; Masters | <a href="https://hpe.wd5.myworkdayjobs.com/jobsathpe/job/Chippewa-Falls-Wisconsin-United-States-of-America/VLSI-Design-Verification-Internship_1213400" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | Insulet | R&D Electrical Engineering Co-op | Acton, MA | Co-op | Undergrad | <a href="https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Co-op--R-D-Electrical-Engineering--January---June-2027--Hybrid-_REQ-2026-18618" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | KLA | Digital Twin Eng Apps Intern | Ann Arbor, MI | Summer 2027 | Undergrad | <a href="https://kla.wd1.myworkdayjobs.com/Search/job/Ann-Arbor-MI/Digital-Twin-Eng-Apps-Intern_2641775-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
-| Legrand | Electrical Engineer Co-op | Middletown, PA | Summer 2027 | Undergrad | <a href="https://iadugs.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/1345" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
+| Legrand | Electrical Engineer Co-op | Middletown, PA | Summer 2027 | Undergrad | 🔒 | Oct 6 |
 | Leidos | Controls Engineer Intern | Walled Lake, MI | Summer 2027 | Undergrad | <a href="https://leidos.wd5.myworkdayjobs.com/External/job/Walled-Lake-MI/Controls-Engineer-Intern_R-00193953" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | ↳ | Systems Engineer Intern | Arlington, VA | Summer 2027 | Undergrad | <a href="https://leidos.wd5.myworkdayjobs.com/External/job/Arlington-VA/Systems-Engineer-Intern_R-00193940" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | Marvell | Hardware Engineer Intern | Santa Clara, CA | Summer 2027 | Undergrad | <a href="https://marvell.wd1.myworkdayjobs.com/MarvellCareers2/job/Santa-Clara-CA/Hardware-Engineer-Intern--BS---Summer-2027_2604975" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
