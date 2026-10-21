@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**838 open** · 1262 total · Summer 2027 (621 open) · Off-cycle & co-ops (217 open) · Updated September 21, 2026
+**841 open** · 1265 total · Summer 2027 (623 open) · Off-cycle & co-ops (218 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-838-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-841-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -34,12 +34,15 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
 | Altera | FPGA IP Design Engineer Intern | Toronto, ON | Summer 2027 | Undergrad | <a href="https://altera.wd1.myworkdayjobs.com/altera/job/Toronto-Ontario-Canada/FPGA-IP-Design-Engineer---Intern_R03299" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
+| Amazon.com Services LLC | Hardware Development Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://www.amazon.jobs/en/jobs/10584121/hardware-development-engineer-intern-winter-2027" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | Analog Devices | Analog Design Engineer Intern - Audio | Remote (US) | Summer 2027 | Undergrad | <a href="https://analogdevices.wd1.myworkdayjobs.com/External/job/United-Kingdom-Edinburgh-SC-Freer/Analog-Design-Engineering-Intern--Audio-_R267095" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | ↳ | Analog Design Engineer Intern - Power Management | Remote (US) | Summer 2027 | Undergrad | <a href="https://analogdevices.wd1.myworkdayjobs.com/External/job/United-Kingdom-Edinburgh-SC-Freer/Analog-Design-Engineering-Intern--Power-Management-_R267094-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | Cummins | Engineering School-to-Work Intern - Electronics Systems Validation Engineering | Troy, MI | Summer 2027 | Undergrad | <a href="https://fa-espx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2439243" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | Dell Technologies | Hardware Engineer 1 Intern | Austin, TX | Summer 2027 | Undergrad | <a href="https://iawmqy.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/careers/job/298141" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
+| Humble Robotics | Electrical Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://jobs.lever.co/humble-robotics/b9822bf4-c77c-42ea-a19f-1280ec3ab763/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | Intel | Design Verification Engineer Intern | <details><summary>**2 locations**</summary>Santa Clara, CA</br>Fort Collins, CO</details> | Summer 2027 | Masters; PhD | <a href="https://intel.wd1.myworkdayjobs.com/en-us/external/job/US-Colorado-Fort-Collins/Design-Verification-Graduate-Intern-2027_JR0287651" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | Keysight Technologies | Hardware Engineering Intern | Santa Rosa, CA | Summer 2027 | Undergrad; Masters | <a href="https://jobs.keysight.com/jobs/55112?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
+| RTX | Co-op: Systems Engineering Co-op (Summer | Cedar Rapids, IA | Co-op | Undergrad | <a href="https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IA-CEDAR-RAPIDS-105--400-Collins-Rd-NE--BLDG-105/Co-op--Systems-Engineering-Co-op--Summer-Fall-2027----Onsite_01873973" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | Skydio | Wireless Hardware Engineer Intern | San Mateo, CA | Summer 2027 | Undergrad; Masters; PhD | <a href="https://jobs.ashbyhq.com/skydio/1ac972b1-8094-4765-8869-63e1c4d50dea/application?embed=true" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | Aerospace Corporation | Electromechanical Undergraduate Intern | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Electromechanical-Undergraduate-Intern_R016918" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 20 |
 | Altera | Quartus User Interface - Intern | Toronto, ON | Summer 2027 | Undergrad | <a href="https://altera.wd1.myworkdayjobs.com/altera/job/Toronto-Ontario-Canada/Quartus-User-Interface---Intern_R03353" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 20 |
