@@ -6,13 +6,13 @@ Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photoni
 
 > Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
 
-**864 open** · 1288 total · Summer 2027 (640 open) · Off-cycle & co-ops (224 open) · Updated September 21, 2026
+**863 open** · 1288 total · Summer 2027 (639 open) · Off-cycle & co-ops (224 open) · Updated September 21, 2026
 
 Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 [![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
 [![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-864-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
+[![Listings](https://img.shields.io/badge/open%20roles-863-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
 
 ---
 
@@ -1024,7 +1024,7 @@ Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose)
 | Apple | Camera Hardware Engineering Intern | Cupertino, CA | Summer 2027 | Undergrad; Masters; PhD | 🔒 | Aug 28 |
 | Cadence Design Systems | Post-Silicon Validation Engineering Intern - Characterization and Support | San Jose, CA | Fall 2026 | Undergrad; Masters | 🔒 | Aug 28 |
 | Tesla | Electrical Engineer Intern - Energy Service Tooling | Hayward, CA | Spring 2027 | Undergrad | <a href="https://www.tesla.com/careers/search/job/281457" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 28 |
-| V2X | Electrical Engineer Intern | Indianapolis, IN | Summer 2027 | Undergrad | <a href="https://careers.gov2x.com/jobs/62685?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 28 |
+| V2X | Electrical Engineer Intern | Indianapolis, IN | Summer 2027 | Undergrad | 🔒 | Aug 28 |
 | CesiumAstro | Test Engineer Intern | Austin, TX | Spring 2027 | Undergrad; Masters | 🔒 | Aug 27 |
 | Ciena | Layout Design Intern | Ottawa, ON | Fall 2026 | Undergrad | <a href="https://ciena.wd5.myworkdayjobs.com/Careers/job/Ottawa/Layout-Design-Intern--Fall-2026-_R031587" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 27 |
 | Micron Technology | ADV DRAM Process Integration Engineer Intern | Boise, ID | Summer 2027 | Undergrad | 🔒 | Aug 27 |
