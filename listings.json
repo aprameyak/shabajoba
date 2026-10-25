@@ -16162,5 +16162,53 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-25"
+  },
+  {
+    "company": "Qualcomm",
+    "role": "Applied AI Engineering Intern, Hardware Systems",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/et",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-25"
+  },
+  {
+    "company": "Hewlett Packard Enterprise",
+    "role": "Hardware Engineering Design Intern",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/c3",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-25"
+  },
+  {
+    "company": "Microchip Technology",
+    "role": "Engineering Intern, ASIC Verification",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/ed",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-25"
+  },
+  {
+    "company": "Lawrence Livermore National Laboratory (LLNL)",
+    "role": "Power Systems Undergraduate Intern, Cyber and Critical Infrastructure",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/gj",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-25"
   }
 ]
