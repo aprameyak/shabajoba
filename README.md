@@ -1,19 +1,5 @@
 # 2027 EE Internships & Co-ops — US & Canada
 
-The premier student-maintained list of **electrical engineering** internships and co-ops in the **United States** and **Canada**. Updated hourly from company career pages.
-
-Hardware · RF · Analog · Power · VLSI/ASIC · FPGA · PCB · Test · Photonics · Avionics
-
-> Exclusive to EE internships/co-ops in the US, Canada, or Remote (US/Canada). Software-only and non-EE roles are not listed.
-
-**912 open** · 1351 total · Summer 2027 (678 open) · Off-cycle & co-ops (234 open) · Updated September 21, 2026
-
-Contribute via [issue](https://github.com/aprameyak/shabajoba/issues/new/choose) or PR — see [CONTRIBUTING.md](./CONTRIBUTING.md).
-
-[![Stars](https://img.shields.io/github/stars/aprameyak/shabajoba?style=flat-square&logo=github&color=f9d71c)](https://github.com/aprameyak/shabajoba/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/aprameyak/shabajoba?style=flat-square&logo=git&color=orange)](https://github.com/aprameyak/shabajoba/commits/main)
-[![Listings](https://img.shields.io/badge/open%20roles-912-brightgreen?style=flat-square)](https://shabajoba.vercel.app/)
-
 ---
 
 **Browse with filters:** [shabajoba.vercel.app](https://shabajoba.vercel.app/)
