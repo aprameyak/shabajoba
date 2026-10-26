@@ -16210,5 +16210,113 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-25"
+  },
+  {
+    "company": "Analog Devices",
+    "role": "Embedded Systems Co-Op",
+    "location": "Boston, MA",
+    "type": "offcycle",
+    "season": "Co-op",
+    "education": "Undergrad",
+    "url": "https://analogdevices.wd1.myworkdayjobs.com/External/job/US-MA-Boston/Embedded-Systems-Co-Op_R267689",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-26"
+  },
+  {
+    "company": "Leidos",
+    "role": "Electrical Design Engineering Intern",
+    "location": "Huntsville, AL",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://leidos.wd5.myworkdayjobs.com/External/job/Huntsville-AL/Electrical-Design-Engineering-Intern_R-00195400",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-26"
+  },
+  {
+    "company": "Qualcomm",
+    "role": "Physical Mixed Layout Engineer Intern, Interim Engineering HW",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/IH",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-26"
+  },
+  {
+    "company": "Cisco",
+    "role": "Hardware Engineer I Intern",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/JR",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-26"
+  },
+  {
+    "company": "Dell Technologies",
+    "role": "Hardware Engineering Intern, Infrastructure Solutions Group",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/In",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-26"
+  },
+  {
+    "company": "General Dynamics Mission Systems, Inc.",
+    "role": "Engineer Intern, Electrical or Firmware",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/D0",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-26"
+  },
+  {
+    "company": "RTX",
+    "role": "FPGA Engineer Intern",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/F5",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-26"
+  },
+  {
+    "company": "First Solar (US)",
+    "role": "Data Science Intern, Device Characterization",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/H7",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-26"
+  },
+  {
+    "company": "Keysight Technologies",
+    "role": "ASIC Design-for-Test Engineer Intern, DFT",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/Is",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-26"
   }
 ]
