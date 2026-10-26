@@ -958,7 +958,7 @@
 | RTX | Analog and Power Design Electrical Engineering Intern | Marlborough, MA | Summer 2027 | Undergrad | 🔒 | Sep 4 |
 | ↳ | Production Hardware Electrical Engineer Intern | Tucson, AZ | Summer 2027 | Undergrad | 🔒 | Sep 4 |
 | Schweitzer Engineering Laboratories | Electrical Engineering Intern | Boise, ID | Summer 2027 | Undergrad | 🔒 | Sep 4 |
-| Shield AI | Electrical Engineering Co-op | Dallas, TX | Co-op | Undergrad | <a href="https://jobs.lever.co/shieldai/87d982f2-8b2b-4c73-9a19-71e461c7b724" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
+| Shield AI | Electrical Engineering Co-op | Dallas, TX | Co-op | Undergrad | 🔒 | Sep 4 |
 | Shure | System Verification Engineering Intern | Skokie, IL | Summer 2027 | Undergrad | <a href="https://careersus-shure.icims.com/jobs/5000/system-verification-engineering-intern/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
 | ↳ | Electrical Engineering Intern - Digital Circuitry | Niles, IL | Summer 2027 | Undergrad | <a href="https://careersus-shure.icims.com/jobs/5013/electrical-engineering-intern-(digital-circuitry)/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
 | ↳ | Electrical Engineering Intern - Pro Audio Circuitry | Niles, IL | Summer 2027 | Undergrad | <a href="https://careersus-shure.icims.com/jobs/5017/electrical-engineering-(pro-audio-circuitry)-intern/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
