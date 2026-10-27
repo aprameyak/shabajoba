@@ -16402,5 +16402,53 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
+  },
+  {
+    "company": "Meta",
+    "role": "Battery Engineering Intern",
+    "location": "Sunnyvale, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://www.metacareers.com/jobs/938682979075854",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-27"
+  },
+  {
+    "company": "Parallel Systems",
+    "role": "Hardware Engineering Intern - Mechanical and Electrical",
+    "location": "Los Angeles, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://boards.greenhouse.io/parallel/jobs/5275660007",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-27"
+  },
+  {
+    "company": "Texas Instruments",
+    "role": "Analog Design Engineer Intern",
+    "location": "Santa Clara, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad; Masters",
+    "url": "https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/25018682",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-27"
+  },
+  {
+    "company": "Boston Dynamics",
+    "role": "Systems Test Engineer Co-op",
+    "location": "Waltham, MA",
+    "type": "offcycle",
+    "season": "Co-op",
+    "education": "Undergrad; Masters",
+    "url": "https://bostondynamics.wd1.myworkdayjobs.com/Boston_Dynamics/job/Waltham-Office-POST/Systems-Test-Engineer---Co-Op_R3312",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-27"
   }
 ]
