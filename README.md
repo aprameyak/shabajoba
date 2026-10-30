@@ -19,6 +19,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| ASML | Optical Engineer Co-op Intern | Wilton, CT | Co-op | Undergrad; Masters; PhD | <a href="https://asml.wd3.myworkdayjobs.com/asmlext1/job/Wilton-CT-USA/Co-Op---Optical-Engineer--Internship-_J-00355324" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 30 |
 | Diversified Automation | Hardware Engineering Co-op | Louisville, KY | Co-op | Undergrad | <a href="https://jobs.lever.co/diversified-automation/7a1f1890-bc5d-4e5e-a510-7fe7f85660d3/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 30 |
 | Hasbro | Electrical Engineering Co-op | Boston, MA | Spring 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/hasbro/jobs/4472128009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 30 |
 | Hewlett Packard Enterprise | ASIC Verification Engineering Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://go.vansh.nyc/Zt" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 30 |
