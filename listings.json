@@ -17578,5 +17578,65 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-30"
+  },
+  {
+    "company": "Samsung",
+    "role": "SRAM Design Engineer Intern",
+    "location": "San Jose, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Masters; PhD",
+    "url": "https://job-boards.greenhouse.io/samsungsemiconductor/jobs/8081483003",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-30"
+  },
+  {
+    "company": "Qualcomm",
+    "role": "Camera HW ASIC Verification Intern",
+    "location": "Vancouver, BC",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://qualcomm.eightfold.ai/careers/job/446721829462",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-30"
+  },
+  {
+    "company": "Qualcomm",
+    "role": "High-Speed Electrical and Optical Systems Validation Co-op Intern - Interim Engineering Intern - HW",
+    "location": "Ottawa, ON",
+    "type": "offcycle",
+    "season": "Co-op",
+    "education": "Undergrad",
+    "url": "https://qualcomm.eightfold.ai/careers/job/446721874877",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-30"
+  },
+  {
+    "company": "Samsung Semiconductor",
+    "role": "SRAM Design Engineer Intern",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/10P",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-30"
+  },
+  {
+    "company": "Altera",
+    "role": "Hardware Design Engineer Intern",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://go.vansh.nyc/10W",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-30"
   }
 ]
