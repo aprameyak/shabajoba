@@ -17638,5 +17638,29 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-30"
+  },
+  {
+    "company": "Schneider Electric",
+    "role": "Electronics Hardware Engineer Co-op",
+    "location": "Cedar Rapids, IA",
+    "type": "offcycle",
+    "season": "Co-op",
+    "education": "Undergrad; Masters",
+    "url": "https://se.jibeapply.com/jobs/134457?icims=1",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-31"
+  },
+  {
+    "company": "Peraton",
+    "role": "Electrical Engineer Intern",
+    "location": "Topeka, KS",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://peraton.jibeapply.com/jobs/172055?icims=1",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-10-31"
   }
 ]
