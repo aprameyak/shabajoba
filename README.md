@@ -19,6 +19,8 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| Cambridge Consultants | Electronics Engineering Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://job-boards.eu.greenhouse.io/cambridgeconsultantslimited/jobs/4988779101" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 31 |
+| Morph Labs | Electrical Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/morph/jobs/4467369009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 31 |
 | Peraton | Electrical Engineer Intern | Topeka, KS | Summer 2027 | Undergrad | <a href="https://peraton.jibeapply.com/jobs/172055?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 31 |
 | Schneider Electric | Electronics Hardware Engineer Co-op | Cedar Rapids, IA | Co-op | Undergrad; Masters | <a href="https://se.jibeapply.com/jobs/134457?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 31 |
 | Aerospace Corporation | Microwave Measurements, Modeling and Simulation UndergradIntern | El Segundo, CA | Summer 2027 | Undergrad | <a href="https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Microwave-Measurements--Modeling-and-Simulation-UndergradIntern_R016892" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 30 |
