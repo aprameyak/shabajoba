@@ -19,6 +19,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Education | Apply | Date Added |
 | ------- | ---- | -------- | ------ | --------- | ----- | ---------- |
+| ByteDance | ASIC Design Engineer Intern, Video Silicon IP | Remote (US) | Summer 2027 | Undergrad | <a href="https://go.vansh.nyc/14u" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 1 |
 | Cambridge Consultants | Electronics Engineering Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://job-boards.eu.greenhouse.io/cambridgeconsultantslimited/jobs/4988779101" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 31 |
 | Micron Technology | Process Integration – Advanced Packaging Intern | Boise, ID | Summer 2027 | Undergrad | <a href="https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---Process-Integration---Advanced-Packaging_JR115378" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 31 |
 | Morph Labs | Electrical Engineer Intern | Remote (US) | Summer 2027 | Undergrad | <a href="https://job-boards.greenhouse.io/morph/jobs/4467369009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 31 |
