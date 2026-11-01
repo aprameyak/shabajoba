@@ -875,7 +875,7 @@
 | General Dynamics | SSN Electrical Engineering and Design Intern | Remote (US) | Summer 2027 | Undergrad | 🔒 | Sep 21 |
 | General Dynamics Mission Systems | Electrical Engineer Co-Op | McLeansville, NC | Co-op | Undergrad | 🔒 | Sep 21 |
 | ↳ | Intern Engineer - FPGA | Bloomington, MN | Summer 2027 | Undergrad | <a href="https://careers-gdms.icims.com/jobs/75044/intern-engineer---fpga/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 21 |
-| ↳ | Optical Engineer Intern | McLeansville, NC | Summer 2027 | Undergrad | <a href="https://careers-gdms.icims.com/jobs/74540/optical-engineer-intern/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 21 |
+| ↳ | Optical Engineer Intern | McLeansville, NC | Summer 2027 | Undergrad | 🔒 | Sep 21 |
 | General Motors | Global Manufacturing Electrical & SDV Intern | Warren, MI | Summer 2027 | Undergrad | 🔒 | Sep 21 |
 | Hermeus | Avionics Electrical Engineering Intern | Atlanta, GA | Summer 2027 | Undergrad | 🔒 | Sep 21 |
 | Hitachi | Electrical Engineering Intern- Raleigh | Raleigh, NC | Summer 2027 | Undergrad | 🔒 | Sep 21 |
