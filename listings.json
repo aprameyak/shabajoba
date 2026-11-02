@@ -302,7 +302,7 @@
   {
     "company": "RTX",
     "role": "Electrical Engineering Co-op",
-    "location": "Jamestown-P1, ND",
+    "location": "Jamestown, ND",
     "type": "offcycle",
     "season": "Spring 2027",
     "education": "Undergrad",
@@ -314,7 +314,7 @@
   {
     "company": "RTX",
     "role": "RF Electrical Engineer Intern",
-    "location": "El Segundo-R01, CA",
+    "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -1044,7 +1044,7 @@
     "date_added": "2026-09-17"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Design for Test Intern",
     "location": "Santa Clara, CA",
     "type": "summer",
@@ -1056,7 +1056,7 @@
     "date_added": "2026-09-17"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "SRAM Circuit Design Intern",
     "location": "Burlington, VT",
     "type": "summer",
@@ -1068,7 +1068,7 @@
     "date_added": "2026-09-17"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Design for Test Intern - MS",
     "location": "Santa Clara, CA",
     "type": "summer",
@@ -1080,7 +1080,7 @@
     "date_added": "2026-09-17"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "SRAM Circuit Design Intern - MS",
     "location": "Burlington, VT",
     "type": "summer",
@@ -1332,7 +1332,7 @@
     "date_added": "2026-09-14"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Data Center Silicon Hardware Engineering Intern",
     "location": "Remote (Canada)",
     "type": "offcycle",
@@ -1788,7 +1788,7 @@
     "date_added": "2026-09-10"
   },
   {
-    "company": "Rocket Lab USA",
+    "company": "Rocket Lab",
     "role": "Electrical Engineer Intern - Space Systems Division",
     "location": "Remote (Canada)",
     "type": "summer",
@@ -1884,7 +1884,7 @@
     "date_added": "2026-09-10"
   },
   {
-    "company": "Motorola",
+    "company": "Motorola Solutions",
     "role": "FPGA Design Engineering Intern",
     "location": "Schaumburg, IL",
     "type": "summer",
@@ -1896,7 +1896,7 @@
     "date_added": "2026-09-09"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Test Solutions Engineering Intern - BS - Post-Silicon Hardware Validation",
     "location": "Burlington, VT",
     "type": "summer",
@@ -2256,7 +2256,7 @@
     "date_added": "2026-09-04"
   },
   {
-    "company": "Stanley Black and Decker",
+    "company": "Stanley Black & Decker",
     "role": "Electrical Engineering Intern",
     "location": "Towson, MD",
     "type": "summer",
@@ -2448,7 +2448,7 @@
     "date_added": "2026-09-04"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Analog Design Intern",
     "location": "Santa Clara, CA; Burlington, VT",
     "type": "summer",
@@ -2460,7 +2460,7 @@
     "date_added": "2026-09-04"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Physical Design Engineer Intern - BS",
     "location": "Morrisville, NC; Austin, TX; Rochester, MN; Santa Clara, CA; Boise, ID; Burlington, VT; Westborough, MA",
     "type": "summer",
@@ -2472,7 +2472,7 @@
     "date_added": "2026-09-04"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Design Verification Intern",
     "location": "Morrisville, NC; Austin, TX; Santa Clara, CA; Boise, ID; Westborough, MA",
     "type": "summer",
@@ -2484,7 +2484,7 @@
     "date_added": "2026-09-04"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Design Verification Intern - BS",
     "location": "Morrisville, NC; Austin, TX; Santa Clara, CA; Boise, ID; Westborough, MA",
     "type": "summer",
@@ -2496,7 +2496,7 @@
     "date_added": "2026-09-04"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Physical Design Engineer Intern",
     "location": "Morrisville, NC; Austin, TX; Rochester, MN; Santa Clara, CA; Boise, ID; Burlington, VT; Westborough, MA",
     "type": "summer",
@@ -2508,7 +2508,7 @@
     "date_added": "2026-09-04"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Physical Design Engineer Intern - MS",
     "location": "Morrisville, NC; Austin, TX; Rochester, MN; Santa Clara, CA; Boise, ID; Burlington, VT; Westborough, MA",
     "type": "summer",
@@ -2520,7 +2520,7 @@
     "date_added": "2026-09-04"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Design Verification Intern - MS",
     "location": "Morrisville, NC; Austin, TX; Santa Clara, CA; Boise, ID; Westborough, MA",
     "type": "summer",
@@ -3060,7 +3060,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "company": "K2 Space Corporation",
+    "company": "K2 Space",
     "role": "Electrical Engineering Intern",
     "location": "Los Angeles, CA",
     "type": "summer",
@@ -3108,7 +3108,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "company": "IMC",
+    "company": "IMC Trading",
     "role": "Hardware Engineer Intern",
     "location": "Chicago, IL",
     "type": "summer",
@@ -3192,7 +3192,7 @@
     "date_added": "2026-09-03"
   },
   {
-    "company": "Emerson",
+    "company": "Emerson Electric",
     "role": "Digital Hardware Engineer Intern",
     "location": "Austin, TX",
     "type": "summer",
@@ -3348,7 +3348,7 @@
     "date_added": "2026-09-02"
   },
   {
-    "company": "Sensata",
+    "company": "Sensata Technologies",
     "role": "Electrical Engineer Intern",
     "location": "South Burlington, VT",
     "type": "summer",
@@ -3530,7 +3530,7 @@
   {
     "company": "AeroVironment",
     "role": "Systems Test Engineer Intern",
-    "location": "Germantown, MD; Annapolis Junction, MD; Pottstown, PA; Albuquerque, NM; Sunrise, FL; Arlington County, Arlington, VA; Melbourne, FL; Petaluma, CA; Fairborn, OH; Minneapolis, MN; San Luis Obispo, CA; Herndon, VA; Huntsville, AL; Moorpark, CA; Simi Valley, CA",
+    "location": "Germantown, MD; Annapolis Junction, MD; Pottstown, PA; Albuquerque, NM; Sunrise, FL; Arlington, VA; Melbourne, FL; Petaluma, CA; Fairborn, OH; Minneapolis, MN; San Luis Obispo, CA; Herndon, VA; Huntsville, AL; Moorpark, CA; Simi Valley, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -3552,7 +3552,7 @@
     "date_added": "2026-08-31"
   },
   {
-    "company": "Stryten",
+    "company": "Stryten Energy",
     "role": "Electrical Engineer Intern",
     "location": "Alpharetta, GA",
     "type": "summer",
@@ -4188,7 +4188,7 @@
     "date_added": "2026-08-21"
   },
   {
-    "company": "WSP in the U.S.",
+    "company": "WSP",
     "role": "Electrical Engineering (ESSP) Intern",
     "location": "Freeport, ME",
     "type": "summer",
@@ -4200,7 +4200,7 @@
     "date_added": "2026-08-21"
   },
   {
-    "company": "WSP in the U.S.",
+    "company": "WSP",
     "role": "Electrical Engineering (Substation) Intern",
     "location": "Billings, MT",
     "type": "summer",
@@ -4224,7 +4224,7 @@
     "date_added": "2026-08-21"
   },
   {
-    "company": "Varda Space Industries",
+    "company": "Varda Space",
     "role": "Avionics Engineering Internship",
     "location": "El Segundo, CA",
     "type": "offcycle",
@@ -4260,7 +4260,7 @@
     "date_added": "2026-08-21"
   },
   {
-    "company": "Techtronic Industries - TTI",
+    "company": "Techtronic Industries (TTI)",
     "role": "Electrical Engineer Internship",
     "location": "Anderson, SC",
     "type": "summer",
@@ -4332,7 +4332,7 @@
     "date_added": "2026-08-21"
   },
   {
-    "company": "Moog Inc.",
+    "company": "Moog",
     "role": "Electrical Engineering Intern",
     "location": "Buffalo, NY",
     "type": "summer",
@@ -4464,7 +4464,7 @@
     "date_added": "2026-08-21"
   },
   {
-    "company": "Anduril Industries",
+    "company": "Anduril",
     "role": "Electrical Engineer Intern",
     "location": "Seattle, WA",
     "type": "summer",
@@ -5232,18 +5232,6 @@
     "date_added": "2026-08-12"
   },
   {
-    "company": "Eaton",
-    "role": "Electrical Engineer Intern - Engineering",
-    "location": "Burton on the Wolds, Loughborough, UK",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-12"
-  },
-  {
     "company": "CMTA, Inc.",
     "role": "Electrical Engineer Intern",
     "location": "Chattanooga, TN",
@@ -5354,7 +5342,7 @@
   {
     "company": "Blue Origin",
     "role": "Electronics/Electrical Systems Engineer 1 Intern",
-    "location": "Seattle, WA; Longmont, CO; Arlington County, Arlington, VA; Reston, VA; Denver, CO; Huntsville, AL; Van Horn, TX",
+    "location": "Seattle, WA; Longmont, CO; Arlington, VA; Reston, VA; Denver, CO; Huntsville, AL; Van Horn, TX",
     "type": "offcycle",
     "season": "Fall 2026",
     "education": "Undergrad",
@@ -5604,7 +5592,7 @@
     "date_added": "2026-08-08"
   },
   {
-    "company": "HP Inc",
+    "company": "HP",
     "role": "Technology & Innovation Organization Electrical Engineering Internship",
     "location": "Corvallis, OR",
     "type": "summer",
@@ -5808,7 +5796,7 @@
     "date_added": "2026-08-06"
   },
   {
-    "company": "GE Appliances, a Haier company",
+    "company": "GE Appliances",
     "role": "Electrical Engineering Co-op",
     "location": "Louisville, KY",
     "type": "offcycle",
@@ -6252,7 +6240,7 @@
     "date_added": "2026-07-13"
   },
   {
-    "company": "Akuna Capital University",
+    "company": "Akuna Capital",
     "role": "Hardware Engineer Intern",
     "location": "Chicago, IL",
     "type": "summer",
@@ -6312,7 +6300,7 @@
     "date_added": "2026-07-06"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Analog Engineer Intern",
     "location": "Remote (Canada)",
     "type": "offcycle",
@@ -6324,7 +6312,7 @@
     "date_added": "2026-07-04"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Silicon Photonics Intern",
     "location": "Remote (Canada)",
     "type": "offcycle",
@@ -6336,7 +6324,7 @@
     "date_added": "2026-07-04"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Design/DSP/Verification Intern",
     "location": "Santa Clara, CA",
     "type": "offcycle",
@@ -6396,7 +6384,7 @@
     "date_added": "2026-06-23"
   },
   {
-    "company": "Figure",
+    "company": "Figure AI",
     "role": "Hardware Reliability Intern",
     "location": "San Jose, CA",
     "type": "offcycle",
@@ -6444,7 +6432,7 @@
     "date_added": "2026-06-19"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Digital Logic + Design Verification Co-op",
     "location": "Santa Clara, CA",
     "type": "offcycle",
@@ -6468,7 +6456,7 @@
     "date_added": "2026-06-18"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Design Verification Engineer Intern",
     "location": "Ottawa, ON",
     "type": "offcycle",
@@ -6492,7 +6480,7 @@
     "date_added": "2026-06-17"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Digital Design Engineer Intern",
     "location": "Toronto, ON",
     "type": "offcycle",
@@ -6816,7 +6804,7 @@
     "date_added": "2026-05-23"
   },
   {
-    "company": "Rocket Lab USA",
+    "company": "Rocket Lab",
     "role": "Test Engineer Intern",
     "location": "Long Beach, CA",
     "type": "offcycle",
@@ -7176,7 +7164,7 @@
     "date_added": "2026-04-29"
   },
   {
-    "company": "Figure",
+    "company": "Figure AI",
     "role": "Electrical Interconnect Engineering Intern",
     "location": "San Jose, CA",
     "type": "offcycle",
@@ -7392,7 +7380,7 @@
     "date_added": "2026-02-24"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Design Verification/Design Intern - Bachelor's Degree",
     "location": "Ottawa, ON",
     "type": "offcycle",
@@ -7514,7 +7502,7 @@
   {
     "company": "RTX",
     "role": "Semiconductor Foundry Intern",
-    "location": "Andover-Ar2, MA",
+    "location": "Andover, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -7586,7 +7574,7 @@
   {
     "company": "RTX",
     "role": "Power and Analog Electronic Engineer Intern",
-    "location": "Tucson-M02, AZ",
+    "location": "Tucson, AZ",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -7608,7 +7596,7 @@
     "date_added": "2026-09-21"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Digital IC Design Intern - BS",
     "location": "Hudson Valley, NY; Austin, TX; Irvine, CA; Santa Clara, CA; Boise, ID",
     "type": "summer",
@@ -7620,7 +7608,7 @@
     "date_added": "2026-09-21"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Digital IC Design Intern",
     "location": "Hudson Valley, NY; Austin, TX; Irvine, CA; Santa Clara, CA; Boise, ID",
     "type": "summer",
@@ -7632,7 +7620,7 @@
     "date_added": "2026-09-21"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Digital IC Design Intern - MS - Multiple Teams",
     "location": "Hudson Valley, NY; Austin, TX; Irvine, CA; Santa Clara, CA; Boise, ID",
     "type": "summer",
@@ -7644,7 +7632,7 @@
     "date_added": "2026-09-21"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Test Engineering Intern",
     "location": "Irvine, CA; Santa Clara, CA; Westlake Village, CA",
     "type": "summer",
@@ -7668,7 +7656,7 @@
     "date_added": "2026-09-22"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Test Engineering Intern - BS",
     "location": "Irvine, CA; Santa Clara, CA; Westlake Village, CA",
     "type": "summer",
@@ -7718,7 +7706,7 @@
   {
     "company": "CACI",
     "role": "Electrical Engineering Intern",
-    "location": "Florham Park, NJ, US",
+    "location": "Florham Park, NJ",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -7824,7 +7812,7 @@
     "date_added": "2026-09-23"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Analog Layout Intern - BS",
     "location": "Irvine, CA; Santa Clara, CA",
     "type": "summer",
@@ -7836,7 +7824,7 @@
     "date_added": "2026-09-23"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Electrical Validation Intern - BS",
     "location": "Santa Clara, CA",
     "type": "summer",
@@ -7874,7 +7862,7 @@
   {
     "company": "RTX",
     "role": "Antenna and Microwave Intern",
-    "location": "Tewksbury-Tb1, MA",
+    "location": "Tewksbury, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -7910,7 +7898,7 @@
   {
     "company": "RTX",
     "role": "Receiver, Exciter & Processing Architecture Electrical Engineer Intern",
-    "location": "Tewksbury-Tb1, MA",
+    "location": "Tewksbury, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -8376,7 +8364,7 @@
     "date_added": "2026-09-24"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Analog Design Intern Co-op - Master\u2019s",
     "location": "Toronto, ON",
     "type": "summer",
@@ -8388,7 +8376,7 @@
     "date_added": "2026-09-24"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Analog and Mixed Signal Layout Engineer Intern Co-op",
     "location": "Toronto, ON",
     "type": "summer",
@@ -8436,7 +8424,7 @@
     "date_added": "2026-09-24"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Data Center Silicon Hardware Engineering Intern Co-op - BS",
     "location": "Toronto, ON; Ottawa, ON",
     "type": "summer",
@@ -8522,7 +8510,7 @@
   {
     "company": "Philips",
     "role": "Electrical Engineering - Cambridge, MA Intern",
-    "location": "Cambridge (US), MA",
+    "location": "Cambridge, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -8594,7 +8582,7 @@
   {
     "company": "RTX",
     "role": "Systems Engineering Intern",
-    "location": "Tewksbury-Tb1, MA",
+    "location": "Tewksbury, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -8606,7 +8594,7 @@
   {
     "company": "GlobalFoundries",
     "role": "Device Engineering Intern, ULP CMOS",
-    "location": "Remote (US)",
+    "location": "Malta, NY",
     "type": "offcycle",
     "season": "Fall 2026",
     "education": "Undergrad",
@@ -8678,7 +8666,7 @@
   {
     "company": "RTX",
     "role": "Electromagnetic Compatibility Engineering Co-Op",
-    "location": "Rockford-P6, IL",
+    "location": "Rockford, IL",
     "type": "offcycle",
     "season": "Co-op",
     "education": "Undergrad",
@@ -8726,7 +8714,7 @@
   {
     "company": "Marvell Technology",
     "role": "Signal Integrity Intern, MS",
-    "location": "ON, CA",
+    "location": "Toronto, ON",
     "type": "offcycle",
     "season": "Co-op",
     "education": "Masters",
@@ -8954,7 +8942,7 @@
   {
     "company": "GlobalFoundries",
     "role": "Technology Development Intern, RF GaN",
-    "location": "Remote (US)",
+    "location": "Essex Junction, VT",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -9002,7 +8990,7 @@
   {
     "company": "RTX",
     "role": "RF Design Engineer Intern",
-    "location": "Tucson-M02, AZ",
+    "location": "Tucson, AZ",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -9014,7 +9002,7 @@
   {
     "company": "RTX",
     "role": "Antenna Design Engineer Intern",
-    "location": "Tucson-M02, AZ",
+    "location": "Tucson, AZ",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -9026,7 +9014,7 @@
   {
     "company": "RTX",
     "role": "A&T Co-op Student",
-    "location": "ON, CA",
+    "location": "Midland, ON",
     "type": "offcycle",
     "season": "Co-op",
     "education": "Undergrad",
@@ -9122,7 +9110,7 @@
   {
     "company": "RTX",
     "role": "Electrical Design Engineer Intern",
-    "location": "Windsor Locks-B1, CT",
+    "location": "Windsor Locks, CT",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -9146,7 +9134,7 @@
   {
     "company": "RTX",
     "role": "Electrical Design Intern",
-    "location": "Windsor Locks-B1, CT",
+    "location": "Windsor Locks, CT",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -9473,7 +9461,7 @@
     "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Communication-Systems-and-Signal-Processing-Graduate-Intern_R016555",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -9521,7 +9509,7 @@
     "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Power-Systems-Engineering-Graduate-Intern_R016527",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -9533,7 +9521,7 @@
     "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Power-and-Analog-Circuit-Engineering-Graduate-Intern_R016531",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -9581,7 +9569,7 @@
     "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Systems-Integration-and-Test-Graduate-Intern_R016693",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -9626,7 +9614,7 @@
   {
     "company": "Ciena",
     "role": "Hardware (PCBA) Design and Verification Intern",
-    "location": "Remote (US)",
+    "location": "Ottawa, ON",
     "type": "offcycle",
     "season": "Winter 2027",
     "education": "Undergrad",
@@ -9638,7 +9626,7 @@
   {
     "company": "Generac",
     "role": "Electrical Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Waukesha, WI",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -9710,7 +9698,7 @@
   {
     "company": "Nordson",
     "role": "Electrical Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Minneapolis, MN",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -9806,7 +9794,7 @@
   {
     "company": "Symbotic",
     "role": "Industrial Controls Intern",
-    "location": "USA Wilmington,  MA",
+    "location": "Wilmington, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10044,9 +10032,9 @@
     "date_added": "2026-09-30"
   },
   {
-    "company": "Danaher",
+    "company": "Danaher Corporation",
     "role": "Hardware Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Vista, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10070,7 +10058,7 @@
   {
     "company": "Analog Devices",
     "role": "Test Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Durham, NC",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10106,7 +10094,7 @@
   {
     "company": "Graco",
     "role": "Electrical Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Dexter, MI",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10118,7 +10106,7 @@
   {
     "company": "Micron Technology",
     "role": "Product Engineer Intern - DRAM Technology - Node Development",
-    "location": "Remote (US)",
+    "location": "Boise, ID",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10130,7 +10118,7 @@
   {
     "company": "Micron Technology",
     "role": "PHY Digital Design & Automation Engineer Intern - HBM",
-    "location": "Remote (US)",
+    "location": "Richardson, TX",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10145,7 +10133,7 @@
     "location": "Remote (US)",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Undergrad; Masters",
     "url": "https://www.google.com/about/careers/applications/jobs/results/88570332985598662",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -10226,7 +10214,7 @@
   {
     "company": "Graco",
     "role": "Electrical Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Dayton, MN",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10262,7 +10250,7 @@
   {
     "company": "Micron Technology",
     "role": "DRAM Customer Enablement Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Boise, ID",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10284,9 +10272,9 @@
     "date_added": "2026-09-30"
   },
   {
-    "company": "Motorola",
+    "company": "Motorola Solutions",
     "role": "Test Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Chicago, IL",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10322,7 +10310,7 @@
   {
     "company": "Stryker",
     "role": "Electrical Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Weston, FL",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10334,7 +10322,7 @@
   {
     "company": "Micron Technology",
     "role": "Electrical Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Boise, ID",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10526,7 +10514,7 @@
   {
     "company": "RTX",
     "role": "Systems Engineer - Intern",
-    "location": "Tewksbury-Tb3, MA",
+    "location": "Tewksbury, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10560,7 +10548,7 @@
     "date_added": "2026-09-30"
   },
   {
-    "company": "Axcelis Technologies",
+    "company": "Axcelis",
     "role": "Manufacturing Test Development Engineer Co-op",
     "location": "Beverly, MA",
     "type": "offcycle",
@@ -10656,7 +10644,7 @@
     "date_added": "2026-10-01"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Test Engineer Intern",
     "location": "Santa Clara, CA",
     "type": "summer",
@@ -10766,7 +10754,7 @@
   {
     "company": "CACI",
     "role": "Optical Engineering Intern",
-    "location": "Danbury, CT, US",
+    "location": "Danbury, CT",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -10994,7 +10982,7 @@
   {
     "company": "RTX",
     "role": "Operations Engineering Intern",
-    "location": "Andover-An1, MA",
+    "location": "Andover, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -11105,7 +11093,7 @@
     "location": "Chantilly, VA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/XMLNAME-2027-Systems-Integration-and-Test-Engineer-Graduate-Intern_R016696",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -11117,7 +11105,7 @@
     "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Electro-Optical-Engineering-Grad-Intern_R016684",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -11138,7 +11126,7 @@
   {
     "company": "CACI",
     "role": "Systems Engineer Intern",
-    "location": "Ashburn, VA, US",
+    "location": "Ashburn, VA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -11306,7 +11294,7 @@
   {
     "company": "Generac",
     "role": "Micro-Grid Systems Engineering Co-Op / Intern",
-    "location": "Remote (US)",
+    "location": "Fort Collins, CO",
     "type": "offcycle",
     "season": "Co-op",
     "education": "Undergrad",
@@ -11426,7 +11414,7 @@
   {
     "company": "Allegion",
     "role": "Hardware Engineering Intern - Hardware Engineering",
-    "location": "Remote (US)",
+    "location": "Indianapolis, IN",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -11438,7 +11426,7 @@
   {
     "company": "Schweitzer Engineering Laboratories",
     "role": "Hardware Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Pullman, WA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -11450,7 +11438,7 @@
   {
     "company": "Cadence Design Systems",
     "role": "Digital ASIC Design / Verification Engineer Intern/Co-op",
-    "location": "Remote (US)",
+    "location": "Toronto, ON",
     "type": "offcycle",
     "season": "Co-op",
     "education": "Undergrad",
@@ -11472,7 +11460,7 @@
     "date_added": "2026-10-04"
   },
   {
-    "company": "Rocket Lab USA",
+    "company": "Rocket Lab",
     "role": "Electrical Engineering Intern",
     "location": "Long Beach, CA",
     "type": "summer",
@@ -11712,9 +11700,9 @@
     "date_added": "2026-10-05"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Physical Design Engineer Intern - MS - Multiple Teams",
-    "location": "Remote (US)",
+    "location": "Santa Clara, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Masters",
@@ -12050,7 +12038,7 @@
   {
     "company": "Meta",
     "role": "Electrical Engineer Intern",
-    "location": "NYC, NY",
+    "location": "New York, NY",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -12084,7 +12072,7 @@
     "date_added": "2026-10-06"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Hardware Engineer Intern",
     "location": "Santa Clara, CA",
     "type": "summer",
@@ -12350,7 +12338,7 @@
   {
     "company": "Nordson",
     "role": "Application/System Engineer I Intern",
-    "location": "Remote (US)",
+    "location": "East Providence, RI",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -12362,7 +12350,7 @@
   {
     "company": "RTX",
     "role": "Stage - Hiver -Stagiaire Technicien en Instrumentation/Internship",
-    "location": "QC, CA",
+    "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
     "education": "Undergrad",
@@ -12374,7 +12362,7 @@
   {
     "company": "RTX",
     "role": "FPGA Engineering Intern",
-    "location": "Mckinney, TX",
+    "location": "McKinney, TX",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -12528,7 +12516,7 @@
     "date_added": "2026-10-07"
   },
   {
-    "company": "GE Healthcare",
+    "company": "GE HealthCare",
     "role": "Electrical Engineering Technician Co-op",
     "location": "Waukesha, WI",
     "type": "offcycle",
@@ -12554,7 +12542,7 @@
   {
     "company": "KLA",
     "role": "Electrical Design Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Ann Arbor, MI",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -12566,7 +12554,7 @@
   {
     "company": "BorgWarner",
     "role": "Electrical Design Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Kokomo, IN",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -12614,7 +12602,7 @@
   {
     "company": "RTX",
     "role": "Systems Engineering Test Equipment Intern",
-    "location": "El Segundo-R01, CA",
+    "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -12653,7 +12641,7 @@
     "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Radiation-Effects-Graduate-Intern_R016793",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -12770,7 +12758,7 @@
   {
     "company": "RTX",
     "role": "Embedded Controls Hardware Co-Op",
-    "location": "Rockford-P6, IL",
+    "location": "Rockford, IL",
     "type": "offcycle",
     "season": "Spring 2027",
     "education": "Undergrad",
@@ -12938,7 +12926,7 @@
   {
     "company": "L3Harris Technologies",
     "role": "Electro-Optical Engineering Co-op",
-    "location": "Waterdown, Hamilton, ON",
+    "location": "Waterdown, ON",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -12950,7 +12938,7 @@
   {
     "company": "GlobalFoundries",
     "role": "Yield and Characterization Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Essex Junction, VT",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -12998,7 +12986,7 @@
   {
     "company": "RTX",
     "role": "Electrical Engineering Intern - Test Solutions",
-    "location": "Tewksbury-Tb2, MA",
+    "location": "Tewksbury, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -13051,18 +13039,6 @@
     "season": "Spring 2027",
     "education": "Undergrad",
     "url": "https://careers.msasafety.com/jobs/10162?icims=1",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-08"
-  },
-  {
-    "company": "Sensata",
-    "role": "Hardware Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://sensata.wd1.myworkdayjobs.com/en-US/Sensata-Careers/job/Newtownabbey-United-Kingdom/Hardware-Engineering-Placement-Student_IRC98569",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-08"
@@ -13130,7 +13106,7 @@
   {
     "company": "Sierra Nevada Corporation",
     "role": "Test Engineer 1 Intern",
-    "location": "Remote (US)",
+    "location": "Lone Tree, CO",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -13250,7 +13226,7 @@
   {
     "company": "Hewlett Packard Enterprise",
     "role": "ASIC Verification/Design Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Roseville, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -13322,7 +13298,7 @@
   {
     "company": "GlobalFoundries",
     "role": "APL Quantum Intern",
-    "location": "Remote (US)",
+    "location": "Malta, NY",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -13356,18 +13332,6 @@
     "date_added": "2026-10-10"
   },
   {
-    "company": "HPE",
-    "role": "Bachelors Tech Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://hpe.wd5.myworkdayjobs.com/jobsathpe/job/Santiago-Region-Metropolitana-de-Santiago-Chile/Intern---Bachelors-Tech_1212993",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-11"
-  },
-  {
     "company": "Western Digital",
     "role": "Spring Co-op - Recording Electronics Data Analytics & Optimization",
     "location": "Rochester, MN",
@@ -13382,7 +13346,7 @@
   {
     "company": "Aptiv",
     "role": "HVP/Cert Engineering Intern",
-    "location": "CAN Kanata (2), ON",
+    "location": "Kanata, ON",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -13586,7 +13550,7 @@
   {
     "company": "Hewlett Packard Enterprise",
     "role": "ASIC Verification Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Roseville, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -13694,7 +13658,7 @@
   {
     "company": "RTX",
     "role": "RF Systems Engineer Intern",
-    "location": "Mckinney, TX",
+    "location": "McKinney, TX",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -13706,7 +13670,7 @@
   {
     "company": "RTX",
     "role": "Electro-Optics Systems Engineer Intern",
-    "location": "Mckinney, TX",
+    "location": "McKinney, TX",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -13718,7 +13682,7 @@
   {
     "company": "RTX",
     "role": "Vision Systems - Intern",
-    "location": "Goleta-B01, CA",
+    "location": "Goleta, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -13973,7 +13937,7 @@
     "location": "Chantilly, VA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/Chantilly-VA/XMLNAME-2027-Sensor-Modeling-and-Simulation-Grad-Intern_R016875",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -14174,7 +14138,7 @@
   {
     "company": "Symbotic",
     "role": "Co-op- Robot Manipulation",
-    "location": "USA Wilmington,  MA",
+    "location": "Wilmington, MA",
     "type": "offcycle",
     "season": "Co-op",
     "education": "Undergrad",
@@ -14297,7 +14261,7 @@
     "location": "Remote (US)",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://jobs.smartrecruiters.com/LLNL/3743990016164736",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -14395,18 +14359,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Engineering-Projects-Intern_R-00194672",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-16"
-  },
-  {
-    "company": "RTX",
-    "role": "CA Intern (Industrial Trainee)",
-    "location": "DL, IN",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/IN-DL-NEW-DELHI-WM2--Asset-Area-No-8--WORLDMARK-2-Unit-No-505--506-5th-Flr/CA-Intern--Industrial-Trainee-_01882516",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-16"
@@ -14556,30 +14508,6 @@
     "date_added": "2026-10-17"
   },
   {
-    "company": "Leonardo",
-    "role": "Electronics Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Bristol---Coldharbour-Lane/Industrial-Placement-Electronics_R0034212",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-18"
-  },
-  {
-    "company": "Leonardo",
-    "role": "Hardware Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Luton---Cap-Green-300/Industrial-Placement-Hardware-Engineer_R0032911",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-18"
-  },
-  {
     "company": "Northrop Grumman",
     "role": "Electrical Engineer 1 Intern",
     "location": "Chandler, AZ",
@@ -14654,7 +14582,7 @@
   {
     "company": "CACI",
     "role": "Production Engineering Intern",
-    "location": "Danbury, CT, US",
+    "location": "Danbury, CT",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -14666,7 +14594,7 @@
   {
     "company": "Generac",
     "role": "Micro-Grid Systems Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Fort Collins, CO",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -14846,7 +14774,7 @@
   {
     "company": "Carrier Global",
     "role": "Test Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Fort Wayne, IN",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -14870,7 +14798,7 @@
   {
     "company": "CACI",
     "role": "Electrical Test Engineering Intern",
-    "location": "Danbury, CT, US",
+    "location": "Danbury, CT",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -14930,7 +14858,7 @@
   {
     "company": "RTX",
     "role": "Receiver, Exciter & Processing Architecture Co-Op",
-    "location": "Marlborough-Ma2, MA",
+    "location": "Marlborough, MA",
     "type": "offcycle",
     "season": "Spring 2027",
     "education": "Undergrad",
@@ -15014,7 +14942,7 @@
   {
     "company": "RTX",
     "role": "Electrical Components Engineer Intern",
-    "location": "Tucson-M10, AZ",
+    "location": "Tucson, AZ",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -15120,30 +15048,6 @@
     "date_added": "2026-10-21"
   },
   {
-    "company": "Analog Devices",
-    "role": "Analog Design Engineer Intern - Audio",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://analogdevices.wd1.myworkdayjobs.com/en-US/External/job/United-Kingdom-Edinburgh-SC-Freer/Analog-Design-Engineering-Intern--Audio-_R267095",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-21"
-  },
-  {
-    "company": "Analog Devices",
-    "role": "Analog Design Engineer Intern - Power Management",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://analogdevices.wd1.myworkdayjobs.com/External/job/United-Kingdom-Edinburgh-SC-Freer/Analog-Design-Engineering-Intern--Power-Management-_R267094-1",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-21"
-  },
-  {
     "company": "RTX",
     "role": "Co-op: Systems Engineering Co-op (Summer",
     "location": "Cedar Rapids, IA",
@@ -15194,7 +15098,7 @@
   {
     "company": "RTX",
     "role": "Part Time Systems Engineer Co-Op",
-    "location": "Aurora-S75, CO",
+    "location": "Aurora, CO",
     "type": "offcycle",
     "season": "Co-op",
     "education": "Undergrad",
@@ -15230,7 +15134,7 @@
   {
     "company": "GlobalFoundries",
     "role": "Manufacturing Quality Intern",
-    "location": "Remote (US)",
+    "location": "Malta, NY",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -15302,7 +15206,7 @@
   {
     "company": "RTX",
     "role": "Stage - Hiver - Conception de la section d'essai / Internship",
-    "location": "QC, CA",
+    "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
     "education": "Undergrad",
@@ -15389,7 +15293,7 @@
     "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Digital-Communication-Grad-Intern_R016966",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -15444,7 +15348,7 @@
     "date_added": "2026-10-21"
   },
   {
-    "company": "Marvell",
+    "company": "Marvell Technology",
     "role": "Silicon Validation Intern",
     "location": "Santa Clara, CA",
     "type": "summer",
@@ -15482,7 +15386,7 @@
   {
     "company": "Aerospace Corporation",
     "role": "Signal Processing and RF Engineering Intern",
-    "location": "Remote (US)",
+    "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -15530,23 +15434,11 @@
   {
     "company": "Aptiv",
     "role": "HVP/Cert Engineer Intern",
-    "location": "CAN Kanata (2), ON",
+    "location": "Kanata, ON",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://aptiv.wd5.myworkdayjobs.com/aptiv_careers/job/CAN-Kanata-2-ON---WR/HVP-Cert--Engineer-Intern_J000704378",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-22"
-  },
-  {
-    "company": "Baker Hughes",
-    "role": "Electrical Engineering Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://bakerhughes.wd5.myworkdayjobs.com/BakerHughes/job/GB-Ashby-de-la-Zouch-Power-House-Excelsior-Road/Intern---Electrical-Engineering---2027_R170981",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-22"
@@ -15566,7 +15458,7 @@
   {
     "company": "RTX",
     "role": "Stage - Hiver - Projet Fabrication Additive / Internship",
-    "location": "QC, CA",
+    "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
     "education": "Undergrad",
@@ -15626,7 +15518,7 @@
   {
     "company": "Aptiv",
     "role": "Linux Engineering Intern",
-    "location": "CAN Kanata (2), ON",
+    "location": "Kanata, ON",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -15638,7 +15530,7 @@
   {
     "company": "Aptiv",
     "role": "Linux Intern",
-    "location": "CAN Kanata (2), ON",
+    "location": "Kanata, ON",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -15653,7 +15545,7 @@
     "location": "Toronto, ON",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://intel.wd1.myworkdayjobs.com/External/job/Canada-Toronto/Compiler-Engineering-Graduate-Intern_JR0287933",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -15710,7 +15602,7 @@
   {
     "company": "RTX",
     "role": "Stage - Hiver - Ing\u00e9nierie : outils d'int\u00e9grit\u00e9 des produits et am\u00e9lioration des processus / Internship",
-    "location": "QC, CA",
+    "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
     "education": "Undergrad",
@@ -15734,7 +15626,7 @@
   {
     "company": "RTX",
     "role": "Stage - Hiver - Support \u00e0 l\u2019ing\u00e9nierie du d\u00e9veloppement / Internship",
-    "location": "QC, CA",
+    "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
     "education": "Undergrad",
@@ -15866,7 +15758,7 @@
   {
     "company": "Badger Meter",
     "role": "Electronics/Electrical Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Milwaukee, WI",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -15902,7 +15794,7 @@
   {
     "company": "Fab2",
     "role": "Electrical Engineer Intern",
-    "location": "SF, CA",
+    "location": "San Francisco, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -15926,7 +15818,7 @@
   {
     "company": "GlobalFoundries",
     "role": "Tapeout Engineering Intern, Tapeout Operations",
-    "location": "Remote (US)",
+    "location": "Essex Junction, VT",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -16068,21 +15960,9 @@
     "date_added": "2026-10-23"
   },
   {
-    "company": "Analog Devices",
-    "role": "Design Verification Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://analogdevices.wd1.myworkdayjobs.com/External/job/United-Kingdom-Newbury/Design-Verification-Engineering-Intern_R267098",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-23"
-  },
-  {
     "company": "Baker Hughes",
     "role": "Field Engineer Intern",
-    "location": "AB, CA",
+    "location": "Calgary, AB",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -16142,7 +16022,7 @@
   {
     "company": "Trimble",
     "role": "Automated Test Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Richmond Hill, ON",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -16152,61 +16032,13 @@
     "date_added": "2026-10-24"
   },
   {
-    "company": "GE HealthCare",
-    "role": "V&V Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://gehc.wd5.myworkdayjobs.com/gehc_externalsite/job/Haifa-HEALTHCARE-HA-IL-2/V-V-Intern_R4048432-2",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-25"
-  },
-  {
     "company": "Qualcomm",
     "role": "Applied AI Engineering Intern, Hardware Systems",
     "location": "Remote (US)",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/et",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-25"
-  },
-  {
-    "company": "Hewlett Packard Enterprise",
-    "role": "Hardware Engineering Design Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://go.vansh.nyc/c3",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-25"
-  },
-  {
-    "company": "Microchip Technology",
-    "role": "Engineering Intern, ASIC Verification",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://go.vansh.nyc/ed",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-25"
-  },
-  {
-    "company": "Lawrence Livermore National Laboratory (LLNL)",
-    "role": "Power Systems Undergraduate Intern, Cyber and Critical Infrastructure",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://go.vansh.nyc/gj",
+    "url": "https://careers.qualcomm.com/careers/job/446721678733",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-25"
@@ -16242,7 +16074,7 @@
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/IH",
+    "url": "https://careers.qualcomm.com/careers/job/446721142985",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
@@ -16250,11 +16082,11 @@
   {
     "company": "Cisco",
     "role": "Hardware Engineer I Intern",
-    "location": "Remote (US)",
+    "location": "San Jose, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/JR",
+    "url": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/San-Jose-California-US/Hardware-Engineer-I--Intern----United-States_2024535-1",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
@@ -16266,13 +16098,13 @@
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/In",
+    "url": "https://enterpriseplatform.dell.com:443/hcmUI/CandidateExperience/en/sites/careers/job/297770",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
   },
   {
-    "company": "General Dynamics Mission Systems, Inc.",
+    "company": "General Dynamics Mission Systems",
     "role": "Engineer Intern, Electrical or Firmware",
     "location": "Remote (US)",
     "type": "summer",
@@ -16284,25 +16116,13 @@
     "date_added": "2026-10-26"
   },
   {
-    "company": "RTX",
-    "role": "FPGA Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://go.vansh.nyc/F5",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-26"
-  },
-  {
     "company": "First Solar (US)",
     "role": "Data Science Intern, Device Characterization",
     "location": "Remote (US)",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/H7",
+    "url": "https://fa-esbv-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/1026161",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
@@ -16314,7 +16134,7 @@
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/Is",
+    "url": "https://jobs.keysight.com/external/jobs/54276?icims=1",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
@@ -16334,7 +16154,7 @@
   {
     "company": "RTX",
     "role": "Stage - Hiver - Industrialisation / Internship",
-    "location": "QC, CA",
+    "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
     "education": "Undergrad",
@@ -16350,7 +16170,7 @@
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/Ru",
+    "url": "https://careers.qualcomm.com/careers/job/446720740649",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
@@ -16362,19 +16182,19 @@
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/Rx",
+    "url": "https://careers.qualcomm.com/careers/job/446721109168",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
   },
   {
-    "company": "Cadence",
+    "company": "Cadence Design Systems",
     "role": "CST Application Engineer Intern, Silicon",
-    "location": "Remote (US)",
+    "location": "San Jose, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/Sz",
+    "url": "https://cadence.wd1.myworkdayjobs.com/External_Careers/job/SAN-JOSE/CST-Application-Engineer-Intern---Silicon_R56655-1",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
@@ -16382,11 +16202,11 @@
   {
     "company": "SOTI",
     "role": "Performance Test Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Mississauga, ON",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/SG",
+    "url": "https://soti.wd3.myworkdayjobs.com/SOTI-Next-Gen/job/Mississauga-Canada--Meadowvale-Office-HQ/Performance-Test-Engineer-Intern--January-2027-12-Months-_R10437",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-26"
@@ -16502,7 +16322,7 @@
   {
     "company": "RTX",
     "role": "Stage - Hiver - \u00c9tudes dimensionnelles sur la fixation des aubes de turbine / Internship",
-    "location": "QC, CA",
+    "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
     "education": "Undergrad",
@@ -16550,7 +16370,7 @@
   {
     "company": "ASML",
     "role": "Imaging product engineer Intern",
-    "location": "Remote (US)",
+    "location": "San Jose, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -16742,7 +16562,7 @@
   {
     "company": "ASML",
     "role": "Design Engineer Intern",
-    "location": "Remote (US)",
+    "location": "Wilton, CT",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -16766,7 +16586,7 @@
   {
     "company": "Keysight Technologies",
     "role": "Electrical Engineering Intern - R&D Design Validation - Test Automation",
-    "location": "Budd Lake, Mt Olive, NJ",
+    "location": "Budd Lake, NJ",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad; Masters",
@@ -16874,7 +16694,7 @@
   {
     "company": "AeroVironment",
     "role": "Test Engineer Intern - Space Technologies",
-    "location": "Remote (US)",
+    "location": "Albuquerque, NM",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -16922,7 +16742,7 @@
   {
     "company": "RTX",
     "role": "Hardware Electrical Engineering Intern",
-    "location": "Cambridge-Bbn01, MA",
+    "location": "Cambridge, MA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -16934,7 +16754,7 @@
   {
     "company": "RTX",
     "role": "Hardware Electrical Engineering Co-Op",
-    "location": "Cambridge-Bbn01, MA",
+    "location": "Cambridge, MA",
     "type": "offcycle",
     "season": "Spring 2027",
     "education": "Undergrad",
@@ -16968,18 +16788,6 @@
     "date_added": "2026-10-28"
   },
   {
-    "company": "Altera",
-    "role": "FPGA Hardware Design Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://altera.wd1.myworkdayjobs.com/altera/job/Marlow-Buckinghamshire-United-Kingdom/Internship---FPGA-Hardware-Design-Engineer_R02748",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-28"
-  },
-  {
     "company": "Qualcomm",
     "role": "Formal Verification Engineering Intern - 6 months",
     "location": "Remote (US)",
@@ -16994,7 +16802,7 @@
   {
     "company": "ASML",
     "role": "Co-op - Optical Engineer (Internship)",
-    "location": "Remote (US)",
+    "location": "Wilton, CT",
     "type": "offcycle",
     "season": "Co-op",
     "education": "Undergrad",
@@ -17006,7 +16814,7 @@
   {
     "company": "ASML",
     "role": "EUV sustaining team Intern",
-    "location": "Remote (US)",
+    "location": "Phoenix, AZ",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -17136,7 +16944,7 @@
     "date_added": "2026-10-29"
   },
   {
-    "company": "Booz Allen",
+    "company": "Booz Allen Hamilton",
     "role": "Design and Verification Engineer Intern",
     "location": "Beavercreek, OH",
     "type": "summer",
@@ -17184,18 +16992,6 @@
     "date_added": "2026-10-29"
   },
   {
-    "company": "Booz Allen Hamilton",
-    "role": "Design and Verification Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://go.vansh.nyc/Yk",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-29"
-  },
-  {
     "company": "ABB",
     "role": "Automation Engineer Intern",
     "location": "New Berlin, WI",
@@ -17210,7 +17006,7 @@
   {
     "company": "CACI",
     "role": "Systems Engineering Intern/Co-op",
-    "location": "Rochester, NY, US",
+    "location": "Rochester, NY",
     "type": "offcycle",
     "season": "Spring 2027",
     "education": "Undergrad",
@@ -17222,7 +17018,7 @@
   {
     "company": "CACI",
     "role": "Electrical Engineering Intern/Co-op",
-    "location": "Rochester, NY, US",
+    "location": "Rochester, NY",
     "type": "offcycle",
     "season": "Spring 2027",
     "education": "Undergrad",
@@ -17438,11 +17234,11 @@
   {
     "company": "Hewlett Packard Enterprise",
     "role": "ASIC Verification Engineering Intern",
-    "location": "Remote (US)",
+    "location": "Roseville, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/Zt",
+    "url": "https://hpe.wd5.myworkdayjobs.com/Jobsathpe/job/Roseville-California-United-States-of-America/ASIC-Verification-Engineering-Intern_1214028",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-30"
@@ -17461,7 +17257,7 @@
   },
   {
     "company": "Aerospace Corporation",
-    "role": "Microwave Measurements, Modeling and Simulation UndergradIntern",
+    "role": "Microwave Measurements, Modeling and Simulation Undergrad Intern",
     "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
@@ -17510,7 +17306,7 @@
   {
     "company": "ASML",
     "role": "EUV CSCM UIR Intern",
-    "location": "Remote (US)",
+    "location": "Hillsboro, OR",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -17522,7 +17318,7 @@
   {
     "company": "Ciena",
     "role": "Mixed Signal Designer Intern",
-    "location": "Remote (US)",
+    "location": "Remote (Canada)",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
@@ -17616,30 +17412,6 @@
     "date_added": "2026-10-30"
   },
   {
-    "company": "Samsung Semiconductor",
-    "role": "SRAM Design Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://go.vansh.nyc/10P",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-30"
-  },
-  {
-    "company": "Altera",
-    "role": "Hardware Design Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://go.vansh.nyc/10W",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-30"
-  },
-  {
     "company": "Schneider Electric",
     "role": "Electronics Hardware Engineer Co-op",
     "location": "Cedar Rapids, IA",
@@ -17706,7 +17478,7 @@
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "https://go.vansh.nyc/14u",
+    "url": "https://joinbytedance.com/search/7673638856678279429",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-11-01"
@@ -17729,7 +17501,7 @@
     "location": "El Segundo, CA",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
+    "education": "Masters; PhD",
     "url": "https://aero.wd5.myworkdayjobs.com/External/job/El-Segundo-CA/XMLNAME-2027-Digital-Signals---RF-Engineering-Grad-Intern_R016952",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
