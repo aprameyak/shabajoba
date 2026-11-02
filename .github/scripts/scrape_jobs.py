@@ -152,6 +152,33 @@ def normalize_url(url):
     return url.rstrip('/')
 
 
+COMPANY_ALIASES = {
+    'Anduril Industries': 'Anduril',
+    'Axcelis Technologies': 'Axcelis',
+    'Booz Allen': 'Booz Allen Hamilton',
+    'Cadence': 'Cadence Design Systems',
+    'Danaher': 'Danaher Corporation',
+    'Emerson': 'Emerson Electric',
+    'Figure': 'Figure AI',
+    'GE Healthcare': 'GE HealthCare',
+    'GE Appliances, a Haier company': 'GE Appliances',
+    'General Dynamics Mission Systems, Inc.': 'General Dynamics Mission Systems',
+    'HP Inc': 'HP',
+    'IMC': 'IMC Trading',
+    'K2 Space Corporation': 'K2 Space',
+    'Marvell': 'Marvell Technology',
+    'Moog Inc.': 'Moog',
+    'Motorola': 'Motorola Solutions',
+    'Rocket Lab USA': 'Rocket Lab',
+    'Sensata': 'Sensata Technologies',
+    'Stanley Black and Decker': 'Stanley Black & Decker',
+    'Stryten': 'Stryten Energy',
+    'Techtronic Industries - TTI': 'Techtronic Industries (TTI)',
+    'Varda Space Industries': 'Varda Space',
+    'WSP in the U.S.': 'WSP',
+    'Akuna Capital University': 'Akuna Capital',
+}
+
 US_STATE_NAMES = {
     'alabama': 'AL', 'alaska': 'AK', 'arizona': 'AZ', 'arkansas': 'AR',
     'california': 'CA', 'colorado': 'CO', 'connecticut': 'CT', 'delaware': 'DE',
@@ -244,12 +271,15 @@ def normalize_location_segment(loc):
         if abbr:
             return f'{city}, {abbr}'
 
-    # Workday-style: US-MD-Baltimore / US-CA-EL SEGUNDO-R01 ~ ...
-    m = re.match(r'^US-([A-Z]{2})-([A-Za-z0-9 .\'-]+)', loc)
-    if m:
-        city = re.split(r'\s*~\s*', m.group(2))[0].strip()
-        city = re.sub(r'-\d+.*$', '', city).strip(' -')
+    # Workday-style: US-MD-Baltimore / US-CA-EL SEGUNDO-R01 ~ ... / CA-QC-LONGUEUIL-J01
+    m = re.match(r'^(?:US|CA)-([A-Z]{2})-([A-Za-z0-9 .\'-]+)', loc)
+    if m and m.group(1).lower() in US_CA_LOCATION_TOKENS:
+        city = re.split(r'\s*~\s*', m.group(2))[0].strip(' -')
+        if '--' in city:
+            city = re.split(r'-{2,}', city)[0].replace('-', ' ')
+        city = re.sub(r'-[A-Za-z]{0,3}\d+.*$', '', city).strip(' -')
         city = city.title() if city.isupper() or city.islower() else city
+        city = re.sub(r'\bMc([a-z])', lambda c: 'Mc' + c.group(1).upper(), city)
         return f'{city}, {m.group(1).upper()}'
 
     # United States-Maryland-Baltimore / Canada-Ontario-Toronto
@@ -267,6 +297,7 @@ def normalize_location_segment(loc):
     # Strip trailing country / zip
     loc = re.sub(r',?\s*United States( of America)?\s*$', '', loc, flags=re.I)
     loc = re.sub(r',?\s*USA\s*$', '', loc, flags=re.I)
+    loc = re.sub(r',\s*US\s*$', '', loc)
     loc = re.sub(r',?\s*Canada\s*$', '', loc, flags=re.I)
     loc = re.sub(r',\s*\d{5}(-\d{4})?\s*$', '', loc)
     loc = loc.strip(' ,')
@@ -287,6 +318,11 @@ def normalize_location_segment(loc):
     if m and m.group(1).lower() in US_CA_LOCATION_TOKENS:
         city = re.sub(r'\s+(Sales Office|Office|Site|Campus).*$', '', m.group(2), flags=re.I)
         return f'{city.strip()}, {m.group(1).upper()}'
+
+    # Tewksbury-Tb1, MA / Tucson-M02, AZ — drop building codes
+    m = re.match(r'^(.+?)-[A-Za-z]{0,3}\d+,\s*([A-Z]{2})$', loc)
+    if m:
+        return f'{m.group(1).strip()}, {m.group(2)}'
 
     # Existing City, ST — strip campus suffixes
     m = re.match(r'^(.+,\s*[A-Z]{2})\s*[-–\u2013].+$', loc)
@@ -488,6 +524,10 @@ def infer_education(title):
         return 'PhD'
     if 'master' in t or ' ms ' in t or 'graduate student' in t:
         return 'Masters'
+    if re.search(r'\bgrad(uate)? intern', t):
+        return 'Masters; PhD'
+    if 'bs/ms' in t:
+        return 'Undergrad; Masters'
     return 'Undergrad'
 
 
@@ -595,6 +635,7 @@ def listing_exists(listings, url, company, role):
 
 
 def add_listing(listings, entry):
+    entry['company'] = COMPANY_ALIASES.get(entry['company'], entry['company'])
     if listing_exists(listings, entry['url'], entry['company'], entry['role']):
         return False
     listings.append(entry)
