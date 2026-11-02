@@ -1215,7 +1215,7 @@
 | AMD | Hardware Engineer Intern/Co-op | <details><summary>**2 locations**</summary>San Jose, CA</br>Santa Clara, CA</details> | Summer 2027 | Undergrad | <a href="https://careers.amd.com/jobs/90894" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
 | Analog Devices | Digital Design Engineer Intern | <details><summary>**2 locations**</summary>San Jose, CA</br>Durham, NC</details> | Fall 2026 | Undergrad; Masters | <a href="https://analogdevices.wd1.myworkdayjobs.com/External/job/US-NC-Durham/Digital-Design-Engineer-Intern_R265298" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
 | Daktronics | Hardware Design Intern/Co-op - Firmware | Brookings, SD | Summer 2027 | Undergrad | 🔒 | Aug 24 |
-| Hitachi Energy | Electrical Engineering Intern | Raleigh, NC | Summer 2027 | Undergrad | <a href="https://www.linkedin.com/jobs/view/2027-summer-electrical-engineering-intern-raleigh-at-hitachi-energy-4457820149" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 24 |
+| Hitachi Energy | Electrical Engineering Intern | Raleigh, NC | Summer 2027 | Undergrad | 🔒 | Aug 24 |
 | Nexus Engineering Group | Electrical Engineering Internship or Co-Op | Oak Brook, IL | Summer 2027 | Undergrad | 🔒 | Aug 24 |
 | RoboForce | Robotics Electrical Engineering Intern | Milpitas, CA | Fall 2026 | Undergrad; Masters; PhD | 🔒 | Aug 24 |
 | The Walt Disney Company | Show Control Hardware Intern | <details><summary>**3 locations**</summary>Orlando, FL</br>Celebration, FL</br>Glendale, CA</details> | Spring 2027 | Undergrad | 🔒 | Aug 24 |
