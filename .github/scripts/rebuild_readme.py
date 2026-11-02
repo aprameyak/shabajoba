@@ -16,7 +16,7 @@ def _company_sort_key(name):
 
 
 def format_company(entry):
-    name = entry['company'].strip()
+    name = cell(entry['company'])
     sponsorship = entry.get('sponsorship', '')
     citizenship = entry.get('citizenship', '')
     if 'not' in sponsorship.lower() or 'no —' in sponsorship.lower():
@@ -55,15 +55,22 @@ def apply_btn(url):
     )
 
 
+def cell(value):
+    return ' '.join(str(value).split()).replace('|', '\\|')
+
+
+def is_undergrad(entry):
+    return 'Undergrad' in entry.get('education', 'Undergrad')
+
+
 def format_row(entry, company_col):
-    role = entry['role'].strip()
+    role = cell(entry['role'])
     location = format_location(entry['location'])
-    season = entry.get('season', 'Summer 2027').strip()
-    education = entry.get('education', 'Undergrad').strip()
+    season = cell(entry.get('season', 'Summer 2027'))
     url = entry.get('url', '').strip()
     date = format_date(entry['date_added'])
     btn = apply_btn(url)
-    return f'| {company_col} | {role} | {location} | {season} | {education} | {btn} | {date} |'
+    return f'| {company_col} | {role} | {location} | {season} | {btn} | {date} |'
 
 
 def build_table(entries):
@@ -130,6 +137,8 @@ def main():
         listings = json.load(f)
 
     print(f'Loaded {len(listings)} listings')
+    listings = [e for e in listings if is_undergrad(e)]
+    print(f'{len(listings)} open to undergrads')
 
     with open(README_FILE, encoding='utf-8') as f:
         content = f.read()

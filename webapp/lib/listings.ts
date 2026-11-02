@@ -144,7 +144,7 @@ function processTable(listings: Listing[]): ProcessedRow[] {
 }
 
 export function getAllListingsData(): ListingsData {
-  const listings = getListings();
+  const listings = getListings().filter((e) => (e.education ?? 'Undergrad').includes('Undergrad'));
   const rows = processTable(listings);
   const summer = rows.filter((r) => r.type === 'summer');
   const offcycle = rows.filter((r) => r.type === 'offcycle');

@@ -55,14 +55,12 @@ function JobTable({
   seasonFilter,
   openOnly,
   region,
-  education,
 }: {
   rows: ProcessedRow[];
   search: string;
   seasonFilter: string;
   openOnly: boolean;
   region: string;
-  education: string;
 }) {
   const displayRows = useMemo(() => {
     const resolved: (ProcessedRow & { resolvedCompany: string })[] = [];
@@ -73,7 +71,7 @@ function JobTable({
       resolved.push({ ...row, resolvedCompany });
     }
 
-    const filtering = !!(search || seasonFilter || openOnly || region || education);
+    const filtering = !!(search || seasonFilter || openOnly || region);
 
     return resolved.filter((row) => {
       if (openOnly && !row.url) return false;
@@ -84,24 +82,20 @@ function JobTable({
       if (region === 'Canada' && row.region !== 'Canada' && row.region !== 'Mixed') {
         return false;
       }
-      if (education && !row.education.toLowerCase().includes(education.toLowerCase())) {
-        return false;
-      }
       if (!search) return true;
       const q = search.toLowerCase();
       return (
         row.resolvedCompany.toLowerCase().includes(q) ||
         row.role.toLowerCase().includes(q) ||
         row.location.toLowerCase().includes(q) ||
-        row.season.toLowerCase().includes(q) ||
-        row.education.toLowerCase().includes(q)
+        row.season.toLowerCase().includes(q)
       );
     }).map((row) => ({
       ...row,
       // when filtering, always show full company name
       _showFull: filtering,
     }));
-  }, [rows, search, seasonFilter, openOnly, region, education]);
+  }, [rows, search, seasonFilter, openOnly, region]);
 
   if (displayRows.length === 0) {
     return (
@@ -123,7 +117,6 @@ function JobTable({
             <th className="px-4 py-3">Role</th>
             <th className="px-4 py-3 w-40">Location</th>
             <th className="px-4 py-3 w-28">Season</th>
-            <th className="px-4 py-3 w-28">Education</th>
             <th className="px-4 py-3 w-20">Apply</th>
             <th className="px-4 py-3 w-20">Added</th>
           </tr>
@@ -153,7 +146,6 @@ function JobTable({
                 <td className="px-4 py-2.5 align-top text-gray-600 whitespace-nowrap">
                   {row.season}
                 </td>
-                <td className="px-4 py-2.5 align-top text-gray-600">{row.education}</td>
                 <td className="px-4 py-2.5 align-top">
                   <ApplyButton url={row.url} />
                 </td>
@@ -189,7 +181,6 @@ export default function JobsClient({ data }: { data: ListingsData }) {
   const [seasonFilter, setSeasonFilter] = useState('');
   const [openOnly, setOpenOnly] = useState(true);
   const [region, setRegion] = useState('');
-  const [education, setEducation] = useState('');
   const [tab, setTab] = useState<TabKey>('all');
 
   const rows =
@@ -209,7 +200,7 @@ export default function JobsClient({ data }: { data: ListingsData }) {
               </h1>
               <p className="mt-2 text-sm text-gray-600 max-w-2xl">
                 Electrical engineering only — hardware, RF, analog, power, VLSI/ASIC, FPGA,
-                PCB, test, photonics, and avionics. No software-only roles.
+                PCB, test, photonics, and avionics. No software-only roles. Undergrad roles only.
               </p>
             </div>
             <a
@@ -302,16 +293,6 @@ export default function JobsClient({ data }: { data: ListingsData }) {
             <option value="US">United States</option>
             <option value="Canada">Canada</option>
           </select>
-          <select
-            value={education}
-            onChange={(e) => setEducation(e.target.value)}
-            className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm shadow-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-          >
-            <option value="">All education</option>
-            <option value="Undergrad">Undergrad</option>
-            <option value="Masters">Masters</option>
-            <option value="PhD">PhD</option>
-          </select>
           <label className="flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-700 shadow-sm cursor-pointer select-none">
             <input
               type="checkbox"
@@ -347,12 +328,11 @@ export default function JobsClient({ data }: { data: ListingsData }) {
             seasonFilter={seasonFilter}
             openOnly={openOnly}
             region={region}
-            education={education}
           />
         </div>
 
         <p className="mt-4 text-center text-xs text-gray-400">
-          EE internships &amp; co-ops in the US and Canada · scraped hourly from company career pages ·{' '}
+          Undergrad EE internships &amp; co-ops in the US and Canada · scraped hourly from company career pages ·{' '}
           <a
             href="https://github.com/aprameyak/shabajoba"
             target="_blank"
