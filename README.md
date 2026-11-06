@@ -1,7 +1,5 @@
 # 2027 EE Internships & Co-ops — US & Canada
 
-Undergrad roles only. Postings limited to Masters or PhD students are left out.
-
 ---
 
 **Browse with filters:** [shabajoba.vercel.app](https://shabajoba.vercel.app/)

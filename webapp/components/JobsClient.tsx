@@ -199,7 +199,7 @@ export default function JobsClient({ data }: { data: ListingsData }) {
               </h1>
               <p className="mt-2 text-sm text-gray-600 max-w-2xl">
                 Electrical engineering only — hardware, RF, analog, power, VLSI/ASIC, FPGA,
-                PCB, test, photonics, and avionics. No software-only roles. Undergrad roles only.
+                PCB, test, photonics, and avionics. No software-only roles.
               </p>
             </div>
             <a
