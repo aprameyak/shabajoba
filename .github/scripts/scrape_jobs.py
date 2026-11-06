@@ -238,6 +238,21 @@ def _ca_region_abbr(token):
 
 def normalize_location_segment(loc):
     """Normalize one ATS location segment to `City, ST` / `Remote (US|Canada)`."""
+    return _tidy_location_segment(_normalize_location_segment(loc))
+
+
+def _tidy_location_segment(loc):
+    """Final consistency pass: `City, ST` spacing, `Fort` spelling, state-level remote."""
+    if not loc:
+        return loc
+    loc = re.sub(r'\s*,\s*(?=[A-Z]{2}$)', ', ', loc.strip())
+    m = re.match(r'^remote,\s*([A-Z]{2})$', loc, re.I)
+    if m:
+        return 'Remote (Canada)' if m.group(1).upper() in CA_PROVINCE_NAMES.values() else 'Remote (US)'
+    return re.sub(r'^Ft\.?\s+', 'Fort ', loc)
+
+
+def _normalize_location_segment(loc):
     if not loc:
         return loc
     loc = loc.strip()
@@ -337,11 +352,16 @@ def normalize_location(loc):
     loc = unmash_locations(loc)
     if not loc:
         return loc
-    parts = [
-        normalize_location_segment(p.strip())
-        for p in loc.split(';')
-        if p.strip()
-    ]
+    segments = []
+    for p in loc.split(';'):
+        p = p.strip()
+        # "St. Petersburg/Tampa, FL" -> two locations in the same state
+        m = re.match(r'^([^,/]+(?:/[^,/]+)+),\s*([A-Z]{2})$', p)
+        if m:
+            segments += [f'{city.strip()}, {m.group(2)}' for city in m.group(1).split('/')]
+        elif p:
+            segments.append(p)
+    parts = list(dict.fromkeys(normalize_location_segment(p) for p in segments))
     return '; '.join(parts)
 
 
