@@ -21,6 +21,7 @@ Undergrad roles only. Postings limited to Masters or PhD students are left out.
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Apply | Date Added |
 | ------- | ---- | -------- | ------ | ----- | ---------- |
+| Zoox | Hardware Engineer Intern - Vehicle Systems | Foster City, CA | Summer 2027 | <a href="https://jobs.lever.co/zoox/0c32245b-f51d-40d2-8e57-a0be1b744c5b/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 6 |
 | Analog Devices | Equipment Engineering Co-Op GFU | Beaverton, OR | Co-op | <a href="https://analogdevices.wd1.myworkdayjobs.com/External/job/US-OR-Beaverton/Equipment-Engineering-Co-Op-GFU--May-Dec-_R268545" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 5 |
 | Applied Materials | Metrology Engineer Intern/Co-op - Undergraduate | Tempe,AZ | Spring 2027 | <a href="https://amat.wd1.myworkdayjobs.com/External/job/TempeAZ/Metrology-Engineer-Co-op-Intern---Undergraduate--Winter-Spring-2027-_R2632419" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 5 |
 | Badger Meter | Firmware Test Engineer Intern | Remote (US) | Summer 2027 | <a href="https://go.vansh.nyc/1hi" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 5 |
