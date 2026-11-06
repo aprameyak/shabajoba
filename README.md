@@ -2,7 +2,7 @@
 
 ---
 
-**Browse with filters:** [shabajoba.vercel.app](https://shabajoba.vercel.app/)
+**Browse with filters:** [shabajoba.aprameyak.workers.dev](https://shabajoba.aprameyak.workers.dev/)
 
 ---
 
