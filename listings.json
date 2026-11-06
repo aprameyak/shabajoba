@@ -8,7 +8,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/xcimer/89ffbeda-ebea-4539-9676-c6441751b95a",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-21"
   },
   {
@@ -20,7 +20,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/xcimer/39fd5473-58a8-446c-86fb-258c1dd0f67d",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-21"
   },
   {
@@ -956,7 +956,7 @@
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7991657003",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-17"
   },
   {
@@ -968,7 +968,7 @@
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7987042003",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-17"
   },
   {
@@ -2635,7 +2635,7 @@
     "season": "Co-op",
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/verkada/jobs/4321158007",
-    "sponsorship": "Yes — sponsorship available",
+    "sponsorship": "Yes \u2014 sponsorship available",
     "citizenship": "Unknown",
     "date_added": "2026-09-03"
   },
@@ -3025,7 +3025,7 @@
   },
   {
     "company": "Johns Hopkins Applied Physics Laboratory",
-    "role": "Electrical Engineer – Networked Systems & Integrated Fires Intern",
+    "role": "Electrical Engineer \u2013 Networked Systems & Integrated Fires Intern",
     "location": "Laurel, MD",
     "type": "summer",
     "season": "Summer 2027",
@@ -4039,7 +4039,7 @@
     "season": "Summer 2027",
     "education": "Masters",
     "url": "https://careers.amd.com/careers-home/jobs/91182",
-    "sponsorship": "No — does NOT offer sponsorship",
+    "sponsorship": "No \u2014 does NOT offer sponsorship",
     "citizenship": "Unknown",
     "date_added": "2026-08-20"
   },
@@ -4051,7 +4051,7 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://careers.amd.com/careers-home/jobs/90820",
-    "sponsorship": "No — does NOT offer sponsorship",
+    "sponsorship": "No \u2014 does NOT offer sponsorship",
     "citizenship": "Unknown",
     "date_added": "2026-08-20"
   },
@@ -4525,7 +4525,7 @@
   },
   {
     "company": "Schaeffler",
-    "role": "Co-op Electrical Engineering — Summer",
+    "role": "Co-op Electrical Engineering \u2014 Summer",
     "location": "Troy, MI",
     "type": "summer",
     "season": "Summer 2027",
@@ -4537,7 +4537,7 @@
   },
   {
     "company": "Schaeffler",
-    "role": "Co-op Electrical Engineering — Fall",
+    "role": "Co-op Electrical Engineering \u2014 Fall",
     "location": "Troy, MI",
     "type": "offcycle",
     "season": "Fall 2027",
@@ -4831,8 +4831,8 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/spacex/jobs/8621763002?utm_source=aprameyak",
-    "sponsorship": "No — does NOT offer sponsorship",
-    "citizenship": "Yes — U.S. citizenship required",
+    "sponsorship": "No \u2014 does NOT offer sponsorship",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-08-06"
   },
   {
@@ -4891,7 +4891,7 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/hyannisportresearch/jobs/7822801003?utm_source=aprameyak",
-    "sponsorship": "No — does NOT offer sponsorship",
+    "sponsorship": "No \u2014 does NOT offer sponsorship",
     "citizenship": "Unknown",
     "date_added": "2026-08-06"
   },
@@ -5749,7 +5749,7 @@
   },
   {
     "company": "Northrop Grumman",
-    "role": "Electrical Engineer Intern – Woodland Hills CA",
+    "role": "Electrical Engineer Intern \u2013 Woodland Hills CA",
     "location": "Woodland Hills, CA",
     "type": "summer",
     "season": "Summer 2027",
@@ -6061,7 +6061,7 @@
   },
   {
     "company": "Cummins",
-    "role": "Product Engineering – Summer Internship Positions",
+    "role": "Product Engineering \u2013 Summer Internship Positions",
     "location": "Columbus, IN",
     "type": "summer",
     "season": "Summer 2027",
@@ -6085,7 +6085,7 @@
   },
   {
     "company": "Cummins",
-    "role": "Product Systems Validation – Summer Internship Positions",
+    "role": "Product Systems Validation \u2013 Summer Internship Positions",
     "location": "Columbus, IN",
     "type": "summer",
     "season": "Summer 2027",
@@ -6164,7 +6164,7 @@
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8003533003",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-24"
   },
   {
@@ -6181,7 +6181,7 @@
   },
   {
     "company": "General Dynamics",
-    "role": "Engineering, Propulsion Plant and Ship Systems – COLUMBIA - Summer Internship",
+    "role": "Engineering, Propulsion Plant and Ship Systems \u2013 COLUMBIA - Summer Internship",
     "location": "Remote (US)",
     "type": "summer",
     "season": "Summer 2027",
@@ -6193,7 +6193,7 @@
   },
   {
     "company": "Marvell Technology",
-    "role": "Analog Design Intern Co-op - Master’s",
+    "role": "Analog Design Intern Co-op - Master\u2019s",
     "location": "Toronto, ON",
     "type": "summer",
     "season": "Summer 2027",
@@ -6925,7 +6925,7 @@
   },
   {
     "company": "RTX",
-    "role": "Systems Engineering Co-op – Special Operations Aviation Mainline",
+    "role": "Systems Engineering Co-op \u2013 Special Operations Aviation Mainline",
     "location": "Cedar Rapids, IA",
     "type": "offcycle",
     "season": "Co-op",
@@ -7136,7 +7136,7 @@
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -7148,7 +7148,7 @@
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -7160,7 +7160,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/CesiumAstro/8eb71502-4374-45aa-82fa-2b62a42cd8e9",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -7172,7 +7172,7 @@
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -7184,7 +7184,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/CesiumAstro/ab7dd1c4-7196-4cae-8fbd-cddec993b9b8",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -7220,7 +7220,7 @@
     "education": "Undergrad",
     "url": "https://jobs.eu.lever.co/quantinuum/dc2d5427-8263-400f-9ca7-501d2e17162f",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -8233,7 +8233,7 @@
   },
   {
     "company": "Northrop Grumman",
-    "role": "Hardware Electronics Engineer Intern – Rolling Meadows IL",
+    "role": "Hardware Electronics Engineer Intern \u2013 Rolling Meadows IL",
     "location": "Rolling Meadows, IL",
     "type": "summer",
     "season": "Summer 2027",
@@ -8389,7 +8389,7 @@
   },
   {
     "company": "Leidos",
-    "role": "Embedded Design Engineering Intern – Firmware",
+    "role": "Embedded Design Engineering Intern \u2013 Firmware",
     "location": "Huntsville, AL",
     "type": "summer",
     "season": "Summer 2027",
@@ -9025,7 +9025,7 @@
   },
   {
     "company": "Vertiv",
-    "role": "Electrical Engineering Intern – Product Architecture",
+    "role": "Electrical Engineering Intern \u2013 Product Architecture",
     "location": "Delaware, OH",
     "type": "summer",
     "season": "Summer 2027",
@@ -9169,7 +9169,7 @@
   },
   {
     "company": "RTX",
-    "role": "Systems Engineering Co-Op ( Summer/Fall) – SOA CAAS Mainline Platform",
+    "role": "Systems Engineering Co-Op ( Summer/Fall) \u2013 SOA CAAS Mainline Platform",
     "location": "Cedar Rapids, IA",
     "type": "offcycle",
     "season": "Co-op",
@@ -9661,7 +9661,7 @@
   },
   {
     "company": "Philips",
-    "role": "Co-op – R&D Engineer",
+    "role": "Co-op \u2013 R&D Engineer",
     "location": "Colorado Springs, CO",
     "type": "offcycle",
     "season": "Co-op",
@@ -11192,12 +11192,12 @@
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8007204003",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-10-13"
   },
   {
     "company": "General Motors",
-    "role": "Research and Developement – Display Optical Simulation Intern",
+    "role": "Research and Developement \u2013 Display Optical Simulation Intern",
     "location": "Warren, MI",
     "type": "summer",
     "season": "Summer 2027",
@@ -11281,7 +11281,7 @@
   },
   {
     "company": "Howmet Aerospace",
-    "role": "Intern & Co-op – Electrical/Controls Engineer - Whitehall, MI ()",
+    "role": "Intern & Co-op \u2013 Electrical/Controls Engineer - Whitehall, MI ()",
     "location": "Whitehall, MI",
     "type": "offcycle",
     "season": "Co-op",
@@ -11533,7 +11533,7 @@
   },
   {
     "company": "Northrop Grumman",
-    "role": "H/W Electronics Engineering Intern – Annapolis MD",
+    "role": "H/W Electronics Engineering Intern \u2013 Annapolis MD",
     "location": "Annapolis, MD",
     "type": "summer",
     "season": "Summer 2027",
@@ -11545,7 +11545,7 @@
   },
   {
     "company": "Northrop Grumman",
-    "role": "S/W Embedded Engineering Intern – Annapolis MD",
+    "role": "S/W Embedded Engineering Intern \u2013 Annapolis MD",
     "location": "Annapolis, MD",
     "type": "summer",
     "season": "Summer 2027",
@@ -12104,7 +12104,7 @@
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-10-16"
   },
   {
@@ -12284,7 +12284,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/xcimer/87bceb04-faeb-4365-9fed-d8f5cd3fb8ac",
     "sponsorship": "Unknown",
-    "citizenship": "Yes — U.S. citizenship required",
+    "citizenship": "Yes \u2014 U.S. citizenship required",
     "date_added": "2026-10-19"
   },
   {
@@ -13237,7 +13237,7 @@
   },
   {
     "company": "RTX",
-    "role": "Stage - Hiver - Ingénierie : outils d'intégrité des produits et amélioration des processus / Internship",
+    "role": "Stage - Hiver - Ing\u00e9nierie : outils d'int\u00e9grit\u00e9 des produits et am\u00e9lioration des processus / Internship",
     "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
@@ -13261,7 +13261,7 @@
   },
   {
     "company": "RTX",
-    "role": "Stage - Hiver - Support à l’ingénierie du développement / Internship",
+    "role": "Stage - Hiver - Support \u00e0 l\u2019ing\u00e9nierie du d\u00e9veloppement / Internship",
     "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
@@ -14869,7 +14869,7 @@
   },
   {
     "company": "General Dynamics",
-    "role": "Quality Assurance – Engineering Internship",
+    "role": "Quality Assurance \u2013 Engineering Internship",
     "location": "Remote (US)",
     "type": "summer",
     "season": "Summer 2027",
@@ -14977,7 +14977,7 @@
   },
   {
     "company": "Micron Technology",
-    "role": "Process Integration – Advanced Packaging Intern",
+    "role": "Process Integration \u2013 Advanced Packaging Intern",
     "location": "Boise, ID",
     "type": "summer",
     "season": "Summer 2027",
@@ -15301,7 +15301,7 @@
   },
   {
     "company": "Ciena",
-    "role": "Optical New Product Engineering Intern - New Product Introduction – Photonic Test Engineer (Co-op)",
+    "role": "Optical New Product Engineering Intern - New Product Introduction \u2013 Photonic Test Engineer (Co-op)",
     "location": "Montreal, QC",
     "type": "offcycle",
     "season": "Co-op",
@@ -16195,6 +16195,18 @@
     "season": "Summer 2027",
     "education": "Undergrad; Masters; PhD",
     "url": "https://qualcomm.eightfold.ai/careers/job/446722001120",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-06"
+  },
+  {
+    "company": "GlobalFoundries",
+    "role": "Silicon Photonics Test Development Intern",
+    "location": "Remote (US)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---Vermont---Essex-Junction/Silicon-Photonics-Test-Development-Intern--Summer-2027-_JR-2604260",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-11-06"
