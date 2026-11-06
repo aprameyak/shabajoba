@@ -1247,7 +1247,7 @@ Undergrad roles only. Postings limited to Masters or PhD students are left out.
 | ↳ | Deep Learning Computer Architecture Intern | Santa Clara, CA | Summer 2027 | 🔒 | Aug 19 |
 | Samtec Inc | Electrical Engineering Co-Op- UofL | New Albany, IN | Co-op | 🔒 | Aug 19 |
 | Zipline | Long Range Platform Hardware Engineering Intern | South San Francisco, CA | Summer 2027 | 🔒 | Aug 19 |
-| Garmin | Electrical Design Engineer Intern | Olathe, KS | Summer 2027 | <a href="https://careers.garmin.com/jobs/19643?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 18 |
+| Garmin | Electrical Design Engineer Intern | Olathe, KS | Summer 2027 | 🔒 | Aug 18 |
 | H3X Technologies | Electromagnetics Engineering Intern - Spring | Louisville, CO | Summer 2027 | 🔒 | Aug 18 |
 | Hendrick Motorsports | Electrical Engineer Intern - Unmanned Vehicles - UXVs | Charlotte, NC | Fall 2026 | 🔒 | Aug 18 |
 | IMEG | Electrical Engineer Intern - Education | Rock Island, IL | Summer 2027 | 🔒 | Aug 18 |
