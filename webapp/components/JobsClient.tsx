@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import { SPECIALTIES } from '@/lib/specialties';
 import type { ListingsData, ProcessedRow } from '@/lib/listings';
 
 type TabKey = 'all' | 'summer' | 'offcycle';
@@ -53,12 +54,14 @@ function JobTable({
   rows,
   search,
   seasonFilter,
+  specialty,
   openOnly,
   region,
 }: {
   rows: ProcessedRow[];
   search: string;
   seasonFilter: string;
+  specialty: string;
   openOnly: boolean;
   region: string;
 }) {
@@ -71,11 +74,12 @@ function JobTable({
       resolved.push({ ...row, resolvedCompany });
     }
 
-    const filtering = !!(search || seasonFilter || openOnly || region);
+    const filtering = !!(search || seasonFilter || specialty || openOnly || region);
 
     return resolved.filter((row) => {
       if (openOnly && !row.url) return false;
       if (seasonFilter && row.season !== seasonFilter) return false;
+      if (specialty && !row.specialties.includes(specialty)) return false;
       if (region === 'US' && row.region !== 'US' && row.region !== 'Mixed' && row.region !== 'Remote') {
         return false;
       }
@@ -88,14 +92,15 @@ function JobTable({
         row.resolvedCompany.toLowerCase().includes(q) ||
         row.role.toLowerCase().includes(q) ||
         row.location.toLowerCase().includes(q) ||
-        row.season.toLowerCase().includes(q)
+        row.season.toLowerCase().includes(q) ||
+        row.specialties.some((s) => s.toLowerCase().includes(q))
       );
     }).map((row) => ({
       ...row,
       // when filtering, always show full company name
       _showFull: filtering,
     }));
-  }, [rows, search, seasonFilter, openOnly, region]);
+  }, [rows, search, seasonFilter, specialty, openOnly, region]);
 
   if (displayRows.length === 0) {
     return (
@@ -178,6 +183,7 @@ const TABS: { key: TabKey; label: string }[] = [
 export default function JobsClient({ data }: { data: ListingsData }) {
   const [search, setSearch] = useState('');
   const [seasonFilter, setSeasonFilter] = useState('');
+  const [specialty, setSpecialty] = useState('');
   const [openOnly, setOpenOnly] = useState(true);
   const [region, setRegion] = useState('');
   const [tab, setTab] = useState<TabKey>('all');
@@ -284,6 +290,18 @@ export default function JobsClient({ data }: { data: ListingsData }) {
             ))}
           </select>
           <select
+            value={specialty}
+            onChange={(e) => setSpecialty(e.target.value)}
+            className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm shadow-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          >
+            <option value="">All specialties</option>
+            {SPECIALTIES.map((s) => (
+              <option key={s} value={s}>
+                {s}
+              </option>
+            ))}
+          </select>
+          <select
             value={region}
             onChange={(e) => setRegion(e.target.value)}
             className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm shadow-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
@@ -325,6 +343,7 @@ export default function JobsClient({ data }: { data: ListingsData }) {
             rows={rows}
             search={search}
             seasonFilter={seasonFilter}
+            specialty={specialty}
             openOnly={openOnly}
             region={region}
           />

@@ -1,5 +1,6 @@
 import path from 'path';
 import fs from 'fs';
+import { specialtiesFor } from './specialties';
 
 export interface Listing {
   company: string;
@@ -28,6 +29,7 @@ export interface ProcessedRow {
   sponsorship: string;
   citizenship: string;
   region: 'US' | 'Canada' | 'Remote' | 'Mixed';
+  specialties: string[];
 }
 
 export interface ListingsData {
@@ -137,6 +139,7 @@ function processTable(listings: Listing[]): ProcessedRow[] {
       sponsorship: entry.sponsorship ?? 'Unknown',
       citizenship: entry.citizenship ?? 'Unknown',
       region: detectRegion(entry.location),
+      specialties: specialtiesFor(entry.role),
     });
   }
 
