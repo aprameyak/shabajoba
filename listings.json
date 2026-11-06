@@ -18646,5 +18646,65 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-11-06"
+  },
+  {
+    "company": "Analog Devices",
+    "role": "Wet Lab Sensor Research Co-Op",
+    "location": "Boston, MA",
+    "type": "offcycle",
+    "season": "Co-op",
+    "education": "Undergrad",
+    "url": "https://analogdevices.wd1.myworkdayjobs.com/External/job/US-MA-Boston/Wet-Lab-Sensor-Research-Co-Op_R268534-1",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-06"
+  },
+  {
+    "company": "Cummins",
+    "role": "Student - School to Work - Manufacturing (Gearing)",
+    "location": "Fletcher, NC",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://fa-espx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2436214",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-06"
+  },
+  {
+    "company": "Nokia",
+    "role": "Service Router Test Student",
+    "location": "Remote (Canada)",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/41069",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-06"
+  },
+  {
+    "company": "SRI International",
+    "role": "Electrical Engineering Co-op",
+    "location": "Princeton, NJ",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://careers-sri.icims.com/jobs/6526/job?mobile=true&needsRedirect=false",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-06"
+  },
+  {
+    "company": "Qualcomm",
+    "role": "RF/Analog Verification Engineer Intern",
+    "location": "Markham, ON",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad; Masters; PhD",
+    "url": "https://qualcomm.eightfold.ai/careers/job/446722001120",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-06"
   }
 ]
