@@ -20,8 +20,7 @@ VALID_TYPES = {'summer', 'offcycle'}
 VALID_SUMMER_SEASON = 'Summer 2027'
 
 OFFCYCLE_SEASONS = {
-    'Co-op', 'Fall 2027', 'Spring 2027', 'Winter 2027',
-    'Fall 2026', 'Spring 2026', 'Winter 2026', 'Summer 2026',
+    'Co-op', 'Winter 2027', 'Spring 2027', 'Fall 2027',
 }
 
 VALID_SPONSORSHIP_PREFIXES = ('unknown', 'no —', 'yes —')

@@ -35,7 +35,7 @@ python3 .github/scripts/rebuild_readme.py
 | `role` | Exact job title — no season/year in the title (e.g. not `Summer 2027`) |
 | `location` | `City, ST` or `City, Province` (e.g. `San Jose, CA`, `Toronto, ON`). Multiple: semicolon-separated. Remote: `Remote (US)` or `Remote (Canada)` |
 | `type` | `summer` or `offcycle` |
-| `season` | e.g. `Summer 2027`, `Fall 2026`, `Co-op`, or `Spring 2027` |
+| `season` | `Winter 2027`, `Spring 2027`, `Summer 2027`, `Fall 2027`, or `Co-op` (terms before Winter 2027 are not accepted) |
 | `education` | `Undergrad`, `Masters`, `PhD`, or semicolon-separated combinations |
 | `url` | Direct application link. Use `""` when closed (README shows 🔒) |
 | `sponsorship` | `Yes — sponsorship available`, `No — does NOT offer sponsorship`, or `Unknown` |

@@ -162,11 +162,10 @@ function JobTable({
 }
 
 const SEASONS = [
-  'Summer 2027',
-  'Fall 2026',
-  'Fall 2027',
   'Winter 2027',
   'Spring 2027',
+  'Summer 2027',
+  'Fall 2027',
   'Co-op',
 ];
 

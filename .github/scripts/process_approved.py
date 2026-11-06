@@ -94,7 +94,7 @@ def normalize_location(location_text):
 def classify_listing(listing_type_str, season_str):
     s = season_str.lower()
     if 'co-op' in s or 'coop' in s or 'co op' in s:
-        return 'offcycle', season_str
+        return 'offcycle', 'Co-op'
     if 'fall' in s or 'spring' in s or 'winter' in s:
         return 'offcycle', season_str
     if 'summer 2027' in s:

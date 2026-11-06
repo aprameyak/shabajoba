@@ -8,7 +8,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/xcimer/89ffbeda-ebea-4539-9676-c6441751b95a",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-21"
   },
   {
@@ -20,7 +20,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/xcimer/39fd5473-58a8-446c-86fb-258c1dd0f67d",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-21"
   },
   {
@@ -648,30 +648,6 @@
     "date_added": "2026-09-21"
   },
   {
-    "company": "Figure AI",
-    "role": "Electrical Engineering Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://job-boards.greenhouse.io/figureai/jobs/4676467006",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-21"
-  },
-  {
-    "company": "Figure AI",
-    "role": "Power Systems Integration Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-21"
-  },
-  {
     "company": "Emerson Electric",
     "role": "Analog Hardware Design Intern",
     "location": "Austin, TX",
@@ -804,18 +780,6 @@
     "date_added": "2026-09-21"
   },
   {
-    "company": "Texas Instruments",
-    "role": "Digital IC Design Engineer Intern",
-    "location": "Knoxville, TN; Dallas, TX; Tucson, AZ",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters",
-    "url": "https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/25017548",
-    "sponsorship": "Unknown",
-    "citizenship": "No",
-    "date_added": "2026-09-19"
-  },
-  {
     "company": "Microsoft",
     "role": "Hardware Engineering Intern",
     "location": "Redmond, WA",
@@ -825,18 +789,6 @@
     "url": "https://apply.careers.microsoft.com/careers/job/1970393557002608",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
-    "date_added": "2026-09-19"
-  },
-  {
-    "company": "Keysight Technologies",
-    "role": "Integrated Photonics Research Intern",
-    "location": "Santa Clara, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://jobs.keysight.com/jobs/54138?icims=1",
-    "sponsorship": "Unknown",
-    "citizenship": "No",
     "date_added": "2026-09-19"
   },
   {
@@ -1004,7 +956,7 @@
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7991657003",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-17"
   },
   {
@@ -1016,7 +968,7 @@
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7987042003",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-17"
   },
   {
@@ -1087,18 +1039,6 @@
     "season": "Summer 2027",
     "education": "Masters",
     "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers2/job/Burlington-VT/SRAM-Circuit-Design-Intern--MS---Summer-2027_2604083",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-17"
-  },
-  {
-    "company": "Lennox International",
-    "role": "Hardware Engineering Co-op",
-    "location": "Carrollton, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-09-17"
@@ -2016,18 +1956,6 @@
     "date_added": "2026-09-08"
   },
   {
-    "company": "Merck",
-    "role": "Optical Imaging Data Science Intern",
-    "location": "Boston, MA",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Massachusetts---Boston-MA-Parcel-B-Laboratory/XMLNAME-2027-Future-Talent-Program---Optical-Imaging-Data-Science-Intern---Intern_R412885",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-08"
-  },
-  {
     "company": "Lumentum",
     "role": "Optical Verification Engineer Intern/Co-op",
     "location": "Remote (Canada)",
@@ -2707,7 +2635,7 @@
     "season": "Co-op",
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/verkada/jobs/4321158007",
-    "sponsorship": "Yes \u2014 sponsorship available",
+    "sponsorship": "Yes — sponsorship available",
     "citizenship": "Unknown",
     "date_added": "2026-09-03"
   },
@@ -3097,7 +3025,7 @@
   },
   {
     "company": "Johns Hopkins Applied Physics Laboratory",
-    "role": "Electrical Engineer \u2013 Networked Systems & Integrated Fires Intern",
+    "role": "Electrical Engineer – Networked Systems & Integrated Fires Intern",
     "location": "Laurel, MD",
     "type": "summer",
     "season": "Summer 2027",
@@ -3324,18 +3252,6 @@
     "date_added": "2026-09-03"
   },
   {
-    "company": "Advanced Energy",
-    "role": "Electrical Engineer Intern",
-    "location": "Wilmington, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-03"
-  },
-  {
     "company": "Xcel Energy",
     "role": "Gas & Electric Design Analytics and Process Improvement Intern - MN",
     "location": "Minneapolis, MN",
@@ -3354,18 +3270,6 @@
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-02"
-  },
-  {
-    "company": "North Atlantic Industries",
-    "role": "Electrical Engineer Intern - Test Systems",
-    "location": "Bohemia, NY",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -3564,258 +3468,6 @@
     "date_added": "2026-08-31"
   },
   {
-    "company": "Qorvo",
-    "role": "RFIC Design Intern",
-    "location": "San Diego, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://careers.qorvo.com/job/San-Diego-RFIC-Design-Intern-CA-92121/1424705100/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "RFIC Design Engineer Intern",
-    "location": "Chelmsford, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Chelmsford-RFIC-Design-Engineer-Intern-MA-1824/1424704500/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Analog Design Engineer Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://careers.qorvo.com/job/San-Jose-Analog-Design-Engineering-Intern-CA-95134/1424725600/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Device Engineering Intern",
-    "location": "Richardson, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Richardson-Device-Engineering-Intern-TX-75080/1424700000/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Analog Design Intern",
-    "location": "Chandler, AZ",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Chandler-Analog-Design-Intern-AZ-85226/1421977600/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "IC Layout Engineer Intern",
-    "location": "Richardson, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://careers.qorvo.com/job/Richardson-IC-Layout-Engineering-Intern-TX-75081/1424795900/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "RF/Analog IC Design Intern",
-    "location": "Fort Lauderdale, FL",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Ft_-Lauderdale-RFAnalog-IC-Design-Intern-FL-33309/1421449000/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Test Engineer Intern - RF Load Pull",
-    "location": "Richardson, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Richardson-Test-Engineering-Intern-TX-75081/1424731100/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Characterization Engineering Intern",
-    "location": "Greensboro, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://careers.qorvo.com/job/Greensboro-Characterization-Engineering-Intern-NC-27409/1424342800/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Electrical Engineer Intern - Physical Verification",
-    "location": "Greensboro, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Greensboro-Software-Engineering-Intern,-SWR-NC-27409/1422901500/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Characterization Engineering Intern - Advanced Cellular",
-    "location": "Greensboro, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Greensboro-Characterization-Engineering-Intern-NC-27409/1421980500/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Test Characterization Engineer Intern - RF Characterization Engineering",
-    "location": "Richardson, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://careers.qorvo.com/job/Richardson-Test-Characterization-Engineer-Intern-TX-75081/1424800700/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Radio Frequency Integrated Circuit Design Intern - High Performance Analog",
-    "location": "Chelmsford, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Chelmsford-RFIC-Design-Intern-MA-1824/1424704300/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Research Engineer Intern - High Performance Analog",
-    "location": "Richardson, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "PhD",
-    "url": "https://careers.qorvo.com/job/Richardson-Research-Engineering-Intern-TX-75080/1424726900/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Test Engineering Intern",
-    "location": "Greensboro, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Greensboro-Test-Engineering-Intern-NC-27409/1422393300/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Electrical CAD Engineer Intern - High Performance Analog",
-    "location": "Richardson, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://careers.qorvo.com/job/Richardson-Electrical-CAD-Engineer-Intern-TX-75081/1421993600/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Analog Design Engineer Intern - High Performance Analog - Advanced Cellular",
-    "location": "Richardson, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Richardson-Analog-Design-Engineering-Intern-TX-75081/1424728600/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Test Engineer Intern",
-    "location": "Hillsboro, OR",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Hillsboro-Test-Engineering-Intern-OR-97124/1421978100/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Test Engineer Intern - Advanced Cellular",
-    "location": "Chandler, AZ",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://careers.qorvo.com/job/Chandler-Test-Engineering-Intern-AZ-85226/1420082600/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "SOI Design Engineer Intern - High Performance Analog - Advanced Cellular",
-    "location": "Greensboro, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Greensboro-SOI-Design-Intern-NC-27409/1421973500/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
-    "company": "Qorvo",
-    "role": "SOI Design Engineer Intern",
-    "location": "Greensboro, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://careers.qorvo.com/job/Greensboro-SOI-Design-Intern-NC-27409/1421670100/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-31"
-  },
-  {
     "company": "Draper",
     "role": "Sensor Electrical Engineering Co-op",
     "location": "Cambridge, MA",
@@ -3838,18 +3490,6 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-08-31"
-  },
-  {
-    "company": "Micron Technology",
-    "role": "Product Test Engineer Intern - DRAM",
-    "location": "Boise, ID",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/DRAM-Prodcut-Test-Engineer-Intern_JR109996",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-30"
   },
   {
     "company": "Micron Technology",
@@ -3912,18 +3552,6 @@
     "date_added": "2026-08-28"
   },
   {
-    "company": "Cadence Design Systems",
-    "role": "Post-Silicon Validation Engineering Intern - Characterization and Support",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-28"
-  },
-  {
     "company": "Apple",
     "role": "Camera Hardware Engineering Intern",
     "location": "Cupertino, CA",
@@ -3948,18 +3576,6 @@
     "date_added": "2026-08-27"
   },
   {
-    "company": "Ciena",
-    "role": "Layout Design Intern",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://ciena.wd5.myworkdayjobs.com/Careers/job/Ottawa/Layout-Design-Intern--Fall-2026-_R031587",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-27"
-  },
-  {
     "company": "CesiumAstro",
     "role": "Test Engineer Intern",
     "location": "Austin, TX",
@@ -3979,42 +3595,6 @@
     "season": "Spring 2027",
     "education": "Undergrad",
     "url": "https://www.tesla.com/careers/search/job/281233",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-26"
-  },
-  {
-    "company": "Microsoft",
-    "role": "Silicon Engineer Intern",
-    "location": "Raleigh, NC; Santa Clara, CA; Mountain View, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://apply.careers.microsoft.com/careers/job/1970393556958170",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-26"
-  },
-  {
-    "company": "L3Harris Technologies",
-    "role": "Electrical Engineer Intern",
-    "location": "Northampton, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://jobs.l3harris.com/job/Northampton-Intern,-Electrical-Engineer-MA-01060/1423783600/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-26"
-  },
-  {
-    "company": "L3Harris Technologies",
-    "role": "Integration and Test Engineer Intern",
-    "location": "Northampton, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://jobs.l3harris.com/job/Northampton-Intern,-Integration-and-Test-Engineering-Non-Automation-MA-01060/1423743300/?ats=successfactors",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-08-26"
@@ -4056,18 +3636,6 @@
     "date_added": "2026-08-25"
   },
   {
-    "company": "Cadence Design Systems",
-    "role": "Product Engineering Intern - Electronics Hardware Design",
-    "location": "Burlington, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-25"
-  },
-  {
     "company": "Apple",
     "role": "Design Verification Intern",
     "location": "Santa Clara, CA",
@@ -4098,18 +3666,6 @@
     "type": "offcycle",
     "season": "Spring 2027",
     "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-24"
-  },
-  {
-    "company": "RoboForce",
-    "role": "Robotics Electrical Engineering Intern",
-    "location": "Milpitas, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
     "url": "",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -4147,18 +3703,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-24"
-  },
-  {
-    "company": "Analog Devices",
-    "role": "Digital Design Engineer Intern",
-    "location": "San Jose, CA; Durham, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://analogdevices.wd1.myworkdayjobs.com/External/job/US-NC-Durham/Digital-Design-Engineer-Intern_R265298",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-08-24"
@@ -4229,18 +3773,6 @@
     "location": "El Segundo, CA",
     "type": "offcycle",
     "season": "Spring 2027",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-21"
-  },
-  {
-    "company": "Texas Instruments",
-    "role": "Layout Design Intern",
-    "location": "Remote (US)",
-    "type": "offcycle",
-    "season": "Fall 2026",
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
@@ -4476,36 +4008,12 @@
     "date_added": "2026-08-21"
   },
   {
-    "company": "Analog Devices",
-    "role": "Analog Design Engineer Intern",
-    "location": "Wilmington, MA; Durham, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://analogdevices.wd1.myworkdayjobs.com/External/job/US-MA-Wilmington/Analog-Design-Engineer-Intern_R265297",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-21"
-  },
-  {
     "company": "AMD",
     "role": "Field Applications Engineer Intern - Masters",
     "location": "San Jose, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-21"
-  },
-  {
-    "company": "Albedo",
-    "role": "Electrical Engineer Intern",
-    "location": "Broomfield, CO",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
     "url": "",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -4524,30 +4032,6 @@
     "date_added": "2026-08-20"
   },
   {
-    "company": "Framatome",
-    "role": "Electrical Engineer Intern/Co-op - Technical",
-    "location": "Richland, WA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-20"
-  },
-  {
-    "company": "Analog Devices",
-    "role": "Mixed Signal Engineer Intern",
-    "location": "Wilmington, MA; Durham, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://analogdevices.wd1.myworkdayjobs.com/External/job/US-MA-Wilmington/Mixed-Signal-Engineer-Intern_R265299",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-20"
-  },
-  {
     "company": "AMD",
     "role": "Hardware Engineering Intern",
     "location": "Austin, TX; Boxborough, MA; Fort Collins, CO; Longmont, CO; Fishkill, NY; Rochester, NY",
@@ -4555,7 +4039,7 @@
     "season": "Summer 2027",
     "education": "Masters",
     "url": "https://careers.amd.com/careers-home/jobs/91182",
-    "sponsorship": "No \u2014 does NOT offer sponsorship",
+    "sponsorship": "No — does NOT offer sponsorship",
     "citizenship": "Unknown",
     "date_added": "2026-08-20"
   },
@@ -4567,7 +4051,7 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://careers.amd.com/careers-home/jobs/90820",
-    "sponsorship": "No \u2014 does NOT offer sponsorship",
+    "sponsorship": "No — does NOT offer sponsorship",
     "citizenship": "Unknown",
     "date_added": "2026-08-20"
   },
@@ -4752,59 +4236,11 @@
     "date_added": "2026-08-19"
   },
   {
-    "company": "University of St. Thomas",
-    "role": "Semiconductor Test AI Intern - Minnesota Semiconductor AI Hub",
-    "location": "St Paul, MN",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-18"
-  },
-  {
-    "company": "Toshiba Global Commerce",
-    "role": "Hardware Engineer Intern",
-    "location": "Bentonville, AR",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-18"
-  },
-  {
-    "company": "L3Harris Technologies",
-    "role": "Electrical Engineering Intern - EGSE Design",
-    "location": "Fort Wayne, IN",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-18"
-  },
-  {
     "company": "IMEG",
     "role": "Electrical Engineer Intern - Education",
     "location": "Rock Island, IL",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-18"
-  },
-  {
-    "company": "Hendrick Motorsports",
-    "role": "Electrical Engineer Intern - Unmanned Vehicles - UXVs",
-    "location": "Charlotte, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
@@ -4836,30 +4272,6 @@
     "date_added": "2026-08-18"
   },
   {
-    "company": "Rivian",
-    "role": "FPGA Design Intern - FPGA Design",
-    "location": "Champaign, IL",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-17"
-  },
-  {
-    "company": "Renesas Electronics",
-    "role": "Digital Design Engineer Intern",
-    "location": "Duluth, GA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-17"
-  },
-  {
     "company": "Neuralink",
     "role": "Electrical Engineer Intern, Implant Embedded Systems",
     "location": "Austin, TX; South San Francisco, CA",
@@ -4878,30 +4290,6 @@
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-17"
-  },
-  {
-    "company": "L3Harris Technologies",
-    "role": "Electrical Engineer Intern - FPGA",
-    "location": "Palm Bay, FL",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-17"
-  },
-  {
-    "company": "L3Harris Technologies",
-    "role": "Integration/Test Engineering Intern",
-    "location": "Ashburn, VA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
     "url": "",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -5016,30 +4404,6 @@
     "date_added": "2026-08-16"
   },
   {
-    "company": "Epia Neuro",
-    "role": "Hardware Engineer Intern",
-    "location": "Alameda, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-15"
-  },
-  {
-    "company": "Schweitzer Engineering Laboratories",
-    "role": "Test Engineer Intern",
-    "location": "Pullman, WA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-14"
-  },
-  {
     "company": "RTX",
     "role": "Radar Digital Products Engineering Intern",
     "location": "Tewksbury, MA",
@@ -5100,54 +4464,6 @@
     "date_added": "2026-08-14"
   },
   {
-    "company": "Interdigital",
-    "role": "Wireless Engineering Intern - 6G Wireless Systems",
-    "location": "Melville, NY; Conshohocken, PA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-14"
-  },
-  {
-    "company": "Intel",
-    "role": "Physical Design Engineer Intern",
-    "location": "Santa Clara, CA; Folsom, CA; Phoenix, AZ",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-14"
-  },
-  {
-    "company": "EquipmentShare",
-    "role": "Electrical Engineering Intern",
-    "location": "Columbia, MO",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-14"
-  },
-  {
-    "company": "Arevon",
-    "role": "Data Science Intern - Interconnection & Transmission",
-    "location": "Scottsdale, AZ",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-14"
-  },
-  {
     "company": "Tesla",
     "role": "Electronic Design Engineer Intern - Radio Frequency",
     "location": "Palo Alto, CA; Fremont, CA",
@@ -5172,47 +4488,11 @@
     "date_added": "2026-08-13"
   },
   {
-    "company": "Interstates",
-    "role": "Electrical Engineering Intern - Design Services",
-    "location": "Sioux Falls, SD",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-13"
-  },
-  {
-    "company": "Western Aircraft",
-    "role": "Electrical Engineer Intern",
-    "location": "Boise, ID",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-12"
-  },
-  {
     "company": "Vertiv",
     "role": "Electrical Engineer Intern - Energy Storage",
     "location": "Delaware, OH",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-12"
-  },
-  {
-    "company": "Hendrick Motorsports",
-    "role": "Electrical Engineer Intern",
-    "location": "Charlotte, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
@@ -5244,20 +4524,8 @@
     "date_added": "2026-08-12"
   },
   {
-    "company": "SkyGig",
-    "role": "RFIC Design Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://apply.workable.com/skygig/j/10A5A58F9E/apply",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-11"
-  },
-  {
     "company": "Schaeffler",
-    "role": "Co-op Electrical Engineering \u2014 Summer",
+    "role": "Co-op Electrical Engineering — Summer",
     "location": "Troy, MI",
     "type": "summer",
     "season": "Summer 2027",
@@ -5269,34 +4537,10 @@
   },
   {
     "company": "Schaeffler",
-    "role": "Co-op Electrical Engineering \u2014 Fall",
+    "role": "Co-op Electrical Engineering — Fall",
     "location": "Troy, MI",
     "type": "offcycle",
     "season": "Fall 2027",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-11"
-  },
-  {
-    "company": "RTX",
-    "role": "Electro-Optical Systems Technician Intern - AN/ZSQ-2",
-    "location": "Fort Campbell, KY",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-11"
-  },
-  {
-    "company": "OceanComm",
-    "role": "Electronics Technician Intern",
-    "location": "Chicago, IL",
-    "type": "offcycle",
-    "season": "Fall 2026",
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
@@ -5317,35 +4561,11 @@
   },
   {
     "company": "Marvell Technology",
-    "role": "Analog Design Intern",
-    "location": "Westlake Village, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-11"
-  },
-  {
-    "company": "Marvell Technology",
     "role": "Design/DSP/Verification Intern",
     "location": "Santa Clara, CA",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-11"
-  },
-  {
-    "company": "Blue Origin",
-    "role": "Electronics/Electrical Systems Engineer 1 Intern",
-    "location": "Seattle, WA; Longmont, CO; Arlington, VA; Reston, VA; Denver, CO; Huntsville, AL; Van Horn, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -5376,42 +4596,6 @@
     "date_added": "2026-08-10"
   },
   {
-    "company": "Teledyne",
-    "role": "Electrical Engineer Intern",
-    "location": "Miamisburg, OH",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-10"
-  },
-  {
-    "company": "Micron Technology",
-    "role": "DRAM Design Engineer Intern",
-    "location": "Boise, ID",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---DRAM-Design-Engineer_JR108468",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-10"
-  },
-  {
-    "company": "Micron Technology",
-    "role": "DRAM IP Circuits Design Engineer Intern - IP Development",
-    "location": "Boise, ID",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-10"
-  },
-  {
     "company": "Carnegie Mellon University",
     "role": "RF Cyber Lab Intern",
     "location": "Pittsburgh, PA",
@@ -5419,18 +4603,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-09"
-  },
-  {
-    "company": "Bosch",
-    "role": "Wireless Systems Research Intern",
-    "location": "Sunnyvale, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://jobs.smartrecruiters.com/BoschGroup/744000141552037?utm_source=aprameyak",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-08-09"
@@ -5458,18 +4630,6 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-08-09"
-  },
-  {
-    "company": "True Anomaly",
-    "role": "Avionics and Electrical Engineering Fall Co-op",
-    "location": "Denver, CO",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "No \u2014 does NOT offer sponsorship",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
-    "date_added": "2026-08-08"
   },
   {
     "company": "Skyworks Solutions, Inc.",
@@ -5556,18 +4716,6 @@
     "date_added": "2026-08-08"
   },
   {
-    "company": "Luxium Solutions",
-    "role": "Electrical Engineer Co-op",
-    "location": "Hiram, OH",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-08"
-  },
-  {
     "company": "Jump Trading",
     "role": "FPGA Engineer Intern",
     "location": "Chicago, IL",
@@ -5575,42 +4723,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://www.jumptrading.com/hr/job?gh_jid=8003013&utm_source=aprameyak",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-08"
-  },
-  {
-    "company": "HyperLight",
-    "role": "Integrated Photonics Intern",
-    "location": "Cambridge, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-08"
-  },
-  {
-    "company": "HP",
-    "role": "Technology & Innovation Organization Electrical Engineering Internship",
-    "location": "Corvallis, OR",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Corvallis-Oregon-United-States-of-America/Technology---Innovation-Organization-Electrical-Engineering-Internship_3167270-1?utm_source=aprameyak",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-08"
-  },
-  {
-    "company": "Formlabs",
-    "role": "Hardware R&D Engineering Intern",
-    "location": "Somerville, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-08-08"
@@ -5719,8 +4831,8 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/spacex/jobs/8621763002?utm_source=aprameyak",
-    "sponsorship": "No \u2014 does NOT offer sponsorship",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "sponsorship": "No — does NOT offer sponsorship",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-08-06"
   },
   {
@@ -5779,7 +4891,7 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/hyannisportresearch/jobs/7822801003?utm_source=aprameyak",
-    "sponsorship": "No \u2014 does NOT offer sponsorship",
+    "sponsorship": "No — does NOT offer sponsorship",
     "citizenship": "Unknown",
     "date_added": "2026-08-06"
   },
@@ -5916,35 +5028,11 @@
     "date_added": "2026-08-05"
   },
   {
-    "company": "Skydio",
-    "role": "Hardware Test & Reliability Intern",
-    "location": "San Mateo, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-05"
-  },
-  {
     "company": "John Deere",
     "role": "Electrical Systems Engineer Part-Time Student - Product Engineering",
     "location": "Silvis, IL",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-05"
-  },
-  {
-    "company": "Ciena",
-    "role": "Hardware Engineer Co-op - 4, 8 Months",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
@@ -5976,18 +5064,6 @@
     "date_added": "2026-08-04"
   },
   {
-    "company": "SiFive",
-    "role": "Design Verification Infrastructure Intern - Platform",
-    "location": "Boston, MA; Austin, TX; Santa Clara, CA; Berkeley, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://sifive.wd1.myworkdayjobs.com/en-US/sifivecareers/job/Santa-Clara-California-United-States/Intern---Design-Verification-Infrastructure-Engineer---Platform_R-101291-1",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-08-01"
-  },
-  {
     "company": "Western Digital",
     "role": "Hardware Engineering Intern",
     "location": "Fremont, CA; Rochester, MN; San Jose, CA; Irvine, CA; Colorado Springs, CO; Longmont, CO",
@@ -5998,30 +5074,6 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-07-31"
-  },
-  {
-    "company": "Microchip Technology",
-    "role": "Power, Analog and Mixed-Signal IC Product Engineer Intern - Product Engineering",
-    "location": "Chandler, AZ",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-31"
-  },
-  {
-    "company": "University of Rochester",
-    "role": "Research Student 1 Co-op - Electronics Shop",
-    "location": "Rochester, NY",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-30"
   },
   {
     "company": "Persona AI",
@@ -6060,30 +5112,6 @@
     "date_added": "2026-07-30"
   },
   {
-    "company": "Techtronic Industries (TTI)",
-    "role": "Electrical Engineer Intern",
-    "location": "Anderson, SC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-24"
-  },
-  {
-    "company": "TechInsights",
-    "role": "Circuit Analysis Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-23"
-  },
-  {
     "company": "Rantec Power Systems Inc.",
     "role": "PCB Design Engineer Intern",
     "location": "San Luis Obispo, CA",
@@ -6120,114 +5148,6 @@
     "date_added": "2026-07-21"
   },
   {
-    "company": "Blue Robotics",
-    "role": "Electronics Design Co-op",
-    "location": "Victoria, BC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-21"
-  },
-  {
-    "company": "Ciena",
-    "role": "Photonic Hardware Intern",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-20"
-  },
-  {
-    "company": "Arlo Technologies",
-    "role": "Hardware Engineer Co-op",
-    "location": "Richmond, BC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-17"
-  },
-  {
-    "company": "Western Digital",
-    "role": "PhD Intern - Hardware Development Engineering",
-    "location": "Fremont, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "PhD",
-    "url": "https://jobs.smartrecruiters.com/WesternDigital/744000138191379",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-16"
-  },
-  {
-    "company": "Rocket Lab",
-    "role": "Electrical Engineering Intern",
-    "location": "Long Beach, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-16"
-  },
-  {
-    "company": "Amentum",
-    "role": "Spaceflight Hardware Intern",
-    "location": "Houston, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-16"
-  },
-  {
-    "company": "Duracell",
-    "role": "Electronics Tech Intern",
-    "location": "Atlanta, GA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-14"
-  },
-  {
-    "company": "Cirrus Logic",
-    "role": "Analog Design Engineer Co-op - Analog Design Engineer",
-    "location": "Greensboro, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-14"
-  },
-  {
-    "company": "Cirrus Logic",
-    "role": "Digital Design Engineer Co-op - Digital Design Engineer",
-    "location": "Greensboro, NC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-14"
-  },
-  {
     "company": "Peak Energy",
     "role": "Systems Integration and Test Engineer Intern",
     "location": "Burlingame, CA",
@@ -6253,126 +5173,6 @@
   },
   {
     "company": "Heron Power",
-    "role": "Power Electronics Controls Engineer Intern",
-    "location": "Scotts Valley, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-10"
-  },
-  {
-    "company": "Vital Lyfe",
-    "role": "Electrical Engineer Intern",
-    "location": "Torrance, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-09"
-  },
-  {
-    "company": "NAV CANADA",
-    "role": "Radar Systems Engineering Student Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://navcanada.wd10.myworkdayjobs.com/NAV_Careers/job/Ottawa/Radar-Systems-Engineering-Student--Co-op-4-or-8-months-COOP-available-position_JR-8229",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-08"
-  },
-  {
-    "company": "Citadel Securities",
-    "role": "FPGA Engineer Intern",
-    "location": "Miami, FL",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-06"
-  },
-  {
-    "company": "Marvell Technology",
-    "role": "Analog Engineer Intern",
-    "location": "Remote (Canada)",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Vancouver-Canada/Analog-Engineer-Intern---PhD_2502424-1",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-04"
-  },
-  {
-    "company": "Marvell Technology",
-    "role": "Silicon Photonics Intern",
-    "location": "Remote (Canada)",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Ottawa-Canada/Silicon-Photonics-Intern---PhD_2502469-1",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-04"
-  },
-  {
-    "company": "Marvell Technology",
-    "role": "Design/DSP/Verification Intern",
-    "location": "Santa Clara, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers2/job/Santa-Clara-CA/Design-DSP-Verification-Intern---PhD-Degree_2502786",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-04"
-  },
-  {
-    "company": "Tesla",
-    "role": "Low Voltage Power Systems Integration Engineer Intern - Vehicle Firmware",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-01"
-  },
-  {
-    "company": "Human Computer Lab",
-    "role": "Electrical Engineer Intern",
-    "location": "Remote (Canada)",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://jobs.ashbyhq.com/human-computer-lab/004ff3a2-7e38-4959-8bd7-48489cbc78f4/application?embed=true",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-07-01"
-  },
-  {
-    "company": "NXP Semiconductors",
-    "role": "Digital Verification Engineer Intern",
-    "location": "Austin, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-23"
-  },
-  {
-    "company": "Heron Power",
     "role": "Electronics Design Engineer Intern",
     "location": "Santa Cruz, CA",
     "type": "offcycle",
@@ -6382,114 +5182,6 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-06-23"
-  },
-  {
-    "company": "Figure AI",
-    "role": "Hardware Reliability Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://job-boards.greenhouse.io/figureai/jobs/4613067006",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-23"
-  },
-  {
-    "company": "Interdigital",
-    "role": "Wifi Intern - Wireless Researcher",
-    "location": "Melville, NY",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-20"
-  },
-  {
-    "company": "Tesla",
-    "role": "Electrical Engineer Intern",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-19"
-  },
-  {
-    "company": "Tesla",
-    "role": "Electrical Engineer Intern - Electronic Design Engineer - Energy Engineering",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-19"
-  },
-  {
-    "company": "Marvell Technology",
-    "role": "Digital Logic + Design Verification Co-op",
-    "location": "Santa Clara, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-18"
-  },
-  {
-    "company": "Formlabs",
-    "role": "Hardware R&D Engineer Intern",
-    "location": "Cambridge, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-18"
-  },
-  {
-    "company": "Marvell Technology",
-    "role": "Design Verification Engineer Intern",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-17"
-  },
-  {
-    "company": "Ciena",
-    "role": "Optical Modem Hardware Intern",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-17"
-  },
-  {
-    "company": "Marvell Technology",
-    "role": "Digital Design Engineer Intern",
-    "location": "Toronto, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-16"
   },
   {
     "company": "Heron Power",
@@ -6504,186 +5196,6 @@
     "date_added": "2026-06-12"
   },
   {
-    "company": "Rivian and Volkswagen Group Technologies",
-    "role": "Electromechanical Design Engineer Intern",
-    "location": "Palo Alto, CA; Urbana, IL; Irvine, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-11"
-  },
-  {
-    "company": "Nokia",
-    "role": "ASIC CAD Intern/Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-10"
-  },
-  {
-    "company": "Etched",
-    "role": "Signal Integrity / Power Integrity Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-10"
-  },
-  {
-    "company": "Tesla",
-    "role": "Sensor Hardware Engineer Intern - Sensor Hardware Design Engineer - Optimus",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://www.tesla.com/careers/search/job/272581",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-07"
-  },
-  {
-    "company": "Tesla",
-    "role": "Silicon Validation Engineer Intern",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://www.tesla.com/careers/search/job/272912",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-07"
-  },
-  {
-    "company": "Tesla",
-    "role": "AI Hardware Design Engineer Intern",
-    "location": "Palo Alto, CA; Austin, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-07"
-  },
-  {
-    "company": "Tesla",
-    "role": "Electronic Design Engineer Internship - Electronic Design Engineer - Electronic Systems",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-07"
-  },
-  {
-    "company": "Tesla",
-    "role": "Electronics Design Engineer Intern",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-07"
-  },
-  {
-    "company": "Tesla",
-    "role": "Electronics Design Engineer Intern - Reliability Electronics Design Engineer - Energy Engineering",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-07"
-  },
-  {
-    "company": "Tesla",
-    "role": "AI Hardware Design Engineer Intern - AI Hardware Design Engineer - AI Hardware",
-    "location": "Palo Alto, CA; Austin, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-07"
-  },
-  {
-    "company": "Tesla",
-    "role": "Actuator Test Engineer Intern - Optimus",
-    "location": "Langley, BC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-07"
-  },
-  {
-    "company": "Tesla",
-    "role": "Solar Hardware Engineer Intern",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-06"
-  },
-  {
-    "company": "Tesla",
-    "role": "Solar Hardware Engineer Intern - Solar Hardware Engineer - Energy Engineering",
-    "location": "Palo Alto, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-06"
-  },
-  {
-    "company": "Nokia",
-    "role": "Silicon Photonics Packaging Intern/Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-02"
-  },
-  {
-    "company": "Nokia",
-    "role": "Silicon Photonics Packaging Engineer Co-op",
-    "location": "Sunnyvale, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-06-02"
-  },
-  {
     "company": "SDSU Research Foundation",
     "role": "Graduate Student 1 - UAV/ Robotic Design - Development and Integration Project",
     "location": "San Diego, CA",
@@ -6694,162 +5206,6 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-06-01"
-  },
-  {
-    "company": "Ciena",
-    "role": "ASIC Engineer Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-28"
-  },
-  {
-    "company": "Nokia",
-    "role": "Photonic Integrated Circuits Test Co-op",
-    "location": "Sunnyvale, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-27"
-  },
-  {
-    "company": "Zipline",
-    "role": "Hardware Test Intern",
-    "location": "San Bruno, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-26"
-  },
-  {
-    "company": "onsemi",
-    "role": "Electrical Device Characterization Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-26"
-  },
-  {
-    "company": "Ciena",
-    "role": "Optical Platform Systems Intern",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-25"
-  },
-  {
-    "company": "Lumentum",
-    "role": "Optical Design and Innovation Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-23"
-  },
-  {
-    "company": "Applied Materials",
-    "role": "Process Integration Engineer Co-op",
-    "location": "Cambridge, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-23"
-  },
-  {
-    "company": "Ambarella",
-    "role": "DFT Engineer Intern",
-    "location": "Remote (US)",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-23"
-  },
-  {
-    "company": "Ambarella",
-    "role": "Verification Engineer Intern",
-    "location": "Remote (US)",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-23"
-  },
-  {
-    "company": "Rocket Lab",
-    "role": "Test Engineer Intern",
-    "location": "Long Beach, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-21"
-  },
-  {
-    "company": "Nokia",
-    "role": "ASIC Verification Intern",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-20"
-  },
-  {
-    "company": "Nokia",
-    "role": "Hardware Engineering Co-op",
-    "location": "Sunnyvale, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-20"
-  },
-  {
-    "company": "Etched",
-    "role": "DFT Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-20"
   },
   {
     "company": "Etched",
@@ -6876,30 +5232,6 @@
     "date_added": "2026-05-20"
   },
   {
-    "company": "Hermeus",
-    "role": "Subsystem Test Engineer Intern",
-    "location": "Atlanta, GA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-19"
-  },
-  {
-    "company": "Amazon",
-    "role": "Hardware Development Engineer Co-op",
-    "location": "Sunnyvale, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-17"
-  },
-  {
     "company": "Ciena",
     "role": "FPGA Development Intern",
     "location": "Atlanta, GA",
@@ -6912,120 +5244,12 @@
     "date_added": "2026-05-16"
   },
   {
-    "company": "Formlabs",
-    "role": "Hardware Systems Integration Intern",
-    "location": "Cambridge, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-15"
-  },
-  {
-    "company": "Ciena",
-    "role": "Hardware Design Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-14"
-  },
-  {
-    "company": "Verkada",
-    "role": "Hardware Engineer Co-op",
-    "location": "San Mateo, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-13"
-  },
-  {
-    "company": "Ciena",
-    "role": "Hardware Design Engineer Intern",
-    "location": "Atlanta, GA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-13"
-  },
-  {
-    "company": "TSC",
-    "role": "Hardware Engineering Co-op",
-    "location": "Plymouth, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-12"
-  },
-  {
-    "company": "Ciena",
-    "role": "Hardware Design and Verification Intern - Pcba",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-12"
-  },
-  {
-    "company": "Regal Rexnord",
-    "role": "Electronics Co-op",
-    "location": "Fort Wayne, IN",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-08"
-  },
-  {
-    "company": "Lumentum",
-    "role": "Liquid Crystal on Silicon Research Intern/Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-07"
-  },
-  {
     "company": "Stantec",
     "role": "Electrical Engineer in Training Intern - Water",
     "location": "Winnipeg, MB",
     "type": "summer",
     "season": "Summer 2027",
     "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-06"
-  },
-  {
-    "company": "H3X Technologies",
-    "role": "Test Engineer Intern",
-    "location": "Lafayette, CO",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
     "url": "",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
@@ -7056,83 +5280,11 @@
     "date_added": "2026-05-06"
   },
   {
-    "company": "Cirrus Logic",
-    "role": "Analog/Mixed-Signal Verification Intern/Co-op",
-    "location": "Austin, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-05-01"
-  },
-  {
-    "company": "Nokia",
-    "role": "Hardware Engineer Intern/Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-30"
-  },
-  {
-    "company": "Nokia",
-    "role": "Electromechanical Assembly Intern/Co-op",
-    "location": "Remote (Canada)",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-30"
-  },
-  {
     "company": "Nokia",
     "role": "Optical Hardware Lab Technician Student",
     "location": "Ottawa, ON",
     "type": "summer",
     "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-30"
-  },
-  {
-    "company": "Nokia",
-    "role": "Electronics Component Intern/Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-30"
-  },
-  {
-    "company": "Nokia",
-    "role": "Hardware Developer Engineer Intern/Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-30"
-  },
-  {
-    "company": "Nokia",
-    "role": "Test Engineer Intern/Co-op",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
@@ -7164,18 +5316,6 @@
     "date_added": "2026-04-29"
   },
   {
-    "company": "Figure AI",
-    "role": "Electrical Interconnect Engineering Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-27"
-  },
-  {
     "company": "Shield AI",
     "role": "Electrical Engineer Co-op",
     "location": "Dallas, TX",
@@ -7186,18 +5326,6 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-04-21"
-  },
-  {
-    "company": "Werfen",
-    "role": "R&D Systems Hardware Engineering Co-Op",
-    "location": "Bedford, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-14"
   },
   {
     "company": "Intel",
@@ -7212,210 +5340,6 @@
     "date_added": "2026-04-14"
   },
   {
-    "company": "Formlabs",
-    "role": "Test Engineering Intern",
-    "location": "Cambridge, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-13"
-  },
-  {
-    "company": "Draper",
-    "role": "Microelectronics Integration & Test Co-op",
-    "location": "Cambridge, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-10"
-  },
-  {
-    "company": "Tenstorrent",
-    "role": "Design Verification Engineer Intern",
-    "location": "Boston, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-09"
-  },
-  {
-    "company": "Nokia",
-    "role": "Hardware Development Intern/Co-op",
-    "location": "Berkeley Heights, NJ",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-08"
-  },
-  {
-    "company": "Vertex Pharmaceuticals",
-    "role": "Vertex Co-op - Instrumentation Engineer",
-    "location": "San Diego, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-04"
-  },
-  {
-    "company": "Berkshire Grey",
-    "role": "Hardware Quality Co-op",
-    "location": "Bedford, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-04-03"
-  },
-  {
-    "company": "Cirrus Logic",
-    "role": "Formal Verification Engineer Co-op",
-    "location": "Austin, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-03-30"
-  },
-  {
-    "company": "Cirrus Logic",
-    "role": "Design Verification Engineer Co-op",
-    "location": "Austin, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-03-25"
-  },
-  {
-    "company": "Riverside Research",
-    "role": "Hardware Embedded Research Scientist \u2013 Intern",
-    "location": "Beavercreek, OH",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-03-19"
-  },
-  {
-    "company": "Aurora Innovation",
-    "role": "Hardware Engineering Intern - HW Systems",
-    "location": "Pittsburgh, PA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-03-12"
-  },
-  {
-    "company": "Rolls Royce",
-    "role": "Vehicle Electronics Test & Validation Intern",
-    "location": "Spartanburg, SC",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-03-06"
-  },
-  {
-    "company": "Keysight Technologies",
-    "role": "Chiplet Solution Development Internship",
-    "location": "Santa Clara, CA; Santa Rosa, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-03-04"
-  },
-  {
-    "company": "Keysight Technologies",
-    "role": "R&D Hardware Engineering Intern",
-    "location": "Santa Rosa, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-02-27"
-  },
-  {
-    "company": "RTX",
-    "role": "Test Engineering Specialist Co-op",
-    "location": "Andover, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-02-24"
-  },
-  {
-    "company": "Marvell Technology",
-    "role": "Design Verification/Design Intern - Bachelor's Degree",
-    "location": "Ottawa, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-02-24"
-  },
-  {
-    "company": "Aurora Innovation",
-    "role": "Hardware Engineering Intern - Embedded",
-    "location": "Mountain View, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-02-21"
-  },
-  {
-    "company": "GE Vernova",
-    "role": "Grid Solutions \u2013 Hardware Engineering Intern - Critical Infrastructure Communications",
-    "location": "Rochester, NY",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-02-13"
-  },
-  {
     "company": "Rolls-Royce",
     "role": "Test Engineering Co-Operative",
     "location": "West Lafayette, IN",
@@ -7426,54 +5350,6 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-02-10"
-  },
-  {
-    "company": "ZOLL Medical Corporation",
-    "role": "Test Development Engineer Co-Op",
-    "location": "Lowell, MA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-02-09"
-  },
-  {
-    "company": "Etched",
-    "role": "Electrical Platform Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://jobs.ashbyhq.com/Etched/904ddf46-55fc-4a8f-8b49-f32cfe88116a/application",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-02-07"
-  },
-  {
-    "company": "Keysight Technologies",
-    "role": "Analog/Mixed-Signal IC Design Engineer Intern",
-    "location": "Santa Clara, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Masters; PhD",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-02-02"
-  },
-  {
-    "company": "The Walt Disney Company",
-    "role": "WDI Show Control Hardware Intern",
-    "location": "Celebration, FL",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-01-27"
   },
   {
     "company": "General Motors",
@@ -7543,18 +5419,6 @@
     "season": "Summer 2027",
     "education": "Undergrad; Masters; PhD",
     "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-21"
-  },
-  {
-    "company": "Qorvo",
-    "role": "Product Management Engineer Intern - High Performance Analog",
-    "location": "Richardson, TX",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://careers.qorvo.com/job/Richardson-Product-Management-Engineering-Intern-TX-75081/1424705200/?ats=successfactors",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-09-21"
@@ -7885,7 +5749,7 @@
   },
   {
     "company": "Northrop Grumman",
-    "role": "Electrical Engineer Intern \u2013 Woodland Hills CA",
+    "role": "Electrical Engineer Intern – Woodland Hills CA",
     "location": "Woodland Hills, CA",
     "type": "summer",
     "season": "Summer 2027",
@@ -7932,18 +5796,6 @@
     "date_added": "2026-09-24"
   },
   {
-    "company": "Hitachi",
-    "role": "Electrical Component Engineering Intern (Fall or Winter )",
-    "location": "Toronto, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-24"
-  },
-  {
     "company": "NVIDIA",
     "role": "PhD Research Intern, Electronic Design Automation",
     "location": "Santa Clara, CA",
@@ -7951,18 +5803,6 @@
     "season": "Summer 2027",
     "education": "PhD",
     "url": "",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-24"
-  },
-  {
-    "company": "Hitachi Energy",
-    "role": "Electrical Component Engineering Intern",
-    "location": "Toronto, ON",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://hitachi.wd1.myworkdayjobs.com/hitachi/job/Toronto-Ontario-Canada/Electrical-Component-Engineering-Intern--Fall-2026-or-Winter-2027-_R0144279",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-09-24"
@@ -8233,7 +6073,7 @@
   },
   {
     "company": "Cummins",
-    "role": "Product Engineering \u2013 Summer Internship Positions",
+    "role": "Product Engineering – Summer Internship Positions",
     "location": "Columbus, IN",
     "type": "summer",
     "season": "Summer 2027",
@@ -8257,7 +6097,7 @@
   },
   {
     "company": "Cummins",
-    "role": "Product Systems Validation \u2013 Summer Internship Positions",
+    "role": "Product Systems Validation – Summer Internship Positions",
     "location": "Columbus, IN",
     "type": "summer",
     "season": "Summer 2027",
@@ -8336,7 +6176,7 @@
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8003533003",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-24"
   },
   {
@@ -8353,7 +6193,7 @@
   },
   {
     "company": "General Dynamics",
-    "role": "Engineering, Propulsion Plant and Ship Systems \u2013 COLUMBIA - Summer Internship",
+    "role": "Engineering, Propulsion Plant and Ship Systems – COLUMBIA - Summer Internship",
     "location": "Remote (US)",
     "type": "summer",
     "season": "Summer 2027",
@@ -8365,7 +6205,7 @@
   },
   {
     "company": "Marvell Technology",
-    "role": "Analog Design Intern Co-op - Master\u2019s",
+    "role": "Analog Design Intern Co-op - Master’s",
     "location": "Toronto, ON",
     "type": "summer",
     "season": "Summer 2027",
@@ -8587,18 +6427,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-MA-TEWKSBURY-TB1--50-Apple-Hill-Dr--ASSABET-BLDG/Systems-Engineering-Intern--Onsite_01874255",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-09-27"
-  },
-  {
-    "company": "GlobalFoundries",
-    "role": "Device Engineering Intern, ULP CMOS",
-    "location": "Malta, NY",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/Product-Business-Unit-Finance-Intern--Summer-2026-_JR-2502830",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-09-27"
@@ -9121,7 +6949,7 @@
   },
   {
     "company": "RTX",
-    "role": "Systems Engineering Co-op \u2013 Special Operations Aviation Mainline",
+    "role": "Systems Engineering Co-op – Special Operations Aviation Mainline",
     "location": "Cedar Rapids, IA",
     "type": "offcycle",
     "season": "Co-op",
@@ -9332,7 +7160,7 @@
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -9344,7 +7172,7 @@
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -9356,7 +7184,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/CesiumAstro/8eb71502-4374-45aa-82fa-2b62a42cd8e9",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -9368,7 +7196,7 @@
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -9380,7 +7208,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/CesiumAstro/ab7dd1c4-7196-4cae-8fbd-cddec993b9b8",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -9416,7 +7244,7 @@
     "education": "Undergrad",
     "url": "https://jobs.eu.lever.co/quantinuum/dc2d5427-8263-400f-9ca7-501d2e17162f",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-09-30"
   },
   {
@@ -10429,7 +8257,7 @@
   },
   {
     "company": "Northrop Grumman",
-    "role": "Hardware Electronics Engineer Intern \u2013 Rolling Meadows IL",
+    "role": "Hardware Electronics Engineer Intern – Rolling Meadows IL",
     "location": "Rolling Meadows, IL",
     "type": "summer",
     "season": "Summer 2027",
@@ -10585,7 +8413,7 @@
   },
   {
     "company": "Leidos",
-    "role": "Embedded Design Engineering Intern \u2013 Firmware",
+    "role": "Embedded Design Engineering Intern – Firmware",
     "location": "Huntsville, AL",
     "type": "summer",
     "season": "Summer 2027",
@@ -10735,18 +8563,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-FL-JUPITER-ADR--17900-Beeline-Hwy--ADR-BLDG/XMLNAME-2027-Summer-System-Engineering-Intern--Onsite-_01878549",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-01"
-  },
-  {
-    "company": "Solidigm",
-    "role": "NAND Development Business Operations Intern",
-    "location": "Rancho Cordova, CA",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://jobs.smartrecruiters.com/Solidigm/744000152981999",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-01"
@@ -11233,7 +9049,7 @@
   },
   {
     "company": "Vertiv",
-    "role": "Electrical Engineering Intern \u2013 Product Architecture",
+    "role": "Electrical Engineering Intern – Product Architecture",
     "location": "Delaware, OH",
     "type": "summer",
     "season": "Summer 2027",
@@ -11377,7 +9193,7 @@
   },
   {
     "company": "RTX",
-    "role": "Systems Engineering Co-Op ( Summer/Fall) \u2013 SOA CAAS Mainline Platform",
+    "role": "Systems Engineering Co-Op ( Summer/Fall) – SOA CAAS Mainline Platform",
     "location": "Cedar Rapids, IA",
     "type": "offcycle",
     "season": "Co-op",
@@ -11628,18 +9444,6 @@
     "date_added": "2026-10-05"
   },
   {
-    "company": "Micron Technology",
-    "role": "TSE R&D Equipment Project Manager Intern",
-    "location": "Boise, ID",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/TSE-R-D-Equipment-Project-Manager--Intern-_JR114087",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-05"
-  },
-  {
     "company": "Hitachi",
     "role": "Applications Engineering Intern (BU40)",
     "location": "Ogden, UT",
@@ -11881,7 +9685,7 @@
   },
   {
     "company": "Philips",
-    "role": "Co-op \u2013 R&D Engineer",
+    "role": "Co-op – R&D Engineer",
     "location": "Colorado Springs, CO",
     "type": "offcycle",
     "season": "Co-op",
@@ -12199,18 +10003,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4727602005",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-06"
-  },
-  {
-    "company": "Astera Labs",
-    "role": "Applied AI Intern - Non-Silicon",
-    "location": "San Jose, CA",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://job-boards.greenhouse.io/asteraearlycareer2027/jobs/4728357005",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-06"
@@ -12607,18 +10399,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CA-EL-SEGUNDO-R01--2000-E-Imperial-Hwy--BLDG-R01/Systems-Engineering-Test-Equipment-Intern--Summer-2027-_01879955",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-07"
-  },
-  {
-    "company": "North Atlantic Industries",
-    "role": "Electrical Engineer Qualification Test Intern",
-    "location": "Bohemia, NY",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad",
-    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4566437",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-07"
@@ -13176,18 +10956,6 @@
     "date_added": "2026-10-09"
   },
   {
-    "company": "Vertiv",
-    "role": "Energy Storage Product Management Intern",
-    "location": "Delaware, OH",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://egup.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/20279379",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-09"
-  },
-  {
     "company": "WSP",
     "role": "Controls Engineering Intern",
     "location": "New York, NY",
@@ -13448,12 +11216,12 @@
     "education": "Undergrad",
     "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8007204003",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-10-13"
   },
   {
     "company": "General Motors",
-    "role": "Research and Developement \u2013 Display Optical Simulation Intern",
+    "role": "Research and Developement – Display Optical Simulation Intern",
     "location": "Warren, MI",
     "type": "summer",
     "season": "Summer 2027",
@@ -13537,7 +11305,7 @@
   },
   {
     "company": "Howmet Aerospace",
-    "role": "Intern & Co-op \u2013 Electrical/Controls Engineer - Whitehall, MI ()",
+    "role": "Intern & Co-op – Electrical/Controls Engineer - Whitehall, MI ()",
     "location": "Whitehall, MI",
     "type": "offcycle",
     "season": "Co-op",
@@ -13801,7 +11569,7 @@
   },
   {
     "company": "Northrop Grumman",
-    "role": "H/W Electronics Engineering Intern \u2013 Annapolis MD",
+    "role": "H/W Electronics Engineering Intern – Annapolis MD",
     "location": "Annapolis, MD",
     "type": "summer",
     "season": "Summer 2027",
@@ -13813,7 +11581,7 @@
   },
   {
     "company": "Northrop Grumman",
-    "role": "S/W Embedded Engineering Intern \u2013 Annapolis MD",
+    "role": "S/W Embedded Engineering Intern – Annapolis MD",
     "location": "Annapolis, MD",
     "type": "summer",
     "season": "Summer 2027",
@@ -14396,7 +12164,7 @@
     "education": "Undergrad",
     "url": "",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-10-16"
   },
   {
@@ -14576,7 +12344,7 @@
     "education": "Undergrad",
     "url": "https://jobs.lever.co/xcimer/87bceb04-faeb-4365-9fed-d8f5cd3fb8ac",
     "sponsorship": "Unknown",
-    "citizenship": "Yes \u2014 U.S. citizenship required",
+    "citizenship": "Yes — U.S. citizenship required",
     "date_added": "2026-10-19"
   },
   {
@@ -15252,18 +13020,6 @@
     "date_added": "2026-10-21"
   },
   {
-    "company": "Stanley Black & Decker",
-    "role": "Packaging Science Engineering Intern, Graphics/Graphic Design",
-    "location": "Towson, MD",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://sbdinc.wd1.myworkdayjobs.com/Stanley_Black_Decker_Career_Site/job/Towson-MD-United-States/Packaging-Science-Engineering-Intern--Graphics-Graphic-Design---Summer-2027_REQ-1000052821",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-21"
-  },
-  {
     "company": "Emerson Electric",
     "role": "Engineering Co-op",
     "location": "Louisville, KY",
@@ -15601,7 +13357,7 @@
   },
   {
     "company": "RTX",
-    "role": "Stage - Hiver - Ing\u00e9nierie : outils d'int\u00e9grit\u00e9 des produits et am\u00e9lioration des processus / Internship",
+    "role": "Stage - Hiver - Ingénierie : outils d'intégrité des produits et amélioration des processus / Internship",
     "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
@@ -15625,7 +13381,7 @@
   },
   {
     "company": "RTX",
-    "role": "Stage - Hiver - Support \u00e0 l\u2019ing\u00e9nierie du d\u00e9veloppement / Internship",
+    "role": "Stage - Hiver - Support à l’ingénierie du développement / Internship",
     "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
@@ -16309,19 +14065,7 @@
   },
   {
     "company": "RTX",
-    "role": "F135 Base High-Pressure Compressor Design Intern",
-    "location": "Jupiter-Adr, FL",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-FL-JUPITER-ADR--17900-Beeline-Hwy--ADR-BLDG/F135-Base-High-Pressure-Compressor-Design-Intern--Summer-2027---Onsite-_01882742",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-27"
-  },
-  {
-    "company": "RTX",
-    "role": "Stage - Hiver - \u00c9tudes dimensionnelles sur la fixation des aubes de turbine / Internship",
+    "role": "Stage - Hiver - Études dimensionnelles sur la fixation des aubes de turbine / Internship",
     "location": "Longueuil, QC",
     "type": "offcycle",
     "season": "Winter 2027",
@@ -16387,30 +14131,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://marvell.wd1.myworkdayjobs.com/marvellcareers/job/IL---Petah-Tikva/Design-Verification--Intern_2604486",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-27"
-  },
-  {
-    "company": "Micron Technology",
-    "role": "NAND Storage Strategic Roadmap Planning Intern",
-    "location": "Boise, ID",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---Main-Site/Intern---NAND-Storage-Strategic-Roadmap-Planning_JR115838",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-27"
-  },
-  {
-    "company": "Micron Technology",
-    "role": "AI & Product Management, Mobile Memory (LPDRAM) Intern",
-    "location": "San Jose, CA",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://micron.wd1.myworkdayjobs.com/External/job/San-Jose-CA/Intern---AI---Product-Management--Mobile-Memory--LPDRAM-_JR115839",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-10-27"
@@ -17040,18 +14760,6 @@
     "date_added": "2026-10-29"
   },
   {
-    "company": "Castelion",
-    "role": "Electrical Engineer Intern - Avionics",
-    "location": "Torrance, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters",
-    "url": "https://job-boards.greenhouse.io/castelioncorporation/jobs/4417146009",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-29"
-  },
-  {
     "company": "KLA",
     "role": "Image Processing Intern",
     "location": "Milpitas, CA",
@@ -17268,18 +14976,6 @@
     "date_added": "2026-10-30"
   },
   {
-    "company": "SK hynix",
-    "role": "ASIC Design Intern",
-    "location": "San Jose, CA",
-    "type": "offcycle",
-    "season": "Fall 2026",
-    "education": "Undergrad; Masters; PhD",
-    "url": "https://job-boards.greenhouse.io/skhynixmemorysolutionsamericainc/jobs/4460200009",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-10-30"
-  },
-  {
     "company": "Altera",
     "role": "Hardware Design Engineer - Intern",
     "location": "Toronto, ON",
@@ -17353,7 +15049,7 @@
   },
   {
     "company": "General Dynamics",
-    "role": "Quality Assurance \u2013 Engineering Internship",
+    "role": "Quality Assurance – Engineering Internship",
     "location": "Remote (US)",
     "type": "summer",
     "season": "Summer 2027",
@@ -17461,7 +15157,7 @@
   },
   {
     "company": "Micron Technology",
-    "role": "Process Integration \u2013 Advanced Packaging Intern",
+    "role": "Process Integration – Advanced Packaging Intern",
     "location": "Boise, ID",
     "type": "summer",
     "season": "Summer 2027",
@@ -17797,7 +15493,7 @@
   },
   {
     "company": "Ciena",
-    "role": "Optical New Product Engineering Intern - New Product Introduction \u2013 Photonic Test Engineer (Co-op)",
+    "role": "Optical New Product Engineering Intern - New Product Introduction – Photonic Test Engineer (Co-op)",
     "location": "Montreal, QC",
     "type": "offcycle",
     "season": "Co-op",
@@ -18139,18 +15835,6 @@
     "season": "Summer 2027",
     "education": "Undergrad",
     "url": "https://careers.westinghousenuclear.com/job/Warrendale-Summer-Intern-System-Test-Engineering-OR/1433673100/?ats=successfactors",
-    "sponsorship": "Unknown",
-    "citizenship": "Unknown",
-    "date_added": "2026-11-04"
-  },
-  {
-    "company": "Plusgrade",
-    "role": "Applied AI Test Engineer Intern",
-    "location": "Remote (US)",
-    "type": "summer",
-    "season": "Summer 2027",
-    "education": "Undergrad",
-    "url": "https://go.vansh.nyc/1gu",
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-11-04"

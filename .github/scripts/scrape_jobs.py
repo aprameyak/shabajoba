@@ -611,13 +611,16 @@ def sanitize_listing_role(company, role):
 
 
 def classify_season(title):
+    """Return (type, season), or None for terms before Winter 2027."""
     t = title.lower()
-    if 'fall 2026' in t:
-        return ('offcycle', 'Fall 2026')
+    if re.search(r'\b(?:winter|spring|summer|fall)\s+2026\b', t) and '2027' not in t:
+        return None
     if 'spring 2027' in t:
         return ('offcycle', 'Spring 2027')
     if 'winter 2027' in t:
         return ('offcycle', 'Winter 2027')
+    if 'fall 2027' in t:
+        return ('offcycle', 'Fall 2027')
     if 'co-op' in t or 'coop' in t or 'co op' in t:
         return ('offcycle', 'Co-op')
     return ('summer', 'Summer 2027')
@@ -1399,7 +1402,7 @@ def scrape_simplify(seen):
         if location and not is_us_or_canada(location):
             continue
         terms = ' '.join(e.get('terms') or []).lower()
-        if '2026' in terms and '2027' not in terms and 'fall 2026' not in terms:
+        if '2026' in terms and '2027' not in terms:
             continue
         key = f"simplify:{e.get('id') or normalize_url(apply_url) or title}"
         if key in seen:
@@ -1754,15 +1757,18 @@ def main():
         batch_normalize_locations_claude(needs_loc_llm, claude_key, location_cache)
 
     for c in to_add:
-        listing_type, season = classify_season(c['title'])
+        classified = classify_season(c['title'])
         # Prefer Simplify term metadata when present
         terms = c.get('terms') or []
+        joined = ' '.join(terms).lower()
+        if classified is None or ('2026' in joined and '2027' not in joined):
+            continue  # terms before Winter 2027 are out of scope
+        listing_type, season = classified
         if terms:
-            joined = ' '.join(terms).lower()
             if 'summer 2027' in joined:
                 listing_type, season = 'summer', 'Summer 2027'
-            elif 'fall 2026' in joined:
-                listing_type, season = 'offcycle', 'Fall 2026'
+            elif 'winter 2027' in joined:
+                listing_type, season = 'offcycle', 'Winter 2027'
             elif 'spring 2027' in joined:
                 listing_type, season = 'offcycle', 'Spring 2027'
             elif 'co-op' in joined or 'coop' in joined:
