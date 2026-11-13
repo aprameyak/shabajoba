@@ -742,7 +742,7 @@
 | Emerson Electric | Electrical Design Engineer Intern | Remote (US) | Summer 2027 | <a href="https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26009762" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | GE Vernova | Hardware Engineer Intern - Critical Infrastructure Communications | Remote (US) | Summer 2027 | <a href="https://gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting/job/Rochester/GE-Vernova-Grid-Solutions---Hardware-Engineering-Intern--Critical-Infrastructure-Communications----Spring-Summer-2027_R5051647-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | Generac | Electrical Engineering Intern | Waukesha, WI | Summer 2027 | <a href="https://generac.wd5.myworkdayjobs.com/External/job/Waukesha-WI---USA/Intern--Electrical-Engineering_JR16432-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
-| General Dynamics Mission Systems 🇺🇸 | Engineering Intern - FPGA | Remote (US) | Summer 2027 | <a href="https://careers-gdms.icims.com/jobs/75044/job?mobile=true&needsRedirect=false" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| General Dynamics Mission Systems 🇺🇸 | Engineering Intern - FPGA | Remote (US) | Summer 2027 | 🔒 | Sep 30 |
 | ↳ | Electrical Engineer Intern | Remote (US) | Summer 2027 | <a href="https://careers-gdms.icims.com/jobs/75019/job?mobile=true&needsRedirect=false" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ↳ | Hardware Electrical Engineer Intern - Crypto and Cross Domain Solutions | Remote (US) | Summer 2027 | 🔒 | Sep 30 |
 | Google | Silicon Engineering Intern - BS/MS - Multiple Teams | Remote (US) | Summer 2027 | <a href="https://www.google.com/about/careers/applications/jobs/results/88570332985598662" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
@@ -811,7 +811,7 @@
 | Viavi Solutions | Electrical & Optical Engineering Intern | Indianapolis, IN | Summer 2027 | <a href="https://viavisolutions.wd1.myworkdayjobs.com/careers/job/Indianapolis-IN-USA/Electrical---Optical-Engineering-Intern_260005046-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ↳ | Electrical Engineer Intern | Indianapolis, IN | Summer 2027 | <a href="https://viavisolutions.wd1.myworkdayjobs.com/careers/job/Indianapolis-IN-USA/Electrical-Engineer-Intern_260005049-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ↳ | Hardware Engineering Co-Op | Germantown, MD | Co-op | <a href="https://viavisolutions.wd1.myworkdayjobs.com/careers/job/Germantown-MD-USA/Hardware-Engineering-Co-Op_260005139-2" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
-| Zipline | Electrical Engineer Intern - Electrical Engineering Team | Remote (US) | Summer 2027 | <a href="https://www.zipline.com/open-roles/7903708003?gh_jid=7903708003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| Zipline | Electrical Engineer Intern - Electrical Engineering Team | Remote (US) | Summer 2027 | 🔒 | Sep 30 |
 | ABB | R&D Electrical Engineering Co-op | Bloomfield, CT | Spring 2027 | <a href="https://abb.wd3.myworkdayjobs.com/external_career_page/job/USA-CT-Bloomfield/R-D-Electrical-Engineering-Co-op---Spring-2027_JR00047585" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 29 |
 | ↳ | Electrical Engineering Co-Op: Variable Speed and Specialty Motors | Greenville, SC | Co-op | <a href="https://abb.wd3.myworkdayjobs.com/external_career_page/job/Greenville-South-Carolina-United-States-of-America/Electrical-Engineering-Co-Op--Variable-Speed-and-Specialty-Motors_JR00048181" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 29 |
 | Amperesand | Power Electronics Design Intern | San Francisco, CA | Summer 2027 | <a href="https://job-boards.greenhouse.io/amperesand/jobs/4425221009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 29 |
@@ -952,7 +952,7 @@
 | GE Vernova | Electrical Intern | Salem, VA | Summer 2027 | 🔒 | Sep 21 |
 | General Dynamics | SSN Electrical Engineering and Design Intern | Remote (US) | Summer 2027 | 🔒 | Sep 21 |
 | General Dynamics Mission Systems | Electrical Engineer Co-Op | McLeansville, NC | Co-op | 🔒 | Sep 21 |
-| ↳ | Intern Engineer - FPGA | Bloomington, MN | Summer 2027 | <a href="https://careers-gdms.icims.com/jobs/75044/intern-engineer---fpga/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 21 |
+| ↳ | Intern Engineer - FPGA | Bloomington, MN | Summer 2027 | 🔒 | Sep 21 |
 | ↳ | Optical Engineer Intern | McLeansville, NC | Summer 2027 | 🔒 | Sep 21 |
 | General Motors | Global Manufacturing Electrical & SDV Intern | Warren, MI | Summer 2027 | 🔒 | Sep 21 |
 | Hermeus | Avionics Electrical Engineering Intern | Atlanta, GA | Summer 2027 | 🔒 | Sep 21 |
@@ -1145,7 +1145,7 @@
 | Viavi Solutions | Optical and Electrical Engineering Intern | Indianapolis, IN | Summer 2027 | <a href="https://viavisolutions.wd1.myworkdayjobs.com/careers/job/Indianapolis-IN-USA/Optical---Electrical-Engineering-Intern_260004968-2" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
 | AMD | Hardware Design Engineer Intern/Co-op | Markham, ON | Summer 2027 | 🔒 | Sep 3 |
 | ↳ | ASIC Package Engineering Intern/Co-op | <details><summary>**2 locations**</summary>San Jose, CA</br>Santa Clara, CA</details> | Summer 2027 | 🔒 | Sep 3 |
-| ↳ | ASIC Verification Engineer Intern/Co-op | Remote (Canada) | Summer 2027 | <a href="https://careers.amd.com/jobs/91207?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 3 |
+| ↳ | ASIC Verification Engineer Intern/Co-op | Remote (Canada) | Summer 2027 | 🔒 | Sep 3 |
 | ↳ | Analog and Mixed Signal Engineer Intern/Co-op | Markham, ON | Summer 2027 | 🔒 | Sep 3 |
 | ↳ | Hardware Design Verification Engineer Intern/Co-op | Markham, ON | Summer 2027 | 🔒 | Sep 3 |
 | Apple | Design Verification Engineer Intern | Cupertino, CA | Summer 2027 | 🔒 | Sep 3 |
