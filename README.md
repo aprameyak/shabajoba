@@ -19,6 +19,8 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Apply | Date Added |
 | ------- | ---- | -------- | ------ | ----- | ---------- |
+| ASML | Engineer (Defectivity, Materials & Contamination Analysis) Intern | Remote (US) | Summer 2027 | <a href="https://asml.wd3.myworkdayjobs.com/asmlext1/job/Wilton-CT-USA/Internship---Engineer--Defectivity--Materials---Contamination-Analysis-_J-00357005" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 14 |
+| Marvell Technology | Analog Layout Engineer Intern Co-op | Toronto, ON | Co-op | <a href="https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Toronto-Canada/Analog-Layout-Intern---BS-MS---2027-Co-Op_2604789" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 14 |
 | CACI | Configuration Control/Data Management Co-op - Spring & | Danbury, CT | Co-op | 🔒 | Nov 13 |
 | KLA Corporation | Electrical Design Engineer Intern | Remote (US) | Summer 2027 | 🔒 | Nov 13 |
 | Leidos | Radar Engineering Intern | Huntsville, AL | Summer 2027 | 🔒 | Nov 13 |
