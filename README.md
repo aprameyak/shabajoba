@@ -20,7 +20,10 @@
 | Company | Role | Location | Season | Apply | Date Added |
 | ------- | ---- | -------- | ------ | ----- | ---------- |
 | ASML | Engineer (Defectivity, Materials & Contamination Analysis) Intern | Remote (US) | Summer 2027 | <a href="https://asml.wd3.myworkdayjobs.com/asmlext1/job/Wilton-CT-USA/Internship---Engineer--Defectivity--Materials---Contamination-Analysis-_J-00357005" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 14 |
+| Leidos | Chief Engineer Intern | Remote (US) | Summer 2027 | <a href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Chief-Engineer-Intern_R-00196859" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 14 |
 | Marvell Technology | Analog Layout Engineer Intern Co-op | Toronto, ON | Co-op | <a href="https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Toronto-Canada/Analog-Layout-Intern---BS-MS---2027-Co-Op_2604789" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 14 |
+| Moog | Engineering Intern | Torrance, CA | Summer 2027 | <a href="https://moog.wd5.myworkdayjobs.com/MOOG_External_Career_Site/job/Torrance-CA/Intern--Engineering_R-26-21444" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 14 |
+| Tesla | Electrical Engineer Intern - High Speed Hardware Design | Palo Alto, CA | Spring 2027 | <a href="https://www.tesla.com/careers/search/job/289951" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 14 |
 | CACI | Configuration Control/Data Management Co-op - Spring & | Danbury, CT | Co-op | 🔒 | Nov 13 |
 | KLA Corporation | Electrical Design Engineer Intern | Remote (US) | Summer 2027 | 🔒 | Nov 13 |
 | Leidos | Radar Engineering Intern | Huntsville, AL | Summer 2027 | 🔒 | Nov 13 |
