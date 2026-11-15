@@ -135,7 +135,7 @@
 | Nokia | Service Router Test Student | Remote (Canada) | Summer 2027 | 🔒 | Nov 6 |
 | Qualcomm | RF/Analog Verification Engineer Intern | Markham, ON | Summer 2027 | <a href="https://qualcomm.eightfold.ai/careers/job/446722001120" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 6 |
 | SRI International 🇺🇸 | Electrical Engineering Co-op | Princeton, NJ | Spring 2027 | 🔒 | Nov 6 |
-| Zoox | Hardware Engineer Intern - Vehicle Systems | Foster City, CA | Summer 2027 | <a href="https://jobs.lever.co/zoox/0c32245b-f51d-40d2-8e57-a0be1b744c5b/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 6 |
+| Zoox | Hardware Engineer Intern - Vehicle Systems | Foster City, CA | Summer 2027 | 🔒 | Nov 6 |
 | Analog Devices | Equipment Engineering Co-Op GFU | Beaverton, OR | Co-op | 🔒 | Nov 5 |
 | Applied Materials | Metrology Engineer Intern/Co-op - Undergraduate | Tempe, AZ | Spring 2027 | 🔒 | Nov 5 |
 | Badger Meter | Firmware Test Engineer Intern | Remote (US) | Summer 2027 | 🔒 | Nov 5 |
@@ -940,7 +940,7 @@
 | ↳ | Solar Hardware Engineer Intern - PV Cell - Energy Engineering | Palo Alto, CA | Spring 2027 | <a href="https://www.tesla.com/careers/search/job/284489" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 24 |
 | Ciena | ASIC Engineer Intern | Ottawa, ON | Summer 2027 | 🔒 | Sep 23 |
 | Eaton | Electrical Engineer Intern/Co-op - Engineering | Peachtree City, GA | Summer 2027 | <a href="https://eaton.eightfold.ai/careers/job/687238597770" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 23 |
-| Hermeus | Propulsion Test Engineering Intern | Jacksonville, FL | Spring 2027 | <a href="https://jobs.lever.co/hermeus/d2651ecb-9aab-4d84-8e69-cbcf7cece28d" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 23 |
+| Hermeus | Propulsion Test Engineering Intern | Jacksonville, FL | Spring 2027 | 🔒 | Sep 23 |
 | Marvell Technology | Analog Layout Intern - BS | <details><summary>**2 locations**</summary>Irvine, CA</br>Santa Clara, CA</details> | Summer 2027 | 🔒 | Sep 23 |
 | ↳ | Electrical Validation Intern - BS | Santa Clara, CA | Summer 2027 | 🔒 | Sep 23 |
 | ↳ | Digital IC Design Intern | Petah Tikva, IL | Summer 2027 | 🔒 | Sep 23 |
@@ -1052,7 +1052,7 @@
 | RTX | FPGA Design Intern | Cedar Rapids, IA | Summer 2027 | 🔒 | Sep 17 |
 | CesiumAstro | Electrical Engineer Intern | Austin, TX | Summer 2027 | 🔒 | Sep 16 |
 | ↳ | Electrical Engineer Intern - FPGA | Westminster, CO | Summer 2027 | 🔒 | Sep 16 |
-| ↳ | Electrical Engineer Intern - Hardware | Westminster, CO | Summer 2027 | <a href="https://jobs.lever.co/CesiumAstro/ccb0f99f-0cc7-4517-8d1c-faeca53b5e5c/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 16 |
+| ↳ | Electrical Engineer Intern - Hardware | Westminster, CO | Summer 2027 | 🔒 | Sep 16 |
 | Emerson Electric | Electrical Engineer Co-op | <details><summary>**2 locations**</summary>Rockford, IL</br>Elyria, OH</details> | Summer 2027 | <a href="https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 16 |
 | ↳ | Electrical Engineering Co-op | <details><summary>**2 locations**</summary>Rockford, IL</br>Elyria, OH</details> | Spring 2027 | <a href="https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26010996" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 16 |
 | Tesla | Electronic Design Engineer Intern - Energy Engineering | Palo Alto, CA | Spring 2027 | <a href="https://www.tesla.com/careers/search/job/283676" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 16 |
