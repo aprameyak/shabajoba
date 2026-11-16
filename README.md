@@ -328,7 +328,7 @@
 | Amazon | Cloud Hardware Development Engineer Intern | <details><summary>**2 locations**</summary>Austin, TX</br>Cupertino, CA</details> | Summer 2027 | <a href="https://amazon.jobs/en/jobs/10517649/cloud-hardware-development-engineer-intern-annapurna-labs-2027" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 23 |
 | ↳ | ASIC Engineer Intern | <details><summary>**3 locations**</summary>Seattle, WA</br>Austin, TX</br>Cupertino, CA</details> | Summer 2027 | <a href="https://amazon.jobs/en/jobs/10517535/asic-engineer-intern-annapurna-labs-2027" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 23 |
 | ↳ | ASIC Engineer Early Career Intern | <details><summary>**3 locations**</summary>Seattle, WA</br>Austin, TX</br>Cupertino, CA</details> | Summer 2027 | <a href="https://amazon.jobs/en/jobs/10558918/asic-engineer-i-annapurna-labs-early-career-2027" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 23 |
-| Ambarella | Physical Design Engineer Intern | Remote (US) | Summer 2027 | <a href="https://ambarella.wd108.myworkdayjobs.com/ambarella/job/US-Headquarters/Physical-Design-Engineer-Intern_JR100393" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 23 |
+| Ambarella | Physical Design Engineer Intern | Remote (US) | Summer 2027 | 🔒 | Oct 23 |
 | Badger Meter | Electronics/Electrical Engineering Intern | Milwaukee, WI | Summer 2027 | 🔒 | Oct 23 |
 | Baker Hughes 🛂 | Field Engineer Intern | Calgary, AB | Summer 2027 | 🔒 | Oct 23 |
 | Corning 🛂 | Optical Metrology Engineer Intern | Fairport, NY | Summer 2027 | 🔒 | Oct 23 |
@@ -346,7 +346,7 @@
 | onsemi | Applications Engineer Intern (DC-DC) | San Jose, CA | Spring 2027 | <a href="https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2506781" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 23 |
 | Qualcomm | Digital Design Engineer Intern | Toronto, ON | Summer 2027 | <a href="https://qualcomm.eightfold.ai/careers/job/446721156182" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 23 |
 | ↳ | Silicon Engineering Intern | Toronto, ON | Summer 2027 | <a href="https://qualcomm.eightfold.ai/careers/job/446721302528" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 23 |
-| Radiance Technologies | Microelectronics Engineer Intern | Ruston, LA | Summer 2027 | <a href="https://radiancetech.wd12.myworkdayjobs.com/Radiance_External/job/Ruston-LA/Microelectronics-Engineer-Intern_HR102520" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 23 |
+| Radiance Technologies | Microelectronics Engineer Intern | Ruston, LA | Summer 2027 | 🔒 | Oct 23 |
 | Rockwell Automation | Electrical Engineer Intern | <details><summary>**2 locations**</summary>Mequon, WI</br>Eden Prairie, MN</details> | Summer 2027 | 🔒 | Oct 23 |
 | RTX | Stage - Hiver - Support à l’ingénierie du développement / Internship | Longueuil, QC | Winter 2027 | 🔒 | Oct 23 |
 | S&C Electric Company | Electronics Engineering Intern - TBI | Chicago, IL | Summer 2027 | <a href="https://ejia.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/107453" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 23 |
@@ -544,7 +544,7 @@
 | Northrop Grumman | Internal Only: Sr Principal Integration and Test Engineer (26-454) | Colorado Springs, CO | Summer 2027 | 🔒 | Oct 9 |
 | SharkNinja | Electrical Engineering Co-op | Needham, MA | Spring 2027 | <a href="https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4718702006" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | Sierra Nevada Corporation | Test Engineer 1 Intern | Lone Tree, CO | Summer 2027 | 🔒 | Oct 9 |
-| Symbotic | Co-Op- System Engineer | USA Palestine, TX | Co-op | <a href="https://symbotic.wd504.myworkdayjobs.com/Symbotic/job/USA-Palestine-TX/Co-Op--System-Engineer_R8211" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
+| Symbotic | Co-Op- System Engineer | USA Palestine, TX | Co-op | 🔒 | Oct 9 |
 | Texas Instruments | Analog Design Eng Intern | Santa Clara, CA | Summer 2027 | <a href="https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/25016378" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | WSP | Controls Engineering Intern | New York, NY | Summer 2027 | <a href="https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/97132" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 9 |
 | GE Vernova | Co-op / Internship Program | Remote (US) | Co-op | 🔒 | Oct 8 |
@@ -575,7 +575,7 @@
 | ↳ | Applications Development Engineering Intern - BBP | Milpitas, CA | Summer 2027 | 🔒 | Oct 7 |
 | ↳ | Product Development Applications Engineer Intern (Broadband Plasma Division) | Milpitas, CA | Summer 2027 | 🔒 | Oct 7 |
 | Moog | Electrical Engineer Intern | Torrance, CA | Summer 2027 | 🔒 | Oct 7 |
-| Nordson | Electrical Engineer Intern | East Providence, RI | Summer 2027 | <a href="https://nordsonhcm.wd501.myworkdayjobs.com/nordsoncareers/job/USA---Rhode-Island---East-Providence/Electrical-Engineering-Intern_REQ53005" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 7 |
+| Nordson | Electrical Engineer Intern | East Providence, RI | Summer 2027 | 🔒 | Oct 7 |
 | Northrop Grumman | Cutting Edge Optronics Engineering Internship - Saint Charles MO | Saint Charles, MO | Summer 2027 | 🔒 | Oct 7 |
 | ↳ | Test Engineer Intern - Sunnyvale CA | Sunnyvale, CA | Summer 2027 | 🔒 | Oct 7 |
 | NVIDIA | PCIe Design Verification Intern | Santa Clara, CA | Summer 2027 | 🔒 | Oct 7 |
@@ -623,7 +623,7 @@
 | Nokia | ASIC Physical Design Coop | Remote (US) | Co-op | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/41122" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | ↳ | Optical Systems Group Co-op | Remote (US) | Co-op | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/41218" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | ↳ | Mixed Signal Circuit Design Coop | Remote (US) | Co-op | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/41222" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
-| Nordson | Application/System Engineer I Intern | East Providence, RI | Summer 2027 | <a href="https://nordsonhcm.wd501.myworkdayjobs.com/nordsoncareers/job/USA---Rhode-Island---East-Providence/Application-System-Engineer-I-Intern_REQ53032" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
+| Nordson | Application/System Engineer I Intern | East Providence, RI | Summer 2027 | 🔒 | Oct 6 |
 | Rheem | Electronics Hardware Systems Engineer Co-op | Indianapolis, IN | Co-op | <a href="https://hdde.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/4432" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | Rivian | Electronics Design Engineer Co-op Intern - Electronics Design | Palo Alto, CA | Spring 2027 | <a href="https://careers.rivian.com/jobs/34040?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 6 |
 | RTX | Stage - Hiver -Stagiaire Technicien en Instrumentation/Internship | Longueuil, QC | Winter 2027 | 🔒 | Oct 6 |
@@ -740,7 +740,7 @@
 | ↳ | Electro-Optical Engineering Undergrad Intern | El Segundo, CA | Summer 2027 | 🔒 | Sep 30 |
 | Allegion | Hardware Engineer (Advanced Development) Intern | Indianapolis, IN | Summer 2027 | 🔒 | Sep 30 |
 | ↳ | Hardware Engineering Intern | Indianapolis, IN | Summer 2027 | 🔒 | Sep 30 |
-| Ambarella | Mixed Signal Engineer Intern | Remote (US) | Summer 2027 | <a href="https://ambarella.wd108.myworkdayjobs.com/ambarella/job/US-Headquarters/Mixed-Signal-Engineer-Intern_JR100361" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| Ambarella | Mixed Signal Engineer Intern | Remote (US) | Summer 2027 | 🔒 | Sep 30 |
 | AMCA | Electrical Engineering Internship | El Segundo, CA | Summer 2027 | <a href="https://job-boards.greenhouse.io/amca/jobs/4396690009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | AMD | ASIC Package Engineering Intern Co-op | Remote (US) | Co-op | 🔒 | Sep 30 |
 | ↳ | Hardware Engineer Intern/Co-op - Hardware Engineering | Remote (US) | Co-op | 🔒 | Sep 30 |
@@ -770,8 +770,8 @@
 | ↳ | Electrical Engineer Intern | Remote (US) | Summer 2027 | <a href="https://careers-gdms.icims.com/jobs/75019/job?mobile=true&needsRedirect=false" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | ↳ | Hardware Electrical Engineer Intern - Crypto and Cross Domain Solutions | Remote (US) | Summer 2027 | 🔒 | Sep 30 |
 | Google | Silicon Engineering Intern - BS/MS - Multiple Teams | Remote (US) | Summer 2027 | <a href="https://www.google.com/about/careers/applications/jobs/results/88570332985598662" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
-| Graco 🛂 | Electrical Engineering Intern | Dexter, MI | Summer 2027 | <a href="https://graco.wd501.myworkdayjobs.com/Graco_Careers/job/Dexter-Michigan-USA/Electrical-Engineering-Intern_R0023525" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
-| ↳ | Electrical Engineer Intern | Dayton, MN | Summer 2027 | <a href="https://graco.wd501.myworkdayjobs.com/Graco_Careers/job/Dayton-Minnesota-USA/Electrical-Engineering-Intern_R0023607" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| Graco 🛂 | Electrical Engineering Intern | Dexter, MI | Summer 2027 | 🔒 | Sep 30 |
+| ↳ | Electrical Engineer Intern | Dayton, MN | Summer 2027 | 🔒 | Sep 30 |
 | HP | Electrical/Hardware Engineering Intern | Corvallis, OR | Summer 2027 | 🔒 | Sep 30 |
 | HPE | VLSI Engineer Intern | Spring, TX | Summer 2027 | 🔒 | Sep 30 |
 | ↳ | Optical Engineering Intern | Sunnyvale, CA | Summer 2027 | 🔒 | Sep 30 |
@@ -797,7 +797,7 @@
 | Muon Space | GNC Hardware Engineering Intern | Mountain View, CA | Summer 2027 | 🔒 | Sep 30 |
 | Neuralink | Electrical Engineer Intern - Robotics and Surgery Engineering | Remote (US) | Summer 2027 | <a href="https://boards.greenhouse.io/neuralink/jobs/6607398003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
 | Nokia | Optical System Engineer Co-Op | Remote (US) | Co-op | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/40648" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
-| Nordson | Electrical Engineering Intern | Minneapolis, MN | Summer 2027 | <a href="https://nordsonhcm.wd501.myworkdayjobs.com/nordsoncareers/job/USA---Minnesota---Minneapolis---5900-Golden-Hills-Drive/Electrical-Engineering-Intern_REQ52913" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 30 |
+| Nordson | Electrical Engineering Intern | Minneapolis, MN | Summer 2027 | 🔒 | Sep 30 |
 | Northrop Grumman | Hardware Electronics Engineer Intern – Rolling Meadows IL | Rolling Meadows, IL | Summer 2027 | 🔒 | Sep 30 |
 | ↳ | Engineering Intern - Hollywood (MD) (Evergreen) | Hollywood, MD | Summer 2027 | 🔒 | Sep 30 |
 | ↳ | Engineering Intern - Melbourne (FL) (Evergreen) | Melbourne, FL | Summer 2027 | 🔒 | Sep 30 |
@@ -960,7 +960,7 @@
 | ↳ | Electrical Validation Intern, BS | Santa Clara, CA | Summer 2027 | 🔒 | Sep 22 |
 | Moog | Test Engineering Intern | Buffalo, NY | Summer 2027 | 🔒 | Sep 22 |
 | Northrop Grumman | Electrical Engineer Intern - San Diego CA | San Diego, CA | Summer 2027 | 🔒 | Sep 22 |
-| Symbotic | Hardware Engineer Intern - Hardware Engineering | Wilmington, MA | Summer 2027 | <a href="https://symbotic.wd504.myworkdayjobs.com/Symbotic/job/USA-Wilmington-MA---ITC/Hardware-Engineer_R8101" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
+| Symbotic | Hardware Engineer Intern - Hardware Engineering | Wilmington, MA | Summer 2027 | 🔒 | Sep 22 |
 | Tesla | Reliability Test Engineer Intern - Energy Engineering | Palo Alto, CA | Spring 2027 | <a href="https://www.tesla.com/careers/search/job/284278" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 22 |
 | Amperesand | Power Electronics Control Intern | <details><summary>**2 locations**</summary>Reno, NV</br>San Francisco, CA</details> | Summer 2027 | <a href="https://job-boards.greenhouse.io/amperesand/jobs/4164330009" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 21 |
 | Axcelis | Manufacturing Test Development Engineer Co-op | Beverly, MA | Co-op | 🔒 | Sep 21 |
@@ -1151,7 +1151,7 @@
 | Olsson | Electrical Engineering Internship - Substation and Power Generation | Fayetteville, AR | Summer 2027 | 🔒 | Sep 4 |
 | Persona AI | Electrical Engineering Intern | Houston, TX | Summer 2027 | 🔒 | Sep 4 |
 | Philips | Electrical Engineering Co-op | Latham, NY | Co-op | 🔒 | Sep 4 |
-| Radiance Technologies | Electrical Engineering Intern | Huntsville, AL | Summer 2027 | <a href="https://radiancetech.wd12.myworkdayjobs.com/Radiance_External/job/Huntsville-AL/Electrical-Engineering-Intern_HR102394" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Sep 4 |
+| Radiance Technologies | Electrical Engineering Intern | Huntsville, AL | Summer 2027 | 🔒 | Sep 4 |
 | Raytheon | RF Design Engineer Intern | Tucson, AZ | Summer 2027 | 🔒 | Sep 4 |
 | RTX | Analog and Power Design Electrical Engineering Intern | Marlborough, MA | Summer 2027 | 🔒 | Sep 4 |
 | ↳ | Production Hardware Electrical Engineer Intern | Tucson, AZ | Summer 2027 | 🔒 | Sep 4 |
@@ -1327,7 +1327,7 @@
 | Carnegie Mellon University | RF Cyber Lab Intern | Pittsburgh, PA | Summer 2027 | 🔒 | Aug 9 |
 | Agilent Technologies | Electrical Engineering Intern | Wilmington, DE | Summer 2027 | 🔒 | Aug 8 |
 | Amazon Web Services (AWS) | Chip Design Student Intern | Naperville, IL | Summer 2027 | 🔒 | Aug 8 |
-| Ambarella | ASIC Design Engineer Intern | Santa Clara, CA | Summer 2027 | <a href="https://ambarella.wd108.myworkdayjobs.com/ambarella/job/US-Headquarters/ASIC-Design-Engineer-Intern_JR100100?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 8 |
+| Ambarella | ASIC Design Engineer Intern | Santa Clara, CA | Summer 2027 | 🔒 | Aug 8 |
 | Base Power | Hardware Engineering Intern | Austin, TX | Summer 2027 | 🔒 | Aug 8 |
 | Jump Trading | FPGA Engineer Intern | Chicago, IL | Summer 2027 | <a href="https://www.jumptrading.com/hr/job?gh_jid=8003013&utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 8 |
 | Neuralink | Analog and Mixed-Signal IC Design Engineer Intern | South San Francisco, CA | Summer 2027 | <a href="https://boards.greenhouse.io/neuralink/jobs/7565469003?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 8 |
