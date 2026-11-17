@@ -19,6 +19,8 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Apply | Date Added |
 | ------- | ---- | -------- | ------ | ----- | ---------- |
+| Canyon AeroConnect | Electrical Engineer Intern | Prescott, AZ | Summer 2027 | <a href="https://canyonaeroconnect.bamboohr.com/careers/165/" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
+| ↳ | Test Engineer Intern | Prescott, AZ | Summer 2027 | <a href="https://canyonaeroconnect.bamboohr.com/careers/166/" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | Impulse Space | Digital Design Engineering Intern - FPGA/ASIC | Redondo Beach, CA | Summer 2027 | <a href="https://impulsespace.pinpointhq.com/en/postings/829256fd-cd06-4f0d-91c9-8bb59eaf6772?ats=pinpointhq" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | Lightmatter | Optical Packaging Integration Internship | Mountain View, CA | Summer 2027 | <a href="https://boards.greenhouse.io/lightmatter/jobs/5478834008?gh_jid=5478834008" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | Nokia | New Product Introduction (NPI) Specialist Intern | Remote (US) | Summer 2027 | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/41999" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
