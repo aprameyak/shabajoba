@@ -19,14 +19,14 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Apply | Date Added |
 | ------- | ---- | -------- | ------ | ----- | ---------- |
-| 3M | Werkstudent (m/w/*) Prototyping & Lab Automation - Forschung & Entwicklung | Remote (US) | Summer 2027 | <a href="https://3m.wd1.myworkdayjobs.com/Search/job/DE-Neuss/Werkstudent--m-w----Prototyping---Lab-Automation---Forschung---Entwicklung_R01173340" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
+| 3M | Werkstudent (m/w/*) Prototyping & Lab Automation - Forschung & Entwicklung | Remote (US) | Summer 2027 | 🔒 | Nov 17 |
 | Amazon | ASIC Design Verification Engineer Intern | Remote (US) | Summer 2027 | <a href="https://amazon.jobs/en/jobs/10606931/ring-asic-dv-engineer-intern" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | Berkshire Hathaway Energy | Engineering Intern | Omaha, NE | Summer 2027 | <a href="https://fa-essf-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/10006017" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | Canyon AeroConnect | Electrical Engineer Intern | Prescott, AZ | Summer 2027 | <a href="https://canyonaeroconnect.bamboohr.com/careers/165/" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | ↳ | Test Engineer Intern | Prescott, AZ | Summer 2027 | <a href="https://canyonaeroconnect.bamboohr.com/careers/166/" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | Exowatt | Robotics & Physical AI Intern (Miami) | Miami, FL | Summer 2027 | <a href="https://jobs.lever.co/exowatt/ec23e694-6716-450d-bfbb-276ca8da3d1c" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | Impulse Space | Digital Design Engineering Intern - FPGA/ASIC | Redondo Beach, CA | Summer 2027 | <a href="https://impulsespace.pinpointhq.com/en/postings/829256fd-cd06-4f0d-91c9-8bb59eaf6772?ats=pinpointhq" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
-| KLA | Firmware Intern | Milpitas, CA | Summer 2027 | <a href="https://kla.wd1.myworkdayjobs.com/Search/job/Milpitas-CA/Firmware-Intern_2642154-1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
+| KLA | Firmware Intern | Milpitas, CA | Summer 2027 | 🔒 | Nov 17 |
 | Lightmatter | Optical Packaging Integration Internship | Mountain View, CA | Summer 2027 | <a href="https://boards.greenhouse.io/lightmatter/jobs/5478834008?gh_jid=5478834008" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | ↳ | Product & Test Engineering, Intern | Mountain View, CA | Summer 2027 | <a href="https://boards.greenhouse.io/lightmatter/jobs/5474690008?gh_jid=5474690008" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
 | Nokia | New Product Introduction (NPI) Specialist Intern | Remote (US) | Summer 2027 | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/41999" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 17 |
@@ -40,7 +40,7 @@
 | Southern States, LLC | Electrical Engineer Intern | Hampton, GA | Summer 2027 | <a href="https://southernstatesllc.applytojob.com/apply/NL0wxVo8tr/Summer-2027-Electrical-Engineering-Intern-SATD1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 16 |
 | Texas Instruments | Kilby Labs RF Analog Design Intern - RF Modeling | Dallas, TX | Summer 2027 | <a href="https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/25016351" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 16 |
 | ASML | Engineer (Defectivity, Materials & Contamination Analysis) Intern | Remote (US) | Summer 2027 | 🔒 | Nov 14 |
-| Leidos | Chief Engineer Intern | Remote (US) | Summer 2027 | <a href="https://leidos.wd5.myworkdayjobs.com/External/job/6314-RemoteTeleworker-US/Chief-Engineer-Intern_R-00196859" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 14 |
+| Leidos | Chief Engineer Intern | Remote (US) | Summer 2027 | 🔒 | Nov 14 |
 | Marvell Technology | Analog Layout Engineer Intern Co-op | Toronto, ON | Co-op | 🔒 | Nov 14 |
 | Moog | Engineering Intern | Torrance, CA | Summer 2027 | 🔒 | Nov 14 |
 | Tesla | Electrical Engineer Intern - High Speed Hardware Design | Palo Alto, CA | Spring 2027 | <a href="https://www.tesla.com/careers/search/job/289951" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 14 |
@@ -203,7 +203,7 @@
 | Westinghouse Electric Company | System Test Engineering Intern | Warrendale, PA | Summer 2027 | 🔒 | Nov 4 |
 | Xanadu | Photonics Test Engineer Intern | Toronto, ON | Summer 2027 | <a href="https://xanadu.careers.hibob.com/jobs/fa179125-845b-4a10-a648-75c1cc20bda4" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 4 |
 | Zurn Elkay Water Solutions | Electrical & Electronics Engineering Intern | Downers Grove, IL | Summer 2027 | 🔒 | Nov 4 |
-| ASML | Coop - Mechatronics Engineer (Internship) | Remote (US) | Co-op | <a href="https://asml.wd3.myworkdayjobs.com/en-US/asmlext1/job/Wilton-CT-USA/Coop---Mechatronics-Engineer--Internship-_J-00356203" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 3 |
+| ASML | Coop - Mechatronics Engineer (Internship) | Remote (US) | Co-op | 🔒 | Nov 3 |
 | ↳ | Electrical Engineer Intern | Remote (US) | Summer 2027 | 🔒 | Nov 3 |
 | ↳ | Co-op - Test and Measurement Facility Engineer (Internship) | Remote (US) | Co-op | 🔒 | Nov 3 |
 | ↳ | CoOp - Electrical Engineer (Internship) | Remote (US) | Co-op | 🔒 | Nov 3 |
@@ -247,7 +247,7 @@
 | Altera | Hardware Design Engineer - Intern | Toronto, ON | Summer 2027 | 🔒 | Oct 30 |
 | ↳ | FPGA Development Tools - Intern | Toronto, ON | Summer 2027 | 🔒 | Oct 30 |
 | ASML | Optical Engineer Co-op Intern | Wilton, CT | Co-op | 🔒 | Oct 30 |
-| ↳ | EUV CSCM UIR Intern | Hillsboro, OR | Summer 2027 | <a href="https://asml.wd3.myworkdayjobs.com/en-US/asmlext1/job/Hillsboro-OR-USA/Internship---EUV-CSCM-UIR_J-00355836" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 30 |
+| ↳ | EUV CSCM UIR Intern | Hillsboro, OR | Summer 2027 | 🔒 | Oct 30 |
 | Berkshire Hathaway Energy | Intern (Electrical Engineering) | Lusby, MD | Summer 2027 | <a href="https://fa-essf-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/10005978" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 30 |
 | Ciena | Mixed Signal Designer Intern | Remote (Canada) | Summer 2027 | 🔒 | Oct 30 |
 | Diversified Automation | Hardware Engineering Co-op | Louisville, KY | Co-op | <a href="https://jobs.lever.co/diversified-automation/7a1f1890-bc5d-4e5e-a510-7fe7f85660d3/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 30 |
@@ -269,7 +269,7 @@
 | CACI 🛂 | Systems Engineering Intern/Co-op | Rochester, NY | Spring 2027 | 🔒 | Oct 29 |
 | ↳ | Electrical Engineering Intern/Co-op | Rochester, NY | Spring 2027 | 🔒 | Oct 29 |
 | Draper | Analog ASIC Design Intern | Cambridge, MA | Summer 2027 | 🔒 | Oct 29 |
-| Indie | Design Verification Engineer Intern | Aliso Viejo, CA | Summer 2027 | <a href="https://www.indie.inc/careers/internships/current-openings/?gh_jid=5265698007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 29 |
+| Indie | Design Verification Engineer Intern | Aliso Viejo, CA | Summer 2027 | 🔒 | Oct 29 |
 | KLA | Image Processing Intern | Milpitas, CA | Summer 2027 | 🔒 | Oct 29 |
 | Nokia | Electrical Engineering Student | Remote (Canada) | Summer 2027 | <a href="https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/32826" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 29 |
 | Riverlane | Hardware Engineer Intern | Remote (US) | Summer 2027 | <a href="https://www.riverlane.com/jobs?gh_jid=5001377101#vacancies" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 29 |
@@ -299,7 +299,7 @@
 | Quadric | Design Verification Intern | Burlingame, CA | Summer 2027 | 🔒 | Oct 28 |
 | Qualcomm | Formal Verification Engineering Intern - 6 months | Remote (US) | Summer 2027 | <a href="https://qualcomm.eightfold.ai/careers/job/446721822125" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 28 |
 | Renesas Electronics | Digital Design Electrical Engineer Intern | Remote (US) | Summer 2027 | <a href="https://jobs.smartrecruiters.com/RenesasElectronics/744000157896855" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 28 |
-| RosaicLabs | CPU Design Verification Engineer Intern | <details><summary>**2 locations**</summary>Austin, TX</br>Santa Clara, CA</details> | Summer 2027 | <a href="https://jobs.lever.co/rosaiclabs/11a93b50-2472-4ec9-85d9-c99a3a17405e/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 28 |
+| RosaicLabs | CPU Design Verification Engineer Intern | <details><summary>**2 locations**</summary>Austin, TX</br>Santa Clara, CA</details> | Summer 2027 | 🔒 | Oct 28 |
 | ↳ | AI Accelerator Design Verification Engineer Intern | <details><summary>**2 locations**</summary>Austin, TX</br>Santa Clara, CA</details> | Summer 2027 | <a href="https://jobs.lever.co/rosaiclabs/8e3e00f8-5b06-450c-bb63-5cc4fc3136ab/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 28 |
 | RTX | Mission Systems Supplier Quality Intern | Remote (US) | Spring 2027 | 🔒 | Oct 28 |
 | ↳ | Hardware Electrical Engineering Intern | Cambridge, MA | Summer 2027 | 🔒 | Oct 28 |
@@ -488,7 +488,7 @@
 | ↳ | Electrical Engineer Co-op | Chelmsford, MA | Summer 2027 | 🔒 | Oct 15 |
 | RTX | Metrology Engineering Intern | Cedar Rapids, IA | Summer 2027 | 🔒 | Oct 15 |
 | Stanley Black & Decker | Engineering Co-Op; Winter & | Towson, MD | Spring 2027 | 🔒 | Oct 15 |
-| Symbotic | Co-op- Robot Manipulation | Wilmington, MA | Co-op | <a href="https://symbotic.wd504.myworkdayjobs.com/Symbotic/job/USA-Wilmington--MA---HQ/Co-op--Robot-Manipulation_R8257" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 15 |
+| Symbotic | Co-op- Robot Manipulation | Wilmington, MA | Co-op | 🔒 | Oct 15 |
 | Texas Instruments | Device Reliability Engineering Intern | Dallas, TX | Summer 2027 | <a href="https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/25016081" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 15 |
 | WSP | Substation Electrical Engineering Intern | Spring, TX | Summer 2027 | <a href="https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/97698" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 15 |
 | Aerospace Corporation 🇺🇸 | Photonics Device Characterization Undergraduate Intern | El Segundo, CA | Summer 2027 | 🔒 | Oct 14 |
@@ -1327,7 +1327,7 @@
 | IMEG | Electrical Engineering Intern | Madison, WI | Summer 2027 | 🔒 | Aug 17 |
 | Micron Technology | EUV & Materials Lithography Intern | Boise, ID | Summer 2027 | 🔒 | Aug 17 |
 | Neuralink | Electrical Engineer Intern, Implant Embedded Systems | <details><summary>**2 locations**</summary>Austin, TX</br>South San Francisco, CA</details> | Summer 2027 | <a href="https://boards.greenhouse.io/neuralink/jobs/7702527003?utm_source=aprameyak" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 17 |
-| GE Aerospace 🇺🇸 | Systems Engineering Intern - Electrical Engineering & Computer Engineering/Science (Avionics) | Grand Rapids, MI | Summer 2027 | <a href="https://www.linkedin.com/jobs/view/systems-engineering-intern-electrical-engineering-computer-engineering-science-avionics-us-summer-2027-at-ge-aerospace-4455243579" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Aug 16 |
+| GE Aerospace 🇺🇸 | Systems Engineering Intern - Electrical Engineering & Computer Engineering/Science (Avionics) | Grand Rapids, MI | Summer 2027 | 🔒 | Aug 16 |
 | Micron Technology | DRAM PI Intern | Boise, ID | Summer 2027 | 🔒 | Aug 16 |
 | Micron Technology | DRAM Process Integration Intern | Boise, ID | Summer 2027 | 🔒 | Aug 14 |
 | ↳ | Digital IP Design Engineer, DRAM Intern | Boise, ID | Summer 2027 | 🔒 | Aug 14 |
