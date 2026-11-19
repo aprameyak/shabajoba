@@ -19,6 +19,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Apply | Date Added |
 | ------- | ---- | -------- | ------ | ----- | ---------- |
+| Lightmatter | Photonics Circuit Simulation Intern | Mountain View, CA | Summer 2027 | <a href="https://boards.greenhouse.io/lightmatter/jobs/5479849008?gh_jid=5479849008" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 19 |
 | Basis Research Institute | Electronics & Sensing Engineer Intern - Contractor | Remote (US) | Summer 2027 | <a href="https://jobs.ashbyhq.com/basis-research/d3a40705-2e66-4ed0-8bf1-f5fe4bb6dfc3/application?embed=true" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 18 |
 | Cummins | EATON - Electronic Systems Internship (ECJV) | Galesburg, MI | Summer 2027 | <a href="https://fa-espx-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2440079" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 18 |
 | Matic | Electrical Design Engineer Intern | Menlo Park, CA | Summer 2027 | <a href="https://jobs.ashbyhq.com/MaticRobots/2f93fe19-0d71-4972-98da-8baf9d4ab05e/application?embed=true" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 18 |
