@@ -28,7 +28,7 @@
 | Avnan | Electronics Engineering Technologist Co-op | Mississauga, ON | Winter 2027 | <a href="https://avnan.bamboohr.com/careers/125/" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 20 |
 | Honeywell Aerospace | Semiconductor Engineer Intern | Remote (US) | Summer 2027 | <a href="https://icfcjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Aerospace/job/119888" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 20 |
 | ↳ | Electrical Engineer Intern | Kanata, Ottawa, ON | Summer 2027 | <a href="https://icfcjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Aerospace/job/127344" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 20 |
-| HPE | Electrical Engineer Intern | Chippewa Falls, WI | Summer 2027 | <a href="https://hpe.wd5.myworkdayjobs.com/jobsathpe/job/Chippewa-Falls-Wisconsin-United-States-of-America/Electrical-Engineer-Intern_1213420" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 20 |
+| HPE | Electrical Engineer Intern | Chippewa Falls, WI | Summer 2027 | 🔒 | Nov 20 |
 | Lightmatter | Electrical Engineer Intern | Mountain View, CA | Summer 2027 | <a href="https://boards.greenhouse.io/lightmatter/jobs/5479814008" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 20 |
 | Lucid Motors | ADAS Systems, Intern | Newark, CA | Summer 2027 | <a href="https://lucidmotors.com/careers/search/5290790007?gh_jid=5290790007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 20 |
 | ↳ | Simulation & Virtualization Engineer, Intern | Newark, CA | Summer 2027 | <a href="https://lucidmotors.com/careers/search/5290915007?gh_jid=5290915007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 20 |
@@ -349,7 +349,7 @@
 | RTX | Mission Systems Supplier Quality Intern | Remote (US) | Spring 2027 | 🔒 | Oct 28 |
 | ↳ | Hardware Electrical Engineering Intern | Cambridge, MA | Summer 2027 | 🔒 | Oct 28 |
 | ↳ | Hardware Electrical Engineering Co-Op | Cambridge, MA | Spring 2027 | 🔒 | Oct 28 |
-| Shield AI | Electrical Engineer Intern - Hardware Test | Dallas, TX | Summer 2027 | <a href="https://jobs.ashbyhq.com/f7d8749a-72d6-407c-bf98-292ea630c73a/16b044e7-02e2-4657-9b87-782a76b127b1/application?embed=true" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 28 |
+| Shield AI | Electrical Engineer Intern - Hardware Test | Dallas, TX | Summer 2027 | 🔒 | Oct 28 |
 | Skyband Systems | Avionics Hardware & Test Engineer Intern | Kirkland, WA | Summer 2027 | <a href="https://jobs.ashbyhq.com/skyband%20systems/74d42f88-5265-4879-9c6d-61f532e89b20/application?embed=true" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 28 |
 | Texas Instruments | Product/Test Eng Intern | Santa Clara, CA | Summer 2027 | <a href="https://edbz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/25016391" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 28 |
 | Altera | IP Design Intern | Toronto, ON | Summer 2027 | 🔒 | Oct 27 |
@@ -446,7 +446,7 @@
 | Emerson Electric | Engineering Co-op | Louisville, KY | Co-op | <a href="https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26012734" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | General Dynamics Mission Systems | Reliability Engineering Intern | Pittsfield, MA | Summer 2027 | <a href="https://careers-gdms.icims.com/jobs/75689/reliability-engineering-intern/job" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | GlobalFoundries | Manufacturing Quality Intern | Malta, NY | Summer 2027 | 🔒 | Oct 21 |
-| Humble Robotics | Electrical Engineer Intern | Remote (US) | Summer 2027 | <a href="https://jobs.lever.co/humble-robotics/b9822bf4-c77c-42ea-a19f-1280ec3ab763/apply" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
+| Humble Robotics | Electrical Engineer Intern | Remote (US) | Summer 2027 | 🔒 | Oct 21 |
 | Keysight Technologies | Hardware Engineering Intern | Santa Rosa, CA | Summer 2027 | <a href="https://jobs.keysight.com/jobs/55112?icims=1" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Oct 21 |
 | L3Harris Technologies | Electrical Engineering Intern | Salt Lake City, UT | Summer 2027 | 🔒 | Oct 21 |
 | Marvell Technology | Silicon Validation Intern, BS | Santa Clara, CA | Summer 2027 | 🔒 | Oct 21 |
