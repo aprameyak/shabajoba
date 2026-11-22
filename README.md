@@ -19,6 +19,7 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Apply | Date Added |
 | ------- | ---- | -------- | ------ | ----- | ---------- |
+| Allegion | Hardware Engineering Intern - Product Lifecycle Engineering | Indianapolis, IN | Summer 2027 | <a href="https://allegion.wd5.myworkdayjobs.com/EarlyTalent_Careers/job/Indianapolis-IN---Hague-Rd/Summer-Intern---Hardware-Engineering---Indianapolis--Indiana_JR37467" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 22 |
 | Blackberry | Hardware Engineering Student Intern - Radar | Waterloo, ON | Summer 2027 | 🔒 | Nov 22 |
 | Neros Technologies | Electrical Engineer Intern | Torrance, CA | Summer 2027 | <a href="https://job-boards.greenhouse.io/nerostechnologies/jobs/5273149007" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 22 |
 | RTX | Advanced Effector Guidance Systems Electrical Engineer Intern | Tucson, AZ | Summer 2027 | 🔒 | Nov 22 |
