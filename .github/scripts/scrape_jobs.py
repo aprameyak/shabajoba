@@ -1390,19 +1390,36 @@ def scrape_icims(company, host, seen, keywords=None):
     return jobs
 
 
-def scrape_simplify(seen):
-    """Pull Hardware/EE roles from SimplifyJobs Summer2027 listings feed."""
-    url = (
+SIMPLIFY_SCHEMA_FEEDS = [
+    (
+        'simplify',
         'https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/'
-        'dev/.github/scripts/listings.json'
-    )
+        'dev/.github/scripts/listings.json',
+    ),
+    (
+        'vansh',
+        'https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/'
+        'dev/.github/scripts/listings.json',
+    ),
+]
+
+
+def scrape_simplify(seen):
+    """Pull Hardware/EE roles from Simplify-schema listings feeds (Simplify, Vansh)."""
+    jobs = []
+    for source, url in SIMPLIFY_SCHEMA_FEEDS:
+        jobs.extend(_scrape_simplify_feed(source, url, seen))
+    return jobs
+
+
+def _scrape_simplify_feed(source, url, seen):
     jobs = []
     try:
         resp = requests.get(url, timeout=60)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
-        print(f'Simplify error: {e}')
+        print(f'{source} error: {e}')
         return jobs
 
     for e in data:
@@ -1424,7 +1441,7 @@ def scrape_simplify(seen):
         terms = ' '.join(e.get('terms') or []).lower()
         if '2026' in terms and '2027' not in terms:
             continue
-        key = f"simplify:{e.get('id') or normalize_url(apply_url) or title}"
+        key = f"{source}:{e.get('id') or normalize_url(apply_url) or title}"
         if key in seen:
             continue
         jobs.append({
@@ -1437,7 +1454,7 @@ def scrape_simplify(seen):
             'degrees': e.get('degrees') or [],
             'sponsorship_raw': e.get('sponsorship') or '',
         })
-    print(f'Simplify: {len(jobs)} EE/hardware candidates')
+    print(f'{source}: {len(jobs)} EE/hardware candidates')
     return jobs
 
 
@@ -1520,6 +1537,65 @@ def scrape_competitor_lists(seen):
             })
             found += 1
         print(f'Competitor [{source}]: {found} EE candidates')
+    return jobs
+
+
+JOBRIGHT_FEEDS = [
+    (
+        'jobright',
+        'https://raw.githubusercontent.com/jobright-ai/2026-Engineer-Internship/master/README.md',
+    ),
+]
+
+
+def scrape_jobright(seen):
+    """Jobright.ai daily engineering-internship tables (2027 roles only)."""
+    jobs = []
+    for source, feed_url in JOBRIGHT_FEEDS:
+        try:
+            resp = requests.get(feed_url, timeout=60)
+            resp.raise_for_status()
+            text = resp.text
+        except Exception as e:
+            print(f'{source} error: {e}')
+            continue
+        company = ''
+        found = 0
+        for line in text.splitlines():
+            if not line.startswith('|'):
+                continue
+            parts = [p.strip() for p in line.strip('|').split('|')]
+            if len(parts) < 3:
+                continue
+            m = re.search(r'\[([^\]]+)\]\((https?://[^)\s]+)\)', parts[1])
+            if not m:
+                continue
+            title, apply_url = m.group(1).strip(), m.group(2).strip()
+            cm = re.search(r'\[([^\]]+)\]', parts[0])
+            if cm:
+                company = cm.group(1).strip()
+            elif '↳' not in parts[0]:
+                company = re.sub(r'\*\*', '', parts[0]).strip()
+            if not company or '2027' not in title and '2027' not in line:
+                continue
+            if not is_internship(title) or not is_ee_title(title):
+                continue
+            location = parts[2].strip()
+            if not is_us_or_canada(location):
+                continue
+            norm = normalize_url(apply_url)
+            key = f'{source}:{norm}'
+            if key in seen:
+                continue
+            jobs.append({
+                'key': key,
+                'company': company,
+                'title': title,
+                'location': location,
+                'url': apply_url,
+            })
+            found += 1
+        print(f'{source}: {found} EE candidates')
     return jobs
 
 
@@ -1695,6 +1771,9 @@ def main():
     competitor_found = scrape_competitor_lists(seen)
     candidates.extend(competitor_found)
 
+    print('=== Jobright EE ===')
+    candidates.extend(scrape_jobright(seen))
+
     print(f'\nTotal candidates: {len(candidates)}')
 
     in_scope = [c for c in candidates if candidate_passes_scope(c)]
@@ -1769,6 +1848,7 @@ def main():
             c['citizenship'] = inferred['citizenship']
 
     added = 0
+    added_keys = set()
     needs_loc_llm = [
         c['location'] for c in to_add
         if not location_passes_validation(normalize_location(c['location']))
@@ -1843,14 +1923,17 @@ def main():
             continue
         if add_listing(listings, entry):
             added += 1
+            added_keys.add(c['key'])
             print(f'Added: {c["company"]} — {c["title"]}')
 
     if added:
         save_json(LISTINGS_FILE, listings)
         subprocess.run(['python3', '.github/scripts/rebuild_readme.py'], check=True)
 
+    retry_keys = {c['key'] for c in to_add} - added_keys
     for c in candidates:
-        seen[c['key']] = today
+        if c['key'] not in retry_keys:
+            seen[c['key']] = today
 
     save_json(CLASSIFICATIONS_FILE, classifications)
     save_json(LOCATION_CACHE_FILE, location_cache)

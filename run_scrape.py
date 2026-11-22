@@ -233,6 +233,11 @@ def main():
     simplify_found = scrape_simplify(seen)
     candidates.extend(simplify_found)
 
+    print('\n=== Competitor EE lists + Jobright ===')
+    from scrape_jobs import scrape_competitor_lists, scrape_jobright
+    candidates.extend(scrape_competitor_lists(seen))
+    candidates.extend(scrape_jobright(seen))
+
     print('\nRunning LinkedIn scraper ...')
     linkedin_found = scrape_linkedin(seen)
     if linkedin_found:
@@ -296,6 +301,7 @@ def main():
             c['citizenship'] = inferred['citizenship']
 
     added = 0
+    added_keys = set()
     needs_loc_llm = [
         c['location'] for c in to_add
         if not location_passes_validation(normalize_location(c['location']))
@@ -326,11 +332,13 @@ def main():
         }
         if add_listing(listings, entry):
             added += 1
+            added_keys.add(c['key'])
             print(f'  Added: {c["company"]} — {c["title"]}')
-        seen[c['key']] = today
 
+    retry_keys = {c['key'] for c in to_add} - added_keys
     for c in candidates:
-        seen[c['key']] = today
+        if c['key'] not in retry_keys:
+            seen[c['key']] = today
 
     print(f'\nNew listings added: {added}')
 
