@@ -6,5 +6,11 @@
   "SF; Austin, TX": "SF, CA",
   "LA": "Los Angeles, CA",
   "Mountain View, CA, USA": "Mountain View, CA",
-  "665 Clyde Avenue, Mountain View,  CA, USA": "Mountain View, CA"
+  "665 Clyde Avenue, Mountain View,  CA, USA": "Mountain View, CA",
+  "Toronto, Canada": "Toronto, ON",
+  "Toronto, Canada; Ottawa, Canada": "Toronto, ON; Ottawa, ON",
+  "Vancouver, Canada": "Vancouver, BC",
+  "Markham, Canada": "Markham, ON",
+  "Ottawa, Canada": "Ottawa, ON",
+  "Montreal, Canada": "Montreal, QC"
 }
