@@ -197,16 +197,9 @@ export default function JobsClient({ data }: { data: ListingsData }) {
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
           <div className="flex items-start justify-between gap-4">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-blue-600">
-                Premier EE list · Updated hourly · US &amp; Canada
-              </p>
-              <h1 className="mt-1 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
+              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
                 2027 EE Internships &amp; Co-ops
               </h1>
-              <p className="mt-2 text-sm text-gray-600 max-w-2xl">
-                Electrical engineering only — hardware, RF, analog, power, VLSI/ASIC, FPGA,
-                PCB, test, photonics, and avionics. No software-only roles.
-              </p>
             </div>
             <a
               href="https://github.com/aprameyak/shabajoba"
