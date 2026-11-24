@@ -20,8 +20,10 @@ CLASSIFICATIONS_FILE = Path('.github/data/title_classifications.json')
 LOCATION_CACHE_FILE = Path('.github/data/location_normalizations.json')
 GEMINI_USAGE_FILE = Path('.github/data/gemini_usage.json')
 
-CLAUDE_MODEL = 'claude-haiku-4-5-20251001'
-ANTHROPIC_API_URL = 'https://api.anthropic.com/v1/messages'
+CLAUDE_MODEL = os.environ.get('GROQ_MODEL', 'openai/gpt-oss-20b')
+LLM_API_URL = os.environ.get(
+    'LLM_API_URL', 'https://api.groq.com/openai/v1/chat/completions'
+)
 
 EE_TITLE_KEYWORDS = [
     'electrical engineer', 'electrical engineering', 'electrical',
@@ -405,26 +407,43 @@ def parse_claude_json(raw):
 
 
 def _claude_message(api_key, prompt, max_tokens):
-    """Single Haiku Messages call. Raises on HTTP/empty body."""
+    key = (
+        api_key
+        or os.environ.get('GROQ_API_KEY')
+        or os.environ.get('ANTHROPIC_API_KEY')
+        or ''
+    ).strip()
+    if not key:
+        raise ValueError('missing LLM API key')
+    # gpt-oss uses reasoning tokens; keep a floor so content is not truncated
+    tokens = max(int(max_tokens or 0), 800)
     resp = requests.post(
-        ANTHROPIC_API_URL,
+        LLM_API_URL,
         headers={
-            'x-api-key': api_key,
-            'anthropic-version': '2023-06-01',
-            'content-type': 'application/json',
+            'Authorization': f'Bearer {key}',
+            'Content-Type': 'application/json',
+            'User-Agent': 'shabajoba/1.0',
         },
         json={
             'model': CLAUDE_MODEL,
-            'max_tokens': max_tokens,
-            'messages': [{'role': 'user', 'content': prompt}],
+            'temperature': 0,
+            'max_tokens': tokens,
+            'messages': [
+                {
+                    'role': 'system',
+                    'content': 'Respond with JSON only. No markdown fences.',
+                },
+                {'role': 'user', 'content': prompt},
+            ],
         },
-        timeout=30,
+        timeout=120,
     )
     resp.raise_for_status()
-    content = resp.json().get('content') or []
-    if not content or not content[0].get('text'):
-        raise ValueError('empty Claude response')
-    return content[0]['text']
+    msg = resp.json()['choices'][0]['message']
+    text = (msg.get('content') or '').strip()
+    if not text:
+        raise ValueError('empty LLM response')
+    return text
 
 
 def batch_normalize_locations_claude(raw_locations, api_key, cache):
