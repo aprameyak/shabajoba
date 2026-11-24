@@ -19654,5 +19654,101 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-11-23"
+  },
+  {
+    "company": "Seasats",
+    "role": "Electronics Engineering Intern",
+    "location": "San Diego, CA",
+    "type": "offcycle",
+    "season": "Winter 2027",
+    "education": "Undergrad",
+    "url": "https://seasats.breezy.hr/p/58eb0549bc6d/apply",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-24"
+  },
+  {
+    "company": "Legrand",
+    "role": "Electrical Engineer Intern",
+    "location": "Canonsburg, PA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://iadugs.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/1948",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-24"
+  },
+  {
+    "company": "Tesla",
+    "role": "Internship, Electrical Engineer, Cell Manufacturing",
+    "location": "San Diego, CA",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://jobright.ai/jobs/info/6b04e6922d88b678f117a7cf?utm_campaign=1048&utm_source=git",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-24"
+  },
+  {
+    "company": "Tesla",
+    "role": "Internship, Reliability Electronics Design Engineer, Energy Engineering",
+    "location": "Palo Alto, CA",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://jobright.ai/jobs/info/6b04e6777fd2e33bde09831a?utm_campaign=1048&utm_source=git",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-24"
+  },
+  {
+    "company": "Tesla",
+    "role": "Internship, Manufacturing Electrical Engineer, Energy Engineering",
+    "location": "Fremont, CA",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://jobright.ai/jobs/info/6b04e6747bec27df08f95337?utm_campaign=1048&utm_source=git",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-24"
+  },
+  {
+    "company": "Oceaneering",
+    "role": "Electrical Engineering Intern",
+    "location": "Hanover, MD",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://jobright.ai/jobs/info/6b04c29b7bec27df08f943b0?utm_campaign=1048&utm_source=git",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-24"
+  },
+  {
+    "company": "Tesla",
+    "role": "Internship, Electronic Design Engineer, Optimus",
+    "location": "Palo Alto, CA",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://jobright.ai/jobs/info/6b04da207bec27df08f94e63?utm_campaign=1048&utm_source=git",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-24"
+  },
+  {
+    "company": "Tesla",
+    "role": "Internship, Solar Hardware Engineer, PV Cell, Energy Engineering",
+    "location": "Palo Alto, CA",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://jobright.ai/jobs/info/6b04da0b7fd2e33bde097e55?utm_campaign=1048&utm_source=git",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-24"
   }
 ]
