@@ -415,7 +415,6 @@ def _claude_message(api_key, prompt, max_tokens):
     ).strip()
     if not key:
         raise ValueError('missing LLM API key')
-    # gpt-oss uses reasoning tokens; keep a floor so content is not truncated
     tokens = max(int(max_tokens or 0), 800)
     resp = requests.post(
         LLM_API_URL,
