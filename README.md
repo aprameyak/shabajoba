@@ -19,8 +19,10 @@
 <!-- TABLE_START listings -->
 | Company | Role | Location | Season | Apply | Date Added |
 | ------- | ---- | -------- | ------ | ----- | ---------- |
+| ByteDance | ASIC Design Engineer Intern (Video Silicon IP) | San Jose, CA | Summer 2027 | <a href="https://jobright.ai/jobs/info/6b06bb9f8113626fcf3d58be?utm_campaign=1048&utm_source=git" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 25 |
 | Lightmatter | Design Verification, Intern | Mountain View, CA | Summer 2027 | <a href="https://boards.greenhouse.io/lightmatter/jobs/5474684008?gh_jid=5474684008" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 25 |
 | ↳ | Design Verification Intern | Boston, MA | Summer 2027 | <a href="https://boards.greenhouse.io/lightmatter/jobs/5493962008" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 25 |
+| Neuralink | Electrical Test Engineer Intern | Remote (US) | Summer 2027 | <a href="https://boards.greenhouse.io/neuralink/jobs/8197808003" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 25 |
 | RTX | FPGA Electrical Engineer Intern | El Segundo, CA | Summer 2027 | <a href="https://jobright.ai/jobs/info/6b05f7810e7eacd1ea644e7f?utm_campaign=1048&utm_source=git" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 25 |
 | Seagate Technology | Optics & Photonics Engineering Intern | Shakopee, MN | Summer 2027 | <a href="https://jobright.ai/jobs/info/6b05f9923e56157448ed2627?utm_campaign=1048&utm_source=git" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/u1KNU8z.png" width="118" alt="Apply"></a> | Nov 25 |
 | Altera | Embedded Solutions Intern | Toronto, ON | Summer 2027 | 🔒 | Nov 24 |
