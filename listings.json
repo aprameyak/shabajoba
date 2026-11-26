@@ -20098,5 +20098,29 @@
     "sponsorship": "Unknown",
     "citizenship": "Unknown",
     "date_added": "2026-11-26"
+  },
+  {
+    "company": "Bobcat Company",
+    "role": "Test Engineer Student Experience",
+    "location": "Bismarck, ND",
+    "type": "offcycle",
+    "season": "Spring 2027",
+    "education": "Undergrad",
+    "url": "https://jobright.ai/jobs/info/6af467f62278454e18c3512f?utm_campaign=1048&utm_source=git",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-26"
+  },
+  {
+    "company": "Northrop Grumman",
+    "role": "Electronics Engineer Intern - Manhattan Beach CA",
+    "location": "Manhattan Beach, CA",
+    "type": "summer",
+    "season": "Summer 2027",
+    "education": "Undergrad",
+    "url": "https://jobright.ai/jobs/info/6b06303b460ce5352ae3ef3b?utm_campaign=1048&utm_source=git",
+    "sponsorship": "Unknown",
+    "citizenship": "Unknown",
+    "date_added": "2026-11-26"
   }
 ]
