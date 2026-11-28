@@ -4,7 +4,7 @@ A list of electrical and computer engineering internships and co-ops for 2027 in
 
 ---
 
-**Browse with filters:** [shabajoba.aprameyak.workers.dev](https://shabajoba.aprameyak.workers.dev/)
+**Browse with filters:** [shabajoba.aprameyakannan.com](https://shabajoba.aprameyakannan.com/)
 
 ---
 
