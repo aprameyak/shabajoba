@@ -1,5 +1,7 @@
 # 2027 EE Internships & Co-ops — US & Canada
 
+A list of electrical and computer engineering internships and co-ops for 2027 in the US and Canada, refreshed hourly from company job boards.
+
 ---
 
 **Browse with filters:** [shabajoba.aprameyak.workers.dev](https://shabajoba.aprameyak.workers.dev/)
@@ -1615,3 +1617,11 @@ Open roles have an Apply link. Closed roles show 🔒. Links are checked regular
 
 **Found a non-EE role or a mistake?**  
 Open an issue or PR. This list stays EE-only on purpose.
+
+## Contributing
+
+Missing a role or found a mistake? Open an issue or a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md) for how to add a listing or mark one closed.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
